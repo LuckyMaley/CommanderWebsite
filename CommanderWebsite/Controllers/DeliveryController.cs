@@ -8,30 +8,29 @@ namespace CommanderWebsite.Controllers
 {
     public class DeliveryController
     {
-        public static void InsertDelivery(string address, string user)
+        public static void InsertDelivery( string address, string user)
         {
             CommanderEDM db = new CommanderEDM();
             var userRow = CustomerController.FindByEmail(user);
-            int id = int.Parse(userRow.Customer_ID.ToString());
+            string id = userRow.Customer_ID.ToString();
             var deliver = new Delivery()
             {
-                Admin_ID = 1,
+                Delivery_ID = Guid.NewGuid().ToString(),
                 dAddress = address,
                 Cost = 20,
-                Delivered = 0,
-                Customer_ID = id
+                DateCreated = DateTime.Now
             };
             db.Deliveries.Add(deliver);
             db.SaveChanges();
         }
 
-        public static int getLastID(string user)
+        public static string getLastID(string user)
         {
-            CommanderEDM db = new CommanderEDM();
-            var cust = CustomerController.FindByEmail(user);
-            var d = db.Deliveries.Where(c => c.Customer_ID == cust.Customer_ID).OrderByDescending(c => c.Delivery_ID).FirstOrDefault();
-            var id = int.Parse(d.Delivery_ID.ToString());
-            return id;
+           CommanderEDM db = new CommanderEDM();
+           var cust = CustomerController.FindByEmail(user);
+           var d = db.Deliveries.Where(c => c.Customer_ID == cust.Customer_ID).OrderByDescending(c => c.Delivery_ID).FirstOrDefault();
+           var id = d.Delivery_ID.ToString();
+           return id;
         }
     }
 }

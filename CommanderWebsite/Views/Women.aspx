@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Women" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Women.aspx.cs" Inherits="CommanderWebsite.Views.Women" %>
+﻿<%@ Page Title="Women" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Women.aspx.cs" Inherits="CommanderWebsite.Views.Women" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div style="text-align:center;min-height:1024px;" class="container-fluid">
     <div  class="row2" style="text-align:center">

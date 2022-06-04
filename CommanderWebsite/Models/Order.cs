@@ -10,15 +10,20 @@ namespace CommanderWebsite.Models
     public partial class Order
     {
         [Key]
-        public int Order_ID { get; set; }
+        [StringLength(50)]
+        public string Order_ID { get; set; }
 
-        public int? Customer_ID { get; set; }
+        [StringLength(50)]
+        public string Customer_ID { get; set; }
 
-        public int? Payment_ID { get; set; }
+        [StringLength(50)]
+        public string Payment_ID { get; set; }
 
-        public int? Delivery_ID { get; set; }
+        [StringLength(50)]
+        public string Delivery_ID { get; set; }
 
-        public int? Product_ID { get; set; }
+        [StringLength(50)]
+        public string Product_ID { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? Date { get; set; }
@@ -30,8 +35,6 @@ namespace CommanderWebsite.Models
         public virtual Customer Customer { get; set; }
 
         public virtual Delivery Delivery { get; set; }
-
-        public virtual Delivery Delivery1 { get; set; }
 
         public virtual Payment Payment { get; set; }
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Men" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Men.aspx.cs" Inherits="CommanderWebsite.Views.Men" %>
+﻿<%@ Page Title="Men" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Men.aspx.cs" Inherits="CommanderWebsite.Views.Men" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div style="text-align:center; min-height:1024px;" class="container">
     <div  class="row2" style="text-align:center">

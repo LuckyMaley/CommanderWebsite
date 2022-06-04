@@ -106,9 +106,9 @@ namespace CommanderWebsite
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           try {  
-            if (!IsPostBack)
-            {
+           try{
+              if (!IsPostBack)
+              {
                 var s = Request.Form["sb2"];
                 if(s != null)
                 {

@@ -12,14 +12,15 @@ namespace CommanderWebsite.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Admin()
         {
+            Brands = new HashSet<Brand>();
             Categories = new HashSet<Category>();
-            Deliveries = new HashSet<Delivery>();
             Discounts = new HashSet<Discount>();
             Products = new HashSet<Product>();
         }
 
         [Key]
-        public int Admin_ID { get; set; }
+        [StringLength(50)]
+        public string Admin_ID { get; set; }
 
         [StringLength(50)]
         public string Firstname { get; set; }
@@ -37,9 +38,6 @@ namespace CommanderWebsite.Models
         public byte[] Picture { get; set; }
 
         [StringLength(50)]
-        public string ThemeColor { get; set; }
-
-        [StringLength(50)]
         public string Email { get; set; }
 
         [StringLength(50)]
@@ -52,10 +50,10 @@ namespace CommanderWebsite.Models
         public string Password { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Category> Categories { get; set; }
+        public virtual ICollection<Brand> Brands { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Delivery> Deliveries { get; set; }
+        public virtual ICollection<Category> Categories { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Discount> Discounts { get; set; }

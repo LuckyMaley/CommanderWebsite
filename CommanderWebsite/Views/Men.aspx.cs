@@ -47,7 +47,7 @@ namespace CommanderWebsite.Views
 
                     Label lbl2 = (Label)e.Item.FindControl("Label1");
                     string b = (string)Session["val"];
-                    var dataT = ProductsController.getByID2(int.Parse(b));
+                    var dataT = ProductsController.getByID2(b);
                     if (dataT.Picture != null)
                     {
 

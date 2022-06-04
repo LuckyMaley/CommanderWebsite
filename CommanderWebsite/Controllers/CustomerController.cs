@@ -8,12 +8,13 @@ namespace CommanderWebsite.Models
     public class CustomerController : CommanderEDM
     {
 
-        public static void AddCustomer(string firstName, string lastName, string email, string passWord)
+        public static void AddCustomer(string user, string firstName, string lastName, string email, string passWord)
         {
             using (var context = new CommanderEDM())
             {
                 var newCustomer = new Customer()
                 {
+                    Customer_ID = user,
                     Firstname = firstName,
                     Lastname = lastName,
                     Email = email,
@@ -31,6 +32,7 @@ namespace CommanderWebsite.Models
             {
                 var newCustomer = new Customer()
                 {
+                    Customer_ID = Guid.NewGuid().ToString(), 
                     Email = email,
                     Password = passWord
 
@@ -89,35 +91,7 @@ namespace CommanderWebsite.Models
             db.SaveChanges();
 
         }
-            /*   
-             *   Update method
-             *     private static void ChangeCustomer()
-                 {
 
-                     using (var context = new CommanderEDM())
-                     {
-
-                         var customer = (from d in context.Customers
-                                        where d.Firstname == "Ali"
-                                        select d).Single();
-                         customer.Lastname = "Aslam";
-                         context.SaveChanges();
-
-                     }
-                 }
-
-
-              //Delete method beware of foreign keys 
-              private static void DeleteCustomer() {
-
-            using (var context = new CommanderEDM()) {
-               var deleteCust = (from d in context.Customers where d.Firstname == "Ali" select d).Single();
-               context.Students.Remove(deleteCust);
-               context.SaveChanges();
-            }
-         }
-             */
-
-        }
+     }
 }
       

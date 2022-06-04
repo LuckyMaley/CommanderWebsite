@@ -17,7 +17,8 @@ namespace CommanderWebsite.Models
         }
 
         [Key]
-        public int Category_ID { get; set; }
+        [StringLength(50)]
+        public string Category_ID { get; set; }
 
         [StringLength(50)]
         public string Type { get; set; }
@@ -25,7 +26,11 @@ namespace CommanderWebsite.Models
         [Column(TypeName = "text")]
         public string Description { get; set; }
 
-        public int? Admin_ID { get; set; }
+        [Column(TypeName = "image")]
+        public byte[] Picture { get; set; }
+
+        [StringLength(50)]
+        public string Admin_ID { get; set; }
 
         public virtual Admin Admin { get; set; }
 

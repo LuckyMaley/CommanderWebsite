@@ -1,11 +1,13 @@
 ﻿using CommanderWebsite.Controllers;
 using CommanderWebsite.Models;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -20,6 +22,15 @@ namespace CommanderWebsite.Account
 
         protected void CreateUser_Click(object sender, EventArgs e)
         {
+            string usertype = "Customer";
+           
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+            if (roleManager.Roles.Count() == 0)
+            {
+                roleManager.Create(new IdentityRole { Name = "Super Admin" });
+                roleManager.Create(new IdentityRole { Name = "Admin" });
+                roleManager.Create(new IdentityRole { Name = "Customer" });
+            }
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
             var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text };
@@ -33,8 +44,8 @@ namespace CommanderWebsite.Account
                 regForm.Visible = false;
                 ConfirmEmail.Visible = true;
                 //EmailController.sendEmail(user.Id, "Confirm your account", Email.Text, "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
-                CustomerController.AddCustomer(firstName.Text, lastName.Text, Email.Text, Password.Text);
-                var result1 = manager.AddToRole(user.Id,"Customer");
+                CustomerController.AddCustomer(user.Id.ToString(),firstName.Text, lastName.Text, Email.Text, Password.Text);
+                var result1 = manager.AddToRole(user.Id,usertype);
                // signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
                // IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
             }

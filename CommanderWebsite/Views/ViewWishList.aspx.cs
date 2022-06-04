@@ -16,7 +16,7 @@ namespace CommanderWebsite.Views
             try
             {
 
-                int id = int.Parse(Request.QueryString["Product_ID"]);
+                string id = Request.QueryString["Product_ID"];
                 Label3.Text = Request.QueryString["Product_ID"];
                 CommanderEDM db = new CommanderEDM();
                 var myWishList = WishListController.GetWishListItems(Context.User.Identity.Name);
@@ -61,7 +61,7 @@ namespace CommanderWebsite.Views
             {
 
            
-            int id = int.Parse(Request.QueryString["Product_ID"]);
+               string id = Request.QueryString["Product_ID"];
             
                
                 CommanderEDM db = new CommanderEDM();
@@ -101,7 +101,7 @@ namespace CommanderWebsite.Views
             try
             {
                 CommanderEDM _db = new CommanderEDM();
-                int idLb = int.Parse(Label3.Text);
+                string idLb = Label3.Text;
                 WishListController.removeItem(idLb, Context.User.Identity.Name);
                 var mywishlist = WishListController.GetWishListItems(Context.User.Identity.Name);
                 Session["WishListCount"] = mywishlist.Count;

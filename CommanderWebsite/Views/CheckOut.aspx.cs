@@ -15,7 +15,7 @@ namespace CommanderWebsite.Views
         protected void Page_Load(object sender, EventArgs e)
         {
             try { 
-            int id = int.Parse(Request.QueryString["Product_ID"]);
+            string id = Request.QueryString["Product_ID"];
             CommanderEDM db = new CommanderEDM();
             var dt = CartController.GetCartItems(Context.User.Identity.Name, id);
             rprtCart1.DataSource = dt;
@@ -48,7 +48,7 @@ namespace CommanderWebsite.Views
         {
             try
             {
-                int id = int.Parse(Request.QueryString["Product_ID"]);
+                string id = Request.QueryString["Product_ID"];
                 if (!String.IsNullOrEmpty(TextBox2.Text)) { 
                     CommanderEDM db = new CommanderEDM();
                     var getCart = CartController.GetCartItems(Context.User.Identity.Name, id);
@@ -59,7 +59,7 @@ namespace CommanderWebsite.Views
                     var delID = DeliveryController.getLastID(Context.User.Identity.Name);
                     OrderController.InsertOrder(Context.User.Identity.Name,id,payID,delID,cartI.Price);
                     CartController.removeItem(id, Context.User.Identity.Name);
-                    int d = OrderController.getOrderID(Context.User.Identity.Name);
+                    string d = OrderController.getOrderID(Context.User.Identity.Name);
                     Response.Redirect("~/Views/Receipt.aspx?Order_ID="+d,false);
                 }
                 else

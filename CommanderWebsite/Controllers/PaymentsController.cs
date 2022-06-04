@@ -8,13 +8,14 @@ namespace CommanderWebsite.Controllers
 {
     public class PaymentsController
     {
-        public static void InsertPayment(string user, decimal? due)
+        public static void InsertPayment(string user, decimal due)
         {
             CommanderEDM db = new CommanderEDM();
             var userRow = CustomerController.FindByEmail(user);
-            int id = int.Parse(userRow.Customer_ID.ToString());
+            string id = userRow.Customer_ID.ToString();
             var payment = new Payment()
             {
+                Payment_ID = Guid.NewGuid().ToString(),
                 Date = DateTime.Now,
                 Customer_ID = id,
                 AmountDue = due,
@@ -24,12 +25,12 @@ namespace CommanderWebsite.Controllers
             db.SaveChanges();
         }
 
-        public static int LastPay(string user) //I'll finish this later
+        public static string LastPay(string user) //I'll finish this later
         {
             CommanderEDM db = new CommanderEDM();
             var cust = CustomerController.FindByEmail(user);
             var d = db.Payments.Where(c=> c.Customer_ID == cust.Customer_ID).OrderByDescending(c => c.Payment_ID).FirstOrDefault();
-            var id = int.Parse(d.Payment_ID.ToString());
+            var id = d.Payment_ID.ToString();
             return id;
         }
     }

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -251,6 +254,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\AdminRegister.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
     <Content Include="Account\Lockout.aspx" />
@@ -323,8 +327,68 @@
     <Content Include="Content\Images\vitaly-taranov-fW2jv1L7yeA-unsplash.jpg" />
     <Content Include="Content\Images\WhatsApp Image 2020-09-03 at 15.34.08.jpeg" />
     <Content Include="Content\Images\WhatsApp Image 2020-09-03 at 21.51.07 %282%29.jpeg" />
+    <Content Include="Content\img\about\1.mp4" />
+    <Content Include="Content\img\about\a1.png" />
+    <Content Include="Content\img\about\a2.jpg" />
+    <Content Include="Content\img\about\a3.png" />
+    <Content Include="Content\img\about\a4.png" />
+    <Content Include="Content\img\about\a5.jpg" />
+    <Content Include="Content\img\about\a6.jpg" />
+    <Content Include="Content\img\about\banner.png" />
+    <Content Include="Content\img\banner\b1.jpg" />
+    <Content Include="Content\img\banner\b10.jpg" />
+    <Content Include="Content\img\banner\b14.png" />
+    <Content Include="Content\img\banner\b16.jpg" />
+    <Content Include="Content\img\banner\b17.jpg" />
+    <Content Include="Content\img\banner\b18.jpg" />
+    <Content Include="Content\img\banner\b19.jpg" />
+    <Content Include="Content\img\banner\b2.jpg" />
+    <Content Include="Content\img\banner\b20.jpg" />
+    <Content Include="Content\img\banner\b4.jpg" />
+    <Content Include="Content\img\banner\b7.jpg" />
+    <Content Include="Content\img\blog\b1.jpg" />
+    <Content Include="Content\img\blog\b2.jpg" />
+    <Content Include="Content\img\blog\b3.jpg" />
+    <Content Include="Content\img\blog\b4.jpg" />
+    <Content Include="Content\img\blog\b5.jpg" />
+    <Content Include="Content\img\blog\b6.jpg" />
+    <Content Include="Content\img\blog\b7.jpg" />
+    <Content Include="Content\img\button.png" />
+    <Content Include="Content\img\features\f1.png" />
+    <Content Include="Content\img\features\f2.png" />
+    <Content Include="Content\img\features\f3.png" />
+    <Content Include="Content\img\features\f4.png" />
+    <Content Include="Content\img\features\f5.png" />
+    <Content Include="Content\img\features\f6.png" />
+    <Content Include="Content\img\hero4.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\pay\app.jpg" />
+    <Content Include="Content\img\pay\pay.png" />
+    <Content Include="Content\img\pay\play.jpg" />
+    <Content Include="Content\img\people\1.png" />
+    <Content Include="Content\img\people\2.png" />
+    <Content Include="Content\img\people\3.png" />
+    <Content Include="Content\img\products\f1.jpg" />
+    <Content Include="Content\img\products\f2.jpg" />
+    <Content Include="Content\img\products\f3.jpg" />
+    <Content Include="Content\img\products\f4.jpg" />
+    <Content Include="Content\img\products\f5.jpg" />
+    <Content Include="Content\img\products\f6.jpg" />
+    <Content Include="Content\img\products\f7.jpg" />
+    <Content Include="Content\img\products\f8.jpg" />
+    <Content Include="Content\img\products\n1.jpg" />
+    <Content Include="Content\img\products\n2.jpg" />
+    <Content Include="Content\img\products\n3.jpg" />
+    <Content Include="Content\img\products\n4.jpg" />
+    <Content Include="Content\img\products\n5.jpg" />
+    <Content Include="Content\img\products\n6.jpg" />
+    <Content Include="Content\img\products\n7.jpg" />
+    <Content Include="Content\img\products\n8.jpg" />
+    <Content Include="Content\img\shoe1.jpg" />
+    <Content Include="Content\img\shoe2.jpg" />
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Site1.css" />
     <Content Include="Customer\DashboardCustomer.aspx" />
     <Content Include="Customer\HelpCustomer.aspx" />
     <Content Include="Customer\Orders.aspx" />
@@ -334,6 +398,7 @@
     <Content Include="Customer\Rewards.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="PrivacyCookies.aspx" />
+    <Content Include="logo.png" />
     <Content Include="Scripts\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Scripts\fonts\glyphicons-halflings-regular.ttf" />
@@ -395,6 +460,7 @@
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Script.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -423,9 +489,13 @@
     <Content Include="Site.Master" />
     <Content Include="TermsOfUse.aspx" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Accessories.aspx" />
+    <Content Include="Views\Blog.aspx" />
     <Content Include="Views\Brands.aspx" />
     <Content Include="Views\CheckOut.aspx" />
     <Content Include="Views\Help.aspx" />
+    <Content Include="Views\Kids.aspx" />
+    <Content Include="Views\Latest.aspx" />
     <Content Include="Views\Men.aspx" />
     <Content Include="Views\MensView.aspx" />
     <Content Include="Views\Offers.aspx" />
@@ -450,6 +520,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -464,6 +535,13 @@
     </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AdminRegister.aspx.cs">
+      <DependentUpon>AdminRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AdminRegister.aspx.designer.cs">
+      <DependentUpon>AdminRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Confirm.aspx.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
@@ -750,17 +828,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Admin.cs" />
     <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Models\CommanderEDM.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Delivery.cs" />
     <Compile Include="Models\Discount.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Product.cs" />
@@ -773,7 +851,6 @@
       <DependentUpon>PrivacyCookies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShoppingCart.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -787,6 +864,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="TermsOfUse.aspx.cs">
@@ -802,6 +886,20 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Accessories.aspx.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Accessories.aspx.designer.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Brands.aspx.cs">
       <DependentUpon>Brands.aspx</DependentUpon>
@@ -823,6 +921,20 @@
     </Compile>
     <Compile Include="Views\Help.aspx.designer.cs">
       <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Kids.aspx.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Kids.aspx.designer.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Latest.aspx.cs">
+      <DependentUpon>Latest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Latest.aspx.designer.cs">
+      <DependentUpon>Latest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Men.aspx.cs">
       <DependentUpon>Men.aspx</DependentUpon>
@@ -929,6 +1041,7 @@
     <Folder Include="Content\Images\Women\" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
@@ -939,6 +1052,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
@@ -949,7 +1063,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52652</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44361/</IISUrl>
+          <IISUrl>http://localhost:52652/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

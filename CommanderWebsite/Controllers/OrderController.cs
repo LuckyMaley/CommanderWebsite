@@ -8,13 +8,14 @@ namespace CommanderWebsite.Controllers
 {
     public class OrderController
     {
-        public static void InsertOrder(string user, int? prodID, int? pay, int? del, decimal? price)
+        public static void InsertOrder(string user, string prodID, string pay, string del, decimal? price)
         {
             CommanderEDM db = new CommanderEDM();
             var userRow = CustomerController.FindByEmail(user);
-            int id = int.Parse(userRow.Customer_ID.ToString());
+            string id = userRow.Customer_ID.ToString();
             var order = new Order()
             {
+                Order_ID = Guid.NewGuid().ToString(),
                 Product_ID = prodID,
                 Customer_ID = id,
                 Payment_ID = pay,
@@ -27,30 +28,30 @@ namespace CommanderWebsite.Controllers
             db.SaveChanges();
         }
 
-        public static int getOrderID(string user)
+        public static string getOrderID(string user)
         {
             CommanderEDM db = new CommanderEDM();
             var cust = CustomerController.FindByEmail(user);
-            var d = db.Orders.Where(c => c.Customer_ID ==cust.Customer_ID).OrderByDescending(c => c.Order_ID).FirstOrDefault();
-            var id = int.Parse(d.Order_ID.ToString());
+            var d = db.Orders.Where(c => c.Customer_ID.Equals(cust.Customer_ID)).OrderByDescending(c => c.Order_ID).FirstOrDefault();
+            var id = d.Order_ID.ToString();
             return id;
         }
 
-        public static List<Order> getOrderID(int id)
-        {
-            CommanderEDM db = new CommanderEDM();
-            var order = db.Orders.Where(c => c.Order_ID == id).ToList();
-            return order;
-        }
+     //   public static List<Order> getOrderID(string id)
+      //  {
+      //      CommanderEDM db = new CommanderEDM();
+       //     var order = db.Orders.Where(c => c.Order_ID == id).ToList();
+        //    return order;
+      //  }
 
-        public static Order getOrder(int id)
+        public static Order getOrder(string id)
         {
             CommanderEDM db = new CommanderEDM();
             var order = db.Orders.SingleOrDefault(c => c.Order_ID == id);
             return order;
         }
 
-        public static IEnumerable<Order> getByCatID4(int id, int cus)
+        public static IEnumerable<Order> getByCatID4(string id, string cus)
         {
             CommanderEDM db = new CommanderEDM();
             var prodi = db.Orders.FirstOrDefault(c => c.Customer_ID == cus);
@@ -59,7 +60,7 @@ namespace CommanderWebsite.Controllers
             return prod;
         }
 
-        public static IEnumerable<Order> getByCatID3( int cus)
+        public static IEnumerable<Order> getByCatID3( string cus)
         {
             CommanderEDM db = new CommanderEDM();
             var prod = db.Orders.Select(c => c).ToList();

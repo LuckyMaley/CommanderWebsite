@@ -1,4 +1,4 @@
-﻿namespace CommanderWebsite.Models
+namespace CommanderWebsite.Models
 {
     using System;
     using System.Collections.Generic;
@@ -12,21 +12,23 @@
         [Key]
         [StringLength(50)]
         public string Cart_ID { get; set; }
-      
-        public int? Product_ID { get; set; }
+
+        [StringLength(50)]
+        public string Product_ID { get; set; }
 
         [StringLength(50)]
         public string cartId { get; set; }
 
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? DateCreated { get; set; }
+        public DateTime DateCreated { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
 
-        
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
+
+        public virtual Product Product { get; set; }
     }
 }

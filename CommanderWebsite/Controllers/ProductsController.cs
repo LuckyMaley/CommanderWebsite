@@ -8,21 +8,21 @@ namespace CommanderWebsite.Controllers
 {
     public class ProductsController
     {
-        public static IEnumerable<Product> getByID(int prodID)
+        public static IEnumerable<Product> getByID(string prodID)
         {
             CommanderEDM db = new CommanderEDM();
             var g = db.Products.Select(c => c);
             var prod = g.Where(c => c.Product_ID == prodID);
             return prod;
         }
-        public static Product getByID2(int prodID)
+        public static Product getByID2(string prodID)
         {
             CommanderEDM db = new CommanderEDM();
             var prod = db.Products.SingleOrDefault(c => c.Product_ID == prodID);
             return prod;
         }
 
-        public static IEnumerable<Product> getByID1(int prodID)
+        public static IEnumerable<Product> getByID1(string prodID)
         {
             CommanderEDM db = new CommanderEDM();
             var f = db.Products.Select(c => c).ToList();
@@ -45,19 +45,20 @@ namespace CommanderWebsite.Controllers
             return prod;
         }
 
-        public static IEnumerable<Product> getByCatID(int id)
+        public static IEnumerable<Product> getByCatID(string id)
         {
             CommanderEDM db = new CommanderEDM();
             var prod = db.Products.Select(c => c).ToList();
-            var prodi = prod.Where(c => c.Category_ID == id);
+            var prodi = prod.Where(c => c.Category_ID.Equals(id));
             return prodi;
         }
 
-        public static void InsertProd (string name, string  type, string description, int? quantity, string size, decimal? price, byte[] picture, int? admin_id, int? category_id)
+        public static void InsertProd (string name, string  type, string description, int quantity, string size, decimal price, byte[] picture, string admin_id, string category_id)
         {
             CommanderEDM db = new CommanderEDM();
             var InsProd = new Product()
             {
+                Product_ID = Guid.NewGuid().ToString(),
                 Name = name,
                 Type = type,
                 Description = description,
@@ -73,10 +74,10 @@ namespace CommanderWebsite.Controllers
 
         }
 
-        public static void UpdateProd(int prodID, string name, string type, string description, int? quantity, string size, decimal? price, byte[] picture, int? admin_id, int? category_id)
+        public static void UpdateProd(string prodID, string name, string type, string description, int quantity, string size, decimal price, byte[] picture, string admin_id, string category_id)
         {
             CommanderEDM db = new CommanderEDM();
-            var prod = db.Products.SingleOrDefault(c => c.Product_ID == prodID);
+            var prod = db.Products.SingleOrDefault(c => c.Product_ID.Equals(prodID));
             prod.Name = name;
             prod.Type = type;
             prod.Description = description;
@@ -90,10 +91,10 @@ namespace CommanderWebsite.Controllers
 
         }
 
-        public static byte[] getByImg(int img)
+        public static byte[] getByImg(string img)
           {
               var _db = new CommanderEDM();
-              var full = _db.Products.SingleOrDefault(c => c.Product_ID == img).Picture;
+              var full = _db.Products.SingleOrDefault(c => c.Product_ID.Equals(img)).Picture;
 
               return full;
           } 

@@ -14,7 +14,7 @@ namespace CommanderWebsite.Controllers
 
         public static string CartSessionKey = "WishListId";
 
-        public static void AddToWishList(int id, int Qty, string name, decimal? price, string user)
+        public static void AddToWishList(string id, int Qty, string name, decimal price, string user)
         {
 
             // Retrieve the product from the database.
@@ -78,7 +78,7 @@ namespace CommanderWebsite.Controllers
             return _db.Wishlists.SingleOrDefault(c => c.wishlistId == ShoppingCartId);
         }
 
-        public static void removeItem(int prod, string user)
+        public static void removeItem(string prod, string user)
         {
             var dbItem = _db.Wishlists.SingleOrDefault(c => c.Product_ID == prod && c.wishlistId == user);
             _db.Wishlists.Remove(dbItem);

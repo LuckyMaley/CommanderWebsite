@@ -16,15 +16,17 @@ namespace CommanderWebsite.Models
         }
 
         [Key]
-        public int Brand_ID { get; set; }
+        [StringLength(50)]
+        public string Brand_ID { get; set; }
 
-        public int? Admin_ID { get; set; }
+        [StringLength(50)]
+        public string Admin_ID { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
 
         [Column(TypeName = "text")]
-        public string Descrption { get; set; }
+        public string Description { get; set; }
 
         [Column(TypeName = "image")]
         public byte[] Picture { get; set; }

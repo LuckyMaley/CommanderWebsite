@@ -42,7 +42,7 @@
             <tr>
                 <td class="auto-style2">Product Quantity</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="TextBox5" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="DropDownList2" Cssclass="form-control" runat="server"></asp:DropDownList>
                 </td>
             </tr>
             <tr>

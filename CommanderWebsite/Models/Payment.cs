@@ -16,24 +16,26 @@ namespace CommanderWebsite.Models
         }
 
         [Key]
-        public int Payment_ID { get; set; }
+        [StringLength(50)]
+        public string Payment_ID { get; set; }
 
-        public int? Customer_ID { get; set; }
+        [StringLength(50)]
+        public string Customer_ID { get; set; }
 
-        public int? Discount_ID { get; set; }
+        [StringLength(50)]
+        public string Discount_ID { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? Date { get; set; }
 
-        public decimal? AmountDue { get; set; }
+        [Column(TypeName = "decimal")]
+        public decimal AmountDue { get; set; }
 
         public int? Payed { get; set; }
 
         public virtual Customer Customer { get; set; }
 
         public virtual Discount Discount { get; set; }
-
-        public virtual Discount Discount1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }

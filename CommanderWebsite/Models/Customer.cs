@@ -17,7 +17,8 @@ namespace CommanderWebsite.Models
         }
 
         [Key]
-        public int Customer_ID { get; set; }
+        [StringLength(50)]
+        public string Customer_ID { get; set; }
 
         [StringLength(50)]
         public string Firstname { get; set; }
@@ -42,9 +43,6 @@ namespace CommanderWebsite.Models
 
         [Column(TypeName = "image")]
         public byte[] Picture { get; set; }
-
-        [StringLength(50)]
-        public string ThemeColor { get; set; }
 
         [StringLength(50)]
         public string Username { get; set; }

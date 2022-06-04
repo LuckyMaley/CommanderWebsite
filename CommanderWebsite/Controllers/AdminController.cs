@@ -1,13 +1,32 @@
-﻿using System;
+﻿using CommanderWebsite.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CommanderWebsite.Models;
 
 namespace CommanderWebsite.Controllers
 {
     public class AdminController: CommanderEDM
     {
+        public static void AddAdmin(string user, string firstName, string lastName, string adminType, string email, string passWord)
+        {
+            using (var context = new CommanderEDM())
+            {
+                var newAdmin = new Models.Admin()
+                {
+                    Admin_ID = user,
+                    Firstname = firstName,
+                    Lastname = lastName,
+                    AdminType = adminType,
+                    Email = email,
+                    Password = passWord
+
+                };
+                context.Admins.Add(newAdmin);
+                context.SaveChanges();
+            }
+        }
+
         public static Models.Admin FindByEmailAdmin(string email)
         {
             CommanderEDM db = new CommanderEDM();

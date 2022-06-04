@@ -20,7 +20,7 @@ namespace CommanderWebsite.Views
             {
                 try
                 {
-                    int id = int.Parse(Request.QueryString["Product_ID"]);
+                    string id = Request.QueryString["Product_ID"];
 
                     CommanderEDM db = new CommanderEDM();
                     var d1 = ProductsController.getByID1(id);
@@ -57,7 +57,7 @@ namespace CommanderWebsite.Views
             try
             {
 
-                int id = int.Parse(Request.QueryString["Product_ID"]);
+                string id = Request.QueryString["Product_ID"];
                 if (Context.User.Identity.IsAuthenticated == true)
                 {
                     CommanderEDM db = new CommanderEDM();
@@ -90,7 +90,7 @@ namespace CommanderWebsite.Views
             {
 
 
-                int id = int.Parse(Request.QueryString["Product_ID"]);
+                string id = Request.QueryString["Product_ID"];
 
                 if (Context.User.Identity.IsAuthenticated == true)
                 {

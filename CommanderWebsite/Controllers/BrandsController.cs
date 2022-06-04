@@ -8,14 +8,16 @@ namespace CommanderWebsite.Controllers
 {
     public class BrandsController
     {
-        public static void insertBrand(string name, string desc, byte[] img)
+        public static void insertBrand(string name, string desc, string id, byte[] img)
         {
             CommanderEDM db = new CommanderEDM();
+            var userRow = AdminController.FindByEmailAdmin(id);
             var brand = new Brand()
             {
+                Brand_ID = Guid.NewGuid().ToString(),
                 Name = name,
-                Descrption = desc,
-                Admin_ID = 1,
+                Description = desc,
+                Admin_ID = userRow.Admin_ID,
                 Picture = img
             };
             db.Brands.Add(brand);

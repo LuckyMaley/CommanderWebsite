@@ -105,7 +105,7 @@
             </section>
             <div style="text-align:center;margin-top:5px;">
              <a href="../Default">Back to Home</a>
-
+             <a href="AdminRegister">Admin Registration</a>
             </div>
         </div>
         

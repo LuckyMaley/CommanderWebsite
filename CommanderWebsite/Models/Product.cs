@@ -12,14 +12,14 @@ namespace CommanderWebsite.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
+            Carts = new HashSet<Cart>();
             Orders = new HashSet<Order>();
             Wishlists = new HashSet<Wishlist>();
-            Wishlists1 = new HashSet<Wishlist>();
-            Carts = new HashSet<Cart>();
         }
 
         [Key]
-        public int Product_ID { get; set; }
+        [StringLength(50)]
+        public string Product_ID { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
@@ -35,17 +35,26 @@ namespace CommanderWebsite.Models
         [StringLength(50)]
         public string size { get; set; }
 
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
 
+        [Column(TypeName = "image")]
         public byte[] Picture { get; set; }
 
-        public int? Admin_ID { get; set; }
+        [StringLength(50)]
+        public string Admin_ID { get; set; }
 
-        public int? Category_ID { get; set; }
+        [StringLength(50)]
+        public string Category_ID { get; set; }
 
-        public int? Brand_ID { get; set; }
+        [StringLength(50)]
+        public string Brand_ID { get; set; }
 
-        public virtual Admin Admin { get; set; } 
+        public virtual Admin Admin { get; set; }
+
+        public virtual Brand Brand { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cart> Carts { get; set; }
 
         public virtual Category Category { get; set; }
 
@@ -54,13 +63,5 @@ namespace CommanderWebsite.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Wishlist> Wishlists { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Wishlist> Wishlists1 { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cart> Carts { get; set; }
-
-
     }
 }

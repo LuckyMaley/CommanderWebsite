@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
     <title><%: Page.Title %> - COMMANDER E-Commerce Website</title>
-    <%@ Import Namespace="System" %>
-    <%
-
-         %>
+  
      <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -76,14 +73,14 @@
                                 <%if (Context.User.Identity.IsAuthenticated == true) { %>
                                     <a runat="server" style="height:0px;width:0px;  background-color:transparent; outline:none;text-decoration:none;" 
                                          class=" cart-feature glyphicon glyphicon-shopping-cart" href="~/Views/Cart">
-                                        <%try
-    {
-        if (Session["CartCount"] != null || !Session["CartCount"].Equals(0))
-        {%>
-                                               :<%=(Session["CartCount"])%>
-                                        <%}
-    }
-    catch (Exception) { } %> 
+                                        <%  try
+                                            {
+                                                if (Session["CartCount"] != null || !Session["CartCount"].Equals(0))
+                                                {%>
+                                                                                       :<%=(Session["CartCount"])%>
+                                                                                <%}
+                                            }
+                                            catch (Exception) { } %> 
                                     </a>
                             
                                     <a runat="server" style="height:0px;width:0px; background-color:transparent; outline:none;text-decoration:none;"  
@@ -114,7 +111,7 @@
                                         ImageUrl= "~/Content/Images/UserAvatar0.png" /> </button>
                                                 <ul class="dropdown-menu" role="menu">
                                                 <li style="width: 100%"><a runat="server">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                                  <% if (Context.User.IsInRole("Super Admin"))
+                                                  <% if (Context.User.IsInRole("Super Admin") || Context.User.IsInRole("Admin"))
                                                       { %>
                                                      
                                                      <li style="width: 100%">
@@ -230,7 +227,7 @@
                 </div>
             </div>
             
-        <div id="ContentonBody" class="container body-content" style="visibility:hidden;">
+        <div id="ContentonBody" class="body-content" style="visibility:hidden;">
            
             <asp:ScriptManager runat="server">
                 <Scripts>
@@ -416,11 +413,13 @@
                
                </div>
                
-                <div style="text-align:center;width:100%; background-color:#333;border-top:1px outset;color: white; ">
+                <div id="footer" style="text-align:center;width:100%; background-color:#333;border-top:1px outset;color: white; ">
                     <b style="width:100%;">&copy;<%:  DateTime.Now.Year %> - Commander Group (Pty) Ltd. CodeBreakers Inc.</b>
                     <br />
+                    <p>Users Online: <span><%= (Application["TotalOnlineUsers"]) %></span></p>
+                    <br />
                     <b style="width:100%;"><a href="PrivacyCookies">Privacy & cookies</a><span> | </span><a href="TermsOfUse">Terms of use</a><span> | </span><a href="About">About us</a><span> | </span><a href="Contact">Contact us</a></b>
-
+                    <br />
                 </div>
             </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -13,7 +13,7 @@ namespace CommanderWebsite.Models
 
         public static string CartSessionKey = "CartId";
 
-        public static void AddToCart(int id, int? Qty, string name, decimal? price, string user)
+        public static void AddToCart(string id, int Qty, string name, decimal price, string user)
         {
 
             // Retrieve the product from the database.
@@ -83,19 +83,19 @@ namespace CommanderWebsite.Models
             return ds;
         }
 
-        public static List<Cart> GetCartItems(string user, int id)
+        public static List<Cart> GetCartItems(string user, string id)
         {
             ShoppingCartId = user;
             var d = _db.Carts.Select(c => c);
-            var ds = d.Where(c => c.cartId == ShoppingCartId && c.Product_ID == id).ToList();
+            var ds = d.Where(c => c.cartId == ShoppingCartId && c.Product_ID.Equals(id)).ToList();
             return ds;
         }
 
-        public static Cart GetCartItems1(string user, int id)
+        public static Cart GetCartItems1(string user, string id)
         {
             ShoppingCartId = user;
             CommanderEDM db = new CommanderEDM();
-            var ds = db.Carts.SingleOrDefault(c => c.cartId == ShoppingCartId && c.Product_ID == id);
+            var ds = db.Carts.SingleOrDefault(c => c.cartId == ShoppingCartId && c.Product_ID.Equals(id));
             return ds;
         }
 
@@ -106,9 +106,9 @@ namespace CommanderWebsite.Models
             return d;
         }
 
-        public static void removeItem(int prod, string user)
+        public static void removeItem(string prod, string user)
         {
-            var dbItem = _db.Carts.SingleOrDefault(c => c.Product_ID == prod && c.cartId == user);
+            var dbItem = _db.Carts.SingleOrDefault(c => c.Product_ID.Equals(prod) && c.cartId == user);
             _db.Carts.Remove(dbItem);
             _db.SaveChanges();
         }

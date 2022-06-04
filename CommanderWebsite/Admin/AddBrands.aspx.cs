@@ -26,7 +26,8 @@ namespace CommanderWebsite.Admin
                     int cId = int.Parse(DropDownList1.Text);
                     
                     CommanderEDM db = new CommanderEDM();
-                    BrandsController.insertBrand(TextBox1.Text, TextBox2.Text,imagelink);
+                    string u = User.Identity.Name;
+                    BrandsController.insertBrand(TextBox1.Text, TextBox2.Text,u,imagelink);
 
                     Label2.Text = "Product Has Been Successfully Saved";
 

@@ -13,13 +13,14 @@ namespace CommanderWebsite.Models
         public Discount()
         {
             Payments = new HashSet<Payment>();
-            Payments1 = new HashSet<Payment>();
         }
 
         [Key]
-        public int Discount_ID { get; set; }
+        [StringLength(50)]
+        public string Discount_ID { get; set; }
 
-        public int? Admin_ID { get; set; }
+        [StringLength(50)]
+        public string Admin_ID { get; set; }
 
         [Column(TypeName = "text")]
         public string Description { get; set; }
@@ -32,7 +33,8 @@ namespace CommanderWebsite.Models
         [Column(TypeName = "date")]
         public DateTime? EndDate { get; set; }
 
-        public int? Category_ID { get; set; }
+        [StringLength(50)]
+        public string Category_ID { get; set; }
 
         public virtual Admin Admin { get; set; }
 
@@ -40,8 +42,5 @@ namespace CommanderWebsite.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Payment> Payments { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Payment> Payments1 { get; set; }
     }
 }

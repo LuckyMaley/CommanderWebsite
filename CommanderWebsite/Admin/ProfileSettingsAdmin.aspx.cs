@@ -21,7 +21,7 @@ namespace CommanderWebsite.Admin
             try
             {
 
-                var userRow = Controllers.AdminController.FindByEmailAdmin(Label1.Text);
+                var userRow = AdminController.FindByEmailAdmin(Label1.Text);
                 if (!IsPostBack)
                 {
 
@@ -95,7 +95,7 @@ namespace CommanderWebsite.Admin
         {
             try
             {
-                Controllers.AdminController.UpdateAdmin(tbFirstName.Text, tbLastName.Text, tbDOB.Text, dpGender.Text, tbCellphone.Text, tbHouseNumber.Text, tbEmail.Text);
+                AdminController.UpdateAdmin(tbFirstName.Text, tbLastName.Text, tbDOB.Text, dpGender.Text, tbCellphone.Text, tbHouseNumber.Text, tbEmail.Text);
 
                 Label2.Text = "Update is Successful!!!";
                 Label1.ForeColor = System.Drawing.Color.Green;
@@ -117,7 +117,7 @@ namespace CommanderWebsite.Admin
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
-            var userRow = Controllers.AdminController.FindByEmailAdmin(Label1.Text);
+            var userRow = AdminController.FindByEmailAdmin(Label1.Text);
             if (!fileup.HasFile)
             {
                 Label3.Text = "Please Insert an Image";
@@ -127,7 +127,7 @@ namespace CommanderWebsite.Admin
                 int length = fileup.PostedFile.ContentLength;
                 byte[] pic = new byte[length];
                 fileup.PostedFile.InputStream.Read(pic, 0, length);
-                Controllers.AdminController.updatePic(tbEmail.Text, pic);
+                AdminController.updatePic(tbEmail.Text, pic);
 
                 if (userRow.Picture != null)
                 {

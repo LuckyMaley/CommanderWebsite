@@ -18,11 +18,11 @@ namespace CommanderWebsite.Views
                     try
                     {
 
-                int id = int.Parse(Request.QueryString["Product_ID"]);
+                string id = Request.QueryString["Product_ID"];
                 Label3.Text = Request.QueryString["Product_ID"];
                 CommanderEDM db = new CommanderEDM();
                 var myCart = CartController.GetCartItems(Context.User.Identity.Name);
-                var ds = myCart.Where(c => c.Product_ID == id);
+                var ds = myCart.Where(c => c.Product_ID.Equals(id));
                         rprtCart.DataSource = ds;
                         rprtCart.DataBind();
                 
@@ -63,7 +63,7 @@ namespace CommanderWebsite.Views
             {
 
 
-                int id = int.Parse(Request.QueryString["Product_ID"]);
+                string id = Request.QueryString["Product_ID"];
 
 
                 CommanderEDM db = new CommanderEDM();
@@ -118,7 +118,7 @@ namespace CommanderWebsite.Views
             try
             { 
                 CommanderEDM _db = new CommanderEDM();
-                int idLb = int.Parse(Label3.Text);
+                string idLb = Label3.Text;
                 CartController.removeItem(idLb, Context.User.Identity.Name);
                 var mycart = CartController.GetCartItems(Context.User.Identity.Name);
                 Session["CartCount"] = mycart.Count;

@@ -30,9 +30,7 @@ namespace CommanderWebsite
 
             CommanderEDM _db = new CommanderEDM();
             
-            var prodimg = ProductsController.getByImg(int.Parse(imageid));
-  //          context.Response.ContentType = "image/png";
-//context.Response.BinaryWrite((Byte[])prodimg);
+            var prodimg = ProductsController.getByImg(imageid);
 
             string url = imageid;
             byte[] imageData;
@@ -41,8 +39,10 @@ namespace CommanderWebsite
                 imageData = prodimg;
             }
 
-            context.Response.ContentType = "image/png";  // Change the content type if necessary
-            context.Response.OutputStream.Write(imageData, 0, imageData.Length);
+//            context.Response.ContentType = "image/png";  // Change the content type if necessary
+//            context.Response.OutputStream.Write(imageData, 0, imageData.Length);
+            context.Response.ContentType = "image/png";
+            context.Response.BinaryWrite((Byte[])prodimg);
             context.Response.Flush();
             context.Response.End();
             }

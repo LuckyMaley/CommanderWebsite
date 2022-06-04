@@ -13,34 +13,33 @@ namespace CommanderWebsite.Models
         public Delivery()
         {
             Orders = new HashSet<Order>();
-            Orders1 = new HashSet<Order>();
         }
 
         [Key]
-        public int Delivery_ID { get; set; }
+        [StringLength(50)]
+        public string Delivery_ID { get; set; }
 
-        public int? Admin_ID { get; set; }
+        [StringLength(50)]
+        public string DeliveryType { get; set; }
 
         [Column(TypeName = "text")]
         public string dAddress { get; set; }
-
-        public decimal? Cost { get; set; }
+        
+        [Column(TypeName = "decimal")]
+        public decimal Cost { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? DateCreated { get; set; }
 
-        public int? Delivered { get; set; }
+        [StringLength(50)]
+        public string DeliveryStatus { get; set; }
 
-        public int? Customer_ID { get; set; }
-
-        public virtual Admin Admin { get; set; }
+        [StringLength(50)]
+        public string Customer_ID { get; set; }
 
         public virtual Customer Customer { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Orders1 { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace CommanderWebsite.Customer
             {
                 try
                 {
-                    int id = int.Parse(Request.QueryString["Product_ID"]);
+                    string id = Request.QueryString["Product_ID"];
 
                     CommanderEDM db = new CommanderEDM();
                     var cus = CustomerController.FindByEmail(Context.User.Identity.Name);

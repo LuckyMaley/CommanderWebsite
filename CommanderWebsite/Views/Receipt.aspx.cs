@@ -14,7 +14,7 @@ namespace CommanderWebsite.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id = int.Parse(Request.QueryString["Order_ID"]);
+            string id = Request.QueryString["Order_ID"];
             CommanderEDM db = new CommanderEDM();
             var o = OrderController.getOrderID(id);
             var f = OrderController.getOrder(id);

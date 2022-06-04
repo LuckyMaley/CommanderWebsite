@@ -19,7 +19,7 @@ namespace CommanderWebsite.Admin
             {
                 try
                 {
-                    int id = int.Parse(Request.QueryString["Product_ID"]);
+                    string id = Request.QueryString["Product_ID"];
                     var d = ProductsController.getByID2(id);
 
                     TextBox1.Text = d.Name;
@@ -38,7 +38,7 @@ namespace CommanderWebsite.Admin
 
                     }
                     var list = CategoryController.getCategoryList();
-                    foreach (int li in list)
+                    foreach (string li in list)
                     {
                         DropDownList1.Items.Add(li.ToString());
                     }
@@ -57,10 +57,12 @@ namespace CommanderWebsite.Admin
             {
                 if (uploadimage() == true)
                 {
-                    int cId = int.Parse(DropDownList1.Text);
-                    int aId = 1;
-                    int id = int.Parse(Request.QueryString["Product_ID"]);
                     CommanderEDM db = new CommanderEDM();
+                    var userRow = AdminController.FindByEmailAdmin(User.Identity.Name);
+                    string cId = DropDownList1.SelectedValue;
+                    string aId = userRow.Admin_ID;
+                    string id = Request.QueryString["Product_ID"];
+                    
                     ProductsController.UpdateProd(id,TextBox1.Text, TextBox3.Text, TextBox4.Text, int.Parse(TextBox5.Text), TextBox6.Text, decimal.Parse(TextBox2.Text), imagelink, aId, cId);
 
                     Label3.Text = "Product Has Been Successfully Updated";
