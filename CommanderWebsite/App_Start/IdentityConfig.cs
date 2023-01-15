@@ -40,6 +40,8 @@ namespace CommanderWebsite
             smtpClient.EnableSsl = true;
             smtpClient.Credentials = credentials;
             smtpClient.Send(msg);
+
+
             return Task.FromResult(0);
         }
     }

@@ -65,7 +65,7 @@
                                             <a href="#">Orders</a>
                                         </li>
                                         <li>
-                                            <a href="#">My profile</a>
+                                            <a href="Account/Login.aspx">My profile</a>
                                         </li>
                                         <li>
                                             <a href="#">Logout</a>
@@ -179,147 +179,7 @@
                 </div>
             </div>
 
-            <!--<div id="nav-links">
-                <ul id="navbar">
-
-                    <li><a runat="server" href="~/Views/Latest">Latest</a></li>
-                    <li><a runat="server" href="~/Views/Men">Men</a></li>
-                    <li><a runat="server" href="~/Views/Women">Women</a></li>
-                    <li><a runat="server" href="~/Views/Kids">Kids</a></li>
-                    <li><a runat="server" href="~/Views/Accessories">Accessories</a></li>
-                    <li><a runat="server" href="~/Views/Sale">Sale</a></li>
-                    <li><a runat="server" href="~/Views/Blog">Blog</a></li>
-                    <li><a runat="server" href="~/About">About</a></li>
-                    <li><a runat="server" href="~/Contact">Contact</a></li>
-                    <li>
-                        <asp:LoginView runat="server" ViewStateMode="Disabled">
-                            <AnonymousTemplate>
-                                <a runat="server" href="~/Account/Login">Log In</a>
-                            </AnonymousTemplate>
-                        </asp:LoginView>
-                    </li>
-                    <li class="dropdown">
-                        <asp:LoginView ID="LoginViewHome" runat="server" ViewStateMode="Disabled">
-                            <AnonymousTemplate>
-                                <a runat="server" href="~/Account/Register">Sign Up</a>
-                            </AnonymousTemplate>
-                            <LoggedInTemplate>
-
-                                <button type="button" style="background-color: transparent; height: 100%; border: none; margin-top: 5px;" class="btn btn-default">
-                                    <asp:Image CssClass="img-circle img-responsive" ID="Image4" runat="server"
-                                        ImageAlign="Middle" BorderColor="#CCCCCC" BorderStyle="Solid" Height="35" Width="35"
-                                        ImageUrl="~/Content/Images/UserAvatar0.png" />
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li style="width: 100%"><a runat="server">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                    <% if (Context.User.IsInRole("Super Admin") || Context.User.IsInRole("Admin"))
-                                        { %>
-
-                                    <li style="width: 100%">
-                                        <asp:LinkButton ID="LinkButton1" PostBackUrl="~/Admin/ProfileSettingsAdmin" runat="server">Profile Settings</asp:LinkButton></li>
-                                    <%}
-                                        else
-                                        { %>
-                                    <li style="width: 100%">
-                                        <asp:LinkButton ID="LinkButton2" PostBackUrl="~/Customer/ProfileSettingsCustomer" runat="server">Profile Settings</asp:LinkButton></li>
-
-
-
-                                    <%} %>
-                                    <li style="width: 100%">
-                                        <li style="width: 100%"><a href="/Account/Manage">Manage Account</a></li>
-
-                                        <li style="width: 100%">
-                                            <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
-                                        </li>
-                                </ul>
-
-                            </LoggedInTemplate>
-                        </asp:LoginView>
-                    </li>
-
-                    <% if (Context.User.Identity.IsAuthenticated == true)
-                        {
-
-                    %>
-                    <li class="cart-feature dropdown">
-                        <i class="fa-thin fa-heart"></i>
-                        <span><%try
-                                  {
-                                      if (!Session["WishListCount"].Equals(0))
-                                      {%>
-                                               :<%=(Session["WishListCount"])%>
-                            <%}
-                                }
-                                catch (Exception) { } %>
-                        </span>
-                        <ul class="dropdown-menu" style="color: #C0C0C0">
-
-                            <li>
-                                <asp:Repeater ID="Repeater1" runat="server">
-                                    <ItemTemplate>
-
-                                        <a id="alinktosome3" href='<%# "~/Views/ViewWishList.aspx?Product_ID="+ Eval("Product_ID") %>' runat="server">
-                                            <div style="text-align: center; width: 100%; height: 50px; border-style: solid; border-width: thin; border-color: #C0C0C0">
-                                                <p style="text-align: center">
-                                                    <%#Eval("Name") %>
-                                                    <br />
-                                                    &nbsp; Qty:<%#Eval("Quantity") %>R <%#Eval("Price") %>
-                                                </p>
-                                            </div>
-                                        </a>
-
-                                    </ItemTemplate>
-                                </asp:Repeater>
-                            </li>
-                            <li>
-                                <p style="color: #333333; text-align: center">
-                                    <% try { if ((int)Session["WishListCount"] == 0) { Response.Write("<asp:LinkButton runat='server' ID='dfds' OnClientClick='~/Views/ViewWishListEmpty' PostBackUrl='~/Views/ViewWishListEmpty.aspx'>No Items in wishlist</asp:LinkButton>"); } } catch (Exception) { } %>
-                                </p>
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li class="cart-feature dropdown">
-                        <i class="fa-thin fa-bag-shopping"></i>
-                        <span><%try
-                                  {
-                                      if (!Session["CartCount"].Equals(0))
-                                      {%>
-                                               :<%=(Session["CartCount"])%>
-                            <%}
-                                }
-                                catch (Exception) { }%>
-                        </span>
-                        <ul class="dropdown-menu" style="color: #C0C0C0">
-
-                            <li>
-                                <asp:Repeater ID="rptr" runat="server">
-                                    <ItemTemplate>
-
-                                        <a id="alinktosome2" href='<%# "~/Views/ViewCart.aspx?Product_ID="+ Eval("Product_ID") %>' runat="server">
-                                            <div style="text-align: center; width: 100%; height: 50px; border-style: solid; border-width: thin; border-color: #C0C0C0;">
-                                                <p style="text-align: center">
-                                                    <%#Eval("Name") %>
-                                                    <br />
-                                                    &nbsp; Qty:<%#Eval("Quantity") %>R <%#Eval("Price") %>
-                                                </p>
-                                            </div>
-                                        </a>
-
-                                    </ItemTemplate>
-                                </asp:Repeater>
-                            </li>
-                            <li>
-                                <p style="color: #333333; text-align: center">
-                                    <% try { if ((int)Session["CartCount"] == 0) Response.Write("<asp:LinkButton runat='server' ID='dfds' OnClientClick='~/Views/ViewCartEmpty' PostBackUrl='~/Views/ViewCartEmpty.aspx'>No Items in cart</asp:LinkButton>"); } catch (Exception) { } %>
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                    <%}  %>
-                </ul>
-            </div> -->
+             
         </section>
         <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

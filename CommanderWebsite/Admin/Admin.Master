@@ -1,206 +1,376 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CommanderWebsite.Admin.Admin" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CommanderWebsite.Admin.Admin1" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - COMMANDER E-Commerce Website</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+   
+    <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/Content/Images/Comm.jpg" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="~/Scripts/bootswatch/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/Content/animate.css" />
-    <link rel="stylesheet" href="~/Content/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script type="text/javascript">
-        onClickDropdown();
+  <!-- Favicons -->
+  <link href="../Assets/admin/img/favicon.png" rel="icon" />
+  <link href="../Assets/admin/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-        function onClickDropdown() {
-            $('.dropdown-menu').toggleClass('show');
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="../Assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../Assets/admin/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../Assets/admin/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="../Assets/admin/vendor/quill/quill.snow.css" rel="stylesheet" />
+  <link href="../Assets/admin/vendor/quill/quill.bubble.css" rel="stylesheet" />
+  <link href="../Assets/admin/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="../Assets/admin/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="../Assets/admin/css/style.css" rel="stylesheet" />
+        <!-- Google Tag Manager -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-1T24HD2682"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1T24HD2682');
     </script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
     <form id="form1" runat="server">
-    <asp:ScriptManager runat="server">
-                <Scripts>
-                    <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                    <%--Framework Scripts--%>
-                    <asp:ScriptReference Name="MsAjaxBundle" />
-                    <asp:ScriptReference Name="jquery" />
-                    <asp:ScriptReference Name="bootstrap" />
-                    <asp:ScriptReference Name="respond" />
-                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                    <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                    <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                    <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                    <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                    <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                    <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                    <asp:ScriptReference Name="WebFormsBundle" />
-                    <%--Site Scripts--%>
-                </Scripts>
-            </asp:ScriptManager>
-        <div id="mySidenav" class="sidenav" style="visibility:hidden; height:0px; width:0px;">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
-          
-            <div class="input-group">
-                <input type="text" id="mySearchbtn" placeholder="Search.." runat="server" title="Search for items" />
-                <div class="input-group-addon" style="color:white;border: none; background-color: transparent">
-                <button id="inputbtn3" type="button" class="btn glyphicon glyphicon-search" onserverclick="Search_Click" style="color:white; border-radius: 0px;border:none; height:auto; background-color: transparent;margin-top:-2px"></button>
-                </div>
-            </div>
-          <a href="DashboardAdmin">Dashboard</a>
-          <a href="ProductsAdmin">Products</a>
-          <a href="CategoriesAdmin">Categories</a>
-          <a href="DiscountsAdmin">Discounts</a>
-          <a href="RewardsAdmin">Rewards</a>
-          <a href="HelpAdmin">Help</a>
-          <a href="ProfileSettingsAdmin">Settings</a>
-          
-            <asp:LoginView runat="server" ViewStateMode="Disabled">
-                                    <AnonymousTemplate>
-                                        <a runat="server" href="~/About">About us</a>
-                                            <a runat="server" href="~/Account/Login">Log In</a>
-                                    </AnonymousTemplate>
-                                    <LoggedInTemplate>
-                                            <a runat="server" href="~/Account/Manage" title="Manage your account">My Account</a>
-                                    
-                                            <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                    </LoggedInTemplate>
-                </asp:LoginView>
-        </div>
-        <div id="main">
-     <div id="centerDiv" class="centerDiv" style="width:100%; background-color:#333;top:0; position:fixed;z-index:999;">
-            <div class="pull-left" style="width :75%;">
-                        <a id="newbtn" class="btn btn-default"  onclick="openNav()" href="javascript:void(0)" style="background-color:transparent;margin-top:-1px; border:none; color:white; border-radius:0; margin-left: 5px">
-                            <img src="../Content/Images/menu-icon-f74b94a86745329ff48fd8a5f2a6783134e60da42990518733b2e43a17c84101.png" style="background-color: transparent" width="30" height="25" />
-                        </a>
-                        <a id="navBrand1" class="navBrand1" runat="server" href="~/" style="color: white; font-size:15px; text-align:right;left:50%;"><b style="text-align:right">COMMANDER</b><b >®</b></a>
-                       </div> <div style="width :25%;float:left">
-            <ul class="navbar-right pull-right" style="list-style:none;">
-            <li class="dropdown">
-                                <asp:LoginView id="cdLoginView" runat="server" ViewStateMode="Disabled">
-                                   <LoggedInTemplate>
-                                        
-                                        <button type="button" style="background-color: transparent; height: 100%; border:none; margin-top:-5px;" class="btn btn-default dropdown-toggle" onclick="onClickDropdown()" data-toggle="dropdown">
-                                            <asp:Image CssClass="img-circle" ID="Image4" runat="server" 
-                                        ImageAlign="Middle" BorderColor="#CCCCCC" BorderStyle="Solid" Height="35" Width="35" 
-                                        ImageUrl= "~/Content/Images/UserAvatar0.png" class="img-circle img-responsive"/> <b class="caret"></b></button>
-                                                <ul id="dpmenu" class="dropdown-menu" role="menu">
-                                                <li style="width: 100%"><a runat="server">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                                <li style="width: 100%"><a href="/Account/Manage" >Account Settings</a></li>
-                                                <li style="width: 100%">
-                                                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                                    </li> 
+   
+        <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
 
-                                                </ul>
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">NiceAdmin</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
 
-                                    </LoggedInTemplate>
-                                </asp:LoginView>
-                            </li>
-                                                                                        </ul></div></div>
-               
-  <div id="left1" class="left1 container-fluid" style="background-color:#ddd; display:flex;">
-    <div id="leftside" class="left" style="position:fixed;height:100%;background-color:#ddd;max-width:200px;">
-      <h2 style="margin-top:-1px;">Menu</h2>
-        <div class="input-group ">
-                <input type="text" id="mySearch" placeholder="Search.." title="Search for items" runat="server" />
-                <div class="input-group-addon" style="border-radius:0; background-color:white; ">
-                <button id="inputbtn2" type="button" class=" glyphicon glyphicon-search" onserverclick="Search_Click1" style="color:black; background-color:transparent;border:none"></button>
-                </div>
-            </div>
-    <ul id="myMenu">
-      <li><a href="DashboardAdmin">Dashboard</a></li>
-      <li><a href="ProductsAdmin">Products</a></li>
-      <li><a href="CategoriesAdmin">Categories</a></li>
-      <li><a href="DiscountsAdmin">Discounts</a></li>
-      <li><a href="RewardsAdmin">Rewards</a></li>
-      <li><a href="HelpAdmin">Help</a></li>
-      <li><a href="ProfileSettingsAdmin">Settings</a></li>
-      
-    </ul>
+    <div class="search-bar">
+      <div class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
       </div>
-  </div>
-  <div id="right" class="right" style="background-color:white;margin-top:50px;margin-left:15px;">
-      
-        
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+        <aside id="sidebar" class="sidebar">
+            <ul class="sidebar-nav" id="sidebar-nav">
+                <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-grid"></i><span>Dashboard</span> </a></li>
+                <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"><i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li><a href="components-alerts.html"><i class="bi bi-circle"></i><span>Alerts</span> </a></li>
+                        <li><a href="components-accordion.html"><i class="bi bi-circle"></i><span>Accordion</span> </a></li>
+                        <li><a href="components-badges.html"><i class="bi bi-circle"></i><span>Badges</span> </a></li>
+                        <li><a href="components-breadcrumbs.html"><i class="bi bi-circle"></i><span>Breadcrumbs</span> </a></li>
+                        <li><a href="components-buttons.html"><i class="bi bi-circle"></i><span>Buttons</span> </a></li>
+                        <li><a href="components-cards.html"><i class="bi bi-circle"></i><span>Cards</span> </a></li>
+                        <li><a href="components-carousel.html"><i class="bi bi-circle"></i><span>Carousel</span> </a></li>
+                        <li><a href="components-list-group.html"><i class="bi bi-circle"></i><span>List group</span> </a></li>
+                        <li><a href="components-modal.html"><i class="bi bi-circle"></i><span>Modal</span> </a></li>
+                        <li><a href="components-tabs.html"><i class="bi bi-circle"></i><span>Tabs</span> </a></li>
+                        <li><a href="components-pagination.html"><i class="bi bi-circle"></i><span>Pagination</span> </a></li>
+                        <li><a href="components-progress.html"><i class="bi bi-circle"></i><span>Progress</span> </a></li>
+                        <li><a href="components-spinners.html"><i class="bi bi-circle"></i><span>Spinners</span> </a></li>
+                        <li><a href="components-tooltips.html"><i class="bi bi-circle"></i><span>Tooltips</span> </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#"><i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li><a href="forms-elements.html"><i class="bi bi-circle"></i><span>Form Elements</span> </a></li>
+                        <li><a href="forms-layouts.html"><i class="bi bi-circle"></i><span>Form Layouts</span> </a></li>
+                        <li><a href="forms-editors.html"><i class="bi bi-circle"></i><span>Form Editors</span> </a></li>
+                        <li><a href="forms-validation.html"><i class="bi bi-circle"></i><span>Form Validation</span> </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#"><i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li><a href="tables-general.html"><i class="bi bi-circle"></i><span>General Tables</span> </a></li>
+                        <li><a href="tables-data.html"><i class="bi bi-circle"></i><span>Data Tables</span> </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#"><i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li><a href="charts-chartjs.html"><i class="bi bi-circle"></i><span>Chart.js</span> </a></li>
+                        <li><a href="charts-apexcharts.html"><i class="bi bi-circle"></i><span>ApexCharts</span> </a></li>
+                        <li><a href="charts-echarts.html"><i class="bi bi-circle"></i><span>ECharts</span> </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#"><i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li><a href="icons-bootstrap.html"><i class="bi bi-circle"></i><span>Bootstrap Icons</span> </a></li>
+                        <li><a href="icons-remix.html"><i class="bi bi-circle"></i><span>Remix Icons</span> </a></li>
+                        <li><a href="icons-boxicons.html"><i class="bi bi-circle"></i><span>Boxicons</span> </a></li>
+                    </ul>
+                </li>
+                <li class="nav-heading">Pages</li>
+                <li class="nav-item"><a class="nav-link collapsed" href="users-profile.html"><i class="bi bi-person"></i><span>Profile</span> </a></li>
+                <li class="nav-item"><a class="nav-link collapsed" href="pages-faq.html"><i class="bi bi-question-circle"></i><span>F.A.Q</span> </a></li>
+                <li class="nav-item"><a class="nav-link collapsed" href="pages-contact.html"><i class="bi bi-envelope"></i><span>Contact</span> </a></li>
+                <li class="nav-item"><a class="nav-link collapsed" href="pages-register.html"><i class="bi bi-card-list"></i><span>Register</span> </a></li>
+                <li class="nav-item"><a class="nav-link collapsed" href="pages-login.html"><i class="bi bi-box-arrow-in-right"></i><span>Login</span> </a></li>
+                <li class="nav-item"><a class="nav-link collapsed" href="pages-error-404.html"><i class="bi bi-dash-circle"></i><span>Error 404</span> </a></li>
+                <li class="nav-item"><a class="nav-link collapsed" href="pages-blank.html"><i class="bi bi-file-earmark"></i><span>Blank</span> </a></li>
+            </ul>
+        </aside>
+        <!-- End Sidebar-->
+
+
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
-      
-    <footer style="background-color:white; float:none; width:100%;">
-                <div align="center">
-                 
-               
-               </div>
-                <div style="text-align:center;">&copy; <%: DateTime.Now.Year %> - Commander Group (Pty) Ltd. CodeBreakers Inc.</div>
-            </footer>
- </div>
-        </div>
+        </asp:ContentPlaceHolder> 
+        <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
 
-        <script>
-        function myFunction() {
-          var input, filter, ul, li, a, i;
-          input = document.getElementById("mySearch");
-          filter = input.value.toUpperCase();
-          ul = document.getElementById("myMenu");
-          li = ul.getElementsByTagName("li");
-          for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-              li[i].style.display = "";
-            } else {
-              li[i].style.display = "none";
-            }
-          }
-        }
-        </script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Vendor JS Files -->
+  <script src="../Assets/admin/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../Assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../Assets/admin/vendor/chart.js/chart.min.js"></script>
+  <script src="../Assets/admin/vendor/echarts/echarts.min.js"></script>
+  <script src="../Assets/admin/vendor/quill/quill.min.js"></script>
+  <script src="../Assets/admin/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../Assets/admin/vendor/tinymce/jquery.tinymce.min.js"></script>
+  <script src="../Assets/admin/vendor/php-email-form/validate.js"></script>
 
-    <script type="text/javascript" >
-                function setActive() {
-                    aObj = document.getElementById('myMenu').getElementsByTagName('a');
-                    for (i = 0; i < aObj.length; i++) {
-                        if (document.location.href == aObj[i].href) {
-                            
-                            aObj[i].className = 'active1';
-                        }
-                    }
-                }
+  <!-- Main JS File -->
+  <script src="../Assets/admin/js/main.js"></script>
 
-                window.onload = setActive;
-            </script>
-          
-            <script type="text/javascript">
-                function openNav() {
-                    document.getElementById("mySidenav").style = "visibility:visible; z-index:999";
-                    document.getElementById("mySidenav").style.width = "250px";
-               //     document.getElementById("main").style.marginLeft = "250px";
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-                    document.getElementById("main").style.backgroundColor = "rgba(0,0,0,0.4)";
-                    document.getElementById("main").className = "blur";
-                }
-
-                function closeNav() {
-                    window.location.hash = "#main"; //focuses on this div, can move with keyboard
-                    document.getElementById("mySidenav").style = "visibility:hidden;";
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("mySidenav").style.height = "0";
-                  //  document.getElementById("main").style.marginLeft= "0";
-                    document.body.style.backgroundColor = "white";
-                    document.getElementById("main").style.backgroundColor = "white";
-                    document.getElementById("main").classList.remove("blur");
-                }
-            </script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
     </form>
 </body>

@@ -37,17 +37,18 @@ namespace CommanderWebsite.Account
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {
+                CustomerController.AddCustomer(user.Id.ToString(),firstName.Text, lastName.Text, Email.Text, Password.Text);
                 // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                 string code = manager.GenerateEmailConfirmationToken(user.Id);
                 string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
-                manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
+                //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
                 regForm.Visible = false;
                 ConfirmEmail.Visible = true;
-                //EmailController.sendEmail(user.Id, "Confirm your account", Email.Text, "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
-                CustomerController.AddCustomer(user.Id.ToString(),firstName.Text, lastName.Text, Email.Text, Password.Text);
+                EmailController.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
+                
                 var result1 = manager.AddToRole(user.Id,usertype);
-               // signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
-               // IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
+                IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
             }
             else
             {

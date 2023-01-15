@@ -1,0 +1,909 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminComponents.master.cs" Inherits="CommanderWebsite.Admin.Master.Components.AdminComponents" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" data-scompiler-id="0" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+<head runat="server">
+    <title><%: Page.Title %> - COMMANDER E-Commerce Website</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- icon -->
+    <style type="text/css">
+        svg:not(:root).svg-inline--fa {
+            overflow: visible;
+        }
+
+        .svg-inline--fa {
+            display: inline-block;
+            font-size: inherit;
+            height: 1em;
+            overflow: visible;
+            vertical-align: -.125em;
+        }
+
+            .svg-inline--fa.fa-lg {
+                vertical-align: -.225em;
+            }
+
+            .svg-inline--fa.fa-w-1 {
+                width: .0625em;
+            }
+
+            .svg-inline--fa.fa-w-2 {
+                width: .125em;
+            }
+
+            .svg-inline--fa.fa-w-3 {
+                width: .1875em;
+            }
+
+            .svg-inline--fa.fa-w-4 {
+                width: .25em;
+            }
+
+            .svg-inline--fa.fa-w-5 {
+                width: .3125em;
+            }
+
+            .svg-inline--fa.fa-w-6 {
+                width: .375em;
+            }
+
+            .svg-inline--fa.fa-w-7 {
+                width: .4375em;
+            }
+
+            .svg-inline--fa.fa-w-8 {
+                width: .5em;
+            }
+
+            .svg-inline--fa.fa-w-9 {
+                width: .5625em;
+            }
+
+            .svg-inline--fa.fa-w-10 {
+                width: .625em;
+            }
+
+            .svg-inline--fa.fa-w-11 {
+                width: .6875em;
+            }
+
+            .svg-inline--fa.fa-w-12 {
+                width: .75em;
+            }
+
+            .svg-inline--fa.fa-w-13 {
+                width: .8125em;
+            }
+
+            .svg-inline--fa.fa-w-14 {
+                width: .875em;
+            }
+
+            .svg-inline--fa.fa-w-15 {
+                width: .9375em;
+            }
+
+            .svg-inline--fa.fa-w-16 {
+                width: 1em;
+            }
+
+            .svg-inline--fa.fa-w-17 {
+                width: 1.0625em;
+            }
+
+            .svg-inline--fa.fa-w-18 {
+                width: 1.125em;
+            }
+
+            .svg-inline--fa.fa-w-19 {
+                width: 1.1875em;
+            }
+
+            .svg-inline--fa.fa-w-20 {
+                width: 1.25em;
+            }
+
+            .svg-inline--fa.fa-pull-left {
+                margin-right: .3em;
+                width: auto;
+            }
+
+            .svg-inline--fa.fa-pull-right {
+                margin-left: .3em;
+                width: auto;
+            }
+
+            .svg-inline--fa.fa-border {
+                height: 1.5em;
+            }
+
+            .svg-inline--fa.fa-li {
+                width: 2em;
+            }
+
+            .svg-inline--fa.fa-fw {
+                width: 1.25em;
+            }
+
+        .fa-layers svg.svg-inline--fa {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .fa-layers {
+            display: inline-block;
+            height: 1em;
+            position: relative;
+            text-align: center;
+            vertical-align: -.125em;
+            width: 1em;
+        }
+
+            .fa-layers svg.svg-inline--fa {
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+            }
+
+        .fa-layers-counter, .fa-layers-text {
+            display: inline-block;
+            position: absolute;
+            text-align: center;
+        }
+
+        .fa-layers-text {
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+        }
+
+        .fa-layers-counter {
+            background-color: #ff253a;
+            border-radius: 1em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #fff;
+            height: 1.5em;
+            line-height: 1;
+            max-width: 5em;
+            min-width: 1.5em;
+            overflow: hidden;
+            padding: .25em;
+            right: 0;
+            text-overflow: ellipsis;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        .fa-layers-bottom-right {
+            bottom: 0;
+            right: 0;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
+        .fa-layers-bottom-left {
+            bottom: 0;
+            left: 0;
+            right: auto;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        .fa-layers-top-right {
+            right: 0;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        .fa-layers-top-left {
+            left: 0;
+            right: auto;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top left;
+            transform-origin: top left;
+        }
+
+        .fa-lg {
+            font-size: 1.3333333333em;
+            line-height: .75em;
+            vertical-align: -.0667em;
+        }
+
+        .fa-xs {
+            font-size: .75em;
+        }
+
+        .fa-sm {
+            font-size: .875em;
+        }
+
+        .fa-1x {
+            font-size: 1em;
+        }
+
+        .fa-2x {
+            font-size: 2em;
+        }
+
+        .fa-3x {
+            font-size: 3em;
+        }
+
+        .fa-4x {
+            font-size: 4em;
+        }
+
+        .fa-5x {
+            font-size: 5em;
+        }
+
+        .fa-6x {
+            font-size: 6em;
+        }
+
+        .fa-7x {
+            font-size: 7em;
+        }
+
+        .fa-8x {
+            font-size: 8em;
+        }
+
+        .fa-9x {
+            font-size: 9em;
+        }
+
+        .fa-10x {
+            font-size: 10em;
+        }
+
+        .fa-fw {
+            text-align: center;
+            width: 1.25em;
+        }
+
+        .fa-ul {
+            list-style-type: none;
+            margin-left: 2.5em;
+            padding-left: 0;
+        }
+
+            .fa-ul > li {
+                position: relative;
+            }
+
+        .fa-li {
+            left: -2em;
+            position: absolute;
+            text-align: center;
+            width: 2em;
+            line-height: inherit;
+        }
+
+        .fa-border {
+            border: solid .08em #eee;
+            border-radius: .1em;
+            padding: .2em .25em .15em;
+        }
+
+        .fa-pull-left {
+            float: left;
+        }
+
+        .fa-pull-right {
+            float: right;
+        }
+
+        .fa.fa-pull-left, .fab.fa-pull-left, .fal.fa-pull-left, .far.fa-pull-left, .fas.fa-pull-left {
+            margin-right: .3em;
+        }
+
+        .fa.fa-pull-right, .fab.fa-pull-right, .fal.fa-pull-right, .far.fa-pull-right, .fas.fa-pull-right {
+            margin-left: .3em;
+        }
+
+        .fa-spin {
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear;
+        }
+
+        .fa-pulse {
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8);
+        }
+
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .fa-rotate-90 {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .fa-rotate-270 {
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+
+        .fa-flip-horizontal {
+            -webkit-transform: scale(-1,1);
+            transform: scale(-1,1);
+        }
+
+        .fa-flip-vertical {
+            -webkit-transform: scale(1,-1);
+            transform: scale(1,-1);
+        }
+
+        .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+            -webkit-transform: scale(-1,-1);
+            transform: scale(-1,-1);
+        }
+
+        :root .fa-flip-both, :root .fa-flip-horizontal, :root .fa-flip-vertical, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-rotate-90 {
+            -webkit-filter: none;
+            filter: none;
+        }
+
+        .fa-stack {
+            display: inline-block;
+            height: 2em;
+            position: relative;
+            width: 2.5em;
+        }
+
+        .fa-stack-1x, .fa-stack-2x {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .svg-inline--fa.fa-stack-1x {
+            height: 1em;
+            width: 1.25em;
+        }
+
+        .svg-inline--fa.fa-stack-2x {
+            height: 2em;
+            width: 2.5em;
+        }
+
+        .fa-inverse {
+            color: #fff;
+        }
+
+        .sr-only {
+            border: 0;
+            clip: rect(0,0,0,0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        .sr-only-focusable:active, .sr-only-focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+        }
+
+        .svg-inline--fa .fa-primary {
+            fill: var(--fa-primary-color,currentColor);
+            opacity: 1;
+            opacity: var(--fa-primary-opacity,1);
+        }
+
+        .svg-inline--fa .fa-secondary {
+            fill: var(--fa-secondary-color,currentColor);
+            opacity: .4;
+            opacity: var(--fa-secondary-opacity,.4);
+        }
+
+        .svg-inline--fa.fa-swap-opacity .fa-primary {
+            opacity: .4;
+            opacity: var(--fa-secondary-opacity,.4);
+        }
+
+        .svg-inline--fa.fa-swap-opacity .fa-secondary {
+            opacity: 1;
+            opacity: var(--fa-primary-opacity,1);
+        }
+
+        .svg-inline--fa mask .fa-primary, .svg-inline--fa mask .fa-secondary {
+            fill: #000;
+        }
+
+        .fad.fa-inverse {
+            color: #fff;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" />
+    <!-- css -->
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/bootstrap/css/bootstrap.ltr.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/highlight.js/styles/github.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/quill/quill.snow.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/air-datepicker/css/datepicker.min.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/datatables/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/vendor/fullcalendar/main.min.css" />
+    <link rel="stylesheet" href="../../../Assets/adminOld/css/style.css" />
+     <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T24HD2682"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1T24HD2682');
+    </script>
+    <!-- End Google Tag Manager -->   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- sa-app -->
+    <div class="sa-app sa-app--mobile-sidebar-hidden sa-app--toolbar-fixed sa-app--desktop-sidebar-shown" style="--sa-footer-visible-height: 0px;">
+        <!-- sa-app__sidebar -->
+        <div class="sa-app__sidebar">
+            <div class="sa-sidebar">
+                <div class="sa-sidebar__header"><a class="sa-sidebar__logo" href="index.html">
+                    <!-- logo -->
+                    <div class="sa-sidebar-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="20px">
+                            <path d="M118.5,20h-1.1c-0.6,0-1.2-0.4-1.4-1l-1.5-4h-6.1l-1.5,4c-0.2,0.6-0.8,1-1.4,1h-1.1c-1,0-1.8-1-1.4-2l1.1-3l1.5-4l3.6-10c0.2-0.6,0.8-1,1.4-1h1.6c0.6,0,1.2,0.4,1.4,1l3.6,10l1.5,4l1.1,3C120.3,19,119.5,20,118.5,20z M111.5,6.6l-1.6,4.4h3.2L111.5,6.6z M99.5,20h-1.4c-0.4,0-0.7-0.2-0.9-0.5L94,14l-2,3.5v1c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17C88,0.7,88.7,0,89.5,0h1C91.3,0,92,0.7,92,1.5v8L94,6l3.2-5.5C97.4,0.2,97.7,0,98.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3L96.3,10l4.5,7.8C101.4,18.8,100.7,20,99.5,20z M80.3,11.8L80,12.3v6.2c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-6.2l-0.3-0.5l-5.5-9.5c-0.6-1,0.2-2.3,1.3-2.3h1.4c0.4,0,0.7,0.2,0.9,0.5L76,4.3l2,3.5l2-3.5l2.2-3.8C82.4,0.2,82.7,0,83.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3L80.3,11.8z M60,20c-5.5,0-10-4.5-10-10S54.5,0,60,0s10,4.5,10,10S65.5,20,60,20z M60,4c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S63.3,4,60,4z M47.8,17.8c0.6,1-0.2,2.3-1.3,2.3h-2L41,14h-4v4.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17C33,0.7,33.7,0,34.5,0H41c0.3,0,0.7,0,1,0.1c3.4,0.5,6,3.4,6,6.9c0,2.4-1.2,4.5-3.1,5.8L47.8,17.8z M42,4.2C41.7,4.1,41.3,4,41,4h-3c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h3c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.6-0.3,0.9-0.5C43.6,8.8,44,7.9,44,7C44,5.7,43.2,4.6,42,4.2z M29.5,4H25v14.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5V4h-4.5C15.7,4,15,3.3,15,2.5v-1C15,0.7,15.7,0,16.5,0h13C30.3,0,31,0.7,31,1.5v1C31,3.3,30.3,4,29.5,4z M6.5,20c-2.8,0-5.5-1.7-6.4-4c-0.4-1,0.3-2,1.3-2h1c0.5,0,0.9,0.3,1.2,0.7c0.2,0.3,0.4,0.6,0.8,0.8C4.9,15.8,5.8,16,6.5,16c1.5,0,2.8-0.9,2.8-2c0-0.7-0.5-1.3-1.2-1.6C7.4,12,7,11,7.4,10.3l0.4-0.9c0.4-0.7,1.2-1,1.8-0.6c0.6,0.3,1.2,0.7,1.6,1.2c1,1.1,1.7,2.5,1.7,4C13,17.3,10.1,20,6.5,20z M11.6,6h-1c-0.5,0-0.9-0.3-1.2-0.7C9.2,4.9,8.9,4.7,8.6,4.5C8.1,4.2,7.2,4,6.5,4C5,4,3.7,4.9,3.7,6c0,0.7,0.5,1.3,1.2,1.6C5.6,8,6,9,5.6,9.7l-0.4,0.9c-0.4,0.7-1.2,1-1.8,0.6c-0.6-0.3-1.2-0.7-1.6-1.2C0.6,8.9,0,7.5,0,6c0-3.3,2.9-6,6.5-6c2.8,0,5.5,1.7,6.4,4C13.3,4.9,12.6,6,11.6,6z"></path></svg><div class="sa-sidebar-logo__caption">Admin</div>
+                    </div>
+                    <!-- logo / end -->
+                </a></div>
+                <div class="sa-sidebar__body" data-simplebar="init">
+                    <div class="simplebar-wrapper" style="margin: 0px;">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                            <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        <div class="simplebar-mask">
+                            <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                <div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;">
+                                    <div class="simplebar-content" style="padding: 0px;">
+                                        <ul class="sa-nav sa-nav--sidebar" data-sa-collapse="">
+                                            <li class="sa-nav__section">
+                                                <div class="sa-nav__section-title"><span>Application</span></div>
+                                                <ul class="sa-nav__menu sa-nav__menu--root">
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="index.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                            <path d="M8,13.1c-4.4,0-8,3.4-8-3C0,5.6,3.6,2,8,2s8,3.6,8,8.1C16,16.5,12.4,13.1,8,13.1zM8,4c-3.3,0-6,2.7-6,6c0,4,2.4,0.9,5,0.2C7,9.9,7.1,9.5,7.4,9.2l3-2.3c0.4-0.3,1-0.2,1.3,0.3c0.3,0.5,0.2,1.1-0.2,1.4l-2.2,1.7c2.5,0.9,4.8,3.6,4.8-0.2C14,6.7,11.3,4,8,4z"></path></svg></span><span class="sa-nav__title">Dashboard</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                            <path d="M8,6C4.7,6,2,4.7,2,3s2.7-3,6-3s6,1.3,6,3S11.3,6,8,6z M2,5L2,5L2,5C2,5,2,5,2,5z M8,8c3.3,0,6-1.3,6-3v3c0,1.7-2.7,3-6,3S2,9.7,2,8V5C2,6.7,4.7,8,8,8z M14,5L14,5C14,5,14,5,14,5L14,5z M2,10L2,10L2,10C2,10,2,10,2,10z M8,13c3.3,0,6-1.3,6-3v3c0,1.7-2.7,3-6,3s-6-1.3-6-3v-3C2,11.7,4.7,13,8,13z M14,10L14,10C14,10,14,10,14,10L14,10z"></path></svg></span><span class="sa-nav__title">Catalog</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="app-products-list.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Products List</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-product.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Product</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-categories-list.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Categories List</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-category.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Category</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                            <path d="M8,10c-3.3,0-6,2.7-6,6H0c0-3.2,1.9-6,4.7-7.3C3.7,7.8,3,6.5,3,5c0-2.8,2.2-5,5-5s5,2.2,5,5c0,1.5-0.7,2.8-1.7,3.7c2.8,1.3,4.7,4,4.7,7.3h-2C14,12.7,11.3,10,8,10z M8,2C6.3,2,5,3.3,5,5s1.3,3,3,3s3-1.3,3-3S9.7,2,8,2z"></path></svg></span><span class="sa-nav__title">Customers</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="app-customers-list.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Customers List</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-customer.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Customer</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                            <path d="M14.2,10.3c-0.1,0.4-0.5,0.7-0.9,0.7H4.8c-0.5,0-0.9-0.3-1-0.8L2.2,4C2.1,3.4,1.6,3,1,3H0.4C0.2,3,0,2.8,0,2.6V1.4C0,1.2,0.2,1,0.4,1h1.4c1,0,1.9,0.7,2.1,1.7l1.5,6.1C5.5,8.9,5.7,9,5.8,9h6.5c0.1,0,0.2-0.1,0.3-0.2l1.1-3.4C13.8,5.2,13.7,5,13.5,5H7.4C7.2,5,7,4.8,7,4.6V3.4C7,3.2,7.2,3,7.4,3H15c0.6,0,1,0.4,1,1v1L14.2,10.3z M4.5,13C5.3,13,6,13.7,6,14.5C6,15.3,5.3,16,4.5,16S3,15.3,3,14.5C3,13.7,3.7,13,4.5,13z M11.5,13c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5S10,15.3,10,14.5C10,13.7,10.7,13,11.5,13z"></path></svg></span><span class="sa-nav__title">Orders</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="app-orders-list.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Orders List</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-order.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Order Details</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                            <path d="M11.5,3C12.9,3,14,4.1,14,5.5c0,2.7-4.3,6.4-6,7.4c-1.7-1-6-4.7-6-7.4C2,4.1,3.1,3,4.5,3C5.3,3,6,3.3,6.4,3.9L8,5.3l1.6-1.4C10,3.3,10.7,3,11.5,3 M11.5,1C10.1,1,8.8,1.6,8,2.7C7.2,1.6,5.9,1,4.5,1C2,1,0,3,0,5.5C0,10,7,15,8,15s8-5,8-9.5C16,3,14,1,11.5,1L11.5,1z"></path></svg></span><span class="sa-nav__title">Marketing</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="app-coupons-list.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Coupons List</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-coupon.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Coupon</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><!-- <i class="fas fa-envelope"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Inbox</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="app-inbox-list.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">List</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-inbox-conversation.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Conversation</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="app-chat.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-comment fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"></path></svg><!-- <i class="fas fa-comment"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Chat</span><span class="sa-nav__menu-item-badge badge badge-sa-pill badge-sa-theme">8</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="app-file-manager.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-hdd fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hdd" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M576 304v96c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48v-96c0-26.51 21.49-48 48-48h480c26.51 0 48 21.49 48 48zm-48-80a79.557 79.557 0 0 1 30.777 6.165L462.25 85.374A48.003 48.003 0 0 0 422.311 64H153.689a48 48 0 0 0-39.938 21.374L17.223 230.165A79.557 79.557 0 0 1 48 224h480zm-48 96c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zm-96 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z"></path></svg><!-- <i class="fas fa-hdd"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">File Manager</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="app-calendar.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path></svg><!-- <i class="fas fa-calendar-alt"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Calendar</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="app-analytics.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                            <path d="M14.5,15h-1c-0.8,0-1.5-0.7-1.5-1.5v-8C12,4.7,12.7,4,13.5,4h1C15.3,4,16,4.7,16,5.5v8C16,14.3,15.3,15,14.5,15z M8.5,15h-1C6.7,15,6,14.3,6,13.5v-11C6,1.7,6.7,1,7.5,1h1C9.3,1,10,1.7,10,2.5v11C10,14.3,9.3,15,8.5,15z M2.5,15h-1C0.7,15,0,14.3,0,13.5v-5C0,7.7,0.7,7,1.5,7h1C3.3,7,4,7.7,4,8.5v5C4,14.3,3.3,15,2.5,15z"></path></svg></span><span class="sa-nav__title">Analytics</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                            <path d="M14,6.8l-0.2,0.1C14,7.3,14,7.6,14,8c0,0.4,0,0.7-0.1,1.1L14,9.2c1,0.6,1.4,1.9,0.8,3c-0.5,0.9-1.6,1.2-2.5,0.7l-0.5-0.3c-0.6,0.5-1.2,0.8-1.9,1.1v0.8c0,0.9-0.7,1.6-1.6,1.6H7.6C6.7,16,6,15.3,6,14.4v-0.8c-0.7-0.2-1.3-0.6-1.9-1.1l-0.5,0.3c-0.9,0.5-2,0.2-2.5-0.7c-0.6-1-0.3-2.4,0.8-3l0.2-0.1C2,8.7,2,8.4,2,8c0-0.4,0-0.7,0.1-1.1L2,6.8c-1.1-0.6-1.4-2-0.8-3C1.7,3,2.8,2.7,3.6,3.2l0.5,0.3C4.7,3,5.3,2.6,6,2.4V1.6C6,0.7,6.7,0,7.6,0h0.8C9.3,0,10,0.7,10,1.6v0.8c0.7,0.2,1.3,0.6,1.9,1.1l0.5-0.3c0.9-0.5,2-0.2,2.5,0.7C15.4,4.9,15.1,6.2,14,6.8z M8,5.5C6.6,5.5,5.5,6.6,5.5,8s1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5S9.4,5.5,8,5.5z"></path></svg></span><span class="sa-nav__title">Settings</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="app-settings-toc.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Table of Content</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="app-settings-form.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Form</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sa-nav__section">
+                                                <div class="sa-nav__section-title"><span>Pages</span></div>
+                                                <ul class="sa-nav__menu sa-nav__menu--root">
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-lock fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path></svg><!-- <i class="fas fa-lock"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Authentication</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="auth-sign-in.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Sign In</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="auth-sign-up.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Sign Up</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="auth-forgot-password.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Forgot Password</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="auth-reset-password.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Reset Password</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="auth-email-confirmation.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Verify Account</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="page-invoice.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-file-alt fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg><!-- <i class="fas fa-file-alt"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Invoice</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="page-pricing-table.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-dollar-sign fa-w-9" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg><!-- <i class="fas fa-dollar-sign"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Pricing Table</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="page-faq.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">FAQ</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="page-terms.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-check-square fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"></path></svg><!-- <i class="fas fa-check-square"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Terms And Conditions</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="page-help-center.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-question-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg><!-- <i class="fas fa-question-circle"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Help Center</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="page-404.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-bomb fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bomb" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M440.5 88.5l-52 52L415 167c9.4 9.4 9.4 24.6 0 33.9l-17.4 17.4c11.8 26.1 18.4 55.1 18.4 85.6 0 114.9-93.1 208-208 208S0 418.9 0 304 93.1 96 208 96c30.5 0 59.5 6.6 85.6 18.4L311 97c9.4-9.4 24.6-9.4 33.9 0l26.5 26.5 52-52 17.1 17zM500 60h-24c-6.6 0-12 5.4-12 12s5.4 12 12 12h24c6.6 0 12-5.4 12-12s-5.4-12-12-12zM440 0c-6.6 0-12 5.4-12 12v24c0 6.6 5.4 12 12 12s12-5.4 12-12V12c0-6.6-5.4-12-12-12zm33.9 55l17-17c4.7-4.7 4.7-12.3 0-17-4.7-4.7-12.3-4.7-17 0l-17 17c-4.7 4.7-4.7 12.3 0 17 4.8 4.7 12.4 4.7 17 0zm-67.8 0c4.7 4.7 12.3 4.7 17 0 4.7-4.7 4.7-12.3 0-17l-17-17c-4.7-4.7-12.3-4.7-17 0-4.7 4.7-4.7 12.3 0 17l17 17zm67.8 34c-4.7-4.7-12.3-4.7-17 0-4.7 4.7-4.7 12.3 0 17l17 17c4.7 4.7 12.3 4.7 17 0 4.7-4.7 4.7-12.3 0-17l-17-17zM112 272c0-35.3 28.7-64 64-64 8.8 0 16-7.2 16-16s-7.2-16-16-16c-52.9 0-96 43.1-96 96 0 8.8 7.2 16 16 16s16-7.2 16-16z"></path></svg><!-- <i class="fas fa-bomb"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Not Found</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Menu Level 0</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Menu Level 1</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                    <li class="sa-nav__menu-item sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Menu Level 2</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                        <li class="sa-nav__menu-item"><a href="" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Menu Level 3</span></a></li>
+                                                                    </ul>
+                                                                    </li>
+                                                                </ul>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sa-nav__section">
+                                                <div class="sa-nav__section-title"><span>Framework</span></div>
+                                                <ul class="sa-nav__menu sa-nav__menu--root">
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-compass fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="compass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z"></path></svg><!-- <i class="fas fa-compass"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Components</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="components-accordion.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Accordion</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-alerts.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Alerts</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-badge.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Badge</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-breadcrumb.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Breadcrumb</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-buttons.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Buttons</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-button-group.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Button group</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-cards.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Cards</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-carousel.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Carousel</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-collapse.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Collapse</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-dropdowns.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Dropdowns</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-list-group.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">List group</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-modal.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Modal</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-navs.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Navs</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-nouislider.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">NoUiSlider</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-offcanvas.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Offcanvas</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-pagination.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Pagination</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-placeholders.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Placeholders</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-popovers.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Popovers</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-progress.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Progress</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-scrollspy.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Scrollspy</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-spinners.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Spinners</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-symbols.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Symbols</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-tabs.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Tabs</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-toasts.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Toasts</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="components-tooltips.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Tooltips</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon sa-nav__menu-item--open" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-toggle-on fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="toggle-on" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M384 64H192C86 64 0 150 0 256s86 192 192 192h192c106 0 192-86 192-192S490 64 384 64zm0 320c-70.8 0-128-57.3-128-128 0-70.8 57.3-128 128-128 70.8 0 128 57.3 128 128 0 70.8-57.3 128-128 128z"></path></svg><!-- <i class="fas fa-toggle-on"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Forms</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="forms-text-box.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Text Box</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-text-area.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Text Area</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-select.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Select</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-checks-and-radios.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Checks And Radios</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-file.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">File</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-range.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Range</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-input-group.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Input Group</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-layout.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Layout</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-help-text.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Help Text</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-validation.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Validation</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-quill.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Quill</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-air-datepicker.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Air Datepicker</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="forms-select2.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Select2</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon" data-sa-collapse-item="sa-nav__menu-item--open"><a href="" class="sa-nav__link" data-sa-collapse-trigger=""><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-table fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="table" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64v-96h160v96zm0-160H64v-96h160v96zm224 160H288v-96h160v96zm0-160H288v-96h160v96z"></path></svg><!-- <i class="fas fa-table"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Tables</span><span class="sa-nav__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="currentColor"><path d="M5.605,0.213 C6.007,0.613 6.107,1.212 5.706,1.612 L2.696,4.511 L5.706,7.409 C6.107,7.809 6.107,8.509 5.605,8.808 C5.204,9.108 4.702,9.108 4.301,8.709 L-0.013,4.511 L4.401,0.313 C4.702,-0.087 5.304,-0.087 5.605,0.213 Z"></path></svg></span></a><ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
+                                                                <li class="sa-nav__menu-item"><a href="tables-basic-tables.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">Basic Tables</span></a></li>
+                                                                <li class="sa-nav__menu-item"><a href="tables-datatables.html" class="sa-nav__link"><span class="sa-nav__menu-item-padding"></span><span class="sa-nav__title">DataTables</span></a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="icons.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-tree fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tree" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M378.31 378.49L298.42 288h30.63c9.01 0 16.98-5 20.78-13.06 3.8-8.04 2.55-17.26-3.28-24.05L268.42 160h28.89c9.1 0 17.3-5.35 20.86-13.61 3.52-8.13 1.86-17.59-4.24-24.08L203.66 4.83c-6.03-6.45-17.28-6.45-23.32 0L70.06 122.31c-6.1 6.49-7.75 15.95-4.24 24.08C69.38 154.65 77.59 160 86.69 160h28.89l-78.14 90.91c-5.81 6.78-7.06 15.99-3.27 24.04C37.97 283 45.93 288 54.95 288h30.63L5.69 378.49c-6 6.79-7.36 16.09-3.56 24.26 3.75 8.05 12 13.25 21.01 13.25H160v24.45l-30.29 48.4c-5.32 10.64 2.42 23.16 14.31 23.16h95.96c11.89 0 19.63-12.52 14.31-23.16L224 440.45V416h136.86c9.01 0 17.26-5.2 21.01-13.25 3.8-8.17 2.44-17.47-3.56-24.26z"></path></svg><!-- <i class="fas fa-tree"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Icons</span></a></li>
+                                                    <li class="sa-nav__menu-item sa-nav__menu-item--has-icon"><a href="charts.html" class="sa-nav__link"><span class="sa-nav__icon">
+                                                        <svg class="svg-inline--fa fa-chart-pie fa-w-17" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-pie" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512" data-fa-i2svg="">
+                                                            <path fill="currentColor" d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"></path></svg><!-- <i class="fas fa-chart-pie"></i> Font Awesome fontawesome.com --></span><span class="sa-nav__title">Charts</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simplebar-placeholder" style="width: auto; height: 2655px;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                        <div class="simplebar-scrollbar" style="height: 156px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sa-app__sidebar-shadow"></div>
+            <div class="sa-app__sidebar-backdrop" data-sa-close-sidebar=""></div>
+        </div>
+        <!-- sa-app__sidebar / end -->
+        <!-- sa-app__content -->
+        <div class="sa-app__content">
+            <!-- sa-app__toolbar -->
+            <div class="sa-toolbar sa-app__toolbar sa-toolbar--search-hidden">
+                <div class="sa-toolbar__body">
+                    <div class="sa-toolbar__item">
+                        <button class="sa-toolbar__button" type="button" aria-label="Menu" data-sa-toggle-sidebar="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M1,11V9h18v2H1z M1,3h18v2H1V3z M15,17H1v-2h14V17z"></path></svg></button></div>
+                    <div class="sa-toolbar__item sa-toolbar__item--search">
+                        <div class="sa-search sa-search--state--pending">
+                            <div class="sa-search__body">
+                                <label class="visually-hidden" for="input-search">Search for:</label><div class="sa-search__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M16.243 14.828C16.243 14.828 16.047 15.308 15.701 15.654C15.34 16.015 14.828 16.242 14.828 16.242L10.321 11.736C9.247 12.522 7.933 13 6.5 13C2.91 13 0 10.09 0 6.5C0 2.91 2.91 0 6.5 0C10.09 0 13 2.91 13 6.5C13 7.933 12.522 9.247 11.736 10.321L16.243 14.828ZM6.5 2C4.015 2 2 4.015 2 6.5C2 8.985 4.015 11 6.5 11C8.985 11 11 8.985 11 6.5C11 4.015 8.985 2 6.5 2Z"></path></svg></div>
+                                <input type="text" id="input-search" class="sa-search__input" placeholder="Search for the truth" autocomplete="off" />
+                                <button class="sa-search__cancel d-sm-none" type="button" aria-label="Close search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                                        <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z"></path></svg></button><div class="sa-search__field"></div>
+                            </div>
+                            <div class="sa-search__dropdown">
+                                <div class="sa-search__dropdown-loader"></div>
+                                <div class="sa-search__dropdown-wrapper">
+                                    <div class="sa-search__suggestions sa-suggestions"></div>
+                                    <div class="sa-search__help sa-search__help--type--no-results">
+                                        <div class="sa-search__help-title">No results for "<span class="sa-search__query"></span>"</div>
+                                        <div class="sa-search__help-subtitle">Make sure that all words are spelled correctly.</div>
+                                    </div>
+                                    <div class="sa-search__help sa-search__help--type--greeting">
+                                        <div class="sa-search__help-title">Start typing to search for</div>
+                                        <div class="sa-search__help-subtitle">Products, orders, customers, actions, etc.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sa-search__backdrop"></div>
+                        </div>
+                    </div>
+                    <div class="mx-auto"></div>
+                    <div class="sa-toolbar__item d-sm-none">
+                        <button class="sa-toolbar__button" type="button" aria-label="Show search" data-sa-action="show-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M16.243 14.828C16.243 14.828 16.047 15.308 15.701 15.654C15.34 16.015 14.828 16.242 14.828 16.242L10.321 11.736C9.247 12.522 7.933 13 6.5 13C2.91 13 0 10.09 0 6.5C0 2.91 2.91 0 6.5 0C10.09 0 13 2.91 13 6.5C13 7.933 12.522 9.247 11.736 10.321L16.243 14.828ZM6.5 2C4.015 2 2 4.015 2 6.5C2 8.985 4.015 11 6.5 11C8.985 11 11 8.985 11 6.5C11 4.015 8.985 2 6.5 2Z"></path></svg></button></div>
+                    <div class="sa-toolbar__item dropdown">
+                        <button class="sa-toolbar__button" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" data-bs-reference="parent" data-bs-offset="0,1" aria-expanded="false">
+                            <img src="vendor/flag-icons/24/DE.png" class="sa-language-icon" alt=""></button><ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton3">
+                                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="vendor/flag-icons/24/DE.png" class="sa-language-icon me-3" alt=""><span class="ps-2">German</span></a></li>
+                                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="vendor/flag-icons/24/FR.png" class="sa-language-icon me-3" alt=""><span class="ps-2">French</span></a></li>
+                                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="vendor/flag-icons/24/GB.png" class="sa-language-icon me-3" alt=""><span class="ps-2">English</span></a></li>
+                                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="vendor/flag-icons/24/RU.png" class="sa-language-icon me-3" alt=""><span class="ps-2">Russian</span></a></li>
+                                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="vendor/flag-icons/24/IT.png" class="sa-language-icon me-3" alt=""><span class="ps-2">Italian</span></a></li>
+                            </ul>
+                    </div>
+                    <div class="sa-toolbar__item dropdown">
+                        <button class="sa-toolbar__button" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-reference="parent" data-bs-offset="0,1" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8,13c0,0-5.2,0-7,0c0-1-0.1-1.9,1-1.9C2,5,4,2,6,2c0-1.1,0-2,2-2c1.9,0,2,0.9,2,2c2,0,4,3,4,9c1,0,1,1,1,2C12.7,13,8,13,8,13z M6,14h4c0,1.1,0,2-2,2C6,16,6,15.1,6,14L6,14L6,14z"></path></svg><span class="sa-toolbar__button-indicator">3</span></button><div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="dropdownMenuButton2">
+                                    <div class="sa-notifications">
+                                        <div class="sa-notifications__header">
+                                            <div class="sa-notifications__header-title">Notifications</div>
+                                            <a class="sa-notifications__header-action" href="">Mark All as Read</a></div>
+                                        <ul class="sa-notifications__list">
+                                            <li class="sa-notifications__item"><a href="#" class="sa-notifications__item-button">
+                                                <div class="sa-notifications__item-icon">
+                                                    <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--style--primary">
+                                                        <div class="sa-symbol__icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                                <path d="M14.5,15h-1c-0.8,0-1.5-0.7-1.5-1.5v-8C12,4.7,12.7,4,13.5,4h1C15.3,4,16,4.7,16,5.5v8C16,14.3,15.3,15,14.5,15z M8.5,15h-1C6.7,15,6,14.3,6,13.5v-11C6,1.7,6.7,1,7.5,1h1C9.3,1,10,1.7,10,2.5v11C10,14.3,9.3,15,8.5,15z M2.5,15h-1C0.7,15,0,14.3,0,13.5v-5C0,7.7,0.7,7,1.5,7h1C3.3,7,4,7.7,4,8.5v5C4,14.3,3.3,15,2.5,15z"></path></svg></div>
+                                                    </div>
+                                                </div>
+                                                <div class="sa-notifications__item-body">
+                                                    <div class="sa-notifications__item-title sa-notifications__item-title--nowrap">New report has been received</div>
+                                                    <div class="sa-notifications__item-subtitle sa-notifications__item-subtitle--nowrap">24 hours ago</div>
+                                                </div>
+                                            </a></li>
+                                            <li class="sa-notifications__item"><a href="#" class="sa-notifications__item-button">
+                                                <div class="sa-notifications__item-icon">
+                                                    <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--style--warning">
+                                                        <div class="sa-symbol__icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                                <path d="M8,6C4.7,6,2,4.7,2,3s2.7-3,6-3s6,1.3,6,3S11.3,6,8,6z M2,5L2,5L2,5C2,5,2,5,2,5z M8,8c3.3,0,6-1.3,6-3v3c0,1.7-2.7,3-6,3S2,9.7,2,8V5C2,6.7,4.7,8,8,8z M14,5L14,5C14,5,14,5,14,5L14,5z M2,10L2,10L2,10C2,10,2,10,2,10z M8,13c3.3,0,6-1.3,6-3v3c0,1.7-2.7,3-6,3s-6-1.3-6-3v-3C2,11.7,4.7,13,8,13z M14,10L14,10C14,10,14,10,14,10L14,10z"></path></svg></div>
+                                                    </div>
+                                                </div>
+                                                <div class="sa-notifications__item-body">
+                                                    <div class="sa-notifications__item-title sa-notifications__item-title--nowrap">Creating a backup in the process</div>
+                                                    <div class="sa-notifications__item-subtitle sa-notifications__item-subtitle--nowrap">Completed: 37% (23.05 MB)</div>
+                                                </div>
+                                            </a></li>
+                                            <li class="sa-notifications__item"><a href="#" class="sa-notifications__item-button">
+                                                <div class="sa-notifications__item-icon">
+                                                    <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--style--primary">
+                                                        <div class="sa-symbol__icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                                <path d="M14.2,10.3c-0.1,0.4-0.5,0.7-0.9,0.7H4.8c-0.5,0-0.9-0.3-1-0.8L2.2,4C2.1,3.4,1.6,3,1,3H0.4C0.2,3,0,2.8,0,2.6V1.4C0,1.2,0.2,1,0.4,1h1.4c1,0,1.9,0.7,2.1,1.7l1.5,6.1C5.5,8.9,5.7,9,5.8,9h6.5c0.1,0,0.2-0.1,0.3-0.2l1.1-3.4C13.8,5.2,13.7,5,13.5,5H7.4C7.2,5,7,4.8,7,4.6V3.4C7,3.2,7.2,3,7.4,3H15c0.6,0,1,0.4,1,1v1L14.2,10.3z M4.5,13C5.3,13,6,13.7,6,14.5C6,15.3,5.3,16,4.5,16S3,15.3,3,14.5C3,13.7,3.7,13,4.5,13z M11.5,13c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5S10,15.3,10,14.5C10,13.7,10.7,13,11.5,13z"></path></svg></div>
+                                                    </div>
+                                                </div>
+                                                <div class="sa-notifications__item-body">
+                                                    <div class="sa-notifications__item-title sa-notifications__item-title--nowrap">Product added to cart</div>
+                                                    <div class="sa-notifications__item-subtitle sa-notifications__item-subtitle--nowrap">Drill Screwdriver Brandix ALX7054 200 Watts</div>
+                                                </div>
+                                            </a></li>
+                                            <li class="sa-notifications__item"><a href="#" class="sa-notifications__item-button">
+                                                <div class="sa-notifications__item-icon">
+                                                    <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--style--info">
+                                                        <div class="sa-symbol__icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                                                                <path d="M8,10c-3.3,0-6,2.7-6,6H0c0-3.2,1.9-6,4.7-7.3C3.7,7.8,3,6.5,3,5c0-2.8,2.2-5,5-5s5,2.2,5,5c0,1.5-0.7,2.8-1.7,3.7c2.8,1.3,4.7,4,4.7,7.3h-2C14,12.7,11.3,10,8,10z M8,2C6.3,2,5,3.3,5,5s1.3,3,3,3s3-1.3,3-3S9.7,2,8,2z"></path></svg></div>
+                                                    </div>
+                                                </div>
+                                                <div class="sa-notifications__item-body">
+                                                    <div class="sa-notifications__item-title sa-notifications__item-title--nowrap">Customer Ryan Ford says</div>
+                                                    <div class="sa-notifications__item-subtitle sa-notifications__item-subtitle--nowrap">What is a screen dimension of Brandix Series B monitor?</div>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                        <div class="sa-notifications__footer"><a class="sa-notifications__footer-action" href="">See all 15 notifications</a></div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="dropdown sa-toolbar__item">
+                        <button class="sa-toolbar-user" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-offset="0,1" aria-expanded="false"><span class="sa-toolbar-user__avatar sa-symbol sa-symbol--shape--rounded">
+                            <img src="images/customers/customer-4-64x64.jpg" width="64" height="64" alt=""></span><span class="sa-toolbar-user__info"><span class="sa-toolbar-user__title">Konstantin Veselovsky</span><span class="sa-toolbar-user__subtitle">stroyka@example.com</span></span></button><ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="app-inbox-list.html">Inbox</a></li>
+                                <li><a class="dropdown-item" href="app-settings-toc.html">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="auth-sign-in.html">Sign Out</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="sa-toolbar__shadow"></div>
+            </div>
+            <!-- sa-app__toolbar / end -->
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <!-- sa-app__footer -->
+            <div class="sa-app__footer d-block d-md-flex">
+                <!-- copyright -->
+                Stroyka Admin — eCommerce Dashboard Template © 2021<div class="m-auto"></div>
+                <div>Powered by HTML — Design by <a href="https://themeforest.net/user/kos9/portfolio">Kos</a></div>
+                <!-- copyright / end -->
+            </div>
+            <!-- sa-app__footer / end -->
+        </div>
+        <!-- sa-app__content / end -->
+        <!-- sa-app__toasts -->
+        <div class="sa-app__toasts toast-container bottom-0 end-0"></div>
+        <!-- sa-app__toasts / end -->
+    </div>
+    <!-- sa-app / end -->
+    <!-- scripts -->
+    <script src="../../../Assets/adminOld/vendor/jquery/jquery.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/feather-icons/feather.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/simplebar/simplebar.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/highlight.js/highlight.pack.js"></script>
+    <script src="../../../Assets/adminOld/vendor/quill/quill.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/air-datepicker/js/datepicker.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/air-datepicker/js/i18n/datepicker.en.js"></script>
+    <script src="../../../Assets/adminOld/vendor/select2/js/select2.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/fontawesome/js/all.min.js" data-auto-replace-svg="" async=""></script>
+    <script src="../../../Assets/adminOld/vendor/chart.js/chart.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/datatables/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/nouislider/nouislider.min.js"></script>
+    <script src="../../../Assets/adminOld/vendor/fullcalendar/main.min.js"></script>
+    <script src="../../../Assets/adminOld/js/stroyka.js"></script>
+    <script src="../../../Assets/adminOld/js/custom.js"></script>
+    <script src="../../../Assets/adminOld/js/calendar.js"></script>
+    <script src="../../../Assets/adminOld/js/demo.js"></script>
+    <script src="../../../Assets/adminOld/js/demo-chart-js.js"></script>
+    <div id="torrent-scanner-popup" style="display: none;"></div>
+    </div>
+    </form>
+</body>
+</html>
+

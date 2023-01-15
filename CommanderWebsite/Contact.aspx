@@ -1,58 +1,77 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="CommanderWebsite.Contact" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <link rel="Stylesheet" type="text/css" href="Styles/Contact.css" />
-    <style>        
-        .mapouter{position:relative;text-align:right;height:501px; width:600px;top: 0px;left: 0px;}
-        .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
-      </style>
-
-<br />
-
-    <div class="container" style="height: 700px">
-
-    <h2 align="center">Contact Us</h2>
-    <h3 align="center">If you have any inquiries about our services please send us an email below</h3>
-    <hr />
-
-  
-    
-    <div class="col" style="float:left; width:40%">
-      <div>
-        <label for="fname">Your Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." 
-            runat = "server" style="width: 100%; height: 39px;" class="form-control" />
-        <label for="lname">Your Email</label>
-        <input type="text" runat = "server" id="EmailAddress" name="lastname" 
-            placeholder="Your email address.." style="width: 100%" 
-            class="form-control" />
-        <br />
-        <label for="fname">Subject</label><input type="text" id="Text1" 
-            name="firstname" placeholder="Subject" runat = "server" 
-            style="width: 100%" class="form-control"/><br />
-        <label for="subject">Message</label>
-        <textarea  class="form-control" rows="0" id="body" name="subject" runat = "server" 
-            placeholder="Write something.." style="height:170px; width: 100%;" cols="0"></textarea><br />
-        &nbsp;
-      </div>
-        <asp:Button ID="Button1" CssClass="btn btn-default" runat="server" OnClick="Button1_Click" 
-            Text="Submit" />
-        <br />
-        
-        <asp:Label ID="Label1" runat="server"></asp:Label>
+﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="CommanderWebsite.Contact1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- site__body -->
+    <div class="site__body">
+        <div class="page-header">
+            <div class="page-header__container container">
+                <div class="page-header__breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                <svg class="breadcrumb-arrow" width="6px" height="9px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                            <li class="breadcrumb-item"><a href="">Breadcrumb</a>
+                                <svg class="breadcrumb-arrow" width="6px" height="9px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="page-header__title">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="container">
+                <div class="card mb-0 contact-us">
+                    <div class="contact-us__map">
+                        <iframe src="https://maps.google.com/maps?q=Holbrook-Palmer%20Park&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <div class="contact-us__container">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 pb-4 pb-lg-0">
+                                    <h4 class="contact-us__header card-title">Our Address</h4>
+                                    <div class="contact-us__address">
+                                        <p>715 Fake Ave, Apt. 34, New York, NY 10021 USA<br>
+                                            Email: stroyka@example.com<br>
+                                            Phone Number: +1 754 000-00-00</p>
+                                        <p><strong>Opening Hours</strong><br>
+                                            Monday to Friday: 8am-8pm<br>
+                                            Saturday: 8am-6pm<br>
+                                            Sunday: 10am-4pm</p>
+                                        <p><strong>Comment</strong><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit suscipit mi, non tempor nulla finibus eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="contact-us__header card-title">Leave us a Message</h4>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="form-name">Your Name</label>
+                                                <input type="text" id="form-name" class="form-control" placeholder="Your Name"></div>
+                                            <div class="form-group col-md-6">
+                                                <label for="form-email">Email</label>
+                                                <input type="email" id="form-email" class="form-control" placeholder="Email Address"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form-subject">Subject</label>
+                                            <input type="text" id="form-subject" class="form-control" placeholder="Subject"></div>
+                                        <div class="form-group">
+                                            <label for="form-message">Message</label>
+                                            <textarea id="form-message" class="form-control" rows="4"></textarea></div>
+                                        <button type="submit" class="btn btn-primary">Send Message</button></form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col" style="float:left; width:53%; margin-left: 20px;">
-      <div class="mapouter img-thumbnail img-rounded" 
-            style="width: 100%; height: 510px">
-      <div class="gmap_canvas " style="width: 100%" >
-      <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=140%20langalibalele%20street%20engen&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-      </iframe><a href="https://www.embedgooglemap.org">wordpress embed a google map on contact page</a>
-    </div>
-  </div>
-</div>
-</div>
-<br />
-<br />
-<br />
-<br />
+    <!-- site__body / end -->
 </asp:Content>

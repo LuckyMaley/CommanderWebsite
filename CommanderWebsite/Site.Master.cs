@@ -176,13 +176,16 @@ namespace CommanderWebsite
         {
             try
             {
-                var smtpSection = (SmtpSection)ConfigurationManager.GetSection("system.net/mailSettings/smtp");
-                System.Net.Mail.MailMessage mm = new System.Net.Mail.MailMessage();
-                mm.From = new System.Net.Mail.MailAddress(smtpSection.Network.UserName);
-                mm.Subject = "NewsLetter Subcription";
-                mm.To.Add(new System.Net.Mail.MailAddress(tbEmailHome.Text));
-                mm.Body = "Hi I would like to subscribe to your newsletter, account is " + tbEmailHome.Text;
-                EmailController.sendEmail(mm.To.ToString(), mm.Subject, mm.Body);
+                string From;
+                string Subject;
+                string Body;
+                string To;
+                
+                From = ConfigurationManager.AppSettings["HostAddress"];
+                Subject = "NewsLetter Subcription";
+                To = tbEmailHome.Text;
+                Body = "Hi I would like to subscribe to your newsletter, account is " + tbEmailHome.Text;
+                EmailController.SendEmail(To, Subject, Body);
                 Label1.ForeColor = System.Drawing.Color.Green;
                 Label1.Text = "Sent!";
                 }
