@@ -295,7 +295,35 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Admin\DashBoard.aspx" />
+    <Content Include="Admin\Store\BlankPage.aspx" />
+    <Content Include="Admin\Store\Components\Accordion.aspx" />
+    <Content Include="Admin\Store\Components\Alerts.aspx" />
+    <Content Include="Admin\Store\Components\ApexCharts.aspx" />
+    <Content Include="Admin\Store\Components\Badges.aspx" />
+    <Content Include="Admin\Store\Components\BootstrapIcons.aspx" />
+    <Content Include="Admin\Store\Components\Boxicons.aspx" />
+    <Content Include="Admin\Store\Components\Breadcrumbs.aspx" />
+    <Content Include="Admin\Store\Components\Buttons.aspx" />
+    <Content Include="Admin\Store\Components\Cards.aspx" />
+    <Content Include="Admin\Store\Components\Carousel.aspx" />
+    <Content Include="Admin\Store\Components\Chartjs.aspx" />
+    <Content Include="Admin\Store\Components\DataTables.aspx" />
+    <Content Include="Admin\Store\Components\ECharts.aspx" />
+    <Content Include="Admin\Store\Components\FormEditors.aspx" />
+    <Content Include="Admin\Store\Components\FormElements.aspx" />
+    <Content Include="Admin\Store\Components\FormLayouts.aspx" />
+    <Content Include="Admin\Store\Components\FormValidation.aspx" />
+    <Content Include="Admin\Store\Components\GeneralTables.aspx" />
+    <Content Include="Admin\Store\Components\ListGroup.aspx" />
+    <Content Include="Admin\Store\Components\Modal.aspx" />
+    <Content Include="Admin\Store\Components\Pagination.aspx" />
+    <Content Include="Admin\Store\Components\Progress.aspx" />
+    <Content Include="Admin\Store\Components\RemixIcons.aspx" />
+    <Content Include="Admin\Store\Components\Spinners.aspx" />
+    <Content Include="Admin\Store\Components\Tabs.aspx" />
+    <Content Include="Admin\Store\Components\Tooltips.aspx" />
+    <Content Include="Admin\Store\Contact.aspx" />
+    <Content Include="Admin\Store\DashBoard.aspx" />
     <Content Include="Admin\Master\Analytics.aspx" />
     <Content Include="Admin\Master\Calendar.aspx" />
     <Content Include="Admin\Master\CategoriesList.aspx" />
@@ -379,6 +407,11 @@
     <Content Include="Admin\Old\ProductsView.aspx" />
     <Content Include="Admin\Old\ProfileSettingsAdmin.aspx" />
     <Content Include="Admin\Old\RewardsAdmin.aspx" />
+    <Content Include="Admin\Store\Error404.aspx" />
+    <Content Include="Admin\Store\FAQ.aspx" />
+    <Content Include="Admin\Store\Login.aspx" />
+    <Content Include="Admin\Store\Register.aspx" />
+    <Content Include="Admin\Store\Profile.aspx" />
     <Content Include="Assets\adminOld\css\style.css" />
     <Content Include="Assets\adminOld\images\customers\customer-1-64x64.jpg" />
     <Content Include="Assets\adminOld\images\customers\customer-10-64x64.jpg" />
@@ -943,7 +976,7 @@
     <Content Include="Typography.aspx" />
     <Content Include="WishList.aspx" />
     <Content Include="Customer\Customer.Master" />
-    <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\Store\Admin.Master" />
     <Content Include="Assets\admin\vendor\apexcharts\locales\ar.json" />
     <Content Include="Assets\admin\vendor\apexcharts\locales\ca.json" />
     <Content Include="Assets\admin\vendor\apexcharts\locales\cs.json" />
@@ -1022,6 +1055,7 @@
     <Content Include="Assets\admin\vendor\remixicon\remixicon.woff2" />
     <Content Include="Admin\Master\AdminSite.Master" />
     <Content Include="Admin\Master\Components\AdminComponents.Master" />
+    <Content Include="Admin\Store\Components\Components.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -1245,18 +1279,221 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin.Master.cs">
+    <Compile Include="Admin\Store\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Admin.Master.designer.cs">
+    <Compile Include="Admin\Store\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DashBoard.aspx.cs">
+    <Compile Include="Admin\Store\BlankPage.aspx.cs">
+      <DependentUpon>BlankPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\BlankPage.aspx.designer.cs">
+      <DependentUpon>BlankPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Accordion.aspx.cs">
+      <DependentUpon>Accordion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Accordion.aspx.designer.cs">
+      <DependentUpon>Accordion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Alerts.aspx.cs">
+      <DependentUpon>Alerts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Alerts.aspx.designer.cs">
+      <DependentUpon>Alerts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\ApexCharts.aspx.cs">
+      <DependentUpon>ApexCharts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\ApexCharts.aspx.designer.cs">
+      <DependentUpon>ApexCharts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Badges.aspx.cs">
+      <DependentUpon>Badges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Badges.aspx.designer.cs">
+      <DependentUpon>Badges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\BootstrapIcons.aspx.cs">
+      <DependentUpon>BootstrapIcons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\BootstrapIcons.aspx.designer.cs">
+      <DependentUpon>BootstrapIcons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Boxicons.aspx.cs">
+      <DependentUpon>Boxicons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Boxicons.aspx.designer.cs">
+      <DependentUpon>Boxicons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Breadcrumbs.aspx.cs">
+      <DependentUpon>Breadcrumbs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Breadcrumbs.aspx.designer.cs">
+      <DependentUpon>Breadcrumbs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Buttons.aspx.cs">
+      <DependentUpon>Buttons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Buttons.aspx.designer.cs">
+      <DependentUpon>Buttons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Cards.aspx.cs">
+      <DependentUpon>Cards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Cards.aspx.designer.cs">
+      <DependentUpon>Cards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Carousel.aspx.cs">
+      <DependentUpon>Carousel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Carousel.aspx.designer.cs">
+      <DependentUpon>Carousel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Chartjs.aspx.cs">
+      <DependentUpon>Chartjs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Chartjs.aspx.designer.cs">
+      <DependentUpon>Chartjs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Components.Master.cs">
+      <DependentUpon>Components.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Components.Master.designer.cs">
+      <DependentUpon>Components.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\DataTables.aspx.cs">
+      <DependentUpon>DataTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\DataTables.aspx.designer.cs">
+      <DependentUpon>DataTables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\ECharts.aspx.cs">
+      <DependentUpon>ECharts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\ECharts.aspx.designer.cs">
+      <DependentUpon>ECharts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormEditors.aspx.cs">
+      <DependentUpon>FormEditors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormEditors.aspx.designer.cs">
+      <DependentUpon>FormEditors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormElements.aspx.cs">
+      <DependentUpon>FormElements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormElements.aspx.designer.cs">
+      <DependentUpon>FormElements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormLayouts.aspx.cs">
+      <DependentUpon>FormLayouts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormLayouts.aspx.designer.cs">
+      <DependentUpon>FormLayouts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormValidation.aspx.cs">
+      <DependentUpon>FormValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\FormValidation.aspx.designer.cs">
+      <DependentUpon>FormValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\GeneralTables.aspx.cs">
+      <DependentUpon>GeneralTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\GeneralTables.aspx.designer.cs">
+      <DependentUpon>GeneralTables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\ListGroup.aspx.cs">
+      <DependentUpon>ListGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\ListGroup.aspx.designer.cs">
+      <DependentUpon>ListGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Modal.aspx.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Modal.aspx.designer.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Pagination.aspx.cs">
+      <DependentUpon>Pagination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Pagination.aspx.designer.cs">
+      <DependentUpon>Pagination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Progress.aspx.cs">
+      <DependentUpon>Progress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Progress.aspx.designer.cs">
+      <DependentUpon>Progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\RemixIcons.aspx.cs">
+      <DependentUpon>RemixIcons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\RemixIcons.aspx.designer.cs">
+      <DependentUpon>RemixIcons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Spinners.aspx.cs">
+      <DependentUpon>Spinners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Spinners.aspx.designer.cs">
+      <DependentUpon>Spinners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Tabs.aspx.cs">
+      <DependentUpon>Tabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Tabs.aspx.designer.cs">
+      <DependentUpon>Tabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Tooltips.aspx.cs">
+      <DependentUpon>Tooltips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Components\Tooltips.aspx.designer.cs">
+      <DependentUpon>Tooltips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\DashBoard.aspx.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\DashBoard.aspx.designer.cs">
+    <Compile Include="Admin\Store\DashBoard.aspx.designer.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Master\AdminSite.Master.cs">
@@ -1867,6 +2104,41 @@
     </Compile>
     <Compile Include="Admin\Old\RewardsAdmin.aspx.designer.cs">
       <DependentUpon>RewardsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Error404.aspx.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Error404.aspx.designer.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
