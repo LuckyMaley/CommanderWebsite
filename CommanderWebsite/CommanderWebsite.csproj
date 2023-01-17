@@ -822,6 +822,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="OffCanvasCart.aspx" />
     <Content Include="OrderSuccess.aspx" />
+    <Content Include="ProductList.aspx" />
     <Content Include="Quickview.aspx" />
     <Content Include="PrivacyCookies.aspx" />
     <Content Include="logo.png" />
@@ -2449,6 +2450,13 @@
     </Compile>
     <Compile Include="OrderSuccess.aspx.designer.cs">
       <DependentUpon>OrderSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Quickview.aspx.cs">
       <DependentUpon>Quickview.aspx</DependentUpon>
