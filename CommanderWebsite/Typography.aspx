@@ -9,12 +9,12 @@
                 <div class="page-header__breadcrumb">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a>
+                            <li class="breadcrumb-item"><a href="\">Home</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
-                            <li class="breadcrumb-item"><a href="">Breadcrumb</a>
+                                    <use xlink:href="Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                            <li class="breadcrumb-item"><a href="#">Breadcrumb</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                                    <use xlink:href="Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
                             <li class="breadcrumb-item active" aria-current="page">Typography</li>
                         </ol>
                     </nav>
@@ -39,7 +39,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
                         <h6>H6 Header Example</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
-                        <hr>
+                        <hr />
                         <h3>Blockquote</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. Vivamus venenatis viverra iaculis.</p>
                         <blockquote>
@@ -47,7 +47,7 @@
                             <p><cite>Adam Taylor</cite></p>
                         </blockquote>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. Vivamus venenatis viverra iaculis.</p>
-                        <hr>
+                        <hr />
                         <h3>Standard List</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. Vivamus venenatis viverra iaculis.</p>
                         <ul>
@@ -67,7 +67,7 @@
                             <li>Vivamus malesuada, mauris in pulvinar ultricies, eros ligula scelerisque mi, a porttitor nulla ligula sed erat.</li>
                         </ol>
                         <h3>Text Styles</h3>
-                        <p>Lorem ipsum <strong>bold text</strong>, consectetur <em>italic text</em>. Donec facilisis <del>line through</del> neque ut purus fermentum, ac <a href="">link</a>. Vivamus venenatis viverra iaculis.</p>
+                        <p>Lorem ipsum <strong>bold text</strong>, consectetur <em>italic text</em>. Donec facilisis <del>line through</del> neque ut purus fermentum, ac <a href="#">link</a>. Vivamus venenatis viverra iaculis.</p>
                     </div>
                 </div>
             </div>

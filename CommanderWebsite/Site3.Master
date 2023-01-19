@@ -1243,7 +1243,7 @@
                         <div class="pswp__top-bar">
                             <div class="pswp__counter"></div>
                             <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                            <button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>
+                            <%--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--%>
                             <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
                             <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
                             <div class="pswp__preloader">
@@ -1272,7 +1272,7 @@
             <script src="Assets/vendor/owl-carousel-2.3.4/owl.carousel.min.js"></script>
             <script src="Assets/vendor/nouislider-14.5.0/nouislider.min.js"></script>
             <script src="Assets/vendor/photoswipe/photoswipe.min.js"></script>
-            <script src="Assets/vendor/photoswipe/photoswipe.min.js"></script>
+            <script src="Assets/vendor/photoswipe/photoswipe-ui-default.min.js"></script>
             <script src="Assets/vendor/Select2/js/select2.min.js"></script>
             <script src="Assets/js/number.js"></script>
             <script src="Assets/js/main.js"></script>

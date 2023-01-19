@@ -7,12 +7,12 @@
                 <div class="page-header__breadcrumb">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a>
+                            <li class="breadcrumb-item"><a href="\">Home</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                                    <use xlink:href="Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
                             <li class="breadcrumb-item"><a href="">Breadcrumb</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                                    <use xlink:href="Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
                             <li class="breadcrumb-item active" aria-current="page">Terms And Conditions</li>
                         </ol>
                     </nav>
@@ -36,7 +36,7 @@
                         </ol>
                         <h2>Ornare dolor</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate. Suspendisse potenti. Pellentesque et molestie ante. In feugiat ante vitae ultricies malesuada.</p>
-                        <p>For information about how to contact us, please visit our <a href="contact-us.html">contact page</a>.</p>
+                        <p>For information about how to contact us, please visit our <a href="Contact.aspx">contact page</a>.</p>
                     </div>
                 </div>
             </div>

@@ -674,6 +674,7 @@
     <Content Include="Assets\vendor\owl-carousel-2.3.4\assets\owl.video.play.png" />
     <Content Include="Assets\vendor\owl-carousel-2.3.4\owl.carousel.min.js" />
     <Content Include="Assets\vendor\photoswipe\default-skin\default-skin.css" />
+    <Content Include="Assets\vendor\photoswipe\default-skin\default-skin.svg" />
     <Content Include="Assets\vendor\photoswipe\photoswipe-ui-default.min.js" />
     <Content Include="Assets\vendor\photoswipe\photoswipe.css" />
     <Content Include="Assets\vendor\photoswipe\photoswipe.min.js" />
