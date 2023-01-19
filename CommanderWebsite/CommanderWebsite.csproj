@@ -568,6 +568,7 @@
     <Content Include="Assets\images\categories\category-5.jpg" />
     <Content Include="Assets\images\categories\category-6.jpg" />
     <Content Include="Assets\images\favicon.png" />
+    <Content Include="Assets\images\finder\finder.jpg" />
     <Content Include="Assets\images\languages\language-1.png" />
     <Content Include="Assets\images\languages\language-2.png" />
     <Content Include="Assets\images\languages\language-3.png" />
