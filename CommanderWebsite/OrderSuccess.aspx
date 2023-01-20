@@ -9,9 +9,9 @@
                 <div class="order-success__body">
                     <div class="order-success__header">
                         <svg class="order-success__icon" width="100" height="100">
-                            <use xlink:href="images/sprite.svg#check-100"></use></svg><h1 class="order-success__title">Thank you</h1>
+                            <use xlink:href="Assets/images/sprite.svg#check-100"></use></svg><h1 class="order-success__title">Thank you</h1>
                         <div class="order-success__subtitle">Your order has been received</div>
-                        <div class="order-success__actions"><a href="" class="btn btn-xs btn-secondary">Go To Homepage</a></div>
+                        <div class="order-success__actions"><a href="\" class="btn btn-xs btn-secondary">Go To Homepage</a></div>
                     </div>
                     <div class="order-success__meta">
                         <ul class="order-success__meta-list">
@@ -34,10 +34,10 @@
                                 <tbody class="order-list__products">
                                     <tr>
                                         <td class="order-list__column-image">
-                                            <div class="product-image"><a href="" class="product-image__body">
-                                                <img class="product-image__img" src="images/products/product-1.jpg" alt=""></a></div>
+                                            <div class="product-image"><a href="Product.aspx" class="product-image__body">
+                                                <img class="product-image__img" src="Assets/images/products/product-1.jpg" alt="" /></a></div>
                                         </td>
-                                        <td class="order-list__column-product"><a href="">Electric Planer Brandix KL370090G 300 Watts</a><div class="order-list__options">
+                                        <td class="order-list__column-product"><a href="Product.aspx">Electric Planer Brandix KL370090G 300 Watts</a><div class="order-list__options">
                                             <ul class="order-list__options-list">
                                                 <li class="order-list__options-item"><span class="order-list__options-label">Color:</span> <span class="order-list__options-value">Yellow</span></li>
                                                 <li class="order-list__options-item"><span class="order-list__options-label">Material:</span> <span class="order-list__options-value">Aluminium</span></li>
@@ -49,19 +49,19 @@
                                     </tr>
                                     <tr>
                                         <td class="order-list__column-image">
-                                            <div class="product-image"><a href="" class="product-image__body">
-                                                <img class="product-image__img" src="images/products/product-2.jpg" alt=""></a></div>
+                                            <div class="product-image"><a href="Product.aspx" class="product-image__body">
+                                                <img class="product-image__img" src="Assets/images/products/product-2.jpg" alt="" /></a></div>
                                         </td>
-                                        <td class="order-list__column-product"><a href="">Undefined Tool IRadix DPS3000SY 2700 watts</a></td>
+                                        <td class="order-list__column-product"><a href="Product.aspx">Undefined Tool IRadix DPS3000SY 2700 watts</a></td>
                                         <td class="order-list__column-quantity" data-title="Qty:">1</td>
                                         <td class="order-list__column-total">$849.00</td>
                                     </tr>
                                     <tr>
                                         <td class="order-list__column-image">
-                                            <div class="product-image"><a href="" class="product-image__body">
-                                                <img class="product-image__img" src="images/products/product-5.jpg" alt=""></a></div>
+                                            <div class="product-image"><a href="Product.aspx" class="product-image__body">
+                                                <img class="product-image__img" src="Assets/images/products/product-5.jpg" alt="" /></a></div>
                                         </td>
-                                        <td class="order-list__column-product"><a href="">Brandix Router Power Tool 2017ERXPK</a><div class="order-list__options">
+                                        <td class="order-list__column-product"><a href="Product.aspx">Brandix Router Power Tool 2017ERXPK</a><div class="order-list__options">
                                             <ul class="order-list__options-list">
                                                 <li class="order-list__options-item"><span class="order-list__options-label">Color:</span> <span class="order-list__options-value">True Red</span></li>
                                             </ul>
@@ -100,8 +100,8 @@
                                 <div class="address-card__body">
                                     <div class="address-card__badge address-card__badge--muted">Shipping Address</div>
                                     <div class="address-card__name">Helena Garcia</div>
-                                    <div class="address-card__row">Random Federation<br>
-                                        115302, Moscow<br>
+                                    <div class="address-card__row">Random Federation<br />
+                                        115302, Moscow<br />
                                         ul. Varshavskaya, 15-2-178</div>
                                     <div class="address-card__row">
                                         <div class="address-card__row-title">Phone Number</div>
@@ -109,7 +109,7 @@
                                     </div>
                                     <div class="address-card__row">
                                         <div class="address-card__row-title">Email Address</div>
-                                        <div class="address-card__row-content">stroyka@example.com</div>
+                                        <div class="address-card__row-content">commander@example.com</div>
                                     </div>
                                 </div>
                             </div>
@@ -119,8 +119,8 @@
                                 <div class="address-card__body">
                                     <div class="address-card__badge address-card__badge--muted">Billing Address</div>
                                     <div class="address-card__name">Helena Garcia</div>
-                                    <div class="address-card__row">Random Federation<br>
-                                        115302, Moscow<br>
+                                    <div class="address-card__row">Random Federation<br />
+                                        115302, Moscow<br />
                                         ul. Varshavskaya, 15-2-178</div>
                                     <div class="address-card__row">
                                         <div class="address-card__row-title">Phone Number</div>
@@ -128,7 +128,7 @@
                                     </div>
                                     <div class="address-card__row">
                                         <div class="address-card__row-title">Email Address</div>
-                                        <div class="address-card__row-content">stroyka@example.com</div>
+                                        <div class="address-card__row-content">commander@example.com</div>
                                     </div>
                                 </div>
                             </div>

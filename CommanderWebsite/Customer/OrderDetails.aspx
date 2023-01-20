@@ -9,12 +9,12 @@
                 <div class="page-header__breadcrumb">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a>
+                            <li class="breadcrumb-item"><a href="\">Home</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
-                            <li class="breadcrumb-item"><a href="">Breadcrumb</a>
+                                    <use xlink:href="../Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                            <li class="breadcrumb-item"><a href="#">Breadcrumb</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                                    <use xlink:href="../Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
                             <li class="breadcrumb-item active" aria-current="page">My Account</li>
                         </ol>
                     </nav>
@@ -31,14 +31,14 @@
                         <div class="account-nav flex-grow-1">
                             <h4 class="account-nav__title">Navigation</h4>
                             <ul>
-                                <li class="account-nav__item"><a href="account-dashboard.html">Dashboard</a></li>
-                                <li class="account-nav__item"><a href="account-profile.html">Edit Profile</a></li>
-                                <li class="account-nav__item"><a href="account-orders.html">Order History</a></li>
-                                <li class="account-nav__item account-nav__item--active"><a href="account-order-details.html">Order Details</a></li>
-                                <li class="account-nav__item"><a href="account-addresses.html">Addresses</a></li>
-                                <li class="account-nav__item"><a href="account-edit-address.html">Edit Address</a></li>
-                                <li class="account-nav__item"><a href="account-password.html">Password</a></li>
-                                <li class="account-nav__item"><a href="account-login.html">Logout</a></li>
+                                <li class="account-nav__item"><a href="DashBoard.aspx">Dashboard</a></li>
+                                <li class="account-nav__item"><a href="EditProfile.aspx">Edit Profile</a></li>
+                                <li class="account-nav__item"><a href="OrderHistory.aspx">Order History</a></li>
+                                <li class="account-nav__item account-nav__item--active"><a href="OrderDetails.aspx">Order Details</a></li>
+                                <li class="account-nav__item"><a href="Address.aspx">Addresses</a></li>
+                                <li class="account-nav__item"><a href="EditAddress.aspx">Edit Address</a></li>
+                                <li class="account-nav__item"><a href="Password.aspx">Password</a></li>
+                                <li class="account-nav__item"><a href="../Account/Login.aspx">Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -103,8 +103,8 @@
                                     <div class="address-card__body">
                                         <div class="address-card__badge address-card__badge--muted">Shipping Address</div>
                                         <div class="address-card__name">Helena Garcia</div>
-                                        <div class="address-card__row">Random Federation<br>
-                                            115302, Moscow<br>
+                                        <div class="address-card__row">Random Federation<br/>
+                                            115302, Moscow<br/>
                                             ul. Varshavskaya, 15-2-178</div>
                                         <div class="address-card__row">
                                             <div class="address-card__row-title">Phone Number</div>
@@ -112,7 +112,7 @@
                                         </div>
                                         <div class="address-card__row">
                                             <div class="address-card__row-title">Email Address</div>
-                                            <div class="address-card__row-content">stroyka@example.com</div>
+                                            <div class="address-card__row-content">commander@example.com</div>
                                         </div>
                                     </div>
                                 </div>
@@ -122,8 +122,8 @@
                                     <div class="address-card__body">
                                         <div class="address-card__badge address-card__badge--muted">Billing Address</div>
                                         <div class="address-card__name">Helena Garcia</div>
-                                        <div class="address-card__row">Random Federation<br>
-                                            115302, Moscow<br>
+                                        <div class="address-card__row">Random Federation<br/>
+                                            115302, Moscow<br/>
                                             ul. Varshavskaya, 15-2-178</div>
                                         <div class="address-card__row">
                                             <div class="address-card__row-title">Phone Number</div>
@@ -131,7 +131,7 @@
                                         </div>
                                         <div class="address-card__row">
                                             <div class="address-card__row-title">Email Address</div>
-                                            <div class="address-card__row-content">stroyka@example.com</div>
+                                            <div class="address-card__row-content">commander@example.com</div>
                                         </div>
                                     </div>
                                 </div>

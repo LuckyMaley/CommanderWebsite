@@ -9,12 +9,12 @@
                 <div class="page-header__breadcrumb">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a>
+                            <li class="breadcrumb-item"><a href="\">Home</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
-                            <li class="breadcrumb-item"><a href="">Breadcrumb</a>
+                                    <use xlink:href="Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                            <li class="breadcrumb-item"><a href="#">Breadcrumb</a>
                                 <svg class="breadcrumb-arrow" width="6px" height="9px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                                    <use xlink:href="Assets/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
                             <li class="breadcrumb-item active" aria-current="page">Compare</li>
                         </ol>
                     </nav>
@@ -31,24 +31,24 @@
                         <tbody>
                             <tr>
                                 <th>Product</th>
-                                <td><a class="compare-table__product-link" href="product.html">
+                                <td><a class="compare-table__product-link" href="Product.aspx">
                                     <div class="compare-table__product-image product-image">
                                         <div class="product-image__body">
-                                            <img class="product-image__img" src="images/products/product-1.jpg" alt=""></div>
+                                            <img class="product-image__img" src="Assets/images/products/product-1.jpg" alt="" /></div>
                                     </div>
                                     <div class="compare-table__product-name">Electric Planer Brandix KL370090G 300 Watts</div>
                                 </a></td>
-                                <td><a class="compare-table__product-link" href="product.html">
+                                <td><a class="compare-table__product-link" href="Product.aspx">
                                     <div class="compare-table__product-image product-image">
                                         <div class="product-image__body">
-                                            <img class="product-image__img" src="images/products/product-2.jpg" alt=""></div>
+                                            <img class="product-image__img" src="Assets/images/products/product-2.jpg" alt="" /></div>
                                     </div>
                                     <div class="compare-table__product-name">Undefined Tool IRadix DPS3000SY 2700 Watts</div>
                                 </a></td>
-                                <td><a class="compare-table__product-link" href="product.html">
+                                <td><a class="compare-table__product-link" href="Product.aspx">
                                     <div class="compare-table__product-image product-image">
                                         <div class="product-image__body">
-                                            <img class="product-image__img" src="images/products/product-3.jpg" alt=""></div>
+                                            <img class="product-image__img" src="Assets/images/products/product-3.jpg" alt="" /></div>
                                     </div>
                                     <div class="compare-table__product-name">Drill Screwdriver Brandix ALX7054 200 Watts</div>
                                 </a></td>
@@ -61,8 +61,8 @@
                                             <div class="rating__body">
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -73,8 +73,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -85,8 +85,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -97,8 +97,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -109,8 +109,8 @@
                                                     </div>
                                                 <svg class="rating__star" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -130,8 +130,8 @@
                                             <div class="rating__body">
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -142,8 +142,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -154,8 +154,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -166,8 +166,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -178,8 +178,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -199,8 +199,8 @@
                                             <div class="rating__body">
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -211,8 +211,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -223,8 +223,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -235,8 +235,8 @@
                                                     </div>
                                                 <svg class="rating__star rating__star--active" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge rating__star--active">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
@@ -247,8 +247,8 @@
                                                     </div>
                                                 <svg class="rating__star" width="13px" height="12px">
                                                     <g class="rating__fill">
-                                                        <use xlink:href="images/sprite.svg#star-normal"></use>
-                                                    </g><g class="rating__stroke"><use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                                        <use xlink:href="Assets/images/sprite.svg#star-normal"></use>
+                                                    </g><g class="rating__stroke"><use xlink:href="Assets/images/sprite.svg#star-normal-stroke"></use>
                                                     </g></svg><div class="rating__star rating__star--only-edge">
                                                         <div class="rating__fill">
                                                             <div class="fake-svg-icon"></div>
