@@ -66,7 +66,7 @@
             <div class="sa-inbox__body">
                 <div class="sa-inbox-toolbar">
                     <label class="sa-inbox-toolbar__checkbox">
-                        <input type="checkbox" class="form-check-input" aria-label="...">Select All</label>
+                        <input type="checkbox" class="form-check-input" aria-label="..." />Select All</label>
                     <button type="button" class="btn btn-sa-muted btn-sa-icon fs-exact-20 sa-inbox-toolbar__menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M1,11V9h18v2H1z M1,3h18v2H1V3z M15,17H1v-2h14V17z"></path></svg></button><div class="flex-grow-1"></div>
@@ -84,7 +84,7 @@
                 <div class="sa-inbox-list">
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -93,13 +93,13 @@
                             </div>
                             Adam Taylor</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">In the 19th century, the growth of modern research.</a></span> – <span class="sa-inbox-list__title">Universities led academic philosophy and other disciplines to professionalize and specialize</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">In the 19th century, the growth of modern research.</a></span> – <span class="sa-inbox-list__title">Universities led academic philosophy and other disciplines to professionalize and specialize</span></div>
                         </div>
                         <div class="sa-inbox-list__date">20 Dec</div>
                     </div>
                     <div class="sa-inbox-list__item sa-inbox-list__item--unread">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -109,7 +109,7 @@
                             Olivia Smith</div>
                         <div class="sa-inbox-list__summary">
                             <div class="sa-inbox-list__badges"><span class="badge badge-sa-primary">Stroyka/HTML</span></div>
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Since then, various areas of investigation.</a></span> – <span class="sa-inbox-list__title">That were traditionally part of philosophy have become separate academic disciplines, such as psychology, sociology, linguistics, and economics.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Since then, various areas of investigation.</a></span> – <span class="sa-inbox-list__title">That were traditionally part of philosophy have become separate academic disciplines, such as psychology, sociology, linguistics, and economics.</span></div>
                         </div>
                         <div class="sa-inbox-list__attachments">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip">
@@ -118,7 +118,7 @@
                     </div>
                     <div class="sa-inbox-list__item sa-inbox-list__item--unread">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -127,13 +127,13 @@
                             </div>
                             Kevin Smith</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Initially the term referred to any body of knowledge.</a></span> – <span class="sa-inbox-list__title">In this sense, philosophy is closely related to religion, mathematics, natural science, education, and politics.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Initially the term referred to any body of knowledge.</a></span> – <span class="sa-inbox-list__title">In this sense, philosophy is closely related to religion, mathematics, natural science, education, and politics.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">12 Nov</div>
                     </div>
                     <div class="sa-inbox-list__item sa-inbox-list__item--starred">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -142,13 +142,13 @@
                             </div>
                             Ethan Young</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">In one general sense, philosophy is associated with wisdom, intellectual culture, and a search for knowledge.</a></span> – <span class="sa-inbox-list__title">In this sense, all cultures and literate societies ask philosophical questions, such as "how are we to live" and "what is the nature of reality."</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">In one general sense, philosophy is associated with wisdom, intellectual culture, and a search for knowledge.</a></span> – <span class="sa-inbox-list__title">In this sense, all cultures and literate societies ask philosophical questions, such as "how are we to live" and "what is the nature of reality."</span></div>
                         </div>
                         <div class="sa-inbox-list__date">21 Oct</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -157,7 +157,7 @@
                             </div>
                             Brian Wood</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">In Against the Logicians the Pyrrhonist philosopher.</a></span> – <span class="sa-inbox-list__title">Sextus Empiricus detailed the variety of ways in which the ancient Greek philosophers had divided philosophy, noting that this three-part division was agreed to by Plato, Aristotle, Xenocrates, and the Stoics.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">In Against the Logicians the Pyrrhonist philosopher.</a></span> – <span class="sa-inbox-list__title">Sextus Empiricus detailed the variety of ways in which the ancient Greek philosophers had divided philosophy, noting that this three-part division was agreed to by Plato, Aristotle, Xenocrates, and the Stoics.</span></div>
                         </div>
                         <div class="sa-inbox-list__attachments">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip">
@@ -166,7 +166,7 @@
                     </div>
                     <div class="sa-inbox-list__item sa-inbox-list__item--starred">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -176,13 +176,13 @@
                             Jessica Moore</div>
                         <div class="sa-inbox-list__summary">
                             <div class="sa-inbox-list__badges"><span class="badge badge-sa-warning">Payout</span><span class="badge badge-sa-info">Important</span></div>
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Medieval philosophy is the period following the fall of the Western Roman Empire.</a></span> – <span class="sa-inbox-list__title">Was dominated by the rise of Christianity and hence reflects Judeo-Christian theological concerns as well as retaining a continuity with Greco-Roman thought.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Medieval philosophy is the period following the fall of the Western Roman Empire.</a></span> – <span class="sa-inbox-list__title">Was dominated by the rise of Christianity and hence reflects Judeo-Christian theological concerns as well as retaining a continuity with Greco-Roman thought.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">30 Sep</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -191,13 +191,13 @@
                             </div>
                             Helena Garcia</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">The regions of the Fertile Crescent, Iran and Arabia are home.</a></span> – <span class="sa-inbox-list__title">To the earliest known philosophical wisdom literature and is today mostly dominated by Islamic culture.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">The regions of the Fertile Crescent, Iran and Arabia are home.</a></span> – <span class="sa-inbox-list__title">To the earliest known philosophical wisdom literature and is today mostly dominated by Islamic culture.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">2 Sep</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -206,13 +206,13 @@
                             </div>
                             Adam Taylor</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Early Wisdom Literature from the Fertile Crescent was a genre.</a></span> – <span class="sa-inbox-list__title">Which sought to instruct people on ethical action, practical living and virtue through stories and proverbs.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Early Wisdom Literature from the Fertile Crescent was a genre.</a></span> – <span class="sa-inbox-list__title">Which sought to instruct people on ethical action, practical living and virtue through stories and proverbs.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">17 Aug</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -221,13 +221,13 @@
                             </div>
                             Charlotte Jones</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Islamic philosophy is the philosophical work originating in the Islamic tradition and is mostly done in Arabic.</a></span> – <span class="sa-inbox-list__title">It draws from the religion of Islam as well as from Greco-Roman philosophy.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Islamic philosophy is the philosophical work originating in the Islamic tradition and is mostly done in Arabic.</a></span> – <span class="sa-inbox-list__title">It draws from the religion of Islam as well as from Greco-Roman philosophy.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">30 Jul</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -237,13 +237,13 @@
                             Isabel Williams</div>
                         <div class="sa-inbox-list__summary">
                             <div class="sa-inbox-list__badges"><span class="badge badge-sa-primary">RedParts/HTML</span></div>
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Many philosophical debates that began in ancient times are still debated today.</a></span> – <span class="sa-inbox-list__title">British philosopher Colin McGinn claims that no philosophical progress has occurred during that interval.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Many philosophical debates that began in ancient times are still debated today.</a></span> – <span class="sa-inbox-list__title">British philosopher Colin McGinn claims that no philosophical progress has occurred during that interval.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">27 Jun</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -252,13 +252,13 @@
                             </div>
                             Helena Garcia</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Metaphysics is the study of the most general features of reality, such as existence, time, objects and their properties.</a></span> – <span class="sa-inbox-list__title">Wholes and their parts, events, processes and causation and the relationship between mind and body.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Metaphysics is the study of the most general features of reality, such as existence, time, objects and their properties.</a></span> – <span class="sa-inbox-list__title">Wholes and their parts, events, processes and causation and the relationship between mind and body.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">13 Jul</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -268,13 +268,13 @@
                             Olivia Smith</div>
                         <div class="sa-inbox-list__summary">
                             <div class="sa-inbox-list__badges"><span class="badge badge-sa-secondary">Feature request</span><span class="badge badge-sa-primary">Stroyka/HTML</span></div>
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">A major point of debate is between realism.</a></span> – <span class="sa-inbox-list__title">Which holds that there are entities that exist independently of their mental perception and idealism, which holds that reality is mentally constructed or otherwise immaterial. Metaphysics deals with the topic of identity.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">A major point of debate is between realism.</a></span> – <span class="sa-inbox-list__title">Which holds that there are entities that exist independently of their mental perception and idealism, which holds that reality is mentally constructed or otherwise immaterial. Metaphysics deals with the topic of identity.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">4 Jul</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -283,13 +283,13 @@
                             </div>
                             Ethan Young</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Logic is the study of reasoning and argument.</a></span> – <span class="sa-inbox-list__title">Deductive reasoning is when, given certain premises, conclusions are unavoidably implied.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Logic is the study of reasoning and argument.</a></span> – <span class="sa-inbox-list__title">Deductive reasoning is when, given certain premises, conclusions are unavoidably implied.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">20 Jun</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -299,13 +299,13 @@
                             Isabel Williams</div>
                         <div class="sa-inbox-list__summary">
                             <div class="sa-inbox-list__badges"><span class="badge badge-sa-danger">Security</span></div>
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Philosophy of language explores the nature, origins, and use of language.</a></span> – <span class="sa-inbox-list__title">Philosophy of mind explores the nature of the mind and its relationship to the body, as typified by disputes between materialism and dualism.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Philosophy of language explores the nature, origins, and use of language.</a></span> – <span class="sa-inbox-list__title">Philosophy of mind explores the nature of the mind and its relationship to the body, as typified by disputes between materialism and dualism.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">5 May</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -314,13 +314,13 @@
                             </div>
                             Brian Wood</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">The philosophy of science explores the foundations, methods, history, implications and purpose of science.</a></span> – <span class="sa-inbox-list__title">Many of its subdivisions correspond to specific branches of science.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">The philosophy of science explores the foundations, methods, history, implications and purpose of science.</a></span> – <span class="sa-inbox-list__title">Many of its subdivisions correspond to specific branches of science.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">4 May</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -329,13 +329,13 @@
                             </div>
                             Ryan Ford</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Political philosophy is the study of government and the relationship of individuals (or families and clans) to communities including the state.</a></span> – <span class="sa-inbox-list__title">It includes questions about justice, law, property and the rights and obligations of the citizen.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Political philosophy is the study of government and the relationship of individuals (or families and clans) to communities including the state.</a></span> – <span class="sa-inbox-list__title">It includes questions about justice, law, property and the rights and obligations of the citizen.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">30 Apr</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -344,13 +344,13 @@
                             </div>
                             Charlotte Jones</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Issues include the existence of God, the relationship between reason and faith, questions of religious epistemology, the relationship between religion and science.</a></span> – <span class="sa-inbox-list__title">How to interpret religious experiences, questions about the possibility of an afterlife, the problem of religious language and the existence of souls and responses to religious pluralism and diversity.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Issues include the existence of God, the relationship between reason and faith, questions of religious epistemology, the relationship between religion and science.</a></span> – <span class="sa-inbox-list__title">How to interpret religious experiences, questions about the possibility of an afterlife, the problem of religious language and the existence of souls and responses to religious pluralism and diversity.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">16 Apr</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -360,13 +360,13 @@
                             Jessica Moore</div>
                         <div class="sa-inbox-list__summary">
                             <div class="sa-inbox-list__badges"><span class="badge badge-sa-info">Important</span></div>
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Metaphilosophy explores the aims, boundaries and methods of philosophy.</a></span> – <span class="sa-inbox-list__title">It is debated as to whether Metaphilosophy is a subject that comes prior to philosophy or whether it is inherently part of philosophy.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Metaphilosophy explores the aims, boundaries and methods of philosophy.</a></span> – <span class="sa-inbox-list__title">It is debated as to whether Metaphilosophy is a subject that comes prior to philosophy or whether it is inherently part of philosophy.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">12 Mar</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -375,13 +375,13 @@
                             </div>
                             Brian Wood</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Some of those who study philosophy become professional philosophers, typically by working as professors who teach, research and write in academic institutions.</a></span> – <span class="sa-inbox-list__title">However, most students of academic philosophy later contribute to law, journalism, religion, sciences, politics, business, or various arts.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Some of those who study philosophy become professional philosophers, typically by working as professors who teach, research and write in academic institutions.</a></span> – <span class="sa-inbox-list__title">However, most students of academic philosophy later contribute to law, journalism, religion, sciences, politics, business, or various arts.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">22 Feb</div>
                     </div>
                     <div class="sa-inbox-list__item">
                         <label class="sa-inbox-list__checkbox">
-                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..."></label><div class="sa-inbox-list__star">
+                            <input type="checkbox" class="form-check-input m-0 d-block" aria-label="..." /></label><div class="sa-inbox-list__star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
                         <div class="sa-inbox-list__author">
@@ -390,7 +390,7 @@
                             </div>
                             Jacob Lee</div>
                         <div class="sa-inbox-list__summary">
-                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="app-inbox-conversation.html">Recent efforts to avail the general public to the work and relevance of philosophers include the million-dollar Berggruen Prize, first awarded to Charles Taylor in 2016.</a></span> – <span class="sa-inbox-list__title">Some philosophers argue that this professionalization has negatively affected the discipline.</span></div>
+                            <div class="sa-inbox-list__content"><span class="sa-inbox-list__subject"><a href="Conversation.aspx">Recent efforts to avail the general public to the work and relevance of philosophers include the million-dollar Berggruen Prize, first awarded to Charles Taylor in 2016.</a></span> – <span class="sa-inbox-list__title">Some philosophers argue that this professionalization has negatively affected the discipline.</span></div>
                         </div>
                         <div class="sa-inbox-list__date">3 Jan</div>
                     </div>
@@ -406,13 +406,13 @@
                     </div>
                     <div class="modal-body p-5">
                         <div class="mb-4">
-                            <label for="form-compose/email" class="visually-hidden">Email address</label><input type="email" class="form-control" id="form-compose/email" placeholder="stroyka@example.com" readonly=""></div>
+                            <label for="form-compose/email" class="visually-hidden">Email address</label><input type="email" class="form-control" id="form-compose/email" placeholder="commander@example.com" readonly="" /></div>
                         <div class="mb-4 d-flex align-items-center">
-                            <label for="form-compose/to" class="visually-hidden">To</label><input type="email" class="form-control" id="form-compose/to" placeholder="To"><div class="ms-4"><a href="#" class="text-muted fs-exact-13">CC</a></div>
+                            <label for="form-compose/to" class="visually-hidden">To</label><input type="email" class="form-control" id="form-compose/to" placeholder="To" /><div class="ms-4"><a href="#" class="text-muted fs-exact-13">CC</a></div>
                             <div class="ms-4"><a href="#" class="text-muted fs-exact-13">BCC</a></div>
                         </div>
                         <div class="mb-4">
-                            <label for="form-compose/subject" class="visually-hidden">Subject</label><input type="text" class="form-control" id="form-compose/subject" placeholder="Subject"></div>
+                            <label for="form-compose/subject" class="visually-hidden">Subject</label><input type="text" class="form-control" id="form-compose/subject" placeholder="Subject" /></div>
                         <div class="mb-4">
                             <textarea class="sa-quill-control form-control sa-quill-control--ready" rows="8" placeholder="Message"></textarea>
                         </div>

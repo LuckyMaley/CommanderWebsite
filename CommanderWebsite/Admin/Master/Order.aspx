@@ -11,8 +11,8 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="app-orders-list.html">Orders</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="OrdersList.aspx">Orders</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Order #80294</li>
                                 </ol>
                             </nav>
@@ -50,7 +50,7 @@
                                             <tr>
                                                 <td class="min-w-20x">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="images/products/product-2-40x40.jpg" class="me-4" width="40" height="40" alt=""><a href="app-product.html" class="text-reset">Brandix Brake Kit BDX-750Z370-S</a></div>
+                                                        <img src="../../Assets/adminOld/images/products/product-2-40x40.jpg" class="me-4" width="40" height="40" alt="" /><a href="Product.aspx" class="text-reset">Brandix Brake Kit BDX-750Z370-S</a></div>
                                                 </td>
                                                 <td class="text-end">
                                                     <div class="sa-price"><span class="sa-price__symbol">$</span><span class="sa-price__integer">849</span><span class="sa-price__decimal">.00</span></div>
@@ -63,7 +63,7 @@
                                             <tr>
                                                 <td class="min-w-20x">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="images/products/product-7-40x40.jpg" class="me-4" width="40" height="40" alt=""><a href="app-product.html" class="text-reset">Glossy Gray 19" Aluminium Wheel AR-19</a></div>
+                                                        <img src="../../Assets/adminOld/images/products/product-7-40x40.jpg" class="me-4" width="40" height="40" alt="" /><a href="Product.aspx" class="text-reset">Glossy Gray 19" Aluminium Wheel AR-19</a></div>
                                                 </td>
                                                 <td class="text-end">
                                                     <div class="sa-price"><span class="sa-price__symbol">$</span><span class="sa-price__integer">699</span><span class="sa-price__decimal">.00</span></div>
@@ -76,7 +76,7 @@
                                             <tr>
                                                 <td class="min-w-20x">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="images/products/product-16-40x40.jpg" class="me-4" width="40" height="40" alt=""><a href="app-product.html" class="text-reset">Twin Exhaust Pipe From Brandix Z54</a></div>
+                                                        <img src="../../Assets/adminOld/images/products/product-16-40x40.jpg" class="me-4" width="40" height="40" alt="" /><a href="Product.aspx" class="text-reset">Twin Exhaust Pipe From Brandix Z54</a></div>
                                                 </td>
                                                 <td class="text-end">
                                                     <div class="sa-price"><span class="sa-price__symbol">$</span><span class="sa-price__integer">1,210</span><span class="sa-price__decimal">.00</span></div>
@@ -206,7 +206,7 @@
                                     <a href="#" class="fs-exact-14">Edit</a></div>
                                 <div class="card-body d-flex align-items-center pt-4">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--lg">
-                                        <img src="images/customers/customer-1-40x40.jpg" width="40" height="40" alt=""></div>
+                                        <img src="../../Assets/adminOld/images/customers/customer-1-40x40.jpg" width="40" height="40" alt="" /></div>
                                     <div class="ms-3 ps-2">
                                         <div class="fs-exact-14 fw-medium">Jessica Moore</div>
                                         <div class="fs-exact-13 text-muted">This is a first order</div>
@@ -227,18 +227,18 @@
                                 <div class="card-body d-flex align-items-center justify-content-between pb-0 pt-4">
                                     <h2 class="fs-exact-16 mb-0">Shipping Address</h2>
                                     <a href="#" class="fs-exact-14">Edit</a></div>
-                                <div class="card-body pt-4 fs-exact-14">Jessica Moore<br>
-                                    Random Federation<br>
-                                    115302, Moscow<br>
+                                <div class="card-body pt-4 fs-exact-14">Jessica Moore<br/>
+                                    Random Federation<br/>
+                                    115302, Moscow<br/>
                                     ul. Varshavskaya, 15-2-178</div>
                             </div>
                             <div class="card mt-5">
                                 <div class="card-body d-flex align-items-center justify-content-between pb-0 pt-4">
                                     <h2 class="fs-exact-16 mb-0">Billing Address</h2>
                                     <a href="#" class="fs-exact-14">Edit</a></div>
-                                <div class="card-body pt-4 fs-exact-14">Jessica Moore<br>
-                                    Random Federation<br>
-                                    115302, Moscow<br>
+                                <div class="card-body pt-4 fs-exact-14">Jessica Moore<br/>
+                                    Random Federation<br/>
+                                    115302, Moscow<br/>
                                     ul. Varshavskaya, 15-2-178</div>
                             </div>
                         </div>

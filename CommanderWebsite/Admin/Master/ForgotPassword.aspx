@@ -512,7 +512,7 @@
                         <label class="form-label">Email Address</label><input type="email" class="form-control form-control-lg"></div>
                     <div>
                         <button type="submit" class="btn btn-primary btn-lg w-100">Reset Password</button></div>
-                    <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Remember your password? <a href="auth-sign-in.html">Sign in</a></div>
+                    <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Remember your password? <a href="../../Account/Login.aspx">Sign in</a></div>
                 </div>
             </div>
         </div>

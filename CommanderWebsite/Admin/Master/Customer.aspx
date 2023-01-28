@@ -11,8 +11,8 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="app-customers-list.html">Customers</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="CustomersList.aspx">Customers</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Jessica Moore</li>
                                 </ol>
                             </nav>
@@ -28,7 +28,7 @@
                                 <div class="card-body d-flex flex-column align-items-center">
                                     <div class="pt-3">
                                         <div class="sa-symbol sa-symbol--shape--circle" style="--sa-symbol--size: 6rem">
-                                            <img src="images/customers/customer-1-96x96.jpg" width="96" height="96" alt=""></div>
+                                            <img src="../../Assets/adminOld/images/customers/customer-1-96x96.jpg" width="96" height="96" alt="" /></div>
                                     </div>
                                     <div class="text-center mt-4">
                                         <div class="fs-exact-16 fw-medium">Jessica Moore</div>
@@ -41,7 +41,7 @@
                                     <div class="w-100">
                                         <dl class="list-unstyled m-0">
                                             <dt class="fs-exact-14 fw-medium">Last Order</dt>
-                                            <dd class="fs-exact-13 text-muted mb-0 mt-1">7 days ago – <a href="app-order.html">#80294</a></dd>
+                                            <dd class="fs-exact-13 text-muted mb-0 mt-1">7 days ago – <a href="Order.aspx">#80294</a></dd>
                                         </dl>
                                         <dl class="list-unstyled m-0 mt-4">
                                             <dt class="fs-exact-14 fw-medium">Average Order Value</dt>
@@ -74,28 +74,28 @@
                                     <table class="sa-table text-nowrap">
                                         <tbody>
                                             <tr>
-                                                <td><a href="app-order.html">#80294</a></td>
+                                                <td><a href="Order.aspx">#80294</a></td>
                                                 <td>Today at 6:10 pm</td>
                                                 <td>Pending</td>
                                                 <td>4 items</td>
                                                 <td>$320.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html">#63736</a></td>
+                                                <td><a href="Order.aspx">#63736</a></td>
                                                 <td>May 15, 2019</td>
                                                 <td>Completed</td>
                                                 <td>7 items</td>
                                                 <td>$2,574.31</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html">#63501</a></td>
+                                                <td><a href="Order.aspx">#63501</a></td>
                                                 <td>January 7, 2019</td>
                                                 <td>Completed</td>
                                                 <td>1 items</td>
                                                 <td>$34.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html">#40278</a></td>
+                                                <td><a href="Order.aspx">#40278</a></td>
                                                 <td>October 19, 2018</td>
                                                 <td>Completed</td>
                                                 <td>2 items</td>
@@ -105,7 +105,7 @@
                                     </table>
                                 </div>
                                 <div class="sa-divider"></div>
-                                <div class="px-5 py-4 text-center"><a href="app-orders-list.html">View all 7 orders</a></div>
+                                <div class="px-5 py-4 text-center"><a href="OrdersList.aspx">View all 7 orders</a></div>
                             </div>
                             <div class="card mt-5">
                                 <div class="card-body px-5 py-4 d-flex align-items-center justify-content-between">
@@ -128,7 +128,7 @@
                                                         <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                         <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                     </ul>
@@ -151,7 +151,7 @@
                                                         <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                         <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                     </ul>

@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Components</li>
                             <li class="breadcrumb-item active" aria-current="page">Tooltips</li>
                         </ol>

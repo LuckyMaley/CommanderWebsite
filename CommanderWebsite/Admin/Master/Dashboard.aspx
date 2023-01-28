@@ -29,7 +29,7 @@
                                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                                         <li><a class="dropdown-item" href="#">Move</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                     </ul>
@@ -60,7 +60,7 @@
                                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                                         <li><a class="dropdown-item" href="#">Move</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                     </ul>
@@ -91,7 +91,7 @@
                                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                                         <li><a class="dropdown-item" href="#">Move</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                     </ul>
@@ -122,7 +122,7 @@
                                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                                         <li><a class="dropdown-item" href="#">Move</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                     </ul>
@@ -184,7 +184,7 @@
                                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                                         <li><a class="dropdown-item" href="#">Move</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                     </ul>
@@ -210,7 +210,7 @@
                                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                                         <li><a class="dropdown-item" href="#">Move</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                     </ul>
@@ -231,152 +231,152 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00745</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00745</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-primary">Pending</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/IT.png" class="sa-language-icon d-block" alt="" title="Italy"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/IT.png" class="sa-language-icon d-block" alt="" title="Italy" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">GB</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Giordano Bruno</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Giordano Bruno</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-11-02</td>
                                                 <td>$2,742.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00513</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00513</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-warning">Hold</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/DE.png" class="sa-language-icon d-block" alt="" title="Germany"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/DE.png" class="sa-language-icon d-block" alt="" title="Germany" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">HW</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Hans Weber</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Hans Weber</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-09-05</td>
                                                 <td>$204.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00507</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00507</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-primary">Pending</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/IT.png" class="sa-language-icon d-block" alt="" title="Italy"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/IT.png" class="sa-language-icon d-block" alt="" title="Italy" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">AR</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Andrea Rossi</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Andrea Rossi</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-08-21</td>
                                                 <td>$5,039.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00104</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00104</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-danger">Canceled</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/US.png" class="sa-language-icon d-block" alt="" title="USA"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/US.png" class="sa-language-icon d-block" alt="" title="USA" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">RF</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Richard Feynman</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Richard Feynman</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-06-22</td>
                                                 <td>$79.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00097</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00097</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-success">Completed</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/CO.png" class="sa-language-icon d-block" alt="" title="Columbia"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/CO.png" class="sa-language-icon d-block" alt="" title="Columbia" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">LG</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Leonardo Garcia</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Leonardo Garcia</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-05-09</td>
                                                 <td>$826.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00082</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00082</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-success">Completed</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/RS.png" class="sa-language-icon d-block" alt="" title="Srbija"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/RS.png" class="sa-language-icon d-block" alt="" title="Srbija" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">NT</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Nikola Tesla</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Nikola Tesla</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-04-27</td>
                                                 <td>$1,052.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00063</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00063</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-primary">Pending</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/FR.png" class="sa-language-icon d-block" alt="" title="France"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/FR.png" class="sa-language-icon d-block" alt="" title="France" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">MC</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Marie Curie</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Marie Curie</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-02-09</td>
                                                 <td>$441.00</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00012</a></td>
+                                                <td><a href="Order.aspx" class="text-reset">#00012</a></td>
                                                 <td>
                                                     <div class="d-flex fs-6">
                                                         <div class="badge badge-sa-success">Completed</div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <img src="vendor/flag-icons/24/RU.png" class="sa-language-icon d-block" alt="" title="Russia"></td>
+                                                    <img src="../../Assets/adminOld/vendor/flag-icons/24/RU.png" class="sa-language-icon d-block" alt="" title="Russia" /></td>
                                                 <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
                                                         <div class="sa-symbol__text">KT</div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Konstantin Tsiolkovsky</a></div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Konstantin Tsiolkovsky</a></div>
                                                     </div>
                                                 </td>
                                                 <td>2020-01-01</td>
@@ -399,7 +399,7 @@
                                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                                         <li><a class="dropdown-item" href="#">Move</a></li>
                                                         <li>
-                                                            <hr class="dropdown-divider">
+                                                            <hr class="dropdown-divider" />
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                     </ul>
@@ -499,7 +499,7 @@
                                                             <li><a class="dropdown-item" href="#">Settings</a></li>
                                                             <li><a class="dropdown-item" href="#">Move</a></li>
                                                             <li>
-                                                                <hr class="dropdown-divider">
+                                                                <hr class="dropdown-divider" />
                                                             </li>
                                                             <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                         </ul>
@@ -542,7 +542,7 @@
                                                             <li><a class="dropdown-item" href="#">Settings</a></li>
                                                             <li><a class="dropdown-item" href="#">Move</a></li>
                                                             <li>
-                                                                <hr class="dropdown-divider">
+                                                                <hr class="dropdown-divider" />
                                                             </li>
                                                             <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
                                                         </ul>
@@ -554,7 +554,7 @@
                                     <li class="list-group-item py-2">
                                         <div class="d-flex align-items-center py-3"><a href="app-product.html" class="me-4">
                                             <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                <img src="images/products/product-1-40x40.jpg" width="40" height="40" alt=""></div>
+                                                <img src="../../Assets/adminOld/images/products/product-1-40x40.jpg" width="40" height="40" alt="" /></div>
                                         </a>
                                             <div class="d-flex align-items-center flex-grow-1 flex-wrap">
                                                 <div class="col"><a href="app-product.html" class="text-reset fs-exact-14">Wiper Blades Brandix WL2</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Ryan Ford</a></div>
@@ -568,12 +568,12 @@
                                         </div>
                                     </li>
                                     <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html" class="me-4">
+                                        <div class="d-flex align-items-center py-3"><a href="Product.aspx" class="me-4">
                                             <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                <img src="images/products/product-7-40x40.jpg" width="40" height="40" alt=""></div>
+                                                <img src="../../Assets/adminOld/images/products/product-7-40x40.jpg" width="40" height="40" alt="" /></div>
                                         </a>
                                             <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html" class="text-reset fs-exact-14">Electric Planer Brandix KL370090G 300 Watts</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Adam Taylor</a></div>
+                                                <div class="col"><a href="Product.aspx" class="text-reset fs-exact-14">Electric Planer Brandix KL370090G 300 Watts</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Adam Taylor</a></div>
                                                 </div>
                                                 <div class="col-12 col-sm-auto">
                                                     <div class="sa-rating ms-sm-3 my-2 my-sm-0" style="--sa-rating--value: 0.8">
@@ -584,12 +584,12 @@
                                         </div>
                                     </li>
                                     <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html" class="me-4">
+                                        <div class="d-flex align-items-center py-3"><a href="Product.aspx" class="me-4">
                                             <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                <img src="images/products/product-10-40x40.jpg" width="40" height="40" alt=""></div>
+                                                <img src="../../Assets/adminOld/images/products/product-10-40x40.jpg" width="40" height="40" alt="" /></div>
                                         </a>
                                             <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html" class="text-reset fs-exact-14">Water Tap</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Jessica Moore</a></div>
+                                                <div class="col"><a href="Product.aspx" class="text-reset fs-exact-14">Water Tap</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Jessica Moore</a></div>
                                                 </div>
                                                 <div class="col-12 col-sm-auto">
                                                     <div class="sa-rating ms-sm-3 my-2 my-sm-0" style="--sa-rating--value: 0.4">
@@ -600,12 +600,12 @@
                                         </div>
                                     </li>
                                     <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html" class="me-4">
+                                        <div class="d-flex align-items-center py-3"><a href="Product.aspx" class="me-4">
                                             <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                <img src="images/products/product-5-40x40.jpg" width="40" height="40" alt=""></div>
+                                                <img src="../../Assets/adminOld/images/products/product-5-40x40.jpg" width="40" height="40" alt="" /></div>
                                         </a>
                                             <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html" class="text-reset fs-exact-14">Brandix Router Power Tool 2017ERXPK</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Helena Garcia</a></div>
+                                                <div class="col"><a href="Product.aspx" class="text-reset fs-exact-14">Brandix Router Power Tool 2017ERXPK</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Helena Garcia</a></div>
                                                 </div>
                                                 <div class="col-12 col-sm-auto">
                                                     <div class="sa-rating ms-sm-3 my-2 my-sm-0" style="--sa-rating--value: 0.6">
@@ -616,12 +616,12 @@
                                         </div>
                                     </li>
                                     <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html" class="me-4">
+                                        <div class="d-flex align-items-center py-3"><a href="Product.aspx" class="me-4">
                                             <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                <img src="images/products/product-2-40x40.jpg" width="40" height="40" alt=""></div>
+                                                <img src="../../Assets/adminOld/images/products/product-2-40x40.jpg" width="40" height="40" alt="" /></div>
                                         </a>
                                             <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html" class="text-reset fs-exact-14">Undefined Tool IRadix DPS3000SY 2700 Watts</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Ryan Ford</a></div>
+                                                <div class="col"><a href="Product.aspx" class="text-reset fs-exact-14">Undefined Tool IRadix DPS3000SY 2700 Watts</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Ryan Ford</a></div>
                                                 </div>
                                                 <div class="col-12 col-sm-auto">
                                                     <div class="sa-rating ms-sm-3 my-2 my-sm-0" style="--sa-rating--value: 1">
@@ -632,12 +632,12 @@
                                         </div>
                                     </li>
                                     <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html" class="me-4">
+                                        <div class="d-flex align-items-center py-3"><a href="Product.aspx" class="me-4">
                                             <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                <img src="images/products/product-16-40x40.jpg" width="40" height="40" alt=""></div>
+                                                <img src="../../Assets/adminOld/images/products/product-16-40x40.jpg" width="40" height="40" alt="" /></div>
                                         </a>
                                             <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html" class="text-reset fs-exact-14">Brandix Screwdriver SCREW150</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Charlotte Jones</a></div>
+                                                <div class="col"><a href="Product.aspx" class="text-reset fs-exact-14">Brandix Screwdriver SCREW150</a><div class="text-muted fs-exact-13">Reviewed by <a href="app-customer.html" class="text-reset">Charlotte Jones</a></div>
                                                 </div>
                                                 <div class="col-12 col-sm-auto">
                                                     <div class="sa-rating ms-sm-3 my-2 my-sm-0" style="--sa-rating--value: 0.8">

@@ -9,8 +9,8 @@
                 <div class="sa-invoice__header">
                     <div class="sa-invoice__meta">
                         <div class="sa-invoice__title">Invoice SA-0747</div>
-                        <div class="sa-invoice__meta-items"><span>Issue date:</span> Oct 19, 2020<br>
-                            <span>Due date:</span> Nov 19, 2020<br>
+                        <div class="sa-invoice__meta-items"><span>Issue date:</span> Oct 19, 2020<br/>
+                            <span>Due date:</span> Nov 19, 2020<br/>
                         </div>
                     </div>
                     <div class="sa-invoice__logo">
@@ -67,9 +67,9 @@
                     </div>
                     <div class="sa-invoice__side">
                         <div class="sa-invoice__side-title">Invoice From</div>
-                        <div class="sa-invoice__side-name">Stroyka Ltd.</div>
+                        <div class="sa-invoice__side-name">Commander Group (Pty) Ltd.</div>
                         <div class="sa-invoice__side-meta">715 Fake Street, New York 10021 USA<br>
-                            +0 800 306-8265, stroyka@example.com</div>
+                            +0 800 306-8265, commander@example.com</div>
                     </div>
                 </div>
                 <div class="sa-invoice__table-container">

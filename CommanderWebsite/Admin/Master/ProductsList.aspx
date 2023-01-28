@@ -10,13 +10,13 @@
                     <div class="col">
                         <nav class="mb-2" aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-sa-simple">
-                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Products</li>
                             </ol>
                         </nav>
                         <h1 class="h3 m-0">Products</h1>
                     </div>
-                    <div class="col-auto d-flex"><a href="#" class="btn btn-secondary me-3">Import</a><a href="app-product.html" class="btn btn-primary">New product</a></div>
+                    <div class="col-auto d-flex"><a href="#" class="btn btn-secondary me-3">Import</a><a href="Product.aspx" class="btn btn-primary">New product</a></div>
                 </div>
             </div>
         </div>
@@ -47,19 +47,19 @@
                                     <ul class="list-unstyled m-0 mt-n2">
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="">Power tools</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="" />Power tools</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16">Hand tools</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" />Hand tools</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="">Machine tools</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="" />Machine tools</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16">Power machinery</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" />Power machinery</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16">Measurement</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" />Measurement</label></li>
                                     </ul>
                                 </div>
                             </li>
@@ -69,13 +69,13 @@
                                     <ul class="list-unstyled m-0 mt-n2">
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="radio" class="form-check-input m-0 me-3 fs-exact-16" name="filter-product_type" checked="">Simple</label></li>
+                                                <input type="radio" class="form-check-input m-0 me-3 fs-exact-16" name="filter-product_type" checked="" />Simple</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="radio" class="form-check-input m-0 me-3 fs-exact-16" name="filter-product_type">Variable</label></li>
+                                                <input type="radio" class="form-check-input m-0 me-3 fs-exact-16" name="filter-product_type" />Variable</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="radio" class="form-check-input m-0 me-3 fs-exact-16" name="filter-product_type">Digital</label></li>
+                                                <input type="radio" class="form-check-input m-0 me-3 fs-exact-16" name="filter-product_type" />Digital</label></li>
                                     </ul>
                                 </div>
                             </li>
@@ -85,22 +85,22 @@
                                     <ul class="list-unstyled m-0 mt-n2">
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16">Brandix</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" />Brandix</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="">FastWheels</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="" />FastWheels</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="">FuelCorp</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" checked="" />FuelCorp</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16">RedGate</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" />RedGate</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16">Specter</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" />Specter</label></li>
                                         <li>
                                             <label class="d-flex align-items-center pt-2">
-                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16">TurboElectric</label></li>
+                                                <input type="checkbox" class="form-check-input m-0 me-3 fs-exact-16" />TurboElectric</label></li>
                                     </ul>
                                 </div>
                             </li>
@@ -138,13 +138,13 @@
                                         <tbody>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-12-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-12-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Ash's Chainsaw 3.5kW</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Ash's Chainsaw 3.5kW</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">1022</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">AC6660KW</span></li>
@@ -153,7 +153,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Power Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Power Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-danger">Out of Stock</div>
                                                 </td>
@@ -170,7 +170,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -179,13 +179,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-14-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-14-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Brandix Air Compressor DELTA500</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Brandix Air Compressor DELTA500</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">4402</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">DELTA500</span></li>
@@ -194,7 +194,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Compressors</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Compressors</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">7 In Stock</div>
                                                 </td>
@@ -211,7 +211,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -220,13 +220,13 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-13-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-13-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Brandix Angle Grinder KZX389PQ</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Brandix Angle Grinder KZX389PQ</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">7203</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">KZX389PQ</span></li>
@@ -235,7 +235,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Power Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Power Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">2 In Stock</div>
                                                 </td>
@@ -252,7 +252,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -261,13 +261,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-6-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-6-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Brandix Drilling Machine DM2019KW 4kW</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Brandix Drilling Machine DM2019KW 4kW</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">4402</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">DM2019KW</span></li>
@@ -276,7 +276,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Drills</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Drills</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-warning">On Backorder</div>
                                                 </td>
@@ -293,7 +293,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -302,13 +302,13 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-15-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-15-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Brandix Electric Jigsaw JIG7000B</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Brandix Electric Jigsaw JIG7000B</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">5221</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">JIG7000B</span></li>
@@ -317,7 +317,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Power Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Power Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">1 In Stock</div>
                                                 </td>
@@ -334,7 +334,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -343,11 +343,11 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-7-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-7-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
                                                         <div><a href="app-product.html" class="text-reset">Brandix Pliers</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
@@ -358,7 +358,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Hand Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Hand Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">8 In Stock</div>
                                                 </td>
@@ -375,7 +375,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -384,13 +384,13 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-5-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-5-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Brandix Router Power Tool 2017ERX9</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Brandix Router Power Tool 2017ERX9</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">3326</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">2017ERX9</span></li>
@@ -399,7 +399,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Routers</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Routers</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-primary">Preorder</div>
                                                 </td>
@@ -416,7 +416,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -425,13 +425,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-16-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-16-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Brandix Screwdriver SCREW150</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Brandix Screwdriver SCREW150</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">7321</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">SCREW150</span></li>
@@ -440,7 +440,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Power Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Power Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">18 In Stock</div>
                                                 </td>
@@ -457,7 +457,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -466,13 +466,13 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-3-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-3-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Drill Screwdriver Brandix ALX7054B 200 Watts</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Drill Screwdriver Brandix ALX7054B 200 Watts</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">8821</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">ALX7054B</span></li>
@@ -481,7 +481,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Screwdrivers</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Screwdrivers</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">3 In Stock</div>
                                                 </td>
@@ -498,7 +498,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -507,13 +507,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-4-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-4-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Drill Series 3 Brandix KSR4590P 1500 Watts</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Drill Series 3 Brandix KSR4590P 1500 Watts</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">5312</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">KSR4590P</span></li>
@@ -522,7 +522,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Drills</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Drills</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">7 In Stock</div>
                                                 </td>
@@ -539,7 +539,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -548,13 +548,13 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-1-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-1-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Electric Planer Brandix KL370090 300 Watts</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Electric Planer Brandix KL370090 300 Watts</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">2043</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">KL370090</span></li>
@@ -563,7 +563,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Planers</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Planers</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">25 In Stock</div>
                                                 </td>
@@ -580,7 +580,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -589,13 +589,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-11-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-11-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Hand Tool Kit</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Hand Tool Kit</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">1302</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">HT75002K</span></li>
@@ -604,7 +604,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Hand Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Hand Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">9 In Stock</div>
                                                 </td>
@@ -621,7 +621,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -630,13 +630,13 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-9-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-9-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Spanner Wrench</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Spanner Wrench</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">4955</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">SP0072WR</span></li>
@@ -645,7 +645,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Hand Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Hand Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">15 In Stock</div>
                                                 </td>
@@ -662,7 +662,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -671,13 +671,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-2-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-2-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Undefined Tool IRadix DPS300SY 2700 Watts</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Undefined Tool IRadix DPS300SY 2700 Watts</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">1746</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">DPS300SY</span></li>
@@ -686,7 +686,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Power Tools</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Power Tools</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-danger">Out of Stock</div>
                                                 </td>
@@ -703,7 +703,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -712,13 +712,13 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-8-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-8-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Water Hose 40cm</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Water Hose 40cm</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">2002</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">WATER40C</span></li>
@@ -727,7 +727,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Plumbing</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Plumbing</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-primary">Preorder</div>
                                                 </td>
@@ -744,7 +744,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -753,13 +753,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-product.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Product.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/products/product-10-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/products/product-10-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-product.html" class="text-reset">Water Tap</a><div class="sa-meta mt-0">
+                                                        <div><a href="Product.aspx" class="text-reset">Water Tap</a><div class="sa-meta mt-0">
                                                             <ul class="sa-meta__list">
                                                                 <li class="sa-meta__item">ID: <span title="Click to copy product ID" class="st-copy">6428</span></li>
                                                                 <li class="sa-meta__item">SKU: <span title="Click to copy product SKU" class="st-copy">TAP883WT</span></li>
@@ -768,7 +768,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-category.html" class="text-reset">Plumbing</a></td>
+                                                <td><a href="Category.aspx" class="text-reset">Plumbing</a></td>
                                                 <td>
                                                     <div class="badge badge-sa-success">24 In Stock</div>
                                                 </td>
@@ -785,7 +785,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>

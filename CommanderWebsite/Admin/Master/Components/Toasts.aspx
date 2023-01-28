@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Components</li>
                             <li class="breadcrumb-item active" aria-current="page">Toasts</li>
                         </ol>
@@ -43,7 +43,16 @@
                     <p>Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your "toasted" content and strongly encourage a dismiss button.</p>
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
-                        <div class="sa-example__body"></div>
+                        <div class="sa-example__body">
+                            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
+                                    <small class="text-muted">11 mins ago</small>
+                                    <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">Hello, world! This is a toast message.</div>
+                            </div>
+                        </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-1" aria-expanded="false" aria-controls="example-1">Source Code</button><div class="sa-example__code collapse" id="example-1">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast fade show"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-live</span>=<span class="hljs-string">"assertive"</span> <span class="hljs-attr">aria-atomic</span>=<span class="hljs-string">"true"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast-header"</span>&gt;</span>
@@ -70,7 +79,7 @@
                         <div class="sa-example__body">
                             <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button><div class="toast fade hide" data-bs-autohide="false" role="alert" aria-live="assertive" aria-atomic="true" id="liveToast">
                                 <div class="toast-header">
-                                    <img src="images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt=""><div class="me-auto fw-medium">Bootstrap</div>
+                                    <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
                                     <small class="text-muted">11 mins ago</small>
                                     <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                 </div>
@@ -112,7 +121,7 @@
                             <div class="toast-container">
                                 <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
-                                        <img src="images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt=""><div class="me-auto fw-medium">Bootstrap</div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
                                         <small class="text-muted">11 mins ago</small>
                                         <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
@@ -120,7 +129,7 @@
                                 </div>
                                 <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
-                                        <img src="images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt=""><div class="me-auto fw-medium">Bootstrap</div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
                                         <small class="text-muted">11 mins ago</small>
                                         <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
@@ -199,7 +208,16 @@
                     <p>Alternatively, you can also add additional controls and components to toasts.</p>
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
-                        <div class="sa-example__body"></div>
+                        <div class="sa-example__body">
+                            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-body">
+                                    <div class="pb-2">Hello, world! This is a toast message.</div>
+                                    <div class="mt-3 pt-4 border-top">
+                                        <button type="button" class="btn btn-primary btn-sm">Take action</button>
+                                        <button type="button" class="btn btn-secondary btn-sm ms-3" data-bs-dismiss="toast">Close</button></div>
+                                </div>
+                            </div>
+                        </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-5" aria-expanded="false" aria-controls="example-5">Source Code</button><div class="sa-example__code collapse" id="example-5">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast fade show"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-live</span>=<span class="hljs-string">"assertive"</span> <span class="hljs-attr">aria-atomic</span>=<span class="hljs-string">"true"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast-body"</span>&gt;</span>
@@ -228,7 +246,7 @@
                             <div class="toast-container">
                                 <div class="toast toast-sa-success fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
-                                        <img src="images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt=""><div class="me-auto fw-medium">Bootstrap</div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
                                         <small>11 mins ago</small>
                                         <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
@@ -236,7 +254,31 @@
                                 </div>
                                 <div class="toast toast-sa-danger fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
-                                        <img src="images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt=""><div class="me-auto fw-medium">Bootstrap</div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                                </div>
+                                <div class="toast toast-sa-warning fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                                </div>
+                                <div class="toast toast-sa-info fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                                </div>
+                                <div class="toast toast-sa-primary fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
                                         <small>11 mins ago</small>
                                         <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
@@ -244,7 +286,7 @@
                                 </div>
                                 <div class="toast toast-sa-secondary fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
-                                        <img src="images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt=""><div class="me-auto fw-medium">Bootstrap</div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
                                         <small>11 mins ago</small>
                                         <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
@@ -252,7 +294,15 @@
                                 </div>
                                 <div class="toast toast-sa-light fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
-                                        <img src="images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt=""><div class="me-auto fw-medium">Bootstrap</div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                                </div>
+                                <div class="toast toast-sa-dark fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
                                         <small>11 mins ago</small>
                                         <button type="button" class="sa-close mt-n2 mb-n2 me-n3 ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
@@ -424,7 +474,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <form>
+                            <div>
                                 <div class="mb-4">
                                     <label for="selectToastPlacement">Toast placement</label><select class="form-select mt-3" id="selectToastPlacement"><option value="" selected="">Select a position...</option>
                                         <option value="top-0 start-0">Top left</option>
@@ -437,12 +487,19 @@
                                         <option value="bottom-0 start-50 translate-middle-x">Bottom center</option>
                                         <option value="bottom-0 end-0">Bottom right</option>
                                     </select></div>
-                            </form>
+                            </div>
                             <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative rounded-1 h-20x">
-                                <div class="toast-container position-absolute p-4 bottom-0 end-0" id="toastPlacement" data-previous-class="bottom-0 end-0"></div>
+                                <div class="toast-container position-absolute p-4" id="toastPlacement">
+                                    <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                        <div class="toast-header">
+                                            <img src="../../../Assets/adminOld/images/customers/customer-4-20x20.jpg" class="rounded me-3" width="20" height="20" alt="" /><div class="me-auto fw-medium">Bootstrap</div>
+                                            <small class="text-muted">11 mins ago</small></div>
+                                        <div class="toast-body">Hello, world! This is a toast message.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-7" aria-expanded="false" aria-controls="example-7">Source Code</button><div class="sa-example__code collapse" id="example-7" style="">
+                        <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-7" aria-expanded="false" aria-controls="example-7">Source Code</button><div class="sa-example__code collapse" id="example-7">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-4"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"selectToastPlacement"</span>&gt;</span>Toast placement&lt;/label

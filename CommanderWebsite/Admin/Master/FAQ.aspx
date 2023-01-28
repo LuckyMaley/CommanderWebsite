@@ -9,10 +9,10 @@
                 <div class="sa-hero-header__title">
                     <h1>Frequently Asked Questions</h1>
                 </div>
-                <div class="sa-hero-header__subtitle">Choose the features and functionality your team needs today.<br>
+                <div class="sa-hero-header__subtitle">Choose the features and functionality your team needs today.<br/>
                     Easily upgrade as your company grows.</div>
                 <div class="sa-hero-header__controls">
-                    <input type="text" placeholder="Search over FAQ" class="form-control form-control--search-filled mx-auto max-w-25x"></div>
+                    <input type="text" placeholder="Search over FAQ" class="form-control form-control--search-filled mx-auto max-w-25x" /></div>
             </div>
         </div>
         <div class="container container--max--md">

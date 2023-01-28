@@ -8,13 +8,13 @@
             <div class="sa-error__background-text">Oops! Error 404</div>
             <div class="sa-error__content">
                 <h1 class="sa-error__title">Page Not Found</h1>
-                <p class="sa-error__text">We can't seem to find the page you're looking for.<br>
+                <p class="sa-error__text">We can't seem to find the page you're looking for.<br />
                     Try to use the search.</p>
                 <div class="sa-error__controls">
-                    <input type="text" placeholder="Search..." class="form-control form-control--search-filled sa-error__input">
+                    <input type="text" placeholder="Search..." class="form-control form-control--search-filled sa-error__input" />
                     <button type="submit" class="btn btn-primary">Search</button></div>
                 <p class="sa-error__text">Or go to the home page to start over.</p>
-                <a class="btn btn-secondary btn-sm" href="index.html">Go To Home Page</a></div>
+                <a class="btn btn-secondary btn-sm" href="Dashboard.aspx">Go To Home Page</a></div>
         </div>
     </div>
     <!-- sa-app__body / end -->

@@ -10,7 +10,7 @@
                     <h1>How we can help?</h1>
                 </div>
                 <div class="sa-hero-header__controls">
-                    <input type="text" placeholder="Search over FAQ" class="form-control form-control--search-filled mx-auto max-w-25x"></div>
+                    <input type="text" placeholder="Search over FAQ" class="form-control form-control--search-filled mx-auto max-w-25x" /></div>
             </div>
         </div>
         <div class="container container--max--xl pb-6">
@@ -26,7 +26,7 @@
                                 <li class="pt-2"><a href="#" class="text-muted">How to Download your items</a></li>
                                 <li class="pt-2"><a href="#" class="text-muted">Licenses Overview</a></li>
                             </ul>
-                            <div class="mb-n2"><a href="">See all articles (17)</a></div>
+                            <div class="mb-n2"><a href="#">See all articles (17)</a></div>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                                 <li class="pt-2"><a href="#" class="text-muted">What is Item Support?</a></li>
                                 <li class="pt-2"><a href="#" class="text-muted">I've Forgotten My Username</a></li>
                             </ul>
-                            <div class="mb-n2"><a href="">See all articles (17)</a></div>
+                            <div class="mb-n2"><a href="#">See all articles (17)</a></div>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                                 <li class="pt-2"><a href="#" class="text-muted">How do I change the language?</a></li>
                                 <li class="pt-2"><a href="#" class="text-muted">Date and time settings</a></li>
                             </ul>
-                            <div class="mb-n2"><a href="">See all articles (17)</a></div>
+                            <div class="mb-n2"><a href="#">See all articles (17)</a></div>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                                 <li class="pt-2"><a href="#" class="text-muted">Extended license</a></li>
                                 <li class="pt-2"><a href="#" class="text-muted">Where can I download the certificate?</a></li>
                             </ul>
-                            <div class="mb-n2"><a href="">See all articles (17)</a></div>
+                            <div class="mb-n2"><a href="#">See all articles (17)</a></div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                                 <li class="pt-2"><a href="#" class="text-muted">Setting up search suggestions</a></li>
                                 <li class="pt-2"><a href="#" class="text-muted">Using Bootstrap Components</a></li>
                             </ul>
-                            <div class="mb-n2"><a href="">See all articles (17)</a></div>
+                            <div class="mb-n2"><a href="#">See all articles (17)</a></div>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                                 <li class="pt-2"><a href="#" class="text-muted">How to remove copyright notice?</a></li>
                                 <li class="pt-2"><a href="#" class="text-muted">How to add a page?</a></li>
                             </ul>
-                            <div class="mb-n2"><a href="">See all articles (17)</a></div>
+                            <div class="mb-n2"><a href="#">See all articles (17)</a></div>
                         </div>
                     </div>
                 </div>

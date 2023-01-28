@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Forms</li>
                             <li class="breadcrumb-item active" aria-current="page">Help Text</li>
                         </ol>
@@ -33,7 +33,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <label for="inputPassword5" class="form-label">Password</label><input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"><div id="passwordHelpBlock" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+                            <label for="inputPassword5" class="form-label">Password</label><input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" /><div id="passwordHelpBlock" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-1" aria-expanded="false" aria-controls="example-1">Source Code</button><div class="sa-example__code collapse" id="example-1">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"inputPassword5"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-label"</span>&gt;</span>Password&lt;/label
@@ -59,7 +59,7 @@
                                 <div class="col-auto">
                                     <label for="inputPassword6" class="col-form-label">Password</label></div>
                                 <div class="col-auto">
-                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline"></div>
+                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline"/></div>
                                 <div class="col-auto"><span id="passwordHelpInline" class="form-text">Must be 8-20 characters long.</span></div>
                             </div>
                         </div>

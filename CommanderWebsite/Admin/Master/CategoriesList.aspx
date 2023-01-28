@@ -11,24 +11,24 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Categories</li>
                                 </ol>
                             </nav>
                             <h1 class="h3 m-0">Categories</h1>
                         </div>
-                        <div class="col-auto d-flex"><a href="app-category.html" class="btn btn-primary">New category</a></div>
+                        <div class="col-auto d-flex"><a href="Category.aspx" class="btn btn-primary">New category</a></div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="p-4">
-                        <input type="text" placeholder="Start typing to search for categories" class="form-control form-control--search mx-auto" id="table-search"></div>
+                        <input type="text" placeholder="Start typing to search for categories" class="form-control form-control--search mx-auto" id="table-search" /></div>
                     
                                 <table class="sa-datatables-init dataTable no-footer" data-order="[[ 1, &quot;asc&quot; ]]" data-sa-search-input="#table-search" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                                     <thead>
                                         <tr role="row">
                                             <th class="w-min sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="" style="width: 16px;">
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></th>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></th>
                                             <th class="min-w-15x sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 629.987px;">Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Items: activate to sort column ascending" style="width: 149.8px;">Items</th>
                                             <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Visibility: activate to sort column ascending" style="width: 201.413px;">Visibility</th>
@@ -38,8 +38,8 @@
                                     <tbody>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Air Filters</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Air Filters</a></td>
                                             <td>0</td>
                                             <td>
                                                 <div class="badge badge-sa-secondary">Hidden</div>
@@ -54,7 +54,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -63,8 +63,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Cargo Accessories</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Cargo Accessories</a></td>
                                             <td>0</td>
                                             <td>
                                                 <div class="badge badge-sa-success">Visible</div>
@@ -79,7 +79,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -88,8 +88,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Consoles &amp; Organizers</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Consoles &amp; Organizers</a></td>
                                             <td>0</td>
                                             <td>
                                                 <div class="badge badge-sa-success">Visible</div>
@@ -104,7 +104,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -113,8 +113,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Engine &amp; Drivetrain</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Engine &amp; Drivetrain</a></td>
                                             <td>0</td>
                                             <td>
                                                 <div class="badge badge-sa-secondary">Hidden</div>
@@ -129,7 +129,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -138,8 +138,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Floor Mats</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Floor Mats</a></td>
                                             <td>0</td>
                                             <td>
                                                 <div class="badge badge-sa-success">Visible</div>
@@ -154,7 +154,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -163,8 +163,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Fuel Systems</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Fuel Systems</a></td>
                                             <td>11</td>
                                             <td>
                                                 <div class="badge badge-sa-danger">For premium</div>
@@ -179,7 +179,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -188,8 +188,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Gauges</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Gauges</a></td>
                                             <td>0</td>
                                             <td>
                                                 <div class="badge badge-sa-success">Visible</div>
@@ -213,8 +213,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Headlights &amp; Lighting</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Headlights &amp; Lighting</a></td>
                                             <td>3</td>
                                             <td>
                                                 <div class="badge badge-sa-success">Visible</div>
@@ -229,7 +229,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -238,8 +238,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Interior Parts</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Interior Parts</a></td>
                                             <td>15</td>
                                             <td>
                                                 <div class="badge badge-sa-primary">8 March</div>
@@ -254,7 +254,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -263,8 +263,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-category.html" class="text-reset">Mobile Electronics</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Category.aspx" class="text-reset">Mobile Electronics</a></td>
                                             <td>0</td>
                                             <td>
                                                 <div class="badge badge-sa-success">Visible</div>
@@ -279,7 +279,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -289,8 +289,8 @@
                                         
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                                <td class="sorting_1"><a href="app-category.html" class="text-reset">Repair Manuals</a></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                                <td class="sorting_1"><a href="Category.aspx" class="text-reset">Repair Manuals</a></td>
                                                 <td>45</td>
                                                 <td>
                                                     <div class="badge badge-sa-success">Visible</div>
@@ -305,7 +305,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -314,8 +314,8 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                                <td class="sorting_1"><a href="app-category.html" class="text-reset">Steering Wheels</a></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                                <td class="sorting_1"><a href="Category.aspx" class="text-reset">Steering Wheels</a></td>
                                                 <td>0</td>
                                                 <td>
                                                     <div class="badge badge-sa-success">Visible</div>
@@ -330,7 +330,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -339,8 +339,8 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                                <td class="sorting_1"><a href="app-category.html" class="text-reset">Suspension</a></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                                <td class="sorting_1"><a href="Category.aspx" class="text-reset">Suspension</a></td>
                                                 <td>28</td>
                                                 <td>
                                                     <div class="badge badge-sa-success">Visible</div>
@@ -355,7 +355,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>

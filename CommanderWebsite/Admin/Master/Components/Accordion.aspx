@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Accordion" Language="C#" MasterPageFile="~/Admin/Master/Components/AdminComponents.Master" AutoEventWireup="true" CodeBehind="Accordion.aspx.cs" Inherits="CommanderWebsite.Admin.Master.Components.Accordion" %>
+﻿ <%@ Page Title="Accordion" Language="C#" MasterPageFile="~/Admin/Master/Components/AdminComponents.Master" AutoEventWireup="true" CodeBehind="Accordion.aspx.cs" Inherits="CommanderWebsite.Admin.Master.Components.Accordion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -9,7 +9,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Components</li>
                             <li class="breadcrumb-item active" aria-current="page">Accordion</li>
                         </ol>

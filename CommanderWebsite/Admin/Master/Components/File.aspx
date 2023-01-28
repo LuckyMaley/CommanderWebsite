@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Forms</li>
                             <li class="breadcrumb-item active" aria-current="page">File</li>
                         </ol>
@@ -37,7 +37,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <label for="formFile-1" class="form-label">Default file input example</label><input type="file" class="form-control" id="formFile-1"></div>
+                            <label for="formFile-1" class="form-label">Default file input example</label><input type="file" class="form-control" id="formFile-1" /></div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-1" aria-expanded="false" aria-controls="example-1">Source Code</button><div class="sa-example__code collapse" id="example-1">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"formFile-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-label"</span>&gt;</span>Default file input example&lt;/label
 &gt;<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"formFile-1"</span> /&gt;</span>
@@ -80,13 +80,13 @@
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
                             <div class="mb-4">
-                                <label for="formFile-3-normal" class="form-label">Normal</label><input type="file" class="form-control" id="formFile-3-normal"></div>
+                                <label for="formFile-3-normal" class="form-label">Normal</label><input type="file" class="form-control" id="formFile-3-normal" /></div>
                             <div class="mb-4">
-                                <label for="formFile-3-disabled" class="form-label">Disabled</label><input type="file" class="form-control" id="formFile-3-disabled" disabled=""></div>
+                                <label for="formFile-3-disabled" class="form-label">Disabled</label><input type="file" class="form-control" id="formFile-3-disabled" disabled="" /></div>
                             <div class="mb-4">
-                                <label for="formFile-3-valid" class="form-label">Valid</label><input type="file" class="form-control is-valid" id="formFile-3-valid"></div>
+                                <label for="formFile-3-valid" class="form-label">Valid</label><input type="file" class="form-control is-valid" id="formFile-3-valid" /></div>
                             <div>
-                                <label for="formFile-3-invalid" class="form-label">Invalid</label><input type="file" class="form-control is-invalid" id="formFile-3-invalid"></div>
+                                <label for="formFile-3-invalid" class="form-label">Invalid</label><input type="file" class="form-control is-invalid" id="formFile-3-invalid" /></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-3" aria-expanded="false" aria-controls="example-3">Source Code</button><div class="sa-example__code collapse" id="example-3">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-4"</span>&gt;</span>

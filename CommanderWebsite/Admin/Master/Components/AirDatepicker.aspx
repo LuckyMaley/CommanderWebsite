@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Forms</li>
                             <li class="breadcrumb-item active" aria-current="page">Air Datepicker</li>
                         </ol>
@@ -45,7 +45,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <input type="text" class="form-control datepicker-here" data-auto-close="true" data-language="en" aria-label="Datepicker"></div>
+                            <input type="text" class="form-control datepicker-here" data-auto-close="true" data-language="en" aria-label="Datepicker" /></div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-1" aria-expanded="false" aria-controls="example-1">Source Code</button><div class="sa-example__code collapse" id="example-1">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
     <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
@@ -76,7 +76,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <input type="text" class="form-control datepicker-here" data-range="true" data-multiple-dates-separator=" - " data-language="en" aria-label="Datepicker"></div>
+                            <input type="text" class="form-control datepicker-here" data-range="true" data-multiple-dates-separator=" - " data-language="en" aria-label="Datepicker" /></div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-3" aria-expanded="false" aria-controls="example-3">Source Code</button><div class="sa-example__code collapse" id="example-3">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
     <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
@@ -94,7 +94,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <input type="text" class="form-control datepicker-here" data-range="true" data-multiple-dates-separator=" - " data-toggle-selected="false" data-language="en" aria-label="Datepicker"></div>
+                            <input type="text" class="form-control datepicker-here" data-range="true" data-multiple-dates-separator=" - " data-toggle-selected="false" data-language="en" aria-label="Datepicker" /></div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-4" aria-expanded="false" aria-controls="example-4">Source Code</button><div class="sa-example__code collapse" id="example-4">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
     <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
@@ -114,7 +114,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <input type="text" class="form-control datepicker-here" data-multiple-dates="3" data-multiple-dates-separator=", " data-language="en" aria-label="Datepicker"></div>
+                            <input type="text" class="form-control datepicker-here" data-multiple-dates="3" data-multiple-dates-separator=", " data-language="en" aria-label="Datepicker" /></div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-5" aria-expanded="false" aria-controls="example-5">Source Code</button><div class="sa-example__code collapse" id="example-5">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
     <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
@@ -133,7 +133,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <input type="text" class="form-control datepicker-here" data-min-view="months" data-view="months" data-date-format="MM yyyy" data-auto-close="true" data-language="en" aria-label="Datepicker"></div>
+                            <input type="text" class="form-control datepicker-here" data-min-view="months" data-view="months" data-date-format="MM yyyy" data-auto-close="true" data-language="en" aria-label="Datepicker" /></div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-6" aria-expanded="false" aria-controls="example-6">Source Code</button><div class="sa-example__code collapse" id="example-6">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
     <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
@@ -154,7 +154,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <input type="text" class="form-control datepicker-here" data-min-view="years" data-view="years" data-date-format="yyyy" data-auto-close="true" data-language="en" aria-label="Datepicker"></div>
+                            <input type="text" class="form-control datepicker-here" data-min-view="years" data-view="years" data-date-format="yyyy" data-auto-close="true" data-language="en" aria-label="Datepicker" /></div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-7" aria-expanded="false" aria-controls="example-7">Source Code</button><div class="sa-example__code collapse" id="example-7">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
     <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>

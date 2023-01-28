@@ -11,24 +11,24 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Customers</li>
                                 </ol>
                             </nav>
                             <h1 class="h3 m-0">Customers</h1>
                         </div>
-                        <div class="col-auto d-flex"><a href="app-customer.html" class="btn btn-primary">New customer</a></div>
+                        <div class="col-auto d-flex"><a href="Customer.aspx" class="btn btn-primary">New customer</a></div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="p-4">
-                        <input type="text" placeholder="Start typing to search for customers" class="form-control form-control--search mx-auto" id="table-search"></div>
+                        <input type="text" placeholder="Start typing to search for customers" class="form-control form-control--search mx-auto" id="table-search" /></div>
                     
                                 <table class="sa-datatables-init dataTable no-footer" data-order="[[ 1, &quot;asc&quot; ]]" data-sa-search-input="#table-search" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                                     <thead>
                                         <tr role="row">
                                             <th class="w-min sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="" style="width: 16px;">
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></th>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></th>
                                             <th class="min-w-20x sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 452.763px;">Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Registered: activate to sort column ascending" style="width: 172.25px;">Registered</th>
                                             <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Country: activate to sort column ascending" style="width: 87.7125px;">Country</th>
@@ -40,13 +40,13 @@
                                     <tbody>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-2-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-2-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Adam Taylor</a><div class="text-muted mt-n1">taylor-adam@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Adam Taylor</a><div class="text-muted mt-n1">taylor-adam@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -66,7 +66,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -75,13 +75,13 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-12-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-12-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Anna Wilson</a><div class="text-muted mt-n1">wilson-anna@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Anna Wilson</a><div class="text-muted mt-n1">wilson-anna@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -101,7 +101,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -110,13 +110,13 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-7-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-7-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Brian Wood</a><div class="text-muted mt-n1">wood-brian@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Brian Wood</a><div class="text-muted mt-n1">wood-brian@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -136,7 +136,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -145,13 +145,13 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-9-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-9-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Charlotte Jones</a><div class="text-muted mt-n1">jones-charlotte@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Charlotte Jones</a><div class="text-muted mt-n1">jones-charlotte@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -171,7 +171,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -180,13 +180,13 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-8-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-8-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Ethan Young</a><div class="text-muted mt-n1">young-ethan@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Ethan Young</a><div class="text-muted mt-n1">young-ethan@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -206,7 +206,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -215,13 +215,13 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-3-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-3-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Helena Garcia</a><div class="text-muted mt-n1">garcia-helena@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Helena Garcia</a><div class="text-muted mt-n1">garcia-helena@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -241,7 +241,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -250,13 +250,13 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-10-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-10-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Isabel Williams</a><div class="text-muted mt-n1">williams-isabel@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Isabel Williams</a><div class="text-muted mt-n1">williams-isabel@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -276,7 +276,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -285,13 +285,13 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-11-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-11-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Jacob Lee</a><div class="text-muted mt-n1">lee-jacob@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Jacob Lee</a><div class="text-muted mt-n1">lee-jacob@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -311,7 +311,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -320,13 +320,13 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-1-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-1-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Jessica Moore</a><div class="text-muted mt-n1">moore-jessica@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Jessica Moore</a><div class="text-muted mt-n1">moore-jessica@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -346,7 +346,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -355,13 +355,13 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                             <td class="sorting_1">
-                                                <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                     <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                        <img src="images/customers/customer-6-40x40.jpg" width="40" height="40" alt=""></div>
+                                                        <img src="../../Assets/adminOld/images/customers/customer-6-40x40.jpg" width="40" height="40" alt="" /></div>
                                                 </a>
-                                                    <div><a href="app-customer.html" class="text-reset">Kevin Smith</a><div class="text-muted mt-n1">smith-kevin@example.com</div>
+                                                    <div><a href="Customer.aspx" class="text-reset">Kevin Smith</a><div class="text-muted mt-n1">smith-kevin@example.com</div>
                                                     </div>
                                                 </div>
                                             </td>
@@ -381,7 +381,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -390,13 +390,13 @@
                                         </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/customers/customer-5-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/customers/customer-5-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Olivia Smith</a><div class="text-muted mt-n1">smith-olivia@example.com</div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Olivia Smith</a><div class="text-muted mt-n1">smith-olivia@example.com</div>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -416,7 +416,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -425,13 +425,13 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
                                                 <td class="sorting_1">
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html" class="me-4">
+                                                    <div class="d-flex align-items-center"><a href="Customer.aspx" class="me-4">
                                                         <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                            <img src="images/customers/customer-4-40x40.jpg" width="40" height="40" alt=""></div>
+                                                            <img src="../../Assets/adminOld/images/customers/customer-4-40x40.jpg" width="40" height="40" alt="" /></div>
                                                     </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Ryan Ford</a><div class="text-muted mt-n1">ford-ryan@example.com</div>
+                                                        <div><a href="Customer.aspx" class="text-reset">Ryan Ford</a><div class="text-muted mt-n1">ford-ryan@example.com</div>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -451,7 +451,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>

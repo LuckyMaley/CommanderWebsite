@@ -11,24 +11,24 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Coupons</li>
                                 </ol>
                             </nav>
                             <h1 class="h3 m-0">Coupons</h1>
                         </div>
-                        <div class="col-auto d-flex"><a href="app-coupon.html" class="btn btn-primary">New coupon</a></div>
+                        <div class="col-auto d-flex"><a href="Coupon.aspx" class="btn btn-primary">New coupon</a></div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="p-4">
-                        <input type="text" placeholder="Start typing to search for coupons" class="form-control form-control--search mx-auto" id="table-search"></div>
+                        <input type="text" placeholder="Start typing to search for coupons" class="form-control form-control--search mx-auto" id="table-search" /></div>
                    
                                 <table class="sa-datatables-init text-nowrap dataTable no-footer" data-order="[[ 1, &quot;asc&quot; ]]" data-sa-search-input="#table-search" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                                     <thead>
                                         <tr role="row">
                                             <th class="w-min sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="" style="width: 16px;">
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></th>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></th>
                                             <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Code: activate to sort column descending" style="width: 171.25px;">Code</th>
                                             <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Type: activate to sort column ascending" style="width: 132.475px;">Type</th>
                                             <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Discount: activate to sort column ascending" style="width: 113.787px;">Discount</th>
@@ -41,8 +41,8 @@
                                     <tbody>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">ANNIVERSARY70</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">ANNIVERSARY70</a></td>
                                             <td>Percentage</td>
                                             <td>25%</td>
                                             <td>
@@ -62,7 +62,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -71,8 +71,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">AUTHORKOS</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">AUTHORKOS</a></td>
                                             <td>Percentage</td>
                                             <td>50%</td>
                                             <td>
@@ -92,7 +92,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -101,8 +101,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">BESTRONG</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">BESTRONG</a></td>
                                             <td>Percentage</td>
                                             <td>10%</td>
                                             <td>
@@ -122,7 +122,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -131,8 +131,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">FIVESTARS</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">FIVESTARS</a></td>
                                             <td>Fixed amount</td>
                                             <td>$5.55</td>
                                             <td>
@@ -152,7 +152,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -161,8 +161,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">LATROP2</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">LATROP2</a></td>
                                             <td>Percentage</td>
                                             <td>15%</td>
                                             <td>
@@ -182,7 +182,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -191,8 +191,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">LUCKYDAY</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">LUCKYDAY</a></td>
                                             <td>Fixed amount</td>
                                             <td>$100.00</td>
                                             <td>
@@ -212,7 +212,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -221,8 +221,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">NEWYEAR</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">NEWYEAR</a></td>
                                             <td>Percentage</td>
                                             <td>10%</td>
                                             <td>
@@ -242,7 +242,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -251,8 +251,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">PROMO78</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">PROMO78</a></td>
                                             <td>Fixed amount</td>
                                             <td>$50.00</td>
                                             <td>
@@ -272,7 +272,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -281,8 +281,8 @@
                                         </tr>
                                         <tr class="odd">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">REBEKKA</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">REBEKKA</a></td>
                                             <td>Percentage</td>
                                             <td>10%</td>
                                             <td>
@@ -304,7 +304,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -313,8 +313,8 @@
                                         </tr>
                                         <tr class="even">
                                             <td>
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                            <td class="sorting_1"><a href="app-coupon.html" class="text-reset">REDPARTS24</a></td>
+                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                            <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">REDPARTS24</a></td>
                                             <td>Fixed amount</td>
                                             <td>$10.00</td>
                                             <td>
@@ -336,7 +336,7 @@
                                                                 <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                 <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                 <li>
-                                                                    <hr class="dropdown-divider">
+                                                                    <hr class="dropdown-divider" />
                                                                 </li>
                                                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                             </ul>
@@ -345,8 +345,8 @@
                                         </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                                <td class="sorting_1"><a href="app-coupon.html" class="text-reset">STROYKASTART</a></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                                <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">STROYKASTART</a></td>
                                                 <td>Fixed amount</td>
                                                 <td>$15.00</td>
                                                 <td>
@@ -366,7 +366,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>
@@ -375,8 +375,8 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..."></td>
-                                                <td class="sorting_1"><a href="app-coupon.html" class="text-reset">UNKNOWN</a></td>
+                                                    <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
+                                                <td class="sorting_1"><a href="Coupon.aspx" class="text-reset">UNKNOWN</a></td>
                                                 <td>Percentage</td>
                                                 <td>$100.00</td>
                                                 <td>
@@ -398,7 +398,7 @@
                                                                     <li><a class="dropdown-item" href="#">Add tag</a></li>
                                                                     <li><a class="dropdown-item" href="#">Remove tag</a></li>
                                                                     <li>
-                                                                        <hr class="dropdown-divider">
+                                                                        <hr class="dropdown-divider" />
                                                                     </li>
                                                                     <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                                                                 </ul>

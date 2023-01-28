@@ -11,8 +11,8 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="app-coupons-list.html">Coupons</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="CouponsList.aspx">Coupons</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Edit Coupon</li>
                                 </ol>
                             </nav>
@@ -30,18 +30,18 @@
                                         <h2 class="mb-0 fs-exact-18">Basic information</h2>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="form-coupon/code" class="form-label">Code</label><input type="text" class="form-control" id="form-coupon/code" placeholder="QWERTY12"></div>
+                                        <label for="form-coupon/code" class="form-label">Code</label><input type="text" class="form-control" id="form-coupon/code" placeholder="QWERTY12" /></div>
                                     <div class="mb-4">
                                         <div class="form-label mb-3">Type</div>
                                         <label class="form-check">
-                                            <input type="radio" class="form-check-input" name="type" checked=""><span class="form-check-label">Percentage</span></label><label class="form-check"><input type="radio" class="form-check-input" name="type"><span class="form-check-label">Fixed amount</span></label><label class="form-check mb-0"><input type="radio" class="form-check-input" name="type"><span class="form-check-label">Free shipping</span></label></div>
+                                            <input type="radio" class="form-check-input" name="type" checked="" /><span class="form-check-label">Percentage</span></label><label class="form-check"><input type="radio" class="form-check-input" name="type" /><span class="form-check-label">Fixed amount</span></label><label class="form-check mb-0"><input type="radio" class="form-check-input" name="type" /><span class="form-check-label">Free shipping</span></label></div>
                                     <div class="mb-4">
-                                        <label for="form-coupon/value" class="form-label">Discount value</label><input type="text" class="form-control" id="form-coupon/value" value="$10.00"></div>
+                                        <label for="form-coupon/value" class="form-label">Discount value</label><input type="text" class="form-control" id="form-coupon/value" value="$10.00" /></div>
                                     <div class="mb-4">
-                                        <label for="form-coupon/limit" class="form-label">Usage limit</label><input type="text" class="form-control" id="form-coupon/limit" value="100"></div>
+                                        <label for="form-coupon/limit" class="form-label">Usage limit</label><input type="text" class="form-control" id="form-coupon/limit" value="100" /></div>
                                     <div class="mb-n2 pt-2">
                                         <label class="form-check">
-                                            <input type="checkbox" class="form-check-input" name="type"><span class="form-check-label">Only for registered customers</span></label></div>
+                                            <input type="checkbox" class="form-check-input" name="type" /><span class="form-check-label">Only for registered customers</span></label></div>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="mb-n2 mt-n3">
                                         <label class="form-check">
-                                            <input type="radio" class="form-check-input" name="status" checked=""><span class="form-check-label">Enabled</span></label><label class="form-check mb-0"><input type="radio" class="form-check-input" name="status"><span class="form-check-label">Disabled</span></label></div>
+                                            <input type="radio" class="form-check-input" name="status" checked="" /><span class="form-check-label">Enabled</span></label><label class="form-check mb-0"><input type="radio" class="form-check-input" name="status" /><span class="form-check-label">Disabled</span></label></div>
                                 </div>
                             </div>
                             <div class="card w-100 mt-5">
@@ -63,9 +63,9 @@
                                         <div class="mt-3 text-muted">Use these settings to limit the coupon expiration date.</div>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="form-coupon/start-date" class="form-label">Start date</label><input type="text" class="form-control datepicker-here" id="form-coupon/start-date" data-auto-close="true" data-language="en"></div>
+                                        <label for="form-coupon/start-date" class="form-label">Start date</label><input type="text" class="form-control datepicker-here" id="form-coupon/start-date" data-auto-close="true" data-language="en" /></div>
                                     <div>
-                                        <label for="form-coupon/end-date" class="form-label">End date</label><input type="text" class="form-control datepicker-here" id="form-coupon/end-date" data-auto-close="true" data-language="en"></div>
+                                        <label for="form-coupon/end-date" class="form-label">End date</label><input type="text" class="form-control datepicker-here" id="form-coupon/end-date" data-auto-close="true" data-language="en" /></div>
                                 </div>
                             </div>
                         </div>

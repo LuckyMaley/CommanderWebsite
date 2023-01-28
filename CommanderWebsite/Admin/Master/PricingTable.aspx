@@ -14,7 +14,7 @@
                 <div class="sa-hero-header__controls">
                     <div class="sa-switch mx-auto">
                         <div class="sa-switch__body">
-                            <input type="radio" id="billing-period-year" name="billing_period" value="year" checked=""><label for="billing-period-year">Yearly billing</label><input type="radio" id="billing-period-month" name="billing_period" value="month"><label for="billing-period-month">Monthly billing</label></div>
+                            <input type="radio" id="billing-period-year" name="billing_period" value="year" checked="" /><label for="billing-period-year">Yearly billing</label><input type="radio" id="billing-period-month" name="billing_period" value="month" /><label for="billing-period-month">Monthly billing</label></div>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@
                     <div class="col">
                         <nav class="mb-2" aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-sa-simple">
-                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Calendar</li>
                             </ol>
                         </nav>
@@ -34,115 +34,7 @@
                                     <div class="simplebar-content-wrapper" style="height: auto; overflow: hidden scroll;">
                                         <div class="simplebar-content" style="padding: 0px;">
                                             <div class="sa-calendar-datepicker">
-                                                <div class="datepicker-inline">
-                                                    <div class="datepicker datepicker-sa-embedded"><i class="datepicker--pointer"></i>
-                                                        <nav class="datepicker--nav">
-                                                            <div class="datepicker--nav-action" data-action="prev">
-                                                                <svg>
-                                                                    <path d="M 17,12 l -5,5 l 5,5"></path></svg></div>
-                                                            <div class="datepicker--nav-title">January, <i>2023</i></div>
-                                                            <div class="datepicker--nav-action" data-action="next">
-                                                                <svg>
-                                                                    <path d="M 14,12 l 5,5 l -5,5"></path></svg></div>
-                                                        </nav>
-                                                        <div class="datepicker--content">
-                                                            <div class="datepicker--days datepicker--body active">
-                                                                <div class="datepicker--days-names">
-                                                                    <div class="datepicker--day-name -weekend-">Su</div>
-                                                                    <div class="datepicker--day-name">Mo</div>
-                                                                    <div class="datepicker--day-name">Tu</div>
-                                                                    <div class="datepicker--day-name">We</div>
-                                                                    <div class="datepicker--day-name">Th</div>
-                                                                    <div class="datepicker--day-name">Fr</div>
-                                                                    <div class="datepicker--day-name -weekend-">Sa</div>
-                                                                </div>
-                                                                <div class="datepicker--cells datepicker--cells-days">
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="1" data-month="0" data-year="2023">1<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #DB4343"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="2" data-month="0" data-year="2023">2<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #DB4343"></div>
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #43b885"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="3" data-month="0" data-year="2023">3<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #DB4343"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="4" data-month="0" data-year="2023">4<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #DB4343"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="5" data-month="0" data-year="2023">5</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="6" data-month="0" data-year="2023">6<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #f69a2f"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="7" data-month="0" data-year="2023">7</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="8" data-month="0" data-year="2023">8</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="9" data-month="0" data-year="2023">9</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="10" data-month="0" data-year="2023">10</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="11" data-month="0" data-year="2023">11<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #7a42c2"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="12" data-month="0" data-year="2023">12<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #7a42c2"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="13" data-month="0" data-year="2023">13</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend- -current-" data-date="14" data-month="0" data-year="2023">14<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #61dafd"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="15" data-month="0" data-year="2023">15</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="16" data-month="0" data-year="2023">16<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #c33994"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="17" data-month="0" data-year="2023">17</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="18" data-month="0" data-year="2023">18</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="19" data-month="0" data-year="2023">19<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #ffd333"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="20" data-month="0" data-year="2023">20</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="21" data-month="0" data-year="2023">21</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="22" data-month="0" data-year="2023">22</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="23" data-month="0" data-year="2023">23</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="24" data-month="0" data-year="2023">24<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #4275c2"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="25" data-month="0" data-year="2023">25<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #4275c2"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="26" data-month="0" data-year="2023">26<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #4275c2"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="27" data-month="0" data-year="2023">27<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #4275c2"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="28" data-month="0" data-year="2023">28<div class="datepicker-sa-dots">
-                                                                        <div class="datepicker-sa-dot" style="--datepicker-sa-dot--color: #dd0032"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend-" data-date="29" data-month="0" data-year="2023">29</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="30" data-month="0" data-year="2023">30</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day" data-date="31" data-month="0" data-year="2023">31</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -other-month-" data-date="1" data-month="1" data-year="2023">1</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -other-month-" data-date="2" data-month="1" data-year="2023">2</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -other-month-" data-date="3" data-month="1" data-year="2023">3</div>
-                                                                    <div class="datepicker--cell datepicker--cell-day -weekend- -other-month-" data-date="4" data-month="1" data-year="2023">4</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                             <div class="sa-divider"></div>
                                             <div class="sa-nav sa-nav--card sa-nav--card--sm px-3 py-4">
@@ -150,64 +42,64 @@
                                                     <div class="sa-nav__section-title">Calendars</div>
                                                     <ul class="sa-nav__menu">
                                                         <li class="sa-nav__menu-item">
-                                                            <label class="sa-nav__link user-select-none">
+                                                            <div class="sa-nav__link user-select-none">
                                                                 <div class="sa-nav__icon sa-color-checkbox" style="--sa-color-checkbox--bg-color: #DB4343; --sa-color-checkbox--font-color: #fff">
-                                                                    <input type="checkbox" checked=""><div class="sa-color-checkbox__box">
+                                                                    <input type="checkbox" checked="" /><div class="sa-color-checkbox__box">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="14" height="14" viewBox="-2 -2 14 14">
                                                                             <path fill="%233d464d" d="M10,2.4L4.5,8L1,4.5l1.4-1.4l2.1,2.1L8.6,1L10,2.4z"></path></svg></div>
                                                                 </div>
                                                                 <div class="sa-nav__title">Isabel Williams</div>
-                                                            </label>
+                                                            </div>
                                                         </li>
                                                         <li class="sa-nav__menu-item">
-                                                            <label class="sa-nav__link user-select-none">
+                                                            <div class="sa-nav__link user-select-none">
                                                                 <div class="sa-nav__icon sa-color-checkbox" style="--sa-color-checkbox--bg-color: #F69A2F; --sa-color-checkbox--font-color: #fff">
-                                                                    <input type="checkbox" checked=""><div class="sa-color-checkbox__box">
+                                                                    <input type="checkbox" checked="" /><div class="sa-color-checkbox__box">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="14" height="14" viewBox="-2 -2 14 14">
                                                                             <path fill="%233d464d" d="M10,2.4L4.5,8L1,4.5l1.4-1.4l2.1,2.1L8.6,1L10,2.4z"></path></svg></div>
                                                                 </div>
                                                                 <div class="sa-nav__title">Jacob Lee</div>
-                                                            </label>
+                                                            </div>
                                                         </li>
                                                         <li class="sa-nav__menu-item">
-                                                            <label class="sa-nav__link user-select-none">
+                                                            <div class="sa-nav__link user-select-none">
                                                                 <div class="sa-nav__icon sa-color-checkbox" style="--sa-color-checkbox--bg-color: #53a700; --sa-color-checkbox--font-color: #fff">
-                                                                    <input type="checkbox"><div class="sa-color-checkbox__box">
+                                                                    <input type="checkbox" /><div class="sa-color-checkbox__box">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="14" height="14" viewBox="-2 -2 14 14">
                                                                             <path fill="%233d464d" d="M10,2.4L4.5,8L1,4.5l1.4-1.4l2.1,2.1L8.6,1L10,2.4z"></path></svg></div>
                                                                 </div>
                                                                 <div class="sa-nav__title">Birthdays</div>
-                                                            </label>
+                                                            </div>
                                                         </li>
                                                         <li class="sa-nav__menu-item">
-                                                            <label class="sa-nav__link user-select-none">
+                                                            <div class="sa-nav__link user-select-none">
                                                                 <div class="sa-nav__icon sa-color-checkbox" style="--sa-color-checkbox--bg-color: #4275C2; --sa-color-checkbox--font-color: #fff">
-                                                                    <input type="checkbox" checked=""><div class="sa-color-checkbox__box">
+                                                                    <input type="checkbox" checked="" /><div class="sa-color-checkbox__box">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="14" height="14" viewBox="-2 -2 14 14">
                                                                             <path fill="%233d464d" d="M10,2.4L4.5,8L1,4.5l1.4-1.4l2.1,2.1L8.6,1L10,2.4z"></path></svg></div>
                                                                 </div>
                                                                 <div class="sa-nav__title">Reminders</div>
-                                                            </label>
+                                                            </div>
                                                         </li>
                                                         <li class="sa-nav__menu-item">
-                                                            <label class="sa-nav__link user-select-none">
+                                                            <div class="sa-nav__link user-select-none">
                                                                 <div class="sa-nav__icon sa-color-checkbox" style="--sa-color-checkbox--bg-color: #7A42C2; --sa-color-checkbox--font-color: #fff">
-                                                                    <input type="checkbox" checked=""><div class="sa-color-checkbox__box">
+                                                                    <input type="checkbox" checked="" /><div class="sa-color-checkbox__box">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="14" height="14" viewBox="-2 -2 14 14">
                                                                             <path fill="%233d464d" d="M10,2.4L4.5,8L1,4.5l1.4-1.4l2.1,2.1L8.6,1L10,2.4z"></path></svg></div>
                                                                 </div>
                                                                 <div class="sa-nav__title">Tasks</div>
-                                                            </label>
+                                                            </div>
                                                         </li>
                                                         <li class="sa-nav__menu-item">
-                                                            <label class="sa-nav__link user-select-none">
+                                                            <div class="sa-nav__link user-select-none">
                                                                 <div class="sa-nav__icon sa-color-checkbox" style="--sa-color-checkbox--bg-color: #C33994; --sa-color-checkbox--font-color: #fff">
-                                                                    <input type="checkbox"><div class="sa-color-checkbox__box">
+                                                                    <input type="checkbox" /><div class="sa-color-checkbox__box">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="14" height="14" viewBox="-2 -2 14 14">
                                                                             <path fill="%233d464d" d="M10,2.4L4.5,8L1,4.5l1.4-1.4l2.1,2.1L8.6,1L10,2.4z"></path></svg></div>
                                                                 </div>
                                                                 <div class="sa-nav__title">Family</div>
-                                                            </label>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                 </div>

@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Components</li>
                             <li class="breadcrumb-item active" aria-current="page">Carousel</li>
                         </ol>
@@ -46,9 +46,9 @@
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
                                         <img src="images/carousel-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
                                 </div>
@@ -80,11 +80,11 @@
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button></div>
@@ -137,11 +137,11 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button></div>
@@ -216,19 +216,19 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="images/carousel-with-captions-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""><div class="carousel-caption d-none d-md-block">
+                                        <img src="../../../Assets/adminOld/images/carousel-with-captions-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /><div class="carousel-caption d-none d-md-block">
                                             <h5>Mars</h5>
                                             <p>Some representative placeholder content for the first slide.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-with-captions-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""><div class="carousel-caption d-none d-md-block">
+                                        <img src="../../../Assets/adminOld/images/carousel-with-captions-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /><div class="carousel-caption d-none d-md-block">
                                             <h5>Earth</h5>
                                             <p>Some representative placeholder content for the second slide.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-with-captions-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""><div class="carousel-caption d-none d-md-block">
+                                        <img src="../../../Assets/adminOld/images/carousel-with-captions-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /><div class="carousel-caption d-none d-md-block">
                                             <h5>Neptune</h5>
                                             <p>Some representative placeholder content for the third slide.</p>
                                         </div>
@@ -314,11 +314,11 @@
                             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/carousel-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /></div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button></div>
@@ -375,19 +375,19 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src="images/carousel-dark-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""><div class="carousel-caption d-none d-md-block">
+                                        <img src="../../../Assets/adminOld/images/carousel-dark-1-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /><div class="carousel-caption d-none d-md-block">
                                             <h5>First slide label</h5>
                                             <p>Some representative placeholder content for the first slide.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="images/carousel-dark-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""><div class="carousel-caption d-none d-md-block">
+                                        <img src="../../../Assets/adminOld/images/carousel-dark-2-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /><div class="carousel-caption d-none d-md-block">
                                             <h5>Second slide label</h5>
                                             <p>Some representative placeholder content for the second slide.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/carousel-dark-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt=""><div class="carousel-caption d-none d-md-block">
+                                        <img src="../../../Assets/adminOld/images/carousel-dark-3-720x405.jpg" class="d-block w-100 h-auto" width="720" height="405" alt="" /><div class="carousel-caption d-none d-md-block">
                                             <h5>Third slide label</h5>
                                             <p>Some representative placeholder content for the third slide.</p>
                                         </div>

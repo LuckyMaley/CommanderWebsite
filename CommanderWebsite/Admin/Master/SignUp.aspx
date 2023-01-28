@@ -516,7 +516,7 @@
                             <label class="form-label">Password</label><input type="password" class="form-control form-control-lg"></div>
                         <div class="mb-4 py-2">
                             <label class="form-check mb-0">
-                                <input type="checkbox" class="form-check-input"><span class="form-check-label">I agree to the <a href="page-terms.html">terms and conditions</a>.</span></label></div>
+                                <input type="checkbox" class="form-check-input"><span class="form-check-label">I agree to the <a href="TermsAndConditions.aspx">terms and conditions</a>.</span></label></div>
                         <div>
                             <button type="submit" class="btn btn-primary btn-lg w-100">Sign Up</button></div>
                     </div>
@@ -528,7 +528,7 @@
                             <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Google</button>
                             <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Facebook</button>
                             <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Twitter</button></div>
-                        <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Already have an account? <a href="auth-sign-in.html">Sign in</a></div>
+                        <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Already have an account? <a href="SignIn.aspx">Sign in</a></div>
                     </div>
                 </div>
             </div>

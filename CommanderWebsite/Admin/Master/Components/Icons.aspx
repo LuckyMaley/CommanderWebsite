@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Icons</li>
                         </ol>
                     </nav>
@@ -44,64 +44,64 @@
                             <div class="d-flex flex-wrap m-n4 fs-2">
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#alarm-fill"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#alarm-fill"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#alarm"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#alarm"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#basket-fill"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#basket-fill"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#archive"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#archive"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#battery-full"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#battery-full"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#bicycle"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#bicycle"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#box"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#box"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#bricks"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#bricks"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#briefcase"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#briefcase"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#brush"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#brush"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#basket"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#basket"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#bug-fill"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#bug-fill"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#calendar"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#calendar"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#card-image"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#card-image"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#chat-fill"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#chat-fill"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#cpu"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#cpu"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#egg-fill"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#egg-fill"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#folder"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#hand-thumbs-up"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#hand-thumbs-up"></use></svg></div>
                                 <div class="m-4 d-flex">
                                     <svg width="1em" height="1em">
-                                        <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#mouse"></use></svg></div>
+                                        <use xlink:href="../../../Assets/adminOld/vendor/bootstrap-icons/bootstrap-icons.svg#mouse"></use></svg></div>
                             </div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-1" aria-expanded="false" aria-controls="example-1">Source Code</button><div class="sa-example__code collapse" id="example-1">

@@ -21,7 +21,7 @@
                             <div class="sa-suggestions__item sa-suggestions__item--type--product">
                                 <div class="sa-suggestions__product">
                                     <div class="sa-suggestions__product-image">
-                                        <img src="images/products/product-1-36x36.jpg" width="36" height="36" alt=""></div>
+                                        <img src="../../Assets/adminOld/images/products/product-1-36x36.jpg" width="36" height="36" alt="" /></div>
                                     <div class="sa-suggestions__product-info">
                                         <div class="sa-suggestions__product-name">Drill Screwdriver Brandix ALX7054</div>
                                         <div class="sa-suggestions__product-meta sa-meta">
@@ -36,7 +36,7 @@
                             <div class="sa-suggestions__item sa-suggestions__item--type--product">
                                 <div class="sa-suggestions__product">
                                     <div class="sa-suggestions__product-image">
-                                        <img src="images/products/product-2-36x36.jpg" width="36" height="36" alt=""></div>
+                                        <img src="../../Assets/adminOld/images/products/product-2-36x36.jpg" width="36" height="36" alt="" /></div>
                                     <div class="sa-suggestions__product-info">
                                         <div class="sa-suggestions__product-name">Undefined Tool IRadix DPS3000SY 2700 Watts</div>
                                         <div class="sa-suggestions__product-meta sa-meta">
@@ -51,7 +51,7 @@
                             <div class="sa-suggestions__item sa-suggestions__item--type--product">
                                 <div class="sa-suggestions__product">
                                     <div class="sa-suggestions__product-image">
-                                        <img src="images/products/product-3-36x36.jpg" width="36" height="36" alt=""></div>
+                                        <img src="../../Assets/adminOld/images/products/product-3-36x36.jpg" width="36" height="36" alt=""/></div>
                                     <div class="sa-suggestions__product-info">
                                         <div class="sa-suggestions__product-name">Drill Screwdriver Brandix ALX7054 200 Watts</div>
                                         <div class="sa-suggestions__product-meta sa-meta">

@@ -11,8 +11,8 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="app-settings-toc.html">Settings</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="Settings.aspx">Settings</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">General</li>
                                 </ol>
                             </nav>
@@ -24,11 +24,11 @@
                 <div class="card">
                     <div class="card-body p-5">
                         <div class="mb-4">
-                            <label for="form-settings/name" class="form-label">Store Name</label><input type="text" class="form-control" id="form-settings/name" value="Stroyka"></div>
+                            <label for="form-settings/name" class="form-label">Store Name</label><input type="text" class="form-control" id="form-settings/name" value="Commander" /></div>
                         <div class="mb-4">
                             <label for="form-settings/description" class="form-label">Store Description</label><textarea class="form-control" id="form-settings/description" rows="4">Tools Store HTML eCommerce Template</textarea></div>
                         <div class="mb-n2">
-                            <label for="form-settings/email" class="form-label">Email Address</label><input type="email" class="form-control" id="form-settings/email" aria-describedby="form-settings/email/help" value="stroyka@example.com"><div id="form-settings/email/help" class="form-text">The contact email address of the store administrator.</div>
+                            <label for="form-settings/email" class="form-label">Email Address</label><input type="email" class="form-control" id="form-settings/email" aria-describedby="form-settings/email/help" value="commander@example.com" /><div id="form-settings/email/help" class="form-text">The contact email address of the store administrator.</div>
                         </div>
                     </div>
                 </div>
@@ -40,13 +40,15 @@
                         </div>
                         <div class="row g-4">
                             <div class="col-6">
-                                <label for="form-settings/weight-unit" class="form-label">Weight Unit</label><select id="form-settings/weight-unit" class="form-select"><option selected="">kg</option>
+                                <label for="form-settings/weight-unit" class="form-label">Weight Unit</label><select id="form-settings/weight-unit" class="form-select">
+                                    <option selected="">kg</option>
                                     <option>g</option>
                                     <option>lbs</option>
                                     <option>oz</option>
                                 </select></div>
                             <div class="col-6">
-                                <label for="form-settings/dimensions-unit" class="form-label">Dimensions Unit</label><select id="form-settings/dimensions-unit" class="form-select"><option selected="">m</option>
+                                <label for="form-settings/dimensions-unit" class="form-label">Dimensions Unit</label><select id="form-settings/dimensions-unit" class="form-select">
+                                    <option selected="">m</option>
                                     <option>cm</option>
                                     <option>mm</option>
                                     <option>in</option>
@@ -95,13 +97,13 @@
                             <div class="form-label">Enable Reviews</div>
                             <div>
                                 <label class="form-check form-check-inline mb-0">
-                                    <input type="radio" class="form-check-input" name="settings[reviews]"><span class="form-check-label">No</span></label><label class="form-check form-check-inline mb-0"><input type="radio" class="form-check-input" name="settings[reviews]" checked=""><span class="form-check-label">Yes</span></label></div>
+                                    <input type="radio" class="form-check-input" name="settings[reviews]" /><span class="form-check-label">No</span></label><label class="form-check form-check-inline mb-0"><input type="radio" class="form-check-input" name="settings[reviews]" checked=""><span class="form-check-label">Yes</span></label></div>
                         </div>
                         <div>
                             <div class="form-label">Product Ratings</div>
                             <div>
                                 <label class="form-check">
-                                    <input type="checkbox" class="form-check-input" checked=""><span class="form-check-label">Enable star rating on reviews</span></label><label class="form-check mb-0"><input type="checkbox" class="form-check-input"><span class="form-check-label">Star ratings should be required, not optional</span></label></div>
+                                    <input type="checkbox" class="form-check-input" checked="" /><span class="form-check-label">Enable star rating on reviews</span></label><label class="form-check mb-0"><input type="checkbox" class="form-check-input"><span class="form-check-label">Star ratings should be required, not optional</span></label></div>
                         </div>
                     </div>
                 </div>

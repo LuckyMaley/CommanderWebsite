@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Components</li>
                             <li class="breadcrumb-item active" aria-current="page">Symbols</li>
                         </ol>
@@ -46,7 +46,7 @@
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
                             <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--xxl">
-                                <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-1" aria-expanded="false" aria-controls="example-1">Source Code</button><div class="sa-example__code collapse" id="example-1">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sa-symbol sa-symbol--shape--circle sa-symbol--size--xxl"</span>&gt;</span>
@@ -64,27 +64,27 @@
                             <div class="row g-3 align-items-center">
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--xs">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--sm">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--lg">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--xl">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--xxl">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                             </div>
                         </div>
@@ -132,27 +132,27 @@
                             <div class="row g-3 align-items-center">
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle fs-6">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle fs-5">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle fs-4">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle fs-3">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle fs-2">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle fs-1">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                             </div>
                         </div>
@@ -276,22 +276,22 @@
                             <div class="row g-3 align-items-center">
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--lg sa-symbol--status--offline">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--lg sa-symbol--status--online">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--lg sa-symbol--status--away">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--lg sa-symbol--status--busy">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                             </div>
@@ -362,32 +362,32 @@
                             <div class="row g-3 align-items-center">
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--xs sa-symbol--status--online">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--sm sa-symbol--status--online">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md sa-symbol--status--online">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--lg sa-symbol--status--online">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--xl sa-symbol--status--online">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--shape--circle sa-symbol--size--xxl sa-symbol--status--online">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""><div class="sa-symbol__status"></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /><div class="sa-symbol__status"></div>
                                     </div>
                                 </div>
                             </div>
@@ -485,15 +485,15 @@
                             <div class="row g-3 align-items-center">
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--size--lg">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--size--lg sa-symbol--shape--rounded">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="sa-symbol sa-symbol--size--lg sa-symbol--shape--circle">
-                                        <img src="images/customers/customer-4-128x128.jpg" width="128" height="128" alt=""></div>
+                                        <img src="../../../Assets/adminOld/images/customers/customer-4-128x128.jpg" width="128" height="128" alt="" /></div>
                                 </div>
                             </div>
                         </div>

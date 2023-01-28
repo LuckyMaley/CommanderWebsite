@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Forms</li>
                             <li class="breadcrumb-item active" aria-current="page">Input Group</li>
                         </ol>
@@ -56,13 +56,13 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <div class="input-group mb-4"><span class="input-group-text" id="basic-addon1">@</span><input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></div>
+                            <div class="input-group mb-4"><span class="input-group-text" id="basic-addon1">@</span><input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/></div>
                             <div class="input-group mb-4">
-                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"><span class="input-group-text" id="basic-addon2">@example.com</span></div>
-                            <label for="basic-url" class="form-label">Your vanity URL</label><div class="input-group mb-4"><span class="input-group-text" id="basic-addon3">https://example.com/users/</span><input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"></div>
-                            <div class="input-group mb-4"><span class="input-group-text">$</span><input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"><span class="input-group-text">.00</span></div>
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" /><span class="input-group-text" id="basic-addon2">@example.com</span></div>
+                            <label for="basic-url" class="form-label">Your vanity URL</label><div class="input-group mb-4"><span class="input-group-text" id="basic-addon3">https://example.com/users/</span><input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" /></div>
+                            <div class="input-group mb-4"><span class="input-group-text">$</span><input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" /><span class="input-group-text">.00</span></div>
                             <div class="input-group mb-4">
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"><span class="input-group-text">@</span><input type="text" class="form-control" placeholder="Server" aria-label="Server"></div>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" /><span class="input-group-text">@</span><input type="text" class="form-control" placeholder="Server" aria-label="Server" /></div>
                             <div class="input-group"><span class="input-group-text">With textarea</span><textarea class="form-control" aria-label="With textarea"></textarea></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-1" aria-expanded="false" aria-controls="example-1">Source Code</button><div class="sa-example__code collapse" id="example-1">
@@ -125,7 +125,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping">@</span><input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping"></div>
+                            <div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping">@</span><input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" /></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-2" aria-expanded="false" aria-controls="example-2">Source Code</button><div class="sa-example__code collapse" id="example-2">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group flex-nowrap"</span>&gt;</span>
@@ -147,9 +147,9 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <div class="input-group input-group-sm mb-4"><span class="input-group-text" id="inputGroup-sizing-sm">Small</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></div>
-                            <div class="input-group mb-4"><span class="input-group-text" id="inputGroup-sizing-default">Normal</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
-                            <div class="input-group input-group-lg"><span class="input-group-text" id="inputGroup-sizing-lg">Large</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></div>
+                            <div class="input-group input-group-sm mb-4"><span class="input-group-text" id="inputGroup-sizing-sm">Small</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" /></div>
+                            <div class="input-group mb-4"><span class="input-group-text" id="inputGroup-sizing-default">Normal</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" /></div>
+                            <div class="input-group input-group-lg"><span class="input-group-text" id="inputGroup-sizing-lg">Large</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" /></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-3" aria-expanded="false" aria-controls="example-3">Source Code</button><div class="sa-example__code collapse" id="example-3">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group input-group-sm mb-4"</span>&gt;</span>
@@ -190,12 +190,12 @@
                         <div class="sa-example__body">
                             <div class="input-group mb-4">
                                 <div class="input-group-text">
-                                    <input type="checkbox" class="form-check-input mt-0" aria-label="Checkbox for following text input" value=""></div>
-                                <input type="text" class="form-control" aria-label="Text input with checkbox"></div>
+                                    <input type="checkbox" class="form-check-input mt-0" aria-label="Checkbox for following text input" value="" /></div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox" /></div>
                             <div class="input-group">
                                 <div class="input-group-text">
-                                    <input type="radio" class="form-check-input mt-0" aria-label="Radio button for following text input" value=""></div>
-                                <input type="text" class="form-control" aria-label="Text input with radio button"></div>
+                                    <input type="radio" class="form-check-input mt-0" aria-label="Radio button for following text input" value="" /></div>
+                                <input type="text" class="form-control" aria-label="Text input with radio button" /></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-4" aria-expanded="false" aria-controls="example-4">Source Code</button><div class="sa-example__code collapse" id="example-4">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group mb-4"</span>&gt;</span>
@@ -229,7 +229,7 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <div class="input-group"><span class="input-group-text">First and last name</span><input type="text" aria-label="First name" class="form-control"><input type="text" aria-label="Last name" class="form-control"></div>
+                            <div class="input-group"><span class="input-group-text">First and last name</span><input type="text" aria-label="First name" class="form-control" /><input type="text" aria-label="Last name" class="form-control" /></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-5" aria-expanded="false" aria-controls="example-5">Source Code</button><div class="sa-example__code collapse" id="example-5">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group"</span>&gt;</span>
@@ -249,9 +249,9 @@
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
-                            <div class="input-group mb-4"><span class="input-group-text">$</span><span class="input-group-text">0.00</span><input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)"></div>
+                            <div class="input-group mb-4"><span class="input-group-text">$</span><span class="input-group-text">0.00</span><input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" /></div>
                             <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)"><span class="input-group-text">$</span><span class="input-group-text">0.00</span></div>
+                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" /><span class="input-group-text">$</span><span class="input-group-text">0.00</span></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-6" aria-expanded="false" aria-controls="example-6">Source Code</button><div class="sa-example__code collapse" id="example-6">
                             <pre><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group mb-4"</span>&gt;</span>
@@ -278,15 +278,15 @@
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
                             <div class="input-group mb-4">
-                                <button class="btn btn-primary" type="button" id="button-addon1">Button</button><input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"></div>
+                                <button class="btn btn-primary" type="button" id="button-addon1">Button</button><input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" /></div>
                             <div class="input-group mb-4">
-                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
                                 <button class="btn btn-primary" type="button" id="button-addon2">Button</button></div>
                             <div class="input-group mb-4">
                                 <button class="btn btn-primary" type="button">Button</button>
-                                <button class="btn btn-primary" type="button">Button</button><input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons"></div>
+                                <button class="btn btn-primary" type="button">Button</button><input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" /></div>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" />
                                 <button class="btn btn-primary" type="button">Button</button>
                                 <button class="btn btn-primary" type="button">Button</button></div>
                         </div>
@@ -343,19 +343,19 @@
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li>
-                                        <hr class="dropdown-divider">
+                                        <hr class="dropdown-divider" />
                                     </li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
-                                <input type="text" class="form-control" aria-label="Text input with dropdown button"></div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button" /></div>
                             <div class="input-group mb-4">
-                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button" />
                                 <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button><ul class="dropdown-menu dropdown-menu-end">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li>
-                                        <hr class="dropdown-divider">
+                                        <hr class="dropdown-divider" />
                                     </li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
@@ -366,17 +366,17 @@
                                     <li><a class="dropdown-item" href="#">Another action before</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li>
-                                        <hr class="dropdown-divider">
+                                        <hr class="dropdown-divider" />
                                     </li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
-                                <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                                <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons" />
                                 <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button><ul class="dropdown-menu dropdown-menu-end">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li>
-                                        <hr class="dropdown-divider">
+                                        <hr class="dropdown-divider" />
                                     </li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
@@ -481,16 +481,16 @@
                                     </li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
-                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"></div>
+                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" /></div>
                             <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" />
                                 <button type="button" class="btn btn-primary">Action</button>
                                 <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button><ul class="dropdown-menu dropdown-menu-end">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li>
-                                        <hr class="dropdown-divider">
+                                        <hr class="dropdown-divider" />
                                     </li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
@@ -632,13 +632,13 @@
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
                             <div class="input-group mb-4">
-                                <label class="input-group-text" for="inputGroupFile01">Upload</label><input type="file" class="form-control" id="inputGroupFile01"></div>
+                                <label class="input-group-text" for="inputGroupFile01">Upload</label><input type="file" class="form-control" id="inputGroupFile01" /></div>
                             <div class="input-group mb-4">
-                                <input type="file" class="form-control" id="inputGroupFile02"><label class="input-group-text" for="inputGroupFile02">Upload</label></div>
+                                <input type="file" class="form-control" id="inputGroupFile02" /><label class="input-group-text" for="inputGroupFile02">Upload</label></div>
                             <div class="input-group mb-4">
-                                <button class="btn btn-primary" type="button" id="inputGroupFileAddon03">Button</button><input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload"></div>
+                                <button class="btn btn-primary" type="button" id="inputGroupFileAddon03">Button</button><input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload" /></div>
                             <div class="input-group">
-                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
                                 <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Button</button></div>
                         </div>
                         <button class="sa-example__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-11" aria-expanded="false" aria-controls="example-11">Source Code</button><div class="sa-example__code collapse" id="example-11">

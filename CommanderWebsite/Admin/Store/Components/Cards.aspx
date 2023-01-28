@@ -8,7 +8,7 @@
       <h1>Cards</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../DashBoard.aspx">Home</a></li>
           <li class="breadcrumb-item">Components</li>
           <li class="breadcrumb-item active">Cards</li>
         </ol>
@@ -47,7 +47,7 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="assets/img/card.jpg" class="img-fluid rounded-start" alt="...">
+                <img src="../../../Assets/admin/img/card.jpg" class="img-fluid rounded-start" alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -64,7 +64,7 @@
 
           <!-- Card with an image on top -->
           <div class="card">
-            <img src="assets/img/card.jpg" class="card-img-top" alt="...">
+            <img src="../../../Assets/admin/img/card.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card with an image on top</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -77,7 +77,7 @@
               <h5 class="card-title">Card with an image on bottom</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <img src="assets/img/card.jpg" class="card-img-bottom" alt="...">
+            <img src="../../../Assets/admin/img/card.jpg" class="card-img-bottom" alt="..." />
           </div><!-- End Card with an image on bottom -->
 
         </div>
@@ -86,7 +86,7 @@
 
           <!-- Card with an image overlay -->
           <div class="card">
-            <img src="assets/img/card.jpg" class="card-img-top" alt="...">
+            <img src="../../../Assets/admin/assets/img/card.jpg" class="card-img-top" alt="..." />
             <div class="card-img-overlay">
               <h5 class="card-title">Card with an image overlay</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

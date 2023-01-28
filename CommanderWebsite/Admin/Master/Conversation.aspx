@@ -123,7 +123,7 @@
                             <div class="sa-inbox-chat__item-header">
                                 <div class="sa-inbox-chat__item-avatar">
                                     <div class="sa-symbol sa-symbol--shape--circle">
-                                        <img src="images/customers/customer-7-64x64.jpg" width="64" height="64" alt=""></div>
+                                        <img src="../../Assets/adminOld/images/customers/customer-7-64x64.jpg" width="64" height="64" alt="" /></div>
                                 </div>
                                 <div class="sa-inbox-chat__item-author">Envato Market</div>
                                 <div class="sa-inbox-chat__item-date">5 Oct 2020, 2:43</div>
@@ -138,15 +138,15 @@
                                 <div class="sa-inbox-chat__item-excerpt">Hi Kos9, We wanted to let you know that your payout for earnings up until the end of July 2021 has been calculated. Your payout will be $320.00. Your payout will be processed as part of our normal schedule later this month. You will receive an email when your payout has been processed.</div>
                             </div>
                             <div class="sa-inbox-chat__item-body">
-                                <div class="sa-inbox-chat__item-message">Hi Kos9,<br>
-                                    <br>
-                                    We wanted to let you know that your payout for earnings up until the end of July 2021 has been calculated.<br>
-                                    <br>
-                                    Your payout will be <strong>$320.00</strong>.<br>
-                                    <br>
-                                    Your payout will be processed as part of our normal schedule later this month. You will receive an email when your payout has been processed.<br>
-                                    <br>
-                                    Regards,<br>
+                                <div class="sa-inbox-chat__item-message">Hi Kos9,<br/>
+                                    <br/>
+                                    We wanted to let you know that your payout for earnings up until the end of July 2021 has been calculated.<br/>
+                                    <br/>
+                                    Your payout will be <strong>$320.00</strong>.<br/>
+                                    <br/>
+                                    Your payout will be processed as part of our normal schedule later this month. You will receive an email when your payout has been processed.<br/>
+                                    <br/>
+                                    Regards,<br/>
                                     Envato Market Team</div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                             <div class="sa-inbox-chat__item-header">
                                 <div class="sa-inbox-chat__item-avatar">
                                     <div class="sa-symbol sa-symbol--shape--circle">
-                                        <img src="images/customers/customer-4-64x64.jpg" width="64" height="64" alt=""></div>
+                                        <img src="../../Assets/adminOld/images/customers/customer-4-64x64.jpg" width="64" height="64" alt="" /></div>
                                 </div>
                                 <div class="sa-inbox-chat__item-author">Konstantin Veselovsky</div>
                                 <div class="sa-inbox-chat__item-date">7 Oct 2020, 10:25</div>
@@ -169,20 +169,20 @@
                                 <div class="sa-inbox-chat__item-excerpt">Hello how are you This is nowt a wordpres websie thems . i want to install it on wordpres admin interface can i do it? --------- This email was sent through your item support contact form on Envato Market. Item: Stroyka - Tools Store React eCommerce Template Sender: xhunedi</div>
                             </div>
                             <div class="sa-inbox-chat__item-body">
-                                <div class="sa-inbox-chat__item-message">Hello,<br>
-                                    <br>
-                                    Philosophy is the study of general and fundamental questions, such as those about existence, reason, knowledge, values, mind, and language. Such questions are often posed as problems to be studied or resolved.Some sources claim the term was coined by Pythagoras, others dispute this story, arguing that Pythagoreans merely claimed use of a preexisting term.Philosophical methods include questioning, critical discussion, rational argument, and systematic presentation.<br>
-                                    <br>
-                                    Historically, philosophy encompassed all bodies of knowledge and a practitioner was known as a philosopher.<br>
-                                    <br>
-                                    Item: Stroyka - Tools Store React eCommerce Template<br>
-                                    Sender: kos9<br>
-                                    <br>
-                                    Date purchased: 26/10/2020<br>
-                                    Support Entitlement: Support ends 26/04/2021<br>
+                                <div class="sa-inbox-chat__item-message">Hello,<br/>
+                                    <br/>
+                                    Philosophy is the study of general and fundamental questions, such as those about existence, reason, knowledge, values, mind, and language. Such questions are often posed as problems to be studied or resolved.Some sources claim the term was coined by Pythagoras, others dispute this story, arguing that Pythagoreans merely claimed use of a preexisting term.Philosophical methods include questioning, critical discussion, rational argument, and systematic presentation.<br />
+                                    <br/>
+                                    Historically, philosophy encompassed all bodies of knowledge and a practitioner was known as a philosopher.<br/>
+                                    <br/>
+                                    Item: Stroyka - Tools Store React eCommerce Template<br/>
+                                    Sender: kos9<br/>
+                                    <br/>
+                                    Date purchased: 26/10/2020<br/>
+                                    Support Entitlement: Support ends 26/04/2021<br/>
                                     Verification URL (valid for 7 days): <a href="https://themeforest.net/user/kos9/portfolio">https://themeforest.net/user/kos9/portfolio</a><br>
-                                    <br>
-                                    <br>
+                                    <br/>
+                                    <br/>
                                     You can reply directly to this email to respond to kos9.</div>
                                 <div class="sa-inbox-chat__item-attachments">
                                     <ul>
@@ -213,7 +213,7 @@
                             <div class="sa-inbox-chat__item-header">
                                 <div class="sa-inbox-chat__item-avatar">
                                     <div class="sa-symbol sa-symbol--shape--circle">
-                                        <img src="images/customers/customer-7-64x64.jpg" width="64" height="64" alt=""></div>
+                                        <img src="../../Assets/adminOld/images/customers/customer-7-64x64.jpg" width="64" height="64" alt="" /></div>
                                 </div>
                                 <div class="sa-inbox-chat__item-author">Envato Market</div>
                                 <div class="sa-inbox-chat__item-date">12 Oct 2020, 17:02</div>
@@ -228,19 +228,19 @@
                                 <div class="sa-inbox-chat__item-excerpt">Congratulations! Your update to RedParts - Auto Parts WordPress Theme on ThemeForest has been approved. Thanks for your submission! Regards, Envato Market Team</div>
                             </div>
                             <div class="sa-inbox-chat__item-body">
-                                <div class="sa-inbox-chat__item-message">Congratulations! Your update to RedParts - Auto Parts WordPress Theme on ThemeForest has been approved.<br>
-                                    <br>
-                                    Thanks for your submission!<br>
-                                    <br>
-                                    Regards,<br>
-                                    Envato Market Team<br>
+                                <div class="sa-inbox-chat__item-message">Congratulations! Your update to RedParts - Auto Parts WordPress Theme on ThemeForest has been approved.<br/>
+                                    <br/>
+                                    Thanks for your submission!<br/>
+                                    <br/>
+                                    Regards,<br/>
+                                    Envato Market Team<br/>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="sa-inbox-chat__form">
                         <div class="sa-symbol sa-symbol--shape--circle">
-                            <img src="images/customers/customer-4-64x64.jpg" width="64" height="64" alt=""></div>
+                            <img src="../../Assets/adminOld/images/customers/customer-4-64x64.jpg" width="64" height="64" alt="" /></div>
                         <div class="sa-inbox-chat__form-head">
                             <button type="button" class="btn btn-sa-muted btn-sa-icon fs-exact-20 me-3" data-bs-toggle="tooltip" title="" data-bs-original-title="Type of response" aria-label="Type of response">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-up-left">
@@ -279,13 +279,13 @@
                     </div>
                     <div class="modal-body p-5">
                         <div class="mb-4">
-                            <label for="form-compose/email" class="visually-hidden">Email address</label><input type="email" class="form-control" id="form-compose/email" placeholder="stroyka@example.com" readonly=""></div>
+                            <label for="form-compose/email" class="visually-hidden">Email address</label><input type="email" class="form-control" id="form-compose/email" placeholder="stroyka@example.com" readonly="" /></div>
                         <div class="mb-4 d-flex align-items-center">
-                            <label for="form-compose/to" class="visually-hidden">To</label><input type="email" class="form-control" id="form-compose/to" placeholder="To"><div class="ms-4"><a href="#" class="text-muted fs-exact-13">CC</a></div>
+                            <label for="form-compose/to" class="visually-hidden">To</label><input type="email" class="form-control" id="form-compose/to" placeholder="To" /><div class="ms-4"><a href="#" class="text-muted fs-exact-13">CC</a></div>
                             <div class="ms-4"><a href="#" class="text-muted fs-exact-13">BCC</a></div>
                         </div>
                         <div class="mb-4">
-                            <label for="form-compose/subject" class="visually-hidden">Subject</label><input type="text" class="form-control" id="form-compose/subject" placeholder="Subject"></div>
+                            <label for="form-compose/subject" class="visually-hidden">Subject</label><input type="text" class="form-control" id="form-compose/subject" placeholder="Subject" /></div>
                         <div class="mb-4">
                             <textarea class="sa-quill-control form-control sa-quill-control--ready" rows="8" placeholder="Message"></textarea>
                         </div>

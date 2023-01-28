@@ -11,7 +11,7 @@
                         <div class="col">
                             <nav class="mb-2" aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-sa-simple">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Analytics</li>
                                 </ol>
                             </nav>
@@ -30,10 +30,10 @@
                                         <option>Last year</option>
                                         <option>[Custom]</option>
                                     </select><div class="sa-chart-toolbar__item-range">
-                                        <input type="text" class="form-control form-control-sm datepicker-here" placeholder="Start date" data-auto-close="true" data-language="en" aria-label="Datepicker"><div class="text-muted mx-3">
+                                        <input type="text" class="form-control form-control-sm datepicker-here" placeholder="Start date" data-auto-close="true" data-language="en" aria-label="Datepicker" /><div class="text-muted mx-3">
                                             <div class="sa-dash sa-dash--size--small"></div>
                                         </div>
-                                        <input type="text" class="form-control form-control-sm datepicker-here" placeholder="End date" data-auto-close="true" data-language="en" aria-label="Datepicker"></div>
+                                        <input type="text" class="form-control form-control-sm datepicker-here" placeholder="End date" data-auto-close="true" data-language="en" aria-label="Datepicker" /></div>
                                 </div>
                                 <div class="sa-chart-toolbar__item">
                                     <label for="analytics/group-by" class="sa-chart-toolbar__item-label">Group by</label><select id="analytics/group-by" class="form-select form-select-sm"><option selected="">Day</option>
@@ -55,7 +55,7 @@
                     <div class="p-4">
                         <div class="row g-3">
                             <div class="col">
-                                <input type="text" placeholder="Start typing to search" class="form-control form-control--search"></div>
+                                <input type="text" placeholder="Start typing to search" class="form-control form-control--search" /></div>
                             <div class="col-auto">
                                 <button type="button" class="btn btn-secondary" disabled="">Plot Rows</button></div>
                         </div>
@@ -67,7 +67,7 @@
                                         <thead>
                                             <tr role="row">
                                                 <th class="w-min sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="" style="width: 15px;">
-                                                    <input type="checkbox" class="form-check-input" aria-label="..."></th>
+                                                    <input type="checkbox" class="form-check-input" aria-label="..." /></th>
                                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 153.55px;">Browser</th>
                                                 <th class="sorting sorting_desc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="descending" aria-label="Users: activate to sort column ascending" style="width: 120.25px;">Users</th>
                                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Sessions: activate to sort column ascending" style="width: 165.2px;">Sessions</th>
@@ -79,7 +79,7 @@
                                         <tbody>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input" aria-label="..." /></td>
                                                 <td>Chrome</td>
                                                 <td class="sorting_1">10,987</td>
                                                 <td>3,843</td>
@@ -89,7 +89,7 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input" aria-label="..." /></td>
                                                 <td>Firefox</td>
                                                 <td class="sorting_1">1,152</td>
                                                 <td>405</td>
@@ -99,7 +99,7 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input" aria-label="..." /></td>
                                                 <td>Safari</td>
                                                 <td class="sorting_1">699</td>
                                                 <td>253</td>
@@ -109,7 +109,7 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input" aria-label="..." /></td>
                                                 <td>Edge</td>
                                                 <td class="sorting_1">370</td>
                                                 <td>29</td>
@@ -119,7 +119,7 @@
                                             </tr>
                                             <tr class="odd">
                                                 <td>
-                                                    <input type="checkbox" class="form-check-input" aria-label="..."></td>
+                                                    <input type="checkbox" class="form-check-input" aria-label="..." /></td>
                                                 <td>Opera</td>
                                                 <td class="sorting_1">27</td>
                                                 <td>4</td>

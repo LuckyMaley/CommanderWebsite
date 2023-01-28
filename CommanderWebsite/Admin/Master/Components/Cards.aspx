@@ -10,7 +10,7 @@
                 <div class="sa-article__header">
                     <nav class="sa-article__breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-sa-simple">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../Dashboard.aspx">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Components</li>
                             <li class="breadcrumb-item active" aria-current="page">Cards</li>
                         </ol>
@@ -69,7 +69,7 @@
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
                             <div class="card w-20x">
-                                <img src="images/card-image-1-320x180.jpg" class="card-img-top h-auto" alt="" width="320" height="180"><div class="card-body">
+                                <img src="../../../Assets/adminOld/images/card-image-1-320x180.jpg" class="card-img-top h-auto" alt="" width="320" height="180" /><div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -149,7 +149,7 @@
                             <div class="row g-5">
                                 <div class="col-12 col-sm-6">
                                     <div class="card">
-                                        <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                        <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@
                                         <div class="card-body">
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
-                                        <img src="images/card-image-1-640x360.jpg" class="card-img-bottom h-auto" alt="" width="640" height="360">
+                                        <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-bottom h-auto" alt="" width="640" height="360" />
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +255,7 @@
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
                             <div class="card w-20x">
-                                <img src="images/card-image-1-320x180.jpg" class="card-img-top h-auto" alt="" width="320" height="180"><div class="card-body">
+                                <img src="../../../Assets/adminOld/images/card-image-1-320x180.jpg" class="card-img-top h-auto" alt="" width="320" height="180" /><div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
@@ -292,7 +292,7 @@
                         </div>
                     </div>
                     <h2 id="article-navigation" class="sa-anchor"><span class="sa-anchor__body">Navigation<a class="sa-anchor__link" href="#article-navigation">#</a></span></h2>
-                    <p>Add some navigation to a card's header (or block) with Bootstrap's <a href="/components-navs.html">nav</a> component or <a href="/components-tabs.html">tabs</a>.</p>
+                    <p>Add some navigation to a card's header (or block) with Bootstrap's <a href="Navs.aspx">nav</a> component or <a href="Tabs.aspx">tabs</a>.</p>
                     <div class="sa-example my-5">
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
@@ -393,7 +393,7 @@
                         <div class="sa-example__legend">Example</div>
                         <div class="sa-example__body">
                             <div class="card bg-dark text-white shadow-none">
-                                <img src="images/card-image-1-640x360.jpg" class="card-img h-auto" alt="" width="640" height="360"><div class="card-img-overlay">
+                                <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img h-auto" alt="" width="640" height="360" /><div class="card-img-overlay">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text">Last updated 3 mins ago</p>
@@ -424,7 +424,7 @@
                             <div class="card">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="images/card-image-1-640x360.jpg" class="h-100 w-100 object-fit-cover" alt="" width="640" height="360">
+                                        <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="h-100 w-100 object-fit-cover" alt="" width="640" height="360" />
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -859,21 +859,21 @@
                         <div class="sa-example__body">
                             <div class="card-group">
                                 <div class="card">
-                                    <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                    <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                     <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
                                 </div>
                                 <div class="card">
-                                    <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                    <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                     <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
                                 </div>
                                 <div class="card">
-                                    <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                    <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                     </div>
@@ -936,7 +936,7 @@
                             <div class="row row-cols-1 row-cols-md-2 g-5">
                                 <div class="col">
                                     <div class="card h-100">
-                                        <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                        <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                             <h5 class="card-title">Card title</h5>
                                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         </div>
@@ -945,7 +945,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="card h-100">
-                                        <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                        <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                             <h5 class="card-title">Card title</h5>
                                             <p class="card-text">This is a short card.</p>
                                         </div>
@@ -954,7 +954,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="card h-100">
-                                        <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                        <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                             <h5 class="card-title">Card title</h5>
                                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         </div>
@@ -963,7 +963,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="card h-100">
-                                        <img src="images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360"><div class="card-body">
+                                        <img src="../../../Assets/adminOld/images/card-image-1-640x360.jpg" class="card-img-top h-auto" alt="" width="640" height="360" /><div class="card-body">
                                             <h5 class="card-title">Card title</h5>
                                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         </div>

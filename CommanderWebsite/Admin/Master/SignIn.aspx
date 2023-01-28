@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignIn.aspx.cs" Inherits="CommanderWebsite.Admin.Master.SignIn" %>
+﻿<%@ Page Title="Sign In" Language="C#" AutoEventWireup="true" CodeBehind="SignIn.aspx.cs" Inherits="CommanderWebsite.Admin.Master.SignIn" %>
 
 <!DOCTYPE html>
 
@@ -519,7 +519,7 @@
                             <label class="form-check mb-0">
                                 <input type="checkbox" class="form-check-input"><span class="form-check-label">Remember me</span></label>
                         </div>
-                        <div class="col-auto d-flex align-items-center"><a href="auth-forgot-password.html">Forgot password?</a></div>
+                        <div class="col-auto d-flex align-items-center"><a href="ForgotPassword.aspx">Forgot password?</a></div>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary btn-lg w-100">Sign In</button>
@@ -534,7 +534,7 @@
                         <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Facebook</button>
                         <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Twitter</button>
                     </div>
-                    <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Don't have an account? <a href="auth-sign-up.html">Sign up</a></div>
+                    <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Don't have an account? <a href="SignUp.aspx">Sign up</a></div>
                 </div>
             </div>
         </div>

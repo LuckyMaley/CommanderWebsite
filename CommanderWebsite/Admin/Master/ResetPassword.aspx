@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ResetPassword.aspx.cs" Inherits="CommanderWebsite.Admin.Master.ResetPassword" %>
+﻿<%@ Page Title="Reset Password" Language="C#" AutoEventWireup="true" CodeBehind="ResetPassword.aspx.cs" Inherits="CommanderWebsite.Admin.Master.ResetPassword" %>
 
 <!DOCTYPE html>
 

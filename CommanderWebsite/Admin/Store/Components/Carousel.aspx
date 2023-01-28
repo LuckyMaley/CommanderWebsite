@@ -8,7 +8,7 @@
       <h1>Carousel</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../DashBoard.aspx">Home</a></li>
           <li class="breadcrumb-item">Components</li>
           <li class="breadcrumb-item active">Carousel</li>
         </ol>
@@ -27,13 +27,13 @@
               <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/slides-1.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-1.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-2.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-2.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-3.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-3.jpg" class="d-block w-100" alt="..." />
                   </div>
                 </div>
               </div><!-- End Slides only carousel-->
@@ -54,13 +54,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/slides-1.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-1.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-2.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-2.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-3.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-3.jpg" class="d-block w-100" alt="..." />
                   </div>
                 </div>
 
@@ -87,13 +87,13 @@
               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/slides-1.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-1.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-2.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-2.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-3.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-3.jpg" class="d-block w-100" alt="..." />
                   </div>
                 </div>
 
@@ -123,13 +123,13 @@
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/slides-1.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-1.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-2.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-2.jpg" class="d-block w-100" alt="..." />
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-3.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-3.jpg" class="d-block w-100" alt="..." />
                   </div>
                 </div>
 
@@ -160,21 +160,21 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/slides-1.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-1.jpg" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-none d-md-block">
                       <h5>First slide label</h5>
                       <p>Some representative placeholder content for the first slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-2.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-2.jpg" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Second slide label</h5>
                       <p>Some representative placeholder content for the second slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/slides-3.jpg" class="d-block w-100" alt="...">
+                    <img src="../../../Assets/admin/img/slides-3.jpg" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Third slide label</h5>
                       <p>Some representative placeholder content for the third slide.</p>
