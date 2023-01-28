@@ -67,7 +67,7 @@
   <script src="../../Assets/admin/vendor/php-email-form/validate.js"></script>
 
   <!-- Main JS File -->
-  <script src="../Assets/admin/js/main.js"></script>
+  <script src="../../Assets/admin/js/main.js"></script>
     </div>
     </form>
 </body>
