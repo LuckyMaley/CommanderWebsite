@@ -1,5 +1,4 @@
-﻿+
-<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Master/Editor/Editor.Master" AutoEventWireup="true" CodeBehind="Editor.aspx.cs" Inherits="CommanderWebsite.Admin.Master.Editor.Editor1" %>
+﻿<%@ Page Title="Editor" Language="C#" MasterPageFile="~/Admin/Master/Editor/Editor.Master" AutoEventWireup="true" CodeBehind="Editor.aspx.cs" Inherits="CommanderWebsite.Admin.Master.Editor.Editor1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

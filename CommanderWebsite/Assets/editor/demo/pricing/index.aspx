@@ -1,24 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+﻿<%@ Page Title="Pricing" Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="CommanderWebsite.Assets.editor.demo.pricing.index" %>
 
-    <title>Pricing example for Bootstrap</title>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <title><%: Page.Title %> - COMMANDER E-Commerce Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../css/editor.css" rel="stylesheet">
+    <link href="../../css/editor.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <link href="pricing.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
   <p class="h5 my-0 me-md-auto fw-normal">Company name</p>
   <nav class="my-2 my-md-0 me-md-3">
     <a class="p-2 text-dark" href="#">Features</a>
@@ -142,5 +144,7 @@
         text: 'Thumbnail'
       });
     </script>
-  </body>
+    </div>
+    </form>
+</body>
 </html>

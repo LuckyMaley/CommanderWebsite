@@ -13,7 +13,7 @@
 
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="../../../Assets/editor/favicon.ico" />
     <base href="Editor.aspx" />
     
     <link href="../../../Assets/editor/css/editor.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
     <form id="form1" runat="server">
         <div id="vvveb-builder">
 				<div id="top-panel">
-					<img src="img/logo.png" alt="Vvveb" class="float-start" id="logo" />
+					<img src="../../../Assets/editor/img/logo.png" alt="Vvveb" class="float-start" id="logo" />
 					
 					<div class="btn-group float-start" role="group">
 					  <button class="btn btn-light" type="button" title="Toggle file manager" id="toggle-file-manager-btn" data-vvveb-action="toggleFileManager" data-bs-toggle="button" aria-pressed="false">
@@ -507,7 +507,7 @@
 
 						<div class="btn-group float-end" role="group">
 
-							 <button id="code-editor-btn" data-view="mobile" class="btn btn-sm btn-light btn-sm"  title="Code editor" data-vvveb-action="toggleEditor">
+							 <button id="code-editor-btn" type="button" data-view="mobile" class="btn btn-sm btn-light btn-sm"  title="Code editor" data-vvveb-action="toggleEditor">
 								  <i class="la la-code"></i> Code editor
 							  </button>
 							 
@@ -1369,14 +1369,14 @@ Unzip the latest ckeditor release zip from https://github.com/ckeditor/ckeditor4
 
     let pages =
         [
-            { name: "narrow-jumbotron", title: "Jumbotron", url: "demo/narrow-jumbotron/index.html", file: "demo/narrow-jumbotron/index.html", assets: ['demo/narrow-jumbotron/narrow-jumbotron.css'] },
-            { name: "landing-page", title: "Landing page", url: "demo/landing/index.html", file: "demo/landing/index.html", assets: ['demo/landing/css/style.css'] },
-            { name: "album", title: "Album", url: "demo/album/index.html", file: "demo/album/index.html", folder: "content", assets: ['demo/album/album.css'] },
-            { name: "blog", title: "Blog", url: "demo/blog/index.html", file: "demo/blog/index.html", folder: "content", assets: ['demo/blog/blog.css'] },
-            { name: "carousel", title: "Carousel", url: "demo/carousel/index.html", file: "demo/carousel/index.html", folder: "content", assets: ['demo/carousel/carousel.css'] },
-            { name: "offcanvas", title: "Offcanvas", url: "demo/offcanvas/index.html", file: "demo/offcanvas/index.html", folder: "content", assets: ['demo/offcanvas/offcanvas.css', 'demo/offcanvas/offcanvas.js'] },
-            { name: "pricing", title: "Pricing", url: "demo/pricing/index.html", file: "demo/pricing/index.html", folder: "ecommerce", assets: ['demo/pricing/pricing.css'] },
-            { name: "product", title: "Product", url: "demo/product/index.html", file: "demo/product/index.html", folder: "ecommerce", assets: ['demo/product/product.css'] },
+            { name: "narrow-jumbotron", title: "Jumbotron", url: "../../../Assets/editor/demo/narrow-jumbotron/index.aspx", file: "../../../Assets/editor/demo/narrow-jumbotron/index.aspx", assets: ['../../../Assets/editor/demo/narrow-jumbotron/narrow-jumbotron.css'] },
+            { name: "landing-page", title: "Landing page", url: "../../../Assets/editor/demo/landing/index.aspx", file: "../../../Assets/editor/demo/landing/index.aspx", assets: ['../../../Assets/editor/demo/landing/css/style.css'] },
+            { name: "album", title: "Album", url: "../../../Assets/editor/demo/album/index.aspx", file: "../../../Assets/editor/demo/album/index.aspx", folder: "content", assets: ['../../../Assets/editor/demo/album/album.css'] },
+            { name: "blog", title: "Blog", url: "../../../Assets/editor/demo/blog/index.aspx", file: "../../../Assets/editor/demo/blog/index.aspx", folder: "content", assets: ['../../../Assets/editor/demo/blog/blog.css'] },
+            { name: "carousel", title: "Carousel", url: "../../../Assets/editor/demo/carousel/index.aspx", file: "../../../Assets/editor/demo/carousel/index.aspx", folder: "content", assets: ['../../../Assets/editor/demo/carousel/carousel.css'] },
+            { name: "offcanvas", title: "Offcanvas", url: "../../../Assets/editor/demo/offcanvas/index.aspx", file: "../../../Assets/editor/demo/offcanvas/index.aspx", folder: "content", assets: ['../../../Assets/editor/demo/offcanvas/offcanvas.css', '../../../Assets/editor/demo/offcanvas/offcanvas.js'] },
+            { name: "pricing", title: "Pricing", url: "../../../Assets/editor/demo/pricing/index.aspx", file: "../../../Assets/editor/demo/pricing/index.aspx", folder: "ecommerce", assets: ['../../../Assets/editor/demo/pricing/pricing.css'] },
+            { name: "product", title: "Product", url: "demo/product/index.aspx", file: "demo/product/index.aspx", folder: "ecommerce", assets: ['../../../Assets/editor/demo/product/product.css'] },
             //uncomment php code below and rename file to .php extension to load saved html files in the editor or use editor.php
             /*
             <?php 
@@ -1399,7 +1399,7 @@ Unzip the latest ckeditor release zip from https://github.com/ckeditor/ckeditor4
 
     $(function () {
 
-        let firstPage = Object.keys(pages)[0];
+        let firstPage = Object.keys(pages)[1];
         Vvveb.Builder.init(pages[firstPage]["url"], function () {
             //load code after page is loaded here
         });
@@ -1419,7 +1419,7 @@ Unzip the latest ckeditor release zip from https://github.com/ckeditor/ckeditor4
         }
     });
 </script>
-        
+        </div>
     
     </form>
 </body>

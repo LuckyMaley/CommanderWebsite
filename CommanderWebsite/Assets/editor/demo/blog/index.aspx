@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+﻿<%@ Page Title="Blog" Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="CommanderWebsite.Assets.editor.demo.blog.index" %>
 
-    <title>Blog Template for Bootstrap</title>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <title><%: Page.Title %> - COMMANDER E-Commerce Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../css/editor.css" rel="stylesheet">
+    <link href="../../css/editor.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="blog.css" rel="stylesheet">
-  </head>
-
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
+    <link href="blog.css" rel="stylesheet" />
+</head>
 <body>
-
-	<div class="container">
+    <form id="form1" runat="server">
+    <div>
+        <div class="container">
 	  <header class="blog-header py-3">
 		<div class="row flex-nowrap justify-content-between align-items-center">
 		  <div class="col-4 pt-1">
@@ -75,7 +77,7 @@
 			  <a href="#" class="stretched-link">Continue reading</a>
 			</div>
 			<div class="col-auto d-none d-lg-block">
-				<img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+				<img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
 			</div>
 		  </div>
 		</div>
@@ -89,7 +91,7 @@
 			  <a href="#" class="stretched-link">Continue reading</a>
 			</div>
 			<div class="col-auto d-none d-lg-block">
-				<img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+				<img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
 			</div>
 		  </div>
 		</div>
@@ -211,5 +213,7 @@
     <a href="#">Back to top</a>
   </p>
 </footer>
+    </div>
+    </form>
 </body>
 </html>

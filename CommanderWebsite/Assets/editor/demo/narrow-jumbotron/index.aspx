@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+﻿<%@ Page Title="Narrow-Jumbotron" Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="CommanderWebsite.Assets.editor.demo.narrow_jumbotron.index" %>
 
-    <title>Narrow Jumbotron Template for Bootstrap</title>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <title><%: Page.Title %> - COMMANDER E-Commerce Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../css/editor.css" rel="stylesheet">
+    <link href="../../css/editor.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="narrow-jumbotron.css" rel="stylesheet">
+    <link href="narrow-jumbotron.css" rel="stylesheet" />
 
     <!-- Animate on scroll library -->
     <script src="../../libs/aos/aos.js"></script>
-    <link href="../../libs/aos/aos.css" rel="stylesheet">
+    <link href="../../libs/aos/aos.css" rel="stylesheet" />
 	<noscript>
         <style type="text/css">
             [data-aos] {
@@ -27,10 +29,10 @@
         </style>
     </noscript>    
 </head>
-	
-  <body>
-
-   <header class="header clearfix" id="top-header" data-aos="zoom-in" data-aos-delay="100">
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header class="header clearfix" id="top-header" data-aos="zoom-in" data-aos-delay="100">
 	<div class="container">
         <nav>
           <ul class="nav nav-pills float-end">
@@ -51,14 +53,14 @@
 
       <section class="jumbotron p-4" id="jumbotron">
 		<div class="container  bg-light">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" fill="#0d6efd" data-aos="fade-up" data-aos-delay="100" style="fill:var(--bs-blue)">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" fill="#0d6efd" data-aos="fade-up" data-aos-delay="100" style="">
 				<path d="M 30.335938 12.546875 L 20.164063 11.472656 L 16 2.132813 L 11.835938 11.472656 L 1.664063 12.546875 L 9.261719 19.394531 L 7.140625 29.398438 L 16 24.289063 L 24.859375 29.398438 L 22.738281 19.394531 Z"></path>
 			</svg>
 
 			<h1 data-aos="fade-up" data-aos-delay="200">Jumbotron heading</h1>
 			<p class="lead" data-aos="fade-up" data-aos-delay="300">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
-			<img class="rounded mw-100 my-5" data-aos="fade-up" data-aos-delay="400" src="https://source.unsplash.com/9UVmlIb0wJU/500x500">
+			<img class="rounded mw-100 my-5" data-aos="fade-up" data-aos-delay="400" src="https://source.unsplash.com/9UVmlIb0wJU/500x500" />
 			<p><a class="btn btn-lg btn-primary" href="#" role="button" data-aos="fade-up" data-aos-delay="100">Sign up today</a></p>
 		</div>
       </section>
@@ -100,5 +102,7 @@
 	<script>
 		AOS.init();
 	</script>
+    </div>
+    </form>
 </body>
 </html>

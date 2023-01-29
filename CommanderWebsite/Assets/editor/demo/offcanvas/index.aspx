@@ -1,24 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+﻿<%@ Page Title="Offcanvas" Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="CommanderWebsite.Assets.editor.demo.offcanvas.index" %>
 
-    <title>Offcanvas template for Bootstrap</title>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <title><%: Page.Title %> - COMMANDER E-Commerce Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../css/editor.css" rel="stylesheet">
+    <link href="../../css/editor.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
-  </head>
-
+    <link href="offcanvas.css" rel="stylesheet" />
+</head>
 <body class="bg-light">
-	
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+    <form id="form1" runat="server">
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
 	  <div class="container-fluid">
 		<a class="navbar-brand" href="#">Offcanvas navbar</a>
 		<button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
@@ -48,10 +50,10 @@
 			  </ul>
 			</li>
 		  </ul>
-		  <form class="d-flex">
-			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		  <div class="d-flex">
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
 			<button class="btn btn-outline-success" type="submit">Search</button>
-		  </form>
+		  </div>
 		</div>
 	  </div>
 	</nav>
@@ -75,7 +77,7 @@
 
 	<main class="container">
 	  <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
-	   <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+	   <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48" />
 		<div class="lh-1">
 		  <h1 class="h6 mb-0 text-white lh-1">Bootstrap</h1>
 		  <small>Since 2011</small>
@@ -85,21 +87,21 @@
 	  <div class="my-3 p-3 bg-white rounded shadow-sm">
 		<h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
 		<div class="d-flex text-muted pt-3">
-		 <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+		 <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded" />
 		  <p class="pb-3 mb-0 small lh-sm border-bottom">
 			<strong class="d-block text-gray-dark">@username</strong>
 			Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 		  </p>
 		</div>
 		<div class="d-flex text-muted pt-3">
-		  <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+		  <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded" />
 		  <p class="pb-3 mb-0 small lh-sm border-bottom">
 			<strong class="d-block text-gray-dark">@username</strong>
 			Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 		  </p>
 		</div>
 		<div class="d-flex text-muted pt-3">
-		 <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+		 <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded" />
 		  <p class="pb-3 mb-0 small lh-sm border-bottom">
 			<strong class="d-block text-gray-dark">@username</strong>
 			Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
@@ -113,7 +115,7 @@
 	  <div class="my-3 p-3 bg-white rounded shadow-sm">
 		<h6 class="border-bottom pb-2 mb-0">Suggestions</h6>
 		<div class="d-flex text-muted pt-3">
-		 <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+		 <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded" />
 		  <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
 			<div class="d-flex justify-content-between">
 			  <strong class="text-gray-dark">Full Name</strong>
@@ -123,7 +125,7 @@
 		  </div>
 		</div>
 		<div class="d-flex text-muted pt-3">
-		 <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+		 <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded" />
 		  <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
 			<div class="d-flex justify-content-between">
 			  <strong class="text-gray-dark">Full Name</strong>
@@ -133,7 +135,7 @@
 		  </div>
 		</div>
 		<div class="d-flex text-muted pt-3">
-		<img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+		<img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded" />
 		  <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
 			<div class="d-flex justify-content-between">
 			  <strong class="text-gray-dark">Full Name</strong>
@@ -156,5 +158,7 @@
     <script src="../../js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.4/holder.js"></script>
     <script src="offcanvas.js"></script>
-  </body>
+    </div>
+    </form>
+</body>
 </html>

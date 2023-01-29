@@ -598,24 +598,48 @@
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\editor\css\editor.css" />
     <Content Include="Assets\editor\css\vvvebjs-editor-helpers.css" />
-    <Content Include="Assets\editor\demo\album\index.html" />
+    <Content Include="Assets\editor\demo\album\index.aspx" />
     <Content Include="Assets\editor\demo\blog\blog.css" />
-    <Content Include="Assets\editor\demo\blog\index.html" />
+    <Content Include="Assets\editor\demo\blog\index.aspx" />
     <Content Include="Assets\editor\demo\carousel\carousel.css" />
-    <Content Include="Assets\editor\demo\carousel\index.html" />
-    <Content Include="Assets\editor\demo\narrow-jumbotron\index.html" />
+    <Content Include="Assets\editor\demo\carousel\index.aspx" />
+    <Content Include="Assets\editor\demo\landing\css\style.bundle.css" />
+    <Content Include="Assets\editor\demo\landing\img\bag.svg" />
+    <Content Include="Assets\editor\demo\landing\img\demo\hero-3.jpg" />
+    <Content Include="Assets\editor\demo\landing\img\demo\video-1.jpg" />
+    <Content Include="Assets\editor\demo\landing\img\demo\video-2.jpg" />
+    <Content Include="Assets\editor\demo\landing\img\illustrations.co\104-dumbbell.svg" />
+    <Content Include="Assets\editor\demo\landing\img\illustrations.co\107-healthy.svg" />
+    <Content Include="Assets\editor\demo\landing\img\illustrations.co\126-namaste-no-hand-shake.svg" />
+    <Content Include="Assets\editor\demo\landing\img\illustrations.co\day67-dog.svg" />
+    <Content Include="Assets\editor\demo\landing\img\illustrations.co\day68-happy-cat.svg" />
+    <Content Include="Assets\editor\demo\landing\img\logo-white.png" />
+    <Content Include="Assets\editor\demo\landing\img\logo.png" />
+    <Content Include="Assets\editor\demo\landing\img\sections\team\1.jpg" />
+    <Content Include="Assets\editor\demo\landing\img\sections\team\2.jpg" />
+    <Content Include="Assets\editor\demo\landing\img\sections\team\3.jpg" />
+    <Content Include="Assets\editor\demo\landing\img\sections\team\4.jpg" />
+    <Content Include="Assets\editor\demo\landing\img\user.svg" />
+    <Content Include="Assets\editor\demo\landing\index.aspx" />
+    <Content Include="Assets\editor\demo\landing\js\aos.css" />
+    <Content Include="Assets\editor\demo\landing\js\aos.js" />
+    <Content Include="Assets\editor\demo\landing\js\theme.js" />
+    <Content Include="Assets\editor\demo\narrow-jumbotron\index.aspx" />
     <Content Include="Assets\editor\demo\narrow-jumbotron\narrow-jumbotron.css" />
-    <Content Include="Assets\editor\demo\offcanvas\index.html" />
+    <Content Include="Assets\editor\demo\offcanvas\index.aspx" />
     <Content Include="Assets\editor\demo\offcanvas\offcanvas.css" />
     <Content Include="Assets\editor\demo\offcanvas\offcanvas.js" />
-    <Content Include="Assets\editor\demo\pricing\index.html" />
+    <Content Include="Assets\editor\demo\pricing\index.aspx" />
     <Content Include="Assets\editor\demo\pricing\pricing.css" />
-    <Content Include="Assets\editor\demo\product\index.html" />
+    <Content Include="Assets\editor\demo\product\index.aspx" />
     <Content Include="Assets\editor\demo\product\product.css" />
+    <Content Include="Assets\editor\favicon.ico" />
     <Content Include="Assets\editor\fonts\line-awesome\la-brands-400.svg" />
     <Content Include="Assets\editor\fonts\line-awesome\la-regular-400.svg" />
     <Content Include="Assets\editor\fonts\line-awesome\la-solid-900.svg" />
     <Content Include="Assets\editor\img\logo.png" />
+    <Content Include="Assets\editor\js\app.js" />
+    <Content Include="Assets\editor\js\bootstrap.bundle.min.js" />
     <Content Include="Assets\editor\js\bootstrap.min.js" />
     <Content Include="Assets\editor\js\jquery.hotkeys.js" />
     <Content Include="Assets\editor\js\jquery.min.js" />
@@ -1494,6 +1518,8 @@
     <Content Include="Assets\editor\scss\_bootstrap-css-vars.scss" />
     <Content Include="Assets\editor\scss\_builder.scss" />
     <Content Include="Assets\editor\scss\_csstree.scss" />
+    <Content Include="Assets\editor\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\editor\js\bootstrap.bundle.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -2603,6 +2629,62 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Assets\editor\demo\album\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\album\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\editor\demo\blog\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\blog\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\editor\demo\carousel\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\carousel\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\editor\demo\landing\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\landing\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\editor\demo\narrow-jumbotron\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\narrow-jumbotron\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\editor\demo\offcanvas\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\offcanvas\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\editor\demo\pricing\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\pricing\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\editor\demo\product\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\editor\demo\product\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
