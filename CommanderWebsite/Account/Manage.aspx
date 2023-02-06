@@ -4,67 +4,63 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" data-scompiler-id="0">
 <head runat="server">
+    <title><%:Page.Title %> - COMMANDER E-Commerce Website</title>
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
-    <title>Register</title>
-     <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-    <link href="Content/Images/Comm.jpg" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="../../Scripts/bootswatch/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../Content/animate.css" />
-    <link rel="stylesheet" href="../../Content/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="../Assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" />
+    <!-- css -->
+    <link rel="stylesheet" href="../Assets/vendor/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Assets/vendor/owl-carousel-2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../Assets/vendor/photoswipe/photoswipe.css" />
+    <link rel="stylesheet" href="../Assets/vendor/photoswipe/default-skin/default-skin.css" />
+    <link rel="stylesheet" href="../Assets/vendor/Select2/css/select2.min.css" />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <!-- font - fontawesome -->
+    <link rel="stylesheet" href="../Assets/vendor/fontawesome-5.13.0/css/all.min.css" />
+    <!-- font - stroyka -->
+    <link rel="stylesheet" href="../Assets/fonts/stroyka/stroyka.css" />
+
+    <!-- Google Tag Manager -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-1T24HD2682"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1T24HD2682');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
-    <form id="form1" runat="server" style= "background-image: url('http://localhost:52652/Content/Images/HeftyGorgeousItalianbrownbear-size_restricted.gif'); background-size:cover; background-repeat: no-repeat; background-attachment: fixed; width: 100%; min-height:1024px; ">
-        <asp:ScriptManager runat="server">
-                <Scripts>
-                    <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                    <%--Framework Scripts--%>
-                    <asp:ScriptReference Name="MsAjaxBundle" />
-                    <asp:ScriptReference Name="jquery" />
-                    <asp:ScriptReference Name="bootstrap" />
-                    <asp:ScriptReference Name="respond" />
-                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                    <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                    <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                    <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                    <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                    <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                    <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                    <asp:ScriptReference Name="WebFormsBundle" />
-                    <%--Site Scripts--%>
-                </Scripts>
-            </asp:ScriptManager>
+    <form id="form1" >
+       
             
-        <div class="container-fluid" style="margin: 0px; background-position: center center; padding-top: 50px; padding-bottom: 25px; padding-left: 15px; padding-right: 15px;">
-
-            <div class="container thumbnail" style="text-align:center;width:400px;  padding-bottom: 20px ">
-                <div class="row2" style="padding-left:15px;padding-right:15px;">
-                     <img src="../Content/Images/CommanderPic.jpg" alt="" style="width:200px; height:200px"/>
-   
-                    <p class="text-danger">
-                        <asp:Literal runat="server" ID="ErrorMessage" />
-                    </p>
-                    <div id="error-div" class="text-danger"> </div>
-                    
-                    <div class="form-horizontal" style="text-align:center;">     
+        
+            <div class="block">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center mb-0">
+                     <a href="/">
+                                    <img src="../Content/Images/CommanderPic.jpg" alt="" style="width: 100px; height: 100px" /></a>
+   </div>
+                    </div>
+                      <div class="row justify-content-center" style="text-align:center;">    
                         <!-- Enter content here -->
-                                   <h2><%: Title %>.</h2>
-
+                                   
+                          <div class="card"><div class="card-body">
     <div>
-        <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
+        <asp:PlaceHolder runat="server" ID="successMessage" Visible="true" ViewStateMode="Disabled">
             <p class="text-success"><%: SuccessMessage %></p>
         </asp:PlaceHolder>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="form-horizontal">
                 <h4>Change your account settings</h4>
@@ -72,12 +68,12 @@
                 <dl class="dl-horizontal">
                     <dt>Password:</dt>
                     <dd>
-                        <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Change]" Visible="false" ID="ChangePassword" runat="server" />
-                        <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Create]" Visible="false" ID="CreatePassword" runat="server" />
+                        <asp:HyperLink NavigateUrl="../Account/ManagePassword" Text="[Change]" Visible="false" ID="ChangePassword" runat="server" />
+                        <asp:HyperLink NavigateUrl="..//Account/ManagePassword" Text="[Create]" Visible="false" ID="CreatePassword" runat="server" />
                     </dd>
                     <dt>External Logins:</dt>
                     <dd><%: LoginsCount %>
-                        <asp:HyperLink NavigateUrl="/Account/ManageLogins" Text="[Manage]" runat="server" />
+                        <asp:HyperLink NavigateUrl="../Account/ManageLogins" Text="[Manage]" runat="server" />
 
                     </dd>
                      
@@ -134,14 +130,23 @@
         </div>
     </div>
                     </div>
-                    
+                    </div></div>
                 </div>
             </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="../Scripts/owl.carousel.min.js"></script>
-        <script src="../Scripts/Bootstrap 3.4.1/js/bootstrap.min.js"></script>
-        <script src="../Scripts/popper.min.js"></script>
+        
+        <!-- scripts -->
+        <script type="text/javascript" src="../Assets/vendor/jquery-3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../Assets/vendor/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="../Assets/vendor/owl-carousel-2.3.4/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="../Assets/vendor/nouislider-14.5.0/nouislider.min.js"></script>
+        <script type="text/javascript" src="../Assets/vendor/photoswipe/photoswipe.min.js"></script>
+        <script type="text/javascript" src="../Assets/vendor/photoswipe/photoswipe-ui-default.min.js"></script>
+        <script type="text/javascript" src="../Assets/vendor/Select2/js/select2.min.js"></script>
+        <script type="text/javascript" src="../Assets/js/number.js"></script>
+        <script type="text/javascript" src="../Assets/js/main.js"></script>
+        <script type="text/javascript" src="../Assets/js/header.js"></script>
+        <script type="text/javascript" src="../Assets/vendor/svg4everybody-2.1.9/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
     </form>
 </body>
 </html>

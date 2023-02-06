@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CommanderWebsite.Account.Login" %>
+﻿<%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="Login_alt.aspx.cs" Inherits="CommanderWebsite.Account.Login_alt" %>
 
 <!DOCTYPE html>
 
@@ -38,24 +38,20 @@
     <!-- End Google Tag Manager -->
 </head>
 <body>
-
     <form id="form1" runat="server">
 
                 <div class="block">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-md-6 text-center mb-0">
+                            <div class="text-center mb-0">
                                 <a href="/">
                                     <img src="../Content/Images/CommanderPic.jpg" alt="" style="width: 100px; height: 100px" /></a>
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-md-12 col-lg-10">
-                                <div class="wrap d-md-flex">
-                                    <div class="Login-img" style="background-image: url('../Assets/login/images/bg-1.jpg');">
-                                    </div>
-                                    <div class="login-wrap p-4 p-md-5">
-
+        <div class="card login-wrap">
+                            <div class="card-body p-4 p-md-5"">
+                                
                                         <h1 class="mb-0 fs-3">Sign In</h1>
                                         <div class="fs-exact-14 text-muted mt-2 pt-1 mb-2 pb-2">Log in to your account to continue.</div>
                                         <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
@@ -110,7 +106,7 @@
                                         <div class="container">
                                            
                                                 <section id="socialLoginForm">
-                                                    <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+                                                    <uc:OpenAuthProviders runat="server" ID="OpenAuthProviders1" />
                                                       
                                                 </section>
                                                
@@ -124,15 +120,14 @@
                                         </div>
 
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-
-                    </div>
+                          
+                        
+            </div>
+    </div>
                 </div>
-
+                    
+                </div>
+                    <br />
                 <!-- scripts -->
                 <script type="text/javascript" src="../Assets/vendor/jquery-3.5.1/jquery.min.js"></script>
                 <script type="text/javascript" src="../Assets/vendor/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
@@ -147,9 +142,6 @@
                 <script type="text/javascript" src="../Assets/vendor/svg4everybody-2.1.9/svg4everybody.min.js"></script>
                 <script>svg4everybody();</script>
 
-
     </form>
-
-
 </body>
 </html>

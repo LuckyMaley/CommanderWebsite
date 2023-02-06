@@ -281,10 +281,12 @@
     <Content Include="404.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
-    <Content Include="Account\AdminRegister.aspx" />
+    <Content Include="Account\AddPhoneNumber2.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
     <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login_alt.aspx" />
+    <Content Include="Account\Login_old.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\ManageLogins.aspx" />
     <Content Include="Account\Manage.aspx" />
@@ -926,6 +928,12 @@
     <Content Include="Assets\js\header.js" />
     <Content Include="Assets\js\main.js" />
     <Content Include="Assets\js\number.js" />
+    <Content Include="Assets\login\css\style.css" />
+    <Content Include="Assets\login\images\bg-1.jpg" />
+    <Content Include="Assets\login\js\bootstrap.min.js" />
+    <Content Include="Assets\login\js\jquery.min.js" />
+    <Content Include="Assets\login\js\main.js" />
+    <Content Include="Assets\login\js\popper.js" />
     <Content Include="Assets\vendor\bootstrap-4.5.3-dist\css\bootstrap-grid.css" />
     <Content Include="Assets\vendor\bootstrap-4.5.3-dist\css\bootstrap-grid.min.css" />
     <Content Include="Assets\vendor\bootstrap-4.5.3-dist\css\bootstrap-reboot.css" />
@@ -1638,12 +1646,12 @@
     <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\AdminRegister.aspx.cs">
-      <DependentUpon>AdminRegister.aspx</DependentUpon>
+    <Compile Include="Account\AddPhoneNumber2.aspx.cs">
+      <DependentUpon>AddPhoneNumber2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\AdminRegister.aspx.designer.cs">
-      <DependentUpon>AdminRegister.aspx</DependentUpon>
+    <Compile Include="Account\AddPhoneNumber2.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Confirm.aspx.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
@@ -1665,6 +1673,20 @@
     </Compile>
     <Compile Include="Account\Lockout.aspx.designer.cs">
       <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login_alt.aspx.cs">
+      <DependentUpon>Login_alt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login_alt.aspx.designer.cs">
+      <DependentUpon>Login_alt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login_old.aspx.cs">
+      <DependentUpon>Login_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login_old.aspx.designer.cs">
+      <DependentUpon>Login_old.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

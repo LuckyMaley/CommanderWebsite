@@ -22,15 +22,6 @@ namespace CommanderWebsite.Account {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ErrorMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ErrorMessage;
-        
-        /// <summary>
         /// successPanel control.
         /// </summary>
         /// <remarks>
@@ -40,13 +31,13 @@ namespace CommanderWebsite.Account {
         protected global::System.Web.UI.WebControls.PlaceHolder successPanel;
         
         /// <summary>
-        /// login control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink login;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
         /// errorPanel control.

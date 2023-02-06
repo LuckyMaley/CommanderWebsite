@@ -13,13 +13,13 @@ namespace CommanderWebsite.Account {
     public partial class Login {
         
         /// <summary>
-        /// frmlogin control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm frmlogin;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// ErrorMessage control.
@@ -76,15 +76,6 @@ namespace CommanderWebsite.Account {
         protected global::System.Web.UI.WebControls.HyperLink ForgotPasswordHyperLink;
         
         /// <summary>
-        /// RegisterHyperLink control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
-        
-        /// <summary>
         /// OpenAuthLogin control.
         /// </summary>
         /// <remarks>
@@ -92,5 +83,14 @@ namespace CommanderWebsite.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CommanderWebsite.Account.OpenAuthProviders OpenAuthLogin;
+        
+        /// <summary>
+        /// RegisterHyperLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
     }
 }

@@ -2,9 +2,9 @@
 
 <!DOCTYPE html>
 
-<html lang="en" dir="ltr" data-scompiler-id="0">
-<head>
-    <title>Sign In - COMMANDER E-Commerce Website</title>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en" dir="ltr" data-scompiler-id="0">
+<head runat="server">
+    <title><%:Page.Title %> - COMMANDER E-Commerce Website</title>
     
      <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

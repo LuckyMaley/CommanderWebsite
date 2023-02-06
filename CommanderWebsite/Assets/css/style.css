@@ -43,6 +43,40 @@ label {
     margin-bottom: .25rem;
 }
 
+.sa-divider {
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    .sa-divider:before {
+        background-color: #2125291a;
+        content: "";
+        display: block;
+        height: 0.5px;
+        width: 100%;
+    }
+
+.sa-divider__text {
+    background: #fff;
+    color: #828f99;
+    font-size: .6875rem;
+    margin: -.25rem 0;
+    padding: .125rem .5rem 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.sa-divider--has-text:before {
+    position: absolute;
+    top: 50%;
+}
+
 h1 {
     font-size: 36px;
 }
@@ -627,6 +661,10 @@ h6 {
     top: 5px;
     right: 11px;
     transform: scaleX(1);
+}
+
+.btn-group-justified {
+    margin: 4px;
 }
 
 .btn {
@@ -13990,4 +14028,68 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     border: 2px solid #f0f0f0;
     border-radius: 2px;
     padding: 28px;
+}
+
+.Login-img {
+    vertical-align: middle;
+    border-style: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24); }
+
+    .Login-img, .login-wrap {
+        width: 50%; 
+    }
+  @media (max-width: 991.98px) {
+    .Login-img, .login-wrap {
+      width: 100%; } }
+
+@media (max-width: 767.98px) {
+  .wrap .Login-img {
+    height: 250px; } }
+
+.login-wrap {
+  position: relative;
+  background: #fff;
+  font-weight: 300; }
+
+.alert-sa-has-icon {
+    display: flex;
+}
+
+.alert-sa-icon {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+[dir=ltr] .alert-sa-icon {
+    margin: -.0625rem .75rem -.0625rem -.375rem;
+}
+
+[dir=rtl] .alert-sa-icon {
+    margin: -.0625rem -.375rem -.0625rem .75rem;
+}
+
+.alert-sa-content {
+    align-self: center;
+}
+
+.alert-danger hr, .alert-dark hr, .alert-info hr, .alert-light hr, .alert-primary hr, .alert-secondary hr, .alert-success hr, .alert-warning hr {
+    opacity: .12;
+}
+
+.alert-danger .alert-sa-icon, .alert-dark .alert-sa-icon, .alert-info .alert-sa-icon, .alert-light .alert-sa-icon, .alert-primary .alert-sa-icon, .alert-secondary .alert-sa-icon, .alert-success .alert-sa-icon, .alert-warning .alert-sa-icon {
+    opacity: .8;
 }

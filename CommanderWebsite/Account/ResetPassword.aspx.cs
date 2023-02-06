@@ -17,6 +17,15 @@ namespace CommanderWebsite.Account
             private set;
         }
 
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                Email.Text = User.Identity.Name;
+            }
+            EmailDiv.Visible = false;
+        }
+
         protected void Reset_Click(object sender, EventArgs e)
         {
             string code = IdentityHelper.GetCodeFromRequest(Request);

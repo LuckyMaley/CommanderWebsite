@@ -1,13 +1,12 @@
-﻿using System;
+﻿using CommanderWebsite.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using CommanderWebsite.Models;
 
 namespace CommanderWebsite.Account
 {
@@ -31,14 +30,14 @@ namespace CommanderWebsite.Account
             }
             var userFactors = manager.GetValidTwoFactorProviders(userId);
             Providers.DataSource = userFactors.Select(x => x).ToList();
-            Providers.DataBind();            
+            Providers.DataBind();
         }
 
         protected void CodeSubmit_Click(object sender, EventArgs e)
         {
             bool rememberMe = false;
             bool.TryParse(Request.QueryString["RememberMe"], out rememberMe);
-            
+
             var result = signinManager.TwoFactorSignIn<ApplicationUser, string>(SelectedProvider.Value, Code.Text, isPersistent: rememberMe, rememberBrowser: RememberBrowser.Checked);
             switch (result)
             {

@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNet.Identity.Owin;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
 
 namespace CommanderWebsite.Account
 {
-    public partial class Login : System.Web.UI.Page
-    {
+    public partial class Login_old : System.Web.UI.Page
+    { 
         protected void Page_Load(object sender, EventArgs e)
         {
             RegisterHyperLink.NavigateUrl = "Register";
@@ -35,8 +32,7 @@ namespace CommanderWebsite.Account
                 // To enable password failures to trigger lockout, change to shouldLockout: true
                 int lockOut = 0;
                 SignInStatus result = new SignInStatus();
-                if (lockOut <= 5)
-                {
+                if (lockOut <= 5) { 
                     result = signinManager.PasswordSignIn(Email.Text, Password.Text, RememberMe.Checked, shouldLockout: false);
                 }
                 else

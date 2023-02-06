@@ -30,8 +30,11 @@ namespace CommanderWebsite.Account
                     return;
                 }
             }
-            successPanel.Visible = false;
-            errorPanel.Visible = true;
+            else
+            {
+                successPanel.Visible = false;
+                errorPanel.Visible = true;
+            }
         }
     }
 }
