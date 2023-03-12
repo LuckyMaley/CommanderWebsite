@@ -50,6 +50,7 @@
                       <div class="row justify-content-center">
                           <div class="card"><div class="card-body">
         <h4>Add a phone number</h4>
+                              <hr />
         <br />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <p class="text-danger">

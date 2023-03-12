@@ -27,11 +27,12 @@ namespace CommanderWebsite.Views
                     var d = ProductsController.getByID2(id);
                     rptrImages2.DataSource = d1;
                     rptrImages2.DataBind();
-                    if (d.Picture != null)
+                    var pic = ImageController.getByID2(id);
+                    if (pic != null)
                     {
-                        byte[] imageData = (byte[])d.Picture;
+                        byte[] imageData = (byte[])pic;
                         string img = Convert.ToBase64String(imageData, 0, imageData.Length);
-                        im.ImageUrl = "data:image/png;base64," + d.Picture;
+                        im.ImageUrl = "data:image/png;base64," + pic;
 
                     }
                     else
@@ -62,9 +63,10 @@ namespace CommanderWebsite.Views
                 {
                     CommanderEDM db = new CommanderEDM();
                     var d = ProductsController.getByID2(id);
+                    var inv = InventoryController.getByID2(id);
                     DropDownList df = (DropDownList)Page.Master.FindControl("dl");
                     DropDownList df1 = (DropDownList)rptrImages2.Items[0].FindControl("DropDownList1");
-                    CartController.AddToCart(id, int.Parse(df1.SelectedValue), d.Name, d.Price, Context.User.Identity.Name);
+                    CartController.AddToCart(id, int.Parse(df1.SelectedValue), d.Name, inv.UnitPrice, Context.User.Identity.Name);
                     var myCart = CartController.GetCartItems(Context.User.Identity.Name);
                     HttpContext.Current.Session["CartCount"] = myCart.Count;
                     var myWishlist = WishListController.GetWishListItems(Context.User.Identity.Name);
@@ -96,9 +98,10 @@ namespace CommanderWebsite.Views
                 {
                     CommanderEDM db = new CommanderEDM();
                 var d = ProductsController.getByID2(id);
-                var ds = db.Carts.SingleOrDefault(c => c.Product_ID == id);
+                    var inv = InventoryController.getByID2(id);
+                    var ds = db.Carts.SingleOrDefault(c => c.Product_ID == id);
                 int f = (int)ds.Quantity;
-                WishListController.AddToWishList(id, f, d.Name, d.Price, Context.User.Identity.Name);
+                WishListController.AddToWishList(id, f, d.Name, inv.UnitPrice, Context.User.Identity.Name);
                 var myWishList = WishListController.GetWishListItems(Context.User.Identity.Name);
                 HttpContext.Current.Session["WishListCount"] = myWishList.Count;
                 var mycart = CartController.GetCartItems(Context.User.Identity.Name);

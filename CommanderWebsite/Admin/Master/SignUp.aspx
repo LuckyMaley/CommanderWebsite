@@ -490,6 +490,10 @@
     <link rel="stylesheet" href="../../Assets/adminOld/vendor/nouislider/nouislider.min.css" />
     <link rel="stylesheet" href="../../Assets/adminOld/vendor/fullcalendar/main.min.css" />
     <link rel="stylesheet" href="../../Assets/adminOld/css/style.css" />
+
+    
+     <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
+
      <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T24HD2682"></script>
     <script>
@@ -509,29 +513,77 @@
                         <h1 class="mb-0 fs-3">Sign Up</h1>
                         <div class="fs-exact-14 text-muted mt-2 pt-1 mb-5 pb-2">Fill out the form to create a new account.</div>
                         <div class="mb-4">
-                            <label class="form-label">Full name</label><input type="text" class="form-control form-control-lg"></div>
+                            <asp:Label runat="server" AssociatedControlID="firstName" CssClass="control-label">First Name</asp:Label>
+                                <asp:TextBox runat="server" ID="firstName" CssClass="form-control form-control-lg"  />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="firstName"
+                                    CssClass="text-danger" ErrorMessage="The first name field is required." />
+                            </div>
                         <div class="mb-4">
-                            <label class="form-label">Email Address</label><input type="email" class="form-control form-control-lg"></div>
+                             <asp:Label runat="server" AssociatedControlID="Email" CssClass=" control-label">Last Name</asp:Label>
+                                <asp:TextBox runat="server" ID="lastName" CssClass="form-control form-control-lg" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="lastName"
+                                    CssClass="text-danger" ErrorMessage="The last name field is required." />
+                        </div>
                         <div class="mb-4">
-                            <label class="form-label">Password</label><input type="password" class="form-control form-control-lg"></div>
+                            <asp:Label runat="server" AssociatedControlID="Email" CssClass=" control-label">Email</asp:Label>
+                                <asp:TextBox runat="server" ID="Email" CssClass="form-control form-control-lg" TextMode="Email" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                                    CssClass="text-danger" ErrorMessage="The email field is required." />
+                        </div>
+                        <div class="mb-4">
+                            <asp:Label runat="server" AssociatedControlID="Password" CssClass=" control-label">Password</asp:Label>
+                                <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control form-control-lg" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
+                                    CssClass="text-danger" ErrorMessage="The password field is required." />
+                        </div>
+                        <div class="mb-4">
+                            <asp:Label runat="server" AssociatedControlID="ConfirmPassword" CssClass=" control-label">Confirm password</asp:Label>
+                                <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" CssClass="form-control form-control-lg" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
+                                    CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
+                                <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
+                                    CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
+                            </div>
                         <div class="mb-4 py-2">
                             <label class="form-check mb-0">
-                                <input type="checkbox" class="form-check-input"><span class="form-check-label">I agree to the <a href="TermsAndConditions.aspx">terms and conditions</a>.</span></label></div>
+                                <input type="checkbox" class="form-check-input" runat="server"><span class="form-check-label">I agree to the <a href="TermsAndConditions.aspx">terms and conditions</a>.</span></label></div>
                         <div>
-                            <button type="submit" class="btn btn-primary btn-lg w-100">Sign Up</button></div>
+                            <asp:Button runat="server" OnClick="CreateUser_Click" Text="Sign Up" CssClass="btn btn-primary btn-lg w-100" />
+                        </div>
                     </div>
-                    <div class="sa-divider sa-divider--has-text">
-                        <div class="sa-divider__text">Or continue with</div>
-                    </div>
-                    <div class="card-body p-sm-5 m-sm-3 flex-grow-0">
-                        <div class="d-flex flex-wrap me-n3 mt-n3">
-                            <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Google</button>
-                            <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Facebook</button>
-                            <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Twitter</button></div>
-                        <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Already have an account? <a href="SignIn.aspx">Sign in</a></div>
-                    </div>
+                    <asp:Panel ID="ExternalLogin" runat="server" Visible="false">
+                <div class="container">
+                                            <div class="row">
+                                                <div class="sa-divider sa-divider--has-text">
+                                                    <div class="sa-divider__text">Or continue with</div>
+                                                </div>
+                                            </div>
+                                            <br />
+                                        </div>
+                                        <div class="container">
+                                           
+                                                <section id="socialLoginForm">
+                                                    <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+                                                      
+                                                </section>
+                                               
+                                            
+                                            
+                                            
+                                        </div>
+                    </asp:Panel>
+                    <div class="container">
+                                           
+                    <div class="row" style="justify-content: center">
+                                                <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">
+                                                    Already have an account? <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled" NavigateUrl="~/Admin/Master/SignIn.aspx">Sign In</asp:HyperLink>
+                                                </div>
+                                            </div>
+                        <br />
                 </div>
+                    </div>
             </div>
+        
 
         <!-- scripts -->
         <script src="../../Assets/adminOld/vendor/jquery/jquery.min.js"></script>

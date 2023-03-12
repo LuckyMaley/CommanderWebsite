@@ -20,7 +20,10 @@ namespace CommanderWebsite.Models
         public string wishlistId { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime DateAdded { get; set; }
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }

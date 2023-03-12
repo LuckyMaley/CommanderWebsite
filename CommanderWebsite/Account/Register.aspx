@@ -1,4 +1,4 @@
-<%@ Page Title="Register" Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="CommanderWebsite.Account.Register" %>
+<%@ Page Title="Sign Up" Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="CommanderWebsite.Account.Register" %>
 
 <!DOCTYPE html>
 
@@ -77,6 +77,7 @@
                                     CssClass="text-danger" ErrorMessage="The last name field is required." />
                             </div>
                         </div>
+
                         <div class="form-group">
                             <asp:Label runat="server" AssociatedControlID="Email" CssClass=" control-label">Email</asp:Label>
                             <div class="">
@@ -107,9 +108,32 @@
                             <div class="" style="text-align:center">
                                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Sign Up" CssClass="btn btn-primary" />
                             </div>
-                            <br />
-                            <div style="text-align:center">Already have an account? <span class="ml-1"></span> <a href="Login">Login</a></div>
+                           
                         </div>
+                        <div class="container">
+                                            <div class="row">
+                                                <div class="sa-divider sa-divider--has-text">
+                                                    <div class="sa-divider__text">Or continue with</div>
+                                                </div>
+                                            </div>
+                                            <br />
+                                        </div>
+                                        <div class="container">
+                                           
+                                                <section id="socialLoginForm">
+                                                    <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+                                                      
+                                                </section>
+                                               
+                                            
+                                            
+                                            <div class="row" style="justify-content: center">
+                                                <div class="form-group  text-center text-muted">
+                                                    <br />
+                                                        <div style="text-align:center">Already have an account? <span class="ml-1"></span> <a href="Login">Sign In</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
                     </div>
                     </asp:PlaceHolder>
                     <asp:PlaceHolder runat="server" ID="ConfirmEmail" Visible="false">

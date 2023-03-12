@@ -53,8 +53,9 @@
                             <div class="">
                                 <asp:PlaceHolder id="loginForm" runat="server">
                                     <div class="card">
-                                    <div class=" card-body" style="text-align:center;">
+                                    <div class=" card-body mb-4" style="text-align:center;">
                                         <h4>Forgot your password?</h4>
+                                        <hr />
                                         <asp:PlaceHolder runat="server" ID="PlaceHolder1" Visible="false">
                                             <p class="text-danger">
                                                 <asp:Literal runat="server" ID="FailureText" />

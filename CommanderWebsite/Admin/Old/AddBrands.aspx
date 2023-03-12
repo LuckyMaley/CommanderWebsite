@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="AddBrands.aspx.cs" Inherits="CommanderWebsite.Admin.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Admin.Master" AutoEventWireup="true" CodeBehind="AddBrands.aspx.cs" Inherits="CommanderWebsite.Admin.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="min-height:1024px;text-align:center">
         <br />

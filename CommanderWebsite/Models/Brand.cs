@@ -28,6 +28,12 @@ namespace CommanderWebsite.Models
         [Column(TypeName = "text")]
         public string Description { get; set; }
 
+        [Column(TypeName = "date")]
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
+
         [Column(TypeName = "image")]
         public byte[] Picture { get; set; }
 

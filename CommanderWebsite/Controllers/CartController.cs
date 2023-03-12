@@ -30,7 +30,8 @@ namespace CommanderWebsite.Models
                     Cart_ID = Guid.NewGuid().ToString(),
                     cartId = ShoppingCartId,
                     Quantity = Qty,
-                    DateCreated = DateTime.Now,
+                    createdDate = DateTime.Now,
+                    modifiedDate = DateTime.Now,
                     Product_ID = id,
                     Name = name,
                     Price = price * Qty
@@ -43,6 +44,7 @@ namespace CommanderWebsite.Models
                 // then add one to the quantity.
                 cartItem.Quantity += Qty;
                 cartItem.Price += price;
+                cartItem.modifiedDate = DateTime.Now;
             }
             _db.SaveChanges();
         }

@@ -23,6 +23,15 @@ namespace CommanderWebsite.Models
         public virtual DbSet<Payment> Payments { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Wishlist> Wishlists { get; set; }
+        public virtual DbSet<Gmail> Gmails { get; set; }
+        public virtual DbSet<Dimension> Dimensions { get; set; }
+        public virtual DbSet<ProductImage> ProductImages { get; set; }
+        public virtual DbSet<Tag> Tags { get; set; }
+        public virtual DbSet<Time> Times { get; set; }
+        public virtual DbSet<File> Files { get; set; }
+        public virtual DbSet<Folder> Folders { get; set; }
+        public virtual DbSet<Inventory> Inventorys { get; set; }
+        public virtual DbSet<Visibility> Visibilitys { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

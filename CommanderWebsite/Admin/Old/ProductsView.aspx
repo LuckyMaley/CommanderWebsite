@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="ProductsView.aspx.cs" Inherits="CommanderWebsite.Admin.ProductsView" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Admin.Master" AutoEventWireup="true" CodeBehind="ProductsView.aspx.cs" Inherits="CommanderWebsite.Admin.ProductsView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div align="center"  style=" width: 100%; min-height:1024px;">
     <div class="container" style="padding-top:50px; ">

@@ -18,8 +18,9 @@ namespace CommanderWebsite.Models
                     Firstname = firstName,
                     Lastname = lastName,
                     Email = email,
-                    Password = passWord
-
+                    Password = passWord,
+                    createdDate = DateTime.Now,
+                    modifiedDate = DateTime.Now
                 };
                 context.Customers.Add(newCustomer);
                 context.SaveChanges();
@@ -34,8 +35,9 @@ namespace CommanderWebsite.Models
                 {
                     Customer_ID = Guid.NewGuid().ToString(), 
                     Email = email,
-                    Password = passWord
-
+                    Password = passWord,
+                    createdDate = DateTime.Now,
+                    modifiedDate = DateTime.Now
                 };
                 context.Customers.Add(newCustomer);
                 context.SaveChanges();
@@ -46,7 +48,7 @@ namespace CommanderWebsite.Models
             CommanderEDM db = new CommanderEDM();
             var user = db.Customers.SingleOrDefault(c => c.Email == email);
             user.Password = pass;
-            
+            user.modifiedDate = DateTime.Now;
             db.SaveChanges();
         }
 
@@ -79,6 +81,7 @@ namespace CommanderWebsite.Models
             customer.Cellphone = cellphone;
             customer.Address = address;    
             customer.Email = email;
+            customer.modifiedDate = DateTime.Now;
                 
             db.SaveChanges();
         }
@@ -88,6 +91,7 @@ namespace CommanderWebsite.Models
             CommanderEDM db = new CommanderEDM();
             var userRow = db.Customers.SingleOrDefault(c => c.Email == email);
             userRow.Picture = pic;
+            userRow.modifiedDate = DateTime.Now;
             db.SaveChanges();
 
         }

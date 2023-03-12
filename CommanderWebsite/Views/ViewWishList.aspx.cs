@@ -28,9 +28,10 @@ namespace CommanderWebsite.Views
                 {
 
                     var dataT = ProductsController.getByID2(id);
-                    if (dataT.Picture != null)
+                    var pic = ImageController.getByID2(id);
+                    if (pic != null)
                     {
-                        byte[] imageData = (byte[])dataT.Picture;
+                        byte[] imageData = (byte[])pic;
                         string img = Convert.ToBase64String(imageData, 0, imageData.Length);
                         imsdf.ImageUrl = "data:image/png;base64," + img;
 
@@ -66,8 +67,9 @@ namespace CommanderWebsite.Views
                
                 CommanderEDM db = new CommanderEDM();
                 var d = ProductsController.getByID2(id);
+                var inv = InventoryController.getByID2(id);
                 var c = WishListController.getWishListItem(Context.User.Identity.Name);
-                CartController.AddToCart(id, c.Quantity, d.Name, d.Price, Context.User.Identity.Name);
+                CartController.AddToCart(id, c.Quantity, d.Name, inv.UnitPrice, Context.User.Identity.Name);
                 var myCart = CartController.GetCartItems(Context.User.Identity.Name);
                 Repeater rp = (Repeater)Page.Master.FindControl("rptr");
                 rp.DataSource = myCart;

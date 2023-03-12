@@ -46,10 +46,11 @@ namespace CommanderWebsite.Views
                     Label lbl2 = (Label)e.Item.FindControl("Label1");
                     string b = (string)Session["val"];
                     var dataT = ProductsController.getByID2(b);
-                    if (dataT.Picture != null)
+                    var pic = ImageController.getByID2(b);
+                    if (pic != null)
                     {
 
-                        byte[] imageData = (byte[])dataT.Picture;
+                        byte[] imageData = (byte[])pic;
                         string img = Convert.ToBase64String(imageData, 0, imageData.Length);
                         Image imagew = (Image)e.Item.FindControl("imgs");
                         imagew.ImageUrl = "data:image/png;base64," + img;

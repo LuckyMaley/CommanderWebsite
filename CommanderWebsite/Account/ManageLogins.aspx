@@ -55,8 +55,10 @@
                     <div class="form-horizontal" style="text-align:center;">     
                         <!-- Enter content here -->
                                   <h2>Manage your external logins.</h2>
+                        
     <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
-            <p class="text-success"><%: SuccessMessage %></p>
+            <hr />
+        <p class="text-success"><%: SuccessMessage %></p>
         </asp:PlaceHolder>
     <div>
         <section id="externalLoginsForm">
@@ -67,6 +69,7 @@
 
                 <LayoutTemplate>
                     <h4>Registered Logins</h4>
+                    <hr />
                     <table class="table">
                         <tbody>
                             <tr runat="server" id="itemPlaceholder"></tr>

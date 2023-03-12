@@ -31,6 +31,15 @@ namespace CommanderWebsite.Models
         [StringLength(50)]
         public string AdminType { get; set; }
 
+        [StringLength(50)]
+        public string Gender { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime? DOB { get; set; }
 

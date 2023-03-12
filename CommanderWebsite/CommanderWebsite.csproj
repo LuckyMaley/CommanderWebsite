@@ -286,7 +286,6 @@
     <Content Include="Account\Forgot.aspx" />
     <Content Include="Account\Lockout.aspx" />
     <Content Include="Account\Login_alt.aspx" />
-    <Content Include="Account\Login_old.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\ManageLogins.aspx" />
     <Content Include="Account\Manage.aspx" />
@@ -297,8 +296,11 @@
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\Verify.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\Master\ConfirmAccount.aspx" />
     <Content Include="Admin\Master\Editor\Editor.aspx" />
+    <Content Include="Admin\Master\ResetPasswordConfirmation.aspx" />
     <Content Include="Admin\Store\BlankPage.aspx" />
     <Content Include="Admin\Store\Components\Accordion.aspx" />
     <Content Include="Admin\Store\Components\Alerts.aspx" />
@@ -1681,13 +1683,6 @@
     <Compile Include="Account\Login_alt.aspx.designer.cs">
       <DependentUpon>Login_alt.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\Login_old.aspx.cs">
-      <DependentUpon>Login_old.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Login_old.aspx.designer.cs">
-      <DependentUpon>Login_old.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1758,12 +1753,26 @@
     <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
       <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\Verify.aspx.cs">
+      <DependentUpon>Verify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Verify.aspx.designer.cs">
+      <DependentUpon>Verify.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Master\ConfirmAccount.aspx.cs">
+      <DependentUpon>ConfirmAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Master\ConfirmAccount.aspx.designer.cs">
+      <DependentUpon>ConfirmAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Master\Editor\Editor.aspx.cs">
       <DependentUpon>Editor.aspx</DependentUpon>
@@ -1778,6 +1787,13 @@
     </Compile>
     <Compile Include="Admin\Master\Editor\Editor.Master.designer.cs">
       <DependentUpon>Editor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Master\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Master\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Store\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -2810,7 +2826,14 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DeliveryController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
-    <Compile Include="Controllers\GmailController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
+    <Compile Include="Controllers\InventoryController.cs" />
+    <Compile Include="Models\Currency.cs" />
+    <Compile Include="Models\Dimension.cs" />
+    <Compile Include="Models\File.cs" />
+    <Compile Include="Models\Folder.cs" />
+    <Compile Include="Models\Gmail.cs" />
     <Compile Include="Controllers\GmailHelperController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
@@ -2988,9 +3011,14 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Delivery.cs" />
     <Compile Include="Models\Discount.cs" />
+    <Compile Include="Models\ProductImage.cs" />
+    <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\Time.cs" />
+    <Compile Include="Models\Visibility.cs" />
     <Compile Include="Models\Wishlist.cs" />
     <Compile Include="OffCanvasCart.aspx.cs">
       <DependentUpon>OffCanvasCart.aspx</DependentUpon>

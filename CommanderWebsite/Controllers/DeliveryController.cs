@@ -18,7 +18,8 @@ namespace CommanderWebsite.Controllers
                 Delivery_ID = Guid.NewGuid().ToString(),
                 dAddress = address,
                 Cost = 20,
-                DateCreated = DateTime.Now
+                createdDate = DateTime.Now,
+                modifiedDate = DateTime.Now
             };
             db.Deliveries.Add(deliver);
             db.SaveChanges();

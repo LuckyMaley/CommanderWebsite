@@ -8,12 +8,13 @@ using CommanderWebsite.Controllers;
 using System.Data.SqlClient;
 using System.Data;
 using CommanderWebsite.Models;
+using System.IO;
 
 namespace CommanderWebsite.Admin
 {
     public partial class AddProducts : System.Web.UI.Page
     {
-        static byte[]  imagelink;
+        static byte[] imagelink;
         protected void Page_Load(object sender, EventArgs e)
         {
             int count = 1;
@@ -25,14 +26,15 @@ namespace CommanderWebsite.Admin
 
             if (!IsPostBack)
             {
-             try { 
-                var list = CategoryController.getCategoryList();
-                foreach (string li in list)
+                try
                 {
-                    DropDownList1.Items.Add(li.ToString());
+                    var list = CategoryController.getCategoryList();
+                    foreach (string li in list)
+                    {
+                        DropDownList1.Items.Add(li.ToString());
+                    }
                 }
-                }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Response.Write("<script>alert('an error occured: " + ex + "')</script>");
                 }
@@ -42,21 +44,22 @@ namespace CommanderWebsite.Admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            try { 
-            if (uploadimage() == true)
+            try
             {
-                var userRow = AdminController.FindByEmailAdmin(User.Identity.Name);
-                string cId = DropDownList1.Text;
-                string aId = userRow.Admin_ID;
-                
-                CommanderEDM db = new CommanderEDM();
-                ProductsController.InsertProd(TextBox1.Text,TextBox3.Text,TextBox4.Text,int.Parse(DropDownList2.SelectedItem.Text), TextBox6.Text, decimal.Parse(TextBox2.Text), imagelink, aId, cId );
-                
-                Label3.Text = "Product Has Been Successfully Saved";
-             
+                if (uploadimage() == true)
+                {
+                    var userRow = AdminController.FindByEmailAdmin(User.Identity.Name);
+                    string cId = DropDownList1.Text;
+                    string aId = userRow.Admin_ID;
+
+                    CommanderEDM db = new CommanderEDM();
+                    ProductsController.InsertProd(TextBox1.Text, TextBox3.Text, TextBox4.Text, int.Parse(DropDownList2.SelectedItem.Text), TextBox6.Text, decimal.Parse(TextBox2.Text), imagelink, aId, cId);
+
+                    Label3.Text = "Product Has Been Successfully Saved";
+
+                }
             }
-            }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Label4.Text = ex.ToString();
             }
@@ -81,25 +84,39 @@ namespace CommanderWebsite.Admin
                     FileUpload1.PostedFile.InputStream.Read(pic, 0, length);
                     imagelink = pic;
                     imagesaved = true;
+                    FileInfo fi = new FileInfo(FileUpload1.PostedFile.FileName);
+
+                    // Get File Name  
+                    string justFileName = fi.Name;
+                    // Get file extension   
+                    string extn = fi.Extension;
+                    // File Exists ?  
+                    bool exists = fi.Exists;
+                    if (fi.Exists)
+                    {
+                        // Get file size  
+                        long size = fi.Length;
+                    }
+                    else
+                    {
+                        Label4.Text = "Kindly Upload JPEG Format Image Only";
+                    }
+
                 }
+
                 else
                 {
-                    Label4.Text = "Kindly Upload JPEG Format Image Only";
+                    Label4.Text = "You have not selected any file - Browse and Select File First";
                 }
 
-            }
 
-            else
-            {
-                Label4.Text = "You have not selected any file - Browse and Select File First";
-            }
 
+
+            }
             return imagesaved;
 
+
+
         }
-
-
-
-        
     }
 }

@@ -48,7 +48,15 @@ namespace CommanderWebsite.Account
                 
                 var result1 = manager.AddToRole(user.Id,usertype);
                 signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
-                IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
+                if (!String.IsNullOrEmpty(returnUrl))
+                {
+                    IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                }
+                else
+                {
+                    Response.Redirect("/Account/Verify");
+                }
             }
             
         }

@@ -28,6 +28,12 @@ namespace CommanderWebsite.Models
         public decimal? Price { get; set; }
 
         [Column(TypeName = "date")]
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
+
+        [Column(TypeName = "date")]
         public DateTime? StartDate { get; set; }
 
         [Column(TypeName = "date")]

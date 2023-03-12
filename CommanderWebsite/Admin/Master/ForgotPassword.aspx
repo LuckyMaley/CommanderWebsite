@@ -504,17 +504,41 @@
 <body>
     <form id="form1" runat="server">
         <div class="min-h-100 p-0 p-sm-6 d-flex align-items-stretch">
+            <asp:PlaceHolder id="loginForm" runat="server">
             <div class="card w-25x flex-grow-1 flex-sm-grow-0 m-sm-auto">
                 <div class="card-body p-sm-5 m-sm-3 flex-grow-0">
                     <h1 class="mb-0 fs-3">Forgot password?</h1>
+                    <asp:PlaceHolder runat="server" ID="PlaceHolder1" Visible="false">
+                                            <p class="text-danger">
+                                                <asp:Literal runat="server" ID="FailureText" />
+                                            </p>
+                                        </asp:PlaceHolder>
                     <div class="fs-exact-14 text-muted mt-2 pt-1 mb-5 pb-2">Enter the email address associated with your account and we will send a link to reset your password.</div>
                     <div class="mb-4">
-                        <label class="form-label">Email Address</label><input type="email" class="form-control form-control-lg"></div>
+                        <asp:Label runat="server" AssociatedControlID="Email" CssClass="control-label">Email</asp:Label>
+                                                <asp:TextBox runat="server" ID="Email" CssClass="form-control form-control-lg" TextMode="Email" />
+                                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                                                    CssClass="text-danger" ErrorMessage="The email field is required." /></div>
                     <div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100">Reset Password</button></div>
+                        <asp:Button runat="server" OnClick="Forgot" Text="Reset Password" CssClass="btn btn-primary btn-lg w-100" />
+                    </div>
                     <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Remember your password? <a href="../../Account/Login.aspx">Sign in</a></div>
+                
                 </div>
             </div>
+            </asp:PlaceHolder>
+            <asp:PlaceHolder runat="server" ID="DisplayEmail" Visible="false">
+                <div class="container">
+                    <div class="row">
+
+                                    <div class="card"><div class="card-body">
+                                    <h2><%:Page.Title %></h2>
+                                    <p class="text-info" style="text-align:center;">
+                                        Please check your email to reset your password.
+                                    </p></div></div>
+                    </div>
+                </div>
+                                </asp:PlaceHolder>
         </div>
 
         <!-- scripts -->

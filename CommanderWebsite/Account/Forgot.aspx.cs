@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using CommanderWebsite.Models;
 using SendGrid.Helpers.Mail;
+using CommanderWebsite.Controllers;
 
 namespace CommanderWebsite.Account
 {
@@ -34,11 +35,16 @@ namespace CommanderWebsite.Account
                     // Send email with the code and the redirect to reset password page
                     string code = manager.GeneratePasswordResetToken(user.Id);
                     string callbackUrl = IdentityHelper.GetResetPasswordRedirectUrl(code, Request);
-                    manager.SendEmail(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>.");
-
-                    loginForm.Visible = false;
-                    DisplayEmail.Visible = true;
-                }
+                    bool emailSent = EmailController.SendEmail(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>.");
+                    if (emailSent == false)
+                    {
+                        FailureText.Text = "There was an error sending email";
+                    }
+                    else
+                    {
+                        loginForm.Visible = false;
+                        DisplayEmail.Visible = true;
+                    }                }
             }
         }
     }

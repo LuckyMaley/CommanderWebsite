@@ -64,7 +64,8 @@
                                     <div class=" d-flex align-items-stretch">
                                         <div class="card">
                                             <div class="card-body  ">
-                                                <h1 class="mb-0 fs-3">Confirm email address</h1>
+                                                <h1 class="mb-4 fs-3">Confirm email address</h1>
+                                                <hr />
                                                 <div class="alert alert-success alert-sa-has-icon mt-4 mb-4" role="alert">
                                                     <div class="alert-sa-icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
@@ -85,6 +86,8 @@
                                     <div class="card">
                                         <div class="card-body  ">
                                             <h2><%:Page.Title %></h2>
+                                            <hr />
+                                            <br />
                                             <p class="text-danger">
                                                 An error has occurred.
                                             </p>

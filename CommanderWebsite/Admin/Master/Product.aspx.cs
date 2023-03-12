@@ -11,7 +11,19 @@ namespace CommanderWebsite.Admin.Master
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+               
+        }  
 
+        protected void statusScheduled_ServerChange(object sender, EventArgs e)
+        {
+            if (statusScheduled.Checked == true)
+            {
+                ScheduleDiv.Visible = true;
+            }
+            else
+            {
+                ScheduleDiv.Visible = false;
+            }
         }
     }
 }

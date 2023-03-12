@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Categories" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="CategoriesAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.CategoriesAdmin" %>
+﻿<%@ Page Title="Categories" Language="C#" MasterPageFile="Admin.Master" AutoEventWireup="true" CodeBehind="CategoriesAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.CategoriesAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="container" style="min-height:1024px;">
 <br />

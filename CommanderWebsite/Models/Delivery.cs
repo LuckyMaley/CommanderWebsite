@@ -29,7 +29,10 @@ namespace CommanderWebsite.Models
         public decimal Cost { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? DateCreated { get; set; }
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
 
         [StringLength(50)]
         public string DeliveryStatus { get; set; }

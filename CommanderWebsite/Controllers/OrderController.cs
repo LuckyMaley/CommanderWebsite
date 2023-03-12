@@ -19,7 +19,8 @@ namespace CommanderWebsite.Controllers
                 Product_ID = prodID,
                 Customer_ID = id,
                 Payment_ID = pay,
-                Date = DateTime.Now,
+                createdDate = DateTime.Now,
+                modifiedDate = DateTime.Now,
                 Delivery_ID = del,
                 Final_Price = price,
                 IsReturned = 0

@@ -26,18 +26,20 @@ namespace CommanderWebsite.Models
         public string Discount_ID { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? Date { get; set; }
+        public DateTime createdDate { get; set; }
 
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
+        
         [Column(TypeName = "decimal")]
         public decimal AmountDue { get; set; }
 
-        public int? Payed { get; set; }
+        public int Payed { get; set; }
 
         public virtual Customer Customer { get; set; }
 
         public virtual Discount Discount { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        
         public virtual ICollection<Order> Orders { get; set; }
     }
 }

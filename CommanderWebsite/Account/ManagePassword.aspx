@@ -54,6 +54,7 @@
                     <div class="form-horizontal" style="text-align:center;">     
                         <!-- Enter content here -->
                          <h2><%:Page.Title %>.</h2>
+                        
     <div class="form-horizontal">
         <section id="passwordForm">
             <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">

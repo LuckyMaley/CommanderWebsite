@@ -18,7 +18,9 @@ namespace CommanderWebsite.Controllers
                 Name = name,
                 Description = desc,
                 Admin_ID = userRow.Admin_ID,
-                Picture = img
+                Picture = img,
+                createdDate = DateTime.Now,
+                modifiedDate = DateTime.Now
             };
             db.Brands.Add(brand);
             db.SaveChanges();

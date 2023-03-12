@@ -24,9 +24,10 @@ namespace CommanderWebsite.Views
             {
 
                 var dataT = ProductsController.getByID2(id);
-                if (dataT.Picture != null)
+                    var pic = ImageController.getByID2(id);
+                    if (pic != null)
                 {
-                    byte[] imageData = (byte[])dataT.Picture;
+                    byte[] imageData = (byte[])pic;
                     string img = Convert.ToBase64String(imageData, 0, imageData.Length);
                     imsdf1.ImageUrl = "data:image/png;base64," + img;
 

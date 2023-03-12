@@ -15,6 +15,7 @@ using System.Net.Mime;
 using System.Net.Mail;
 using System.Web;
 using System.Net.Configuration;
+using CommanderWebsite.Controllers;
 
 namespace CommanderWebsite
 {
@@ -22,25 +23,9 @@ namespace CommanderWebsite
     {
         public Task SendAsync(IdentityMessage message)
         {
-          
-            string text = message.Body;
-            string html = message.Body;
-            
-            
-            var smtpSection = (SmtpSection)ConfigurationManager.GetSection("system.net/mailSettings/smtp");
-            MailMessage msg = new MailMessage();
-            msg.From = new MailAddress(smtpSection.Network.UserName);
-            msg.To.Add(new MailAddress(message.Destination));
-            msg.Subject = message.Subject;
-            msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
-            msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
-            SmtpClient smtpClient = new SmtpClient(smtpSection.Network.Host, Convert.ToInt32(smtpSection.Network.Port));
-            System.Net.NetworkCredential credentials = new NetworkCredential(smtpSection.Network.UserName, smtpSection.Network.Password);
-            smtpClient.UseDefaultCredentials = false;
-            smtpClient.EnableSsl = true;
-            smtpClient.Credentials = credentials;
-            smtpClient.Send(msg);
 
+            bool sendEmail = EmailController.SendEmail(message.Destination, message.Subject, message.Body);
+            
 
             return Task.FromResult(0);
         }

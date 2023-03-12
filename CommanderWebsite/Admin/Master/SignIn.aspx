@@ -490,8 +490,11 @@
     <link rel="stylesheet" href="../../Assets/adminOld/vendor/nouislider/nouislider.min.css" />
     <link rel="stylesheet" href="../../Assets/adminOld/vendor/fullcalendar/main.min.css" />
     <link rel="stylesheet" href="../../Assets/adminOld/css/style.css" />
+
+     <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
+
      <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T24HD2682"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-1T24HD2682"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -508,37 +511,74 @@
                 <div class="card-body p-sm-5 m-sm-3 flex-grow-0">
                     <h1 class="mb-0 fs-3">Sign In</h1>
                     <div class="fs-exact-14 text-muted mt-2 pt-1 mb-5 pb-2">Log in to your account to continue.</div>
+                    <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
+                                            <p class="text-danger">
+                                                <asp:Literal runat="server" ID="FailureText" />
+                                            </p>
+                                        </asp:PlaceHolder>
                     <div class="mb-4">
-                        <label class="form-label">Email Address</label><input type="email" class="form-control form-control-lg">
+                        <label class="form-label">Email Address</label>
+                                            <asp:TextBox runat="server" ID="Email" CssClass="form-control form-control-lg" TextMode="Email" />
+                                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                                                CssClass="text-danger" ErrorMessage="The email field is required." />
                     </div>
                     <div class="mb-4">
-                        <label class="form-label">Password</label><input type="password" class="form-control form-control-lg">
+                        <label class="form-label">Password</label>
+                                             <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control form-control-lg" />
+                                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
+                       
                     </div>
                     <div class="mb-4 row py-2 flex-wrap">
                         <div class="col-auto me-auto">
-                            <label class="form-check mb-0">
-                                <input type="checkbox" class="form-check-input"><span class="form-check-label">Remember me</span></label>
+                            <div class="form-check mb-0">
+                                <input type="checkbox" class="form-check-input" id="RememberMe" runat="server" /><asp:Label runat="server" CssClass="form-check-label">Remember me?</asp:Label></div>
+                                                                                
                         </div>
                         <div class="col-auto d-flex align-items-center"><a href="ForgotPassword.aspx">Forgot password?</a></div>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100">Sign In</button>
+                        
+                        <asp:Button runat="server" OnClick="LogIn" Text="Sign In" CssClass="btn btn-primary btn-lg w-100" />
+                        
                     </div>
                 </div>
-                <div class="sa-divider sa-divider--has-text">
-                    <div class="sa-divider__text">Or continue with</div>
-                </div>
-                <div class="card-body p-sm-5 m-sm-3 flex-grow-0">
-                    <div class="d-flex flex-wrap me-n3 mt-n3">
-                        <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Google</button>
-                        <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Facebook</button>
-                        <button type="button" class="btn btn-secondary flex-grow-1 me-3 mt-3">Twitter</button>
+                <asp:Panel ID="ExternalLogin" runat="server" Visible="false">
+                <div class="container">
+                                            <div class="row">
+                                                <div class="sa-divider sa-divider--has-text">
+                                                    <div class="sa-divider__text">Or continue with</div>
+                                                </div>
+                                            </div>
+                                            <br />
+                                        </div>
+                                        <div class="container">
+                                           
+                                                <section id="socialLoginForm">
+                                                    <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+                                                      
+                                                </section>
+                                               
+                                            
+                                            
+                                            <div class="row" style="justify-content: center">
+                                                <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">
+                                                    Don't have an account? <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Sign Up</asp:HyperLink>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </asp:Panel>
+                <div class="container">
+                    <div class="row" style="justify-content: center">
+                        <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">
+                            Don't have an account?
+                            <asp:HyperLink runat="server" ID="HyperLink1" ViewStateMode="Disabled" NavigateUrl="~/Admin/Master/SignUp.aspx">Sign Up</asp:HyperLink>
+                        </div>
                     </div>
-                    <div class="form-group mb-0 mt-4 pt-2 text-center text-muted">Don't have an account? <a href="SignUp.aspx">Sign up</a></div>
                 </div>
+                <br />
             </div>
-        </div>
-
+        
+            </div>
         <!-- scripts -->
         <script src="../../Assets/adminOld/vendor/jquery/jquery.min.js"></script>
         <script src="../../Assets/adminOld/vendor/feather-icons/feather.min.js"></script>

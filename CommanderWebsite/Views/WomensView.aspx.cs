@@ -26,11 +26,12 @@ namespace CommanderWebsite.Views
                     CommanderEDM db = new CommanderEDM();
                     var d1 = ProductsController.getByID1(id);
                     var d = ProductsController.getByID2(id);
+                    var pic = ImageController.getByID2(id);
                     rptrImages2.DataSource = d1;
                     rptrImages2.DataBind();
-                    if (d.Picture != null)
+                    if (pic != null)
                     {
-                            byte[] imageData = (byte[])d.Picture;
+                            byte[] imageData = (byte[])pic;
                             string img = Convert.ToBase64String(imageData, 0, imageData.Length);
                             im.ImageUrl = "data:image/png;base64," + img;
 
@@ -64,9 +65,10 @@ namespace CommanderWebsite.Views
 
                     CommanderEDM db = new CommanderEDM();
                     var d = ProductsController.getByID2(id);
+                    var inv = InventoryController.getByID2(id);
                     DropDownList df = (DropDownList)Page.Master.FindControl("dl");
                     DropDownList df1 = (DropDownList)rptrImages2.Items[0].FindControl("DropDownList1");
-                    CartController.AddToCart(id, int.Parse(df1.SelectedValue), d.Name, d.Price, Context.User.Identity.Name);
+                    CartController.AddToCart(id, int.Parse(df1.SelectedValue), d.Name, inv.UnitPrice, Context.User.Identity.Name);
                     var myCart = CartController.GetCartItems(Context.User.Identity.Name);
                     HttpContext.Current.Session["CartCount"] = myCart.Count;
                     Repeater rp = (Repeater)Page.Master.FindControl("rptr");
@@ -98,9 +100,10 @@ namespace CommanderWebsite.Views
 
                     CommanderEDM db = new CommanderEDM();
                     var d = ProductsController.getByID2(id);
+                    var inv = InventoryController.getByID2(id);
                     DropDownList df1 = (DropDownList)rptrImages2.Items[0].FindControl("DropDownList1");
                     int f = int.Parse(df1.SelectedValue);
-                    WishListController.AddToWishList(id, f, d.Name, d.Price, Context.User.Identity.Name);
+                    WishListController.AddToWishList(id, f, d.Name, inv.UnitPrice, Context.User.Identity.Name);
                     var myWishList = WishListController.GetWishListItems(Context.User.Identity.Name);
                     HttpContext.Current.Session["WishListCount"] = myWishList.Count;
                     var mycart = CartController.GetCartItems(Context.User.Identity.Name);

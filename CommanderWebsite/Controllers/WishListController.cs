@@ -29,7 +29,8 @@ namespace CommanderWebsite.Controllers
                 {
                     wishlistId = ShoppingCartId,
                     Quantity = Qty,
-                    DateAdded = DateTime.Now,
+                    createdDate = DateTime.Now,
+                    modifiedDate = DateTime.Now,
                     Product_ID = id,
                     Name = name,
                     Price = price * Qty

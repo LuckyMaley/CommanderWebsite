@@ -22,6 +22,12 @@ namespace CommanderWebsite.Models
         public string Product_ID { get; set; }
 
         [StringLength(50)]
+        public string SKU { get; set; }
+
+        [StringLength(50)]
+        public string Slug { get; set; }
+
+        [StringLength(50)]
         public string Name { get; set; }
 
         [StringLength(50)]
@@ -30,16 +36,23 @@ namespace CommanderWebsite.Models
         [Column(TypeName = "text")]
         public string Description { get; set; }
 
-        public int? Quantity { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
 
         [StringLength(50)]
-        public string size { get; set; }
+        public string Weight { get; set; }
 
-        public decimal Price { get; set; }
+        public decimal Length { get; set; }
 
-        [Column(TypeName = "image")]
-        public byte[] Picture { get; set; }
+        public decimal Width { get; set; }
 
+        public decimal Height { get; set; }
+
+        public bool ShippingRequire { get; set; }
+        
         [StringLength(50)]
         public string Admin_ID { get; set; }
 
@@ -49,9 +62,31 @@ namespace CommanderWebsite.Models
         [StringLength(50)]
         public string Brand_ID { get; set; }
 
+        [StringLength(50)]
+        public string Visibility_ID { get; set; }
+
+        [StringLength(50)]
+        public string Tag_ID { get; set; }
+
+        [StringLength(50)]
+        public string Dimension_ID { get; set; }
+
+        [StringLength(50)]
+        public string Image_ID { get; set; }
+
         public virtual Admin Admin { get; set; }
 
+        public virtual Tag Tag { get; set; }
+
+        public virtual Dimension Dimension { get; set; }
+
+        public virtual ProductImage ProductImage { get; set; }
+
         public virtual Brand Brand { get; set; }
+
+
+        public virtual Visibility Visibility { get; set; }
+
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cart> Carts { get; set; }

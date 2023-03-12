@@ -53,7 +53,7 @@ namespace CommanderWebsite.Controllers
             return prodi;
         }
 
-        public static void InsertProd (string name, string  type, string description, int quantity, string size, decimal price, byte[] picture, string admin_id, string category_id)
+        public static void InsertProd (string name, string  type, string description, int quantity, string weight, decimal price, byte[] picture, string admin_id, string category_id)
         {
             CommanderEDM db = new CommanderEDM();
             var InsProd = new Product()
@@ -62,39 +62,39 @@ namespace CommanderWebsite.Controllers
                 Name = name,
                 Type = type,
                 Description = description,
-                Quantity = quantity,
-                size = size,
-                Price = price,
-                Picture = picture,
+                Weight = weight,
                 Admin_ID = admin_id,
-                Category_ID = category_id
+                Category_ID = category_id,
+                createdDate = DateTime.Now,
+                modifiedDate = DateTime.Now
             };
             db.Products.Add(InsProd);
+            InventoryController.InsertInvProd(InsProd.Product_ID, quantity, price, admin_id);
+            FileController.InsertProdFile(InsProd.Product_ID, picture, admin_id);
             db.SaveChanges();
 
         }
 
-        public static void UpdateProd(string prodID, string name, string type, string description, int quantity, string size, decimal price, byte[] picture, string admin_id, string category_id)
+        public static void UpdateProd(string prodID, string name, string type, string description, int quantity, string weight, decimal price, byte[] picture, string admin_id, string category_id)
         {
             CommanderEDM db = new CommanderEDM();
             var prod = db.Products.SingleOrDefault(c => c.Product_ID.Equals(prodID));
             prod.Name = name;
             prod.Type = type;
             prod.Description = description;
-            prod.Quantity = quantity;
-            prod.size = size;
-            prod.Price = price;
-            prod.Picture = picture;
+            prod.Weight = weight;
+            ImageController.UpdateProdImage(prodID, picture, admin_id);
+            InventoryController.UpdateInvProd(prodID, quantity, price, admin_id);
             prod.Admin_ID = admin_id;
             prod.Category_ID = category_id;
+            prod.modifiedDate = DateTime.Now;
             db.SaveChanges();
 
         }
 
-        public static byte[] getByImg(string img)
+        public static byte[] getByImg(string prodID)
           {
-              var _db = new CommanderEDM();
-              var full = _db.Products.SingleOrDefault(c => c.Product_ID.Equals(img)).Picture;
+              var full = ImageController.getByImg(prodID);
 
               return full;
           } 

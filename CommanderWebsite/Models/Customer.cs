@@ -32,6 +32,12 @@ namespace CommanderWebsite.Models
         [Column(TypeName = "date")]
         public DateTime? DOB { get; set; }
 
+        [Column(TypeName = "date")]
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
+
         [StringLength(50)]
         public string Gender { get; set; }
 

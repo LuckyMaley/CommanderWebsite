@@ -26,7 +26,10 @@ namespace CommanderWebsite.Models
         public string Product_ID { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? Date { get; set; }
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
 
         public decimal? Final_Price { get; set; }
 

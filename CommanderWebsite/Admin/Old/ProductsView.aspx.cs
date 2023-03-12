@@ -21,18 +21,19 @@ namespace CommanderWebsite.Admin
                 {
                     string id = Request.QueryString["Product_ID"];
                     var d = ProductsController.getByID2(id);
-
+                    var inv = InventoryController.getByID2(id);
+                    var pic = ImageController.getByID2(id);
                     TextBox1.Text = d.Name;
                     TextBox3.Text = d.Type;
                     TextBox4.Text = d.Description;
-                    TextBox5.Text = d.Quantity.ToString();
-                    TextBox6.Text = d.size;
-                    TextBox2.Text = d.Price.ToString();
+                    TextBox5.Text = inv.QuantityOnHand.ToString();
+                    TextBox6.Text = d.Weight;
+                    TextBox2.Text = inv.UnitPrice.ToString();
                     DropDownList1.Text = d.Category_ID.ToString();
-
-                    if (d.Picture != null)
+                    
+                    if (pic != null)
                     {
-                        byte[] imageData = (byte[])d.Picture;
+                        byte[] imageData = (byte[])pic;
                         string img = Convert.ToBase64String(imageData, 0, imageData.Length);
                         im.ImageUrl = "data:image/png;base64," + img;
 

@@ -22,7 +22,10 @@ namespace CommanderWebsite.Models
         public int Quantity { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime DateCreated { get; set; }
+        public DateTime createdDate { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime modifiedDate { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }

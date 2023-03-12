@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VerifyAccount.aspx.cs" Inherits="CommanderWebsite.Admin.Master.VerifyAccount" %>
+﻿<%@ Page Title="Verify Account" Language="C#" AutoEventWireup="true" CodeBehind="VerifyAccount.aspx.cs" Inherits="CommanderWebsite.Admin.Master.VerifyAccount" %>
 
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr" data-scompiler-id="0">
-<head>
-    <title>Reset Password - COMMANDER E-Commerce Website</title>
+<head runat="server">
+    <title><%:Page.Title %> - COMMANDER E-Commerce Website</title>
     
      <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -515,7 +515,7 @@
                     </div>
                     <p class="pt-2">Before proceeding, we must verify the authenticity of your inbox.</p>
                     <p>Check the mailbox! After receiving the email, click on the link provided to confirm the email address.</p>
-                    <p class="mb-0 sa-text--sm">Back to <a href="SignIn.aspx">Sign In</a> page.</p>
+                   
                 </div>
             </div>
         </div>

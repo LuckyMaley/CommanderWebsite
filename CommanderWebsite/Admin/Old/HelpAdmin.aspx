@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="HelpAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.HelpAdmin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Admin.Master" AutoEventWireup="true" CodeBehind="HelpAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.HelpAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container" style="min-height:1024px;">
 <br />

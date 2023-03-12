@@ -16,10 +16,11 @@ namespace CommanderWebsite.Controllers
             var payment = new Payment()
             {
                 Payment_ID = Guid.NewGuid().ToString(),
-                Date = DateTime.Now,
                 Customer_ID = id,
                 AmountDue = due,
-                Payed = 0  //Either 0 or 1, if 0 not payed
+                Payed = 0,  //Either 0 or 1, if 0 not payed
+                createdDate = DateTime.Now,
+                modifiedDate = DateTime.Now,
             };
             db.Payments.Add(payment);
             db.SaveChanges();

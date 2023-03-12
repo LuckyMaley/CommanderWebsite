@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Products" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="ProductsAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.ProductsAdmin" %>
+﻿<%@ Page Title="Products" Language="C#" MasterPageFile="Admin.Master" AutoEventWireup="true" CodeBehind="ProductsAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.ProductsAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="background-color:lightgrey; height:50px;margin-top:0px; width:100%; border-bottom-left-radius:10px; border-bottom-right-radius: 10px;">
         <h1 style="text-align: center;">Products</h1>

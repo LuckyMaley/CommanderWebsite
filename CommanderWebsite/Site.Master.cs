@@ -155,7 +155,7 @@ namespace CommanderWebsite
                     {
                         byte[] imageData = (byte[])userRow1.Picture;
                         string img = Convert.ToBase64String(imageData, 0, imageData.Length);
-                        Image imagesomet = (Image)LoginViewHome.FindControl("Image4");
+                            Image imagesomet = (Image)LoginViewHome.FindControl("Image4");
                         imagesomet.ImageUrl = "data:image/png;base64," + img;
                     }
                 }

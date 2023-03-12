@@ -507,13 +507,25 @@
             <div class="card w-25x flex-grow-1 flex-sm-grow-0 m-sm-auto">
                 <div class="card-body p-sm-5 m-sm-3 flex-grow-0">
                     <h1 class="mb-0 fs-3">Reset Password</h1>
+                    <p class="text-danger">
+                        <asp:Literal runat="server" ID="ErrorMessage" />
+                    </p>
                     <div class="fs-exact-14 text-muted mt-2 pt-1 mb-5 pb-2">Please enter your new password.</div>
                     <div class="mb-4">
-                        <label class="form-label">Password</label><input type="password" class="form-control form-control-lg"></div>
+                        <asp:Label runat="server" AssociatedControlID="Password" CssClass="control-label">New Password</asp:Label>
+                                <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
+                                    CssClass="text-danger" ErrorMessage="The password field is required." /></div>
                     <div class="mb-4 pb-2">
-                        <label class="form-label">Confirm password</label><input type="password" class="form-control form-control-lg"></div>
+                        <asp:Label runat="server" AssociatedControlID="ConfirmPassword" CssClass="control-label">Confirm New Password</asp:Label>
+                                <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" CssClass="form-control" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
+                                    CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
+                                <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
+                                    CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." /></div>
                     <div class="pt-3">
-                        <button type="submit" class="btn btn-primary btn-lg w-100">Reset</button></div>
+                        <asp:Button runat="server" OnClick="Reset_Click" Text="Reset" CssClass="btn btn-primary btn-lg w-100" />
+                    </div>
                 </div>
             </div>
         </div>

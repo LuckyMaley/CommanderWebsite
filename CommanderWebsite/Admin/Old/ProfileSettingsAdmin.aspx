@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Profile Settings" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="ProfileSettingsAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.ProfileSettingsAdmin" %>
+﻿<%@ Page Title="Profile Settings" Language="C#" MasterPageFile="Admin.Master" AutoEventWireup="true" CodeBehind="ProfileSettingsAdmin.aspx.cs" Inherits="CommanderWebsite.Admin.ProfileSettingsAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div  class="container-fluid" style="text-align:center;padding-right:15px; display:flex; width:100%; justify-content:center;">
         <div id="AccountSetting" class="row" style="border: medium solid #000000; margin-bottom: 26px;" >
