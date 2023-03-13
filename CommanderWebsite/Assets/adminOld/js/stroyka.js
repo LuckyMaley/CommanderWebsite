@@ -17,6 +17,7 @@
 // - Indeterminate
 // - Select2
 // - Quill
+// - TinyMCE
 // - Toasts
 // - Container query
 // - Inbox list
@@ -625,35 +626,67 @@
                     theme: 'snow',
                     modules: {
                         toolbar: [
-                            ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-                            ['blockquote', 'code-block'],
-
-                            [{ 'header': 1 }, { 'header': 2 }],               // custom button values
-                            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-                            [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-                            [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-                            [{ 'direction': 'rtl' }],                         // text direction
-
-                            [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-                            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-
-                            [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
                             [{ 'font': [] }],
-                            [{ 'align': [] }],
+                            [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+                            ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+                            [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+                            //['blockquote', 'code-block'],
 
-                            ['clean']                                         // remove formatting button
+                           // [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+                            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                            [{ 'align': [] }],
+                           //[{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+                           // [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+                            //[{ 'direction': 'rtl' }],                         // text direction
+
+                            
+                            //[{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+
+                             ['image','video', 'link'],
+                            //['clean']                                         // remove formatting button
                         ],
                     },
                 };
             },
         };
+        var Link = Quill.import('formats/link');
+        var builtInFunc = Link.sanitize;
+        Link.sanitize = function customSanitizeLinkInput(linkValueInput) {
+            var val = linkValueInput;
 
+            // do nothing, since this implies user's already using a custom protocol
+            if (/^\w+:/.test(val));
+            else if (!/^https?:/.test(val))
+                val = "https://" + val;
+
+            return builtInFunc.call(this, val); // retain the built-in logic
+        };
         $('.sa-quill-control').each(function() {
+            
             stroykaQuill.init(this);
         });
-
         return stroykaQuill;
     })();
+
+    /*TinyMCE
+    //TinyMCE
+    */
+    tinymce.init({
+        selector: 'textarea.editor',
+        editor_selector : "editor",
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        promotion: false,
+        branding: false,
+        menubar: false,
+        toolbar_mode: 'wrap',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+          { value: 'First.Name', title: 'First Name' },
+          { value: 'Email', title: 'Email' },
+        ]
+    });
 
     /*
     // Toasts

@@ -36,7 +36,7 @@
                                         <div id="ProdslugHelp" class="form-text">Unique human-readable product identifier. No longer than 255 characters.</div>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="Proddescription" class="form-label">Description</label><textarea id="Proddescription" runat="server" class="sa-quill-control form-control sa-quill-control--ready" rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare, mi in ornare elementum, libero nibh lacinia urna, quis convallis lorem erat at purus. Maecenas eu varius nisi.</textarea>
+                                        <label for="Proddescription" class="form-label">Description</label><textarea id="Proddescription" runat="server" class="editor form-control " rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare, mi in ornare elementum, libero nibh lacinia urna, quis convallis lorem erat at purus. Maecenas eu varius nisi.</textarea>
                                     </div>
                                     <div>
                                         <label for="Prodshortdescription" class="form-label">Short description</label><textarea id="Prodshortdescription" runat="server" class="form-control" rows="2"></textarea></div>

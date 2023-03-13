@@ -4,7 +4,7 @@
         <h1 style="text-align: center;">Products</h1>
     </div>
  <div style="width:100%; height:40px; position:sticky;">
-     <asp:Button ID="Button1" runat="server" class="btn btn-default pull-right" Text="ADD" OnClick="Button1_Click" /></div>   
+     <asp:Button ID="Button1" runat="server" CssClass="btn btn-default pull-right" Text="ADD" OnClick="Button1_Click" /></div>   
  <div style="text-align:center;min-height:1024px;" class="container-fluid">
     <div  class="row2" style="text-align:center;">
                                

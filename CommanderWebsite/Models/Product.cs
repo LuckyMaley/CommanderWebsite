@@ -72,6 +72,9 @@ namespace CommanderWebsite.Models
         public string Dimension_ID { get; set; }
 
         [StringLength(50)]
+        public string Currency_ID { get; set; }
+
+        [StringLength(50)]
         public string Image_ID { get; set; }
 
         public virtual Admin Admin { get; set; }
@@ -79,6 +82,8 @@ namespace CommanderWebsite.Models
         public virtual Tag Tag { get; set; }
 
         public virtual Dimension Dimension { get; set; }
+
+        public virtual Currency Currency { get; set; }
 
         public virtual ProductImage ProductImage { get; set; }
 
