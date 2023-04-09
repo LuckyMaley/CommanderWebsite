@@ -546,7 +546,7 @@
                             </div>
                         <div class="mb-4 py-2">
                             <label class="form-check mb-0">
-                                <input type="checkbox" class="form-check-input" runat="server"><span class="form-check-label">I agree to the <a href="TermsAndConditions.aspx">terms and conditions</a>.</span></label></div>
+                                <input type="checkbox" class="form-check-input" runat="server" /><span class="form-check-label">I agree to the <a href="TermsAndConditions.aspx">terms and conditions</a>.</span></label></div>
                         <div>
                             <asp:Button runat="server" OnClick="CreateUser_Click" Text="Sign Up" CssClass="btn btn-primary btn-lg w-100" />
                         </div>

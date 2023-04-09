@@ -8,6 +8,7 @@ namespace CommanderWebsite.Controllers
 {
     public class ProductsController
     {
+        public static List<Product> listProd = new List<Product>();
         public static IEnumerable<Product> getByID(string prodID)
         {
             CommanderEDM db = new CommanderEDM();
@@ -15,6 +16,23 @@ namespace CommanderWebsite.Controllers
             var prod = g.Where(c => c.Product_ID == prodID);
             return prod;
         }
+
+        public static List<Product> InsertNewTempProd()
+        {
+            //listProd = new List<Product>();
+            var InsProd = new Product()
+            {
+                Product_ID = Guid.NewGuid().ToString(),
+                QuantitySold = 0,
+                SalesValue = 0,
+                Admin_ID = "6dde783d-e078-4b6c-ba2e-762c2ad5ecee", //Still need to add a parameter to get the admin adding product
+                createdDate = DateTime.Now,
+                modifiedDate = DateTime.Now
+            };
+            listProd.Add(InsProd);
+            return listProd;
+        }
+
         public static Product getByID2(string prodID)
         {
             CommanderEDM db = new CommanderEDM();
@@ -53,7 +71,7 @@ namespace CommanderWebsite.Controllers
             return prodi;
         }
 
-        public static void InsertProd (string name, string  type, string description, int quantity, string weight, decimal price, byte[] picture, string admin_id, string category_id)
+        public static void InsertProd (string name, string  type, string description, int quantity, decimal weight, decimal price, byte[] picture, string admin_id, string category_id)
         {
             CommanderEDM db = new CommanderEDM();
             var InsProd = new Product()
@@ -62,6 +80,11 @@ namespace CommanderWebsite.Controllers
                 Name = name,
                 Type = type,
                 Description = description,
+                QuantityOnHand = quantity,
+                UnitPrice = price,
+                QuantitySold = 0,
+                InventoryValue = price * quantity,
+                SalesValue = 0,
                 Weight = weight,
                 Admin_ID = admin_id,
                 Category_ID = category_id,
@@ -69,13 +92,12 @@ namespace CommanderWebsite.Controllers
                 modifiedDate = DateTime.Now
             };
             db.Products.Add(InsProd);
-            InventoryController.InsertInvProd(InsProd.Product_ID, quantity, price, admin_id);
             FileController.InsertProdFile(InsProd.Product_ID, picture, admin_id);
             db.SaveChanges();
 
         }
 
-        public static void UpdateProd(string prodID, string name, string type, string description, int quantity, string weight, decimal price, byte[] picture, string admin_id, string category_id)
+        public static void UpdateProd(string prodID, string name, string type, string description, int quantity, decimal weight, decimal price, byte[] picture, string admin_id, string category_id)
         {
             CommanderEDM db = new CommanderEDM();
             var prod = db.Products.SingleOrDefault(c => c.Product_ID.Equals(prodID));
@@ -84,7 +106,9 @@ namespace CommanderWebsite.Controllers
             prod.Description = description;
             prod.Weight = weight;
             ImageController.UpdateProdImage(prodID, picture, admin_id);
-            InventoryController.UpdateInvProd(prodID, quantity, price, admin_id);
+            prod.QuantityOnHand = quantity;
+            prod.UnitPrice = price;
+            prod.InventoryValue = price * quantity;
             prod.Admin_ID = admin_id;
             prod.Category_ID = category_id;
             prod.modifiedDate = DateTime.Now;
@@ -97,6 +121,7 @@ namespace CommanderWebsite.Controllers
               var full = ImageController.getByImg(prodID);
 
               return full;
-          } 
+          }
+         
     }
 }

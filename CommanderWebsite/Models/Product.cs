@@ -42,8 +42,19 @@ namespace CommanderWebsite.Models
         [Column(TypeName = "date")]
         public DateTime modifiedDate { get; set; }
 
-        [StringLength(50)]
-        public string Weight { get; set; }
+        public decimal UnitPrice { get; set; }
+
+        public int QuantityOnHand { get; set; }
+
+        public int QuantitySold { get; set; }
+
+        public bool StockControl { get; set; }
+
+        public decimal InventoryValue { get; set; }
+
+        public decimal SalesValue { get; set; }
+
+        public decimal Weight { get; set; }
 
         public decimal Length { get; set; }
 
@@ -74,9 +85,6 @@ namespace CommanderWebsite.Models
         [StringLength(50)]
         public string Currency_ID { get; set; }
 
-        [StringLength(50)]
-        public string Image_ID { get; set; }
-
         public virtual Admin Admin { get; set; }
 
         public virtual Tag Tag { get; set; }
@@ -84,8 +92,6 @@ namespace CommanderWebsite.Models
         public virtual Dimension Dimension { get; set; }
 
         public virtual Currency Currency { get; set; }
-
-        public virtual ProductImage ProductImage { get; set; }
 
         public virtual Brand Brand { get; set; }
 

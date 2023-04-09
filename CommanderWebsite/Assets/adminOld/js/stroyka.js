@@ -28,6 +28,7 @@
 // - Responsive slug input group
 // - Colors
 // - Nouislider
+// - Format Currency Values
 */
 
 (function($, window){
@@ -679,6 +680,7 @@
         promotion: false,
         branding: false,
         menubar: false,
+        statusbar: false,
         toolbar_mode: 'wrap',
         tinycomments_mode: 'embedded',
         tinycomments_author: 'Author name',
@@ -1070,4 +1072,117 @@
             create: create,
         };
     })();
+    
+
+    /*
+   // Format Currency Values
+   */
+    // Jquery Dependency
+
+    $("input[data-type='currency']").on({
+        keyup: function () {
+            formatCurrency($(this));
+        },
+        blur: function () {
+            formatCurrency($(this), "blur");
+        }
+    });
+
+
+    function formatNumber(n) {
+        // format number 1000000 to 1,234,567
+        return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    }
+
+
+    function formatCurrency(input, blur) {
+        // appends $ to value, validates decimal side
+        // and puts cursor back in right position.
+
+        // get input value
+        var input_val = input.val();
+
+        // don't validate empty input
+        if (input_val === "") { return; }
+
+        // original length
+        var original_len = input_val.length;
+
+        // initial caret position 
+        var caret_pos = input.prop("selectionStart");
+        if (input_val.indexOf("0") === 0 && input_val.length > 1) {
+            input_val = input_val.substring(1);
+        }
+        // check for decimal
+        if (input_val.indexOf(".") >= 1) {
+            
+            // get position of first decimal
+            // this prevents multiple decimals from
+            // being entered
+            var decimal_pos = input_val.indexOf(".");
+
+            // split number by decimal point
+            var left_side = input_val.substring(0, decimal_pos);
+            var right_side = input_val.substring(decimal_pos);
+
+            // add commas to left side of number
+            left_side = formatNumber(left_side);
+
+            // validate right side
+            right_side = formatNumber(right_side);
+
+            // On blur make sure 2 numbers after decimal
+            if (blur === "blur") {
+                right_side += "00";
+            }
+
+            // Limit decimal to only 2 digits
+            right_side = right_side.substring(0, 2);
+
+            // join number by .
+            input_val = left_side + "." + right_side;
+
+        }
+        else if (input_val === "00") {
+                            input_val = "";
+        }
+        else {
+            // no decimal entered
+            // add commas to number
+            // remove all non-digits 
+            
+            input_val = formatNumber(input_val);
+            input_val = input_val;
+
+            // final formatting
+            if (blur === "blur") {
+                input_val += ".00";
+            }
+        }
+        
+
+        // send updated string to input
+        input.val(input_val);
+
+        // put caret back in the right position
+        var updated_len = input_val.length;
+        caret_pos = updated_len - original_len + caret_pos;
+        input[0].setSelectionRange(caret_pos, caret_pos);
+    }
+
+    function uploadFiles() {
+        var files = document.getElementById('file_upload').files;
+        if (files.length == 0) {
+            alert("Please first choose or drop any file(s)...");
+            return;
+        }
+        var filenames = "";
+        for (var i = 0; i < files.length; i++) {
+            filenames += files[i].name + "\n";
+        }
+        alert("Selected file(s) :\n____________________\n" + filenames);
+    }
+
+
+
 })(jQuery, window);

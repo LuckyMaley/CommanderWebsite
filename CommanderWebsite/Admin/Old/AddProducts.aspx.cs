@@ -53,7 +53,7 @@ namespace CommanderWebsite.Admin
                     string aId = userRow.Admin_ID;
 
                     CommanderEDM db = new CommanderEDM();
-                    ProductsController.InsertProd(TextBox1.Text, TextBox3.Text, TextBox4.Text, int.Parse(DropDownList2.SelectedItem.Text), TextBox6.Text, decimal.Parse(TextBox2.Text), imagelink, aId, cId);
+                    ProductsController.InsertProd(TextBox1.Text, TextBox3.Text, TextBox4.Text, int.Parse(DropDownList2.SelectedItem.Text), decimal.Parse(TextBox6.Text), decimal.Parse(TextBox2.Text), imagelink, aId, cId);
 
                     Label3.Text = "Product Has Been Successfully Saved";
 

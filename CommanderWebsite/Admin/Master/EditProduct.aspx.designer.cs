@@ -10,16 +10,16 @@
 namespace CommanderWebsite.Admin.Master {
     
     
-    public partial class Product {
+    public partial class EditProduct {
         
         /// <summary>
-        /// Prodname control.
+        /// productName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Prodname;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText productName;
         
         /// <summary>
         /// Prodslug control.
@@ -49,24 +49,6 @@ namespace CommanderWebsite.Admin.Master {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea Prodshortdescription;
         
         /// <summary>
-        /// Prodprice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Prodprice;
-        
-        /// <summary>
-        /// Prodoldprice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Prodoldprice;
-        
-        /// <summary>
         /// Prodsku control.
         /// </summary>
         /// <remarks>
@@ -94,85 +76,13 @@ namespace CommanderWebsite.Admin.Master {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Prodquantity;
         
         /// <summary>
-        /// Alttext control.
+        /// listViewProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Alttext;
-        
-        /// <summary>
-        /// Ordernumber control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Ordernumber;
-        
-        /// <summary>
-        /// Deleteimg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Deleteimg;
-        
-        /// <summary>
-        /// Alttext1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Alttext1;
-        
-        /// <summary>
-        /// Ordernumber1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Ordernumber1;
-        
-        /// <summary>
-        /// Alttext2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Alttext2;
-        
-        /// <summary>
-        /// Ordernumber2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Ordernumber2;
-        
-        /// <summary>
-        /// Alttext3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Alttext3;
-        
-        /// <summary>
-        /// Ordernumber3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Ordernumber3;
+        protected global::System.Web.UI.WebControls.ListView listViewProducts;
         
         /// <summary>
         /// Prodseotitle control.
@@ -191,6 +101,24 @@ namespace CommanderWebsite.Admin.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTextArea Prodseodescription;
+        
+        /// <summary>
+        /// ProdPriceCurrency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProdPriceCurrency;
+        
+        /// <summary>
+        /// prodPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText prodPrice;
         
         /// <summary>
         /// statusPublished control.

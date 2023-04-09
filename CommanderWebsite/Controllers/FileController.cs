@@ -8,6 +8,8 @@ namespace CommanderWebsite.Controllers
 {
     public class FileController
     {
+
+        public static List<Models.File> listFile = new List<File>();
         public static void InsertProdFile(string prodID, byte[] picture, string admin_id)
         {
             CommanderEDM db = new CommanderEDM();
@@ -23,6 +25,26 @@ namespace CommanderWebsite.Controllers
             ImageController.InsertImage(prodID, admin_id);
             db.SaveChanges();
 
+        }
+
+        public static File InsertTempProdFile(string prodID, byte[] picture, string fileName, int size, string type, decimal height, decimal width)
+        {
+            //listFile = new List<File>();
+            var InsProd = new File()
+            {
+                File_ID = Guid.NewGuid().ToString(),
+                Type = type,
+                ActualFile = picture,
+                Size = size,
+                Height = height,
+                Width = width,
+                Name = fileName,
+                Admin_ID = "6dde783d-e078-4b6c-ba2e-762c2ad5ecee", //Must fix this
+                createdDate = DateTime.Now,
+                modifiedDate = DateTime.Now
+            };
+            listFile.Add(InsProd);
+            return InsProd;
         }
 
         public static void UpdateProdFile(string fileID, byte[] picture, string admin_id)
@@ -49,6 +71,24 @@ namespace CommanderWebsite.Controllers
             CommanderEDM db = new CommanderEDM();
             var prod = db.Files.SingleOrDefault(c => c.File_ID == fileID).ActualFile;
             return prod;
+        }
+
+        public static File getByID3(string fileID)
+        {
+            var prod = listFile.SingleOrDefault(c => c.File_ID == fileID);
+            return prod;
+        }
+
+        public static byte[] getByID4(string fileID)
+        {
+            var prod = listFile.SingleOrDefault(c => c.File_ID == fileID).ActualFile;
+            return prod;
+        }
+
+        public static void removeItem(string prodr)
+        {
+            var dbItem = listFile.SingleOrDefault(c => c.File_ID.Equals(prodr));
+            listFile.Remove(dbItem);
         }
     }
 }

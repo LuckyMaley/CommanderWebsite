@@ -30,7 +30,6 @@ namespace CommanderWebsite.Models
         public virtual DbSet<Time> Times { get; set; }
         public virtual DbSet<File> Files { get; set; }
         public virtual DbSet<Folder> Folders { get; set; }
-        public virtual DbSet<Inventory> Inventorys { get; set; }
         public virtual DbSet<Visibility> Visibilitys { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

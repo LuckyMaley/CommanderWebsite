@@ -23,10 +23,9 @@ namespace CommanderWebsite.Models
         [StringLength(50)]
         public string Body { get; set; }
 
-        [StringLength(50)]
+        [Column(TypeName = "date")]
         public DateTime MailDateTime { get; set; }
 
-        [StringLength(50)]
         public List<string> Attachments { get; set; }
     }
 }

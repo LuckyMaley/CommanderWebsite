@@ -69,10 +69,9 @@ namespace CommanderWebsite.Views
 
                 CommanderEDM db = new CommanderEDM();
                 var d = ProductsController.getByID2(id);
-                var inv = InventoryController.getByID2(id);
                 var ds = db.Carts.SingleOrDefault(c=> c.Product_ID == id);
                 int f = (int)ds.Quantity;
-                WishListController.AddToWishList(id, f, d.Name, inv.UnitPrice, Context.User.Identity.Name);
+                WishListController.AddToWishList(id, f, d.Name, d.UnitPrice, Context.User.Identity.Name);
                 var myWishList = WishListController.GetWishListItems(Context.User.Identity.Name);
                 
                 Repeater rp = (Repeater)Page.Master.FindControl("Repeater1");

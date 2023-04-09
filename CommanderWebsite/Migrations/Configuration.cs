@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "CommanderWebsite.Models.CommanderEDM";
         }
 
         protected override void Seed(CommanderWebsite.Models.CommanderEDM context)

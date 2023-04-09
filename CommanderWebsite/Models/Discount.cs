@@ -25,7 +25,7 @@ namespace CommanderWebsite.Models
         [Column(TypeName = "text")]
         public string Description { get; set; }
 
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime createdDate { get; set; }
@@ -34,10 +34,10 @@ namespace CommanderWebsite.Models
         public DateTime modifiedDate { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         [StringLength(50)]
         public string Category_ID { get; set; }

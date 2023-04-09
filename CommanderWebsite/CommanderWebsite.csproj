@@ -300,6 +300,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\Master\ConfirmAccount.aspx" />
     <Content Include="Admin\Master\Editor\Editor.aspx" />
+    <Content Include="Admin\Master\EditProduct.aspx" />
     <Content Include="Admin\Master\ResetPasswordConfirmation.aspx" />
     <Content Include="Admin\Store\BlankPage.aspx" />
     <Content Include="Admin\Store\Components\Accordion.aspx" />
@@ -394,7 +395,7 @@
     <Content Include="Admin\Master\Order.aspx" />
     <Content Include="Admin\Master\OrdersList.aspx" />
     <Content Include="Admin\Master\PricingTable.aspx" />
-    <Content Include="Admin\Master\Product.aspx" />
+    <Content Include="Admin\Master\AddProduct.aspx" />
     <Content Include="Admin\Master\ProductsList.aspx" />
     <Content Include="Admin\Master\ResetPassword.aspx" />
     <Content Include="Admin\Master\Settings.aspx" />
@@ -1178,6 +1179,7 @@
     <Content Include="Default4.aspx" />
     <Content Include="FAQ.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Migrations\TextFile1.txt" />
     <Content Include="OffCanvasCart.aspx" />
     <Content Include="OrderSuccess.aspx" />
     <Content Include="Quickview.aspx" />
@@ -1591,6 +1593,7 @@
     <Content Include="Assets\editor\js\bootstrap.bundle.js.map" />
     <Content Include="Assets\editor\js\bootstrap.bundle.min.js.map" />
     <Content Include="Assets\adminOld\vendor\tinymce\langs\README.md" />
+    <Content Include="FileImage.ashx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -1848,6 +1851,13 @@
     </Compile>
     <Compile Include="Admin\Master\Editor\Editor.Master.designer.cs">
       <DependentUpon>Editor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Master\EditProduct.aspx.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Master\EditProduct.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Master\ResetPasswordConfirmation.aspx.cs">
       <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
@@ -2535,12 +2545,12 @@
     <Compile Include="Admin\Master\PricingTable.aspx.designer.cs">
       <DependentUpon>PricingTable.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Master\Product.aspx.cs">
-      <DependentUpon>Product.aspx</DependentUpon>
+    <Compile Include="Admin\Master\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Master\Product.aspx.designer.cs">
-      <DependentUpon>Product.aspx</DependentUpon>
+    <Compile Include="Admin\Master\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Master\ProductsList.aspx.cs">
       <DependentUpon>ProductsList.aspx</DependentUpon>
@@ -2889,7 +2899,38 @@
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\ImageController.cs" />
-    <Compile Include="Controllers\InventoryController.cs" />
+    <Compile Include="FileImage.ashx.cs">
+      <DependentUpon>FileImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304080418546_InitialCreate.cs" />
+    <Compile Include="Migrations\202304080418546_InitialCreate.designer.cs">
+      <DependentUpon>202304080418546_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304080419551_InitialCreate1.cs" />
+    <Compile Include="Migrations\202304080419551_InitialCreate1.designer.cs">
+      <DependentUpon>202304080419551_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304080424156_InitialCreate2.cs" />
+    <Compile Include="Migrations\202304080424156_InitialCreate2.designer.cs">
+      <DependentUpon>202304080424156_InitialCreate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304080427522_InitialCreate3.cs" />
+    <Compile Include="Migrations\202304080427522_InitialCreate3.designer.cs">
+      <DependentUpon>202304080427522_InitialCreate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304081105124_InitialCreate4.cs" />
+    <Compile Include="Migrations\202304081105124_InitialCreate4.designer.cs">
+      <DependentUpon>202304081105124_InitialCreate4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304081220120_InitialCreate5.cs" />
+    <Compile Include="Migrations\202304081220120_InitialCreate5.designer.cs">
+      <DependentUpon>202304081220120_InitialCreate5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304091846442_InitialCreate6.cs" />
+    <Compile Include="Migrations\202304091846442_InitialCreate6.designer.cs">
+      <DependentUpon>202304091846442_InitialCreate6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Currency.cs" />
     <Compile Include="Models\Dimension.cs" />
     <Compile Include="Models\File.cs" />
@@ -3055,11 +3096,6 @@
     </Compile>
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
-    <Compile Include="Migrations\202211102114198_InitialCreate.cs" />
-    <Compile Include="Migrations\202211102114198_InitialCreate.designer.cs">
-      <DependentUpon>202211102114198_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModalImageHandler.ashx.cs">
       <DependentUpon>ModalImageHandler.ashx</DependentUpon>
     </Compile>
@@ -3073,7 +3109,6 @@
     <Compile Include="Models\Delivery.cs" />
     <Compile Include="Models\Discount.cs" />
     <Compile Include="Models\ProductImage.cs" />
-    <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Product.cs" />
@@ -3430,8 +3465,26 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211102114198_InitialCreate.resx">
-      <DependentUpon>202211102114198_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202304080418546_InitialCreate.resx">
+      <DependentUpon>202304080418546_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304080419551_InitialCreate1.resx">
+      <DependentUpon>202304080419551_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304080424156_InitialCreate2.resx">
+      <DependentUpon>202304080424156_InitialCreate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304080427522_InitialCreate3.resx">
+      <DependentUpon>202304080427522_InitialCreate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304081105124_InitialCreate4.resx">
+      <DependentUpon>202304081105124_InitialCreate4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304081220120_InitialCreate5.resx">
+      <DependentUpon>202304081220120_InitialCreate5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304091846442_InitialCreate6.resx">
+      <DependentUpon>202304091846442_InitialCreate6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

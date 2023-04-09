@@ -67,9 +67,8 @@ namespace CommanderWebsite.Views
                
                 CommanderEDM db = new CommanderEDM();
                 var d = ProductsController.getByID2(id);
-                var inv = InventoryController.getByID2(id);
                 var c = WishListController.getWishListItem(Context.User.Identity.Name);
-                CartController.AddToCart(id, c.Quantity, d.Name, inv.UnitPrice, Context.User.Identity.Name);
+                CartController.AddToCart(id, c.Quantity, d.Name, d.UnitPrice, Context.User.Identity.Name);
                 var myCart = CartController.GetCartItems(Context.User.Identity.Name);
                 Repeater rp = (Repeater)Page.Master.FindControl("rptr");
                 rp.DataSource = myCart;

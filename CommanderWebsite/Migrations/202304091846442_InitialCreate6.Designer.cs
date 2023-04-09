@@ -7,13 +7,13 @@ namespace CommanderWebsite.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class InitialCreate6 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate6));
         
         string IMigrationMetadata.Id
         {
-            get { return "202211102114198_InitialCreate"; }
+            get { return "202304091846442_InitialCreate6"; }
         }
         
         string IMigrationMetadata.Source

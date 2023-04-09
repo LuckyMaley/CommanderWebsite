@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Edit Product" Language="C#" MasterPageFile="~/Admin/Master/AdminSite.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="CommanderWebsite.Admin.Master.Product" %>
+﻿<%@ Page Title="Edit Product" Language="C#" MasterPageFile="~/Admin/Master/AdminSite.Master" AutoEventWireup="true" CodeBehind="EditProduct.aspx.cs" Inherits="CommanderWebsite.Admin.Master.EditProduct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -21,7 +21,59 @@
                         <div class="col-auto d-flex"><a href="#" class="btn btn-secondary me-3">Duplicate</a><a href="#" class="btn btn-primary">Save</a></div>
                     </div>
                 </div>
-                <div class="sa-entity-layout sa-entity-layout--size--lg sa-entity-layout--size--md" data-sa-container-query="{&quot;920&quot;:&quot;sa-entity-layout--size--md&quot;,&quot;1100&quot;:&quot;sa-entity-layout--size--lg&quot;}">
+                <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link active"
+            id="home-tab-1"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-content-1"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-content-1"
+            aria-selected="true"
+        >
+            General<span class="nav-link-sa-indicator"></span>
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link"
+            id="profile-tab-1"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-content-1"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-content-1"
+            aria-selected="true"
+        >
+            Profile<span class="nav-link-sa-indicator"></span>
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link"
+            id="contact-tab-1"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-content-1"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-content-1"
+            aria-selected="true"
+        >
+            Contact<span class="nav-link-sa-indicator"></span>
+        </button>
+    </li>
+</ul>
+<div class="tab-content mt-4">
+    <div
+        class="tab-pane fade show active"
+        id="home-tab-content-1"
+        role="tabpanel"
+        aria-labelledby="home-tab-1"
+    >
+        <div class="mb-0">
+            <div class="sa-entity-layout sa-entity-layout--size--lg sa-entity-layout--size--md" data-sa-container-query="{&quot;920&quot;:&quot;sa-entity-layout--size--md&quot;,&quot;1100&quot;:&quot;sa-entity-layout--size--lg&quot;}">
                     <div class="sa-entity-layout__body">
                         <div class="sa-entity-layout__main">
                             <div class="card">
@@ -30,7 +82,7 @@
                                         <h2 class="mb-0 fs-exact-18">Basic information</h2>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="Prodname" class="form-label">Name</label><input type="text" runat="server" class="form-control" id="Prodname" value="Brandix Screwdriver SCREW150" /></div>
+                                        <label for="productName" class="form-label">Name</label><input type="text" runat="server" class="form-control" id="productName" value="Brandix Screwdriver SCREW150" /></div>
                                     <div class="mb-4">
                                         <label for="Prodslug" class="form-label">Slug</label><div class="input-group input-group--sa-slug"><span class="input-group-text" id="ProdslugAaddon">https://example.com/products/</span><input type="text" class="form-control" runat="server" id="Prodslug" aria-describedby="ProdslugAddon ProdslugHelp" value="brandix-screwdriver-screw150" /></div>
                                         <div id="ProdslugHelp" class="form-text">Unique human-readable product identifier. No longer than 255 characters.</div>
@@ -39,22 +91,11 @@
                                         <label for="Proddescription" class="form-label">Description</label><textarea id="Proddescription" runat="server" class="editor form-control " rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare, mi in ornare elementum, libero nibh lacinia urna, quis convallis lorem erat at purus. Maecenas eu varius nisi.</textarea>
                                     </div>
                                     <div>
-                                        <label for="Prodshortdescription" class="form-label">Short description</label><textarea id="Prodshortdescription" runat="server" class="form-control" rows="2"></textarea></div>
+                                        <label for="Prodshortdescription" class="form-label">Short description</label><textarea id="Prodshortdescription" runat="server" class="form-control sa-quill-control" rows="2"></textarea></div>
                                 </div>
                             </div>
                             <div class="card mt-5">
-                                <div class="card-body p-5">
-                                    <div class="mb-5">
-                                        <h2 class="mb-0 fs-exact-18">Pricing</h2>
-                                    </div>
-                                    <div class="row g-4">
-                                        <div class="col">
-                                            <label for="Prodprice" class="form-label">Price</label><input type="number" runat="server" class="form-control" id="Prodprice" value="1499" /></div>
-                                        <div class="col">
-                                            <label for="Prodoldprice" class="form-label">Old price</label><input type="number" runat="server" class="form-control" id="Prodoldprice" /></div>
-                                    </div>
-                                    <div class="mt-4 mb-n2"><a href="#">Schedule discount</a></div>
-                                </div>
+                                
                             </div>
                             <div class="card mt-5">
                                 <div class="card-body p-5">
@@ -78,7 +119,45 @@
                                 </div>
                                 <div class="mt-n5">
 <div class="sa-divider"></div>
-                                        <table class="sa-table">
+                                    <table class="sa-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="w-min">Image</th>
+                                                    <th class="min-w-10x">Alt text</th>
+                                                    <th class="w-min">Order</th>
+                                                    <th class="w-min"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                    <asp:ListView ID="listViewProducts" OnItemDataBound="listViewProducts_ItemDataBound" runat="server">
+                         <EmptyDataTemplate>
+                              <div id="NoRecords" runat="server" >
+                                No records are available.
+                              </div>
+                         </EmptyDataTemplate>
+                    <ItemTemplate> 
+                        
+                                                <tr>
+                                                    <td>
+                                                        <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
+                                                            <img src='<%# "~/FileImage.ashx?file="+ Eval("File_ID") %>' width="40" height="40" alt="" /></div>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" runat="server" id="Alttext" class="form-control form-control-sm" /></td>
+                                                    <td>
+                                                        <input type="text" id="Ordernumber" runat="server" class="form-control form-control-sm w-4x" value="0" /></td>
+                                                    <td>
+                                                        <button class="btn btn-sa-muted btn-sm mx-n3" runat="server" id="Deleteimg" type="button" aria-label="Delete image" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Delete image">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                                                                <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z"></path></svg></button></td>
+                                                </tr>
+                                            
+                    </ItemTemplate>
+        </asp:ListView>
+
+                                            </tbody>
+                                        </table>
+                                       <%-- <table class="sa-table">
                                             <thead>
                                                 <tr>
                                                     <th class="w-min">Image</th>
@@ -145,7 +224,7 @@
                                                                 <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z"></path></svg></button></td>
                                                 </tr>
                                             </tbody>
-                                        </table>
+                                        </table>--%>
                                     </div>
                                     <div class="sa-divider"></div>
                                     <div class="px-5 py-4 my-2"><a href="#">Upload new image</a></div>
@@ -168,11 +247,28 @@
                             <div class="card w-100">
                                 <div class="card-body p-5">
                                     <div class="mb-5">
+                                        <h2 class="mb-0 fs-exact-18">Pricing</h2>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="mb-4">
+                                        <label for="prodPrice" class="form-label">Price</label><div class="input-group input-group--sa-slug"><span class="input-group-text" id="ProdPriceAaddon">
+                                            <asp:Label ID="ProdPriceCurrency" runat="server" Text="R"></asp:Label></span><input type="text" placeholder="0.00" class="form-control" title="" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"  data-type="currency"  runat="server" id="prodPrice" aria-describedby="ProdPriceAddon ProdPriceHelp" value="" /></div>
+                                        <div id="ProdPriceHelp" class="form-text">Unique human-readable product identifier. No longer than 255 characters.</div>
+                                    </div>
+                                        <div class="mt-4 mb-n2"><a href="#">Schedule discount</a></div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="card w-100 mt-5">
+                                <div class="card-body p-5">
+                                    <div class="mb-5">
                                         <h2 class="mb-0 fs-exact-18">Visibility</h2>
                                     </div>
                                     <div class="mb-4">
                                         <script type="text/javascript">
-                                        
+                                            
                                             function ShowHideDiv() {
                                             var statusSchedule = document.getElementById("<%=statusScheduled.ClientID%>");
                                                 var statusPublish = document.getElementById("<%=statusPublished.ClientID%>");
@@ -223,6 +319,39 @@
                         </div>
                     </div>
                 </div>
+        </div>
+    </div>
+    <div
+        class="tab-pane fade"
+        id="profile-tab-content-1"
+        role="tabpanel"
+        aria-labelledby="profile-tab-1"
+    >
+        <p class="mb-0">
+            This is some placeholder content the Profile tab&#x27;s associated content.
+            Clicking another tab will toggle the visibility of this one for the next. The
+            tab JavaScript swaps classes to control the content visibility and styling.
+            You can use it with tabs, pills, and any other <code>.nav</code>-powered
+            navigation.
+        </p>
+    </div>
+    <div
+        class="tab-pane fade"
+        id="contact-tab-content-1"
+        role="tabpanel"
+        aria-labelledby="contact-tab-1"
+    >
+        <p class="mb-0">
+            This is some placeholder content the Contact tab&#x27;s associated content.
+            Clicking another tab will toggle the visibility of this one for the next. The
+            tab JavaScript swaps classes to control the content visibility and styling.
+            You can use it with tabs, pills, and any other <code>.nav</code>-powered
+            navigation.
+        </p>
+    </div>
+</div>
+
+                
             </div>
         </div>
         </div><script type="text/javascript">

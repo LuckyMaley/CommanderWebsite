@@ -20,7 +20,11 @@ namespace CommanderWebsite.Models
         [StringLength(50)]
         public string Type { get; set; }
 
-        public decimal Size { get; set; }
+        public int Size { get; set; }
+
+        public decimal Height { get; set; }
+
+        public decimal Width { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime createdDate { get; set; }

@@ -21,14 +21,13 @@ namespace CommanderWebsite.Admin
                 {
                     string id = Request.QueryString["Product_ID"];
                     var d = ProductsController.getByID2(id);
-                    var inv = InventoryController.getByID2(id);
                     var pic = ImageController.getByID2(id);
                     TextBox1.Text = d.Name;
                     TextBox3.Text = d.Type;
                     TextBox4.Text = d.Description;
-                    TextBox5.Text = inv.QuantityOnHand.ToString();
-                    TextBox6.Text = d.Weight;
-                    TextBox2.Text = inv.UnitPrice.ToString();
+                    TextBox5.Text = d.QuantityOnHand.ToString();
+                    TextBox6.Text = d.Weight.ToString();
+                    TextBox2.Text = d.UnitPrice.ToString();
                     DropDownList1.Text = d.Category_ID.ToString();
                     
                     if (pic != null)
@@ -64,7 +63,7 @@ namespace CommanderWebsite.Admin
                     string aId = userRow.Admin_ID;
                     string id = Request.QueryString["Product_ID"];
                     
-                    ProductsController.UpdateProd(id,TextBox1.Text, TextBox3.Text, TextBox4.Text, int.Parse(TextBox5.Text), TextBox6.Text, decimal.Parse(TextBox2.Text), imagelink, aId, cId);
+                    ProductsController.UpdateProd(id,TextBox1.Text, TextBox3.Text, TextBox4.Text, int.Parse(TextBox5.Text), decimal.Parse(TextBox6.Text), decimal.Parse(TextBox2.Text), imagelink, aId, cId);
 
                     Label3.Text = "Product Has Been Successfully Updated";
                     
