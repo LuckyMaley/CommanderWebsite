@@ -136,7 +136,7 @@ namespace CommanderWebsite.Controllers
 
         public static int getCount(string prodID)
         {
-            var prod = listProdImg.Count;
+            var prod = listProdImg.Where(c => c.Product_ID.Equals(prodID)).Count();
 
             return prod;
         }

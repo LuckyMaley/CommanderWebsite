@@ -674,10 +674,14 @@
     */
     tinymce.init({
         selector: 'textarea.editor',
-        editor_selector : "editor",
-        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        plugins: "preview powerpaste casechange searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed template codesample advtable table charmap pagebreak nonbreaking anchor advlist lists checklist wordcount tinymcespellchecker a11ychecker help formatpainter permanentpen pageembed linkchecker emoticons export",
         toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
         promotion: false,
+        onchange_callback : function(editor) {
+            editor.on('change', function(e) {
+                console.log('The ' + e.command + ' command was fired.');
+            });
+        },
         branding: false,
         menubar: false,
         statusbar: false,
@@ -689,7 +693,7 @@
           { value: 'Email', title: 'Email' },
         ]
     });
-
+   
     /*
     // Toasts
     */

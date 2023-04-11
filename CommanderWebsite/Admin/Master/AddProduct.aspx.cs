@@ -31,30 +31,30 @@ namespace CommanderWebsite.Admin.Master
             try
             {
                 int imgCount = ImageController.getCount(Literal1.Text);
-                    int index = e.Item.DataItemIndex;
-                    Button UpBtn = (Button)e.Item.FindControl("btnUp");
-                    Button DownBtn = (Button)e.Item.FindControl("btnDown");
-                    int listviewCount = imgCount;
-                    if (listviewCount > 1)
-                    {
-                        if (index == 0)
-                        {
-                            UpBtn.Enabled = false;
-                        }
-                        if (index.Equals(listviewCount - 1))
-                        {
-                            DownBtn.Enabled = false;
-                        }
-                    }
-                    else
+                int index = e.Item.DataItemIndex;
+                Button UpBtn = (Button)e.Item.FindControl("btnUp");
+                Button DownBtn = (Button)e.Item.FindControl("btnDown");
+                int listviewCount = imgCount;
+                if (listviewCount > 1)
+                {
+                    if (index == 0)
                     {
                         UpBtn.Enabled = false;
+                    }
+                    if (index.Equals(listviewCount - 1))
+                    {
                         DownBtn.Enabled = false;
                     }
+                }
+                else
+                {
+                    UpBtn.Enabled = false;
+                    DownBtn.Enabled = false;
+                }
             }
             catch (Exception ex)
             {
-               Response.Write("<script language=javascript>alert('an error occured: " + ex + "');</script>");
+                Response.Write("<script language=javascript>alert('an error occured: " + ex + "');</script>");
             }
         }
 
@@ -117,6 +117,7 @@ namespace CommanderWebsite.Admin.Master
 
                     ImageController.InsertTempImage(Literal1.Text, pic, justFileName, fileSize, extn, height, width);
                     rep_bind();
+                    hdnField.Value = "true";
                 }
                 else
                 {
@@ -134,27 +135,6 @@ namespace CommanderWebsite.Admin.Master
 
         }
 
-
-
-        protected void listViewProducts_ItemCommand(object sender, ListViewCommandEventArgs e)
-        {
-            System.Web.UI.WebControls.LinkButton productImg = (System.Web.UI.WebControls.LinkButton)e.Item.FindControl("DeleteImg");
-            System.Web.UI.WebControls.Literal lit = (System.Web.UI.WebControls.Literal)e.Item.FindControl("Literal2");
-            CommanderEDM db = new CommanderEDM();
-            if (lit.Text != "")
-            {
-                var prodImg = ImageController.getByID5(lit.Text);
-                var fileImg = FileController.getByID3(prodImg.File_ID);
-                ImageController.removeItem(prodImg.Image_ID);
-                FileController.removeItem(fileImg.File_ID);
-                rep_bind();
-            }
-            else
-            {
-                Response.Redirect("../AddProduct.aspx");
-            }
-        }
-
         protected void btnUp_Click(object sender, EventArgs e)
         {
             try
@@ -165,11 +145,13 @@ namespace CommanderWebsite.Admin.Master
                 {
                     ImageController.moveUp(fileId);
                     rep_bind();
+                    fixedSave.Style["visibility"] = "hidden";
+                    hdnField.Value = "true";
                 }
             }
             catch
             {
-                Response.Redirect("../AddProduct.aspx");
+                Response.Redirect("~/Admin/Master/AddProduct.aspx");
             }
         }
 
@@ -183,14 +165,50 @@ namespace CommanderWebsite.Admin.Master
                 {
                     ImageController.moveDown(fileId);
                     rep_bind();
+                    fixedSave.Style["visibility"] = "hidden";
+                    hdnField.Value = "true";
                 }
             }
             catch
             {
-                Response.Redirect("../AddProduct.aspx");
+                Response.Redirect("~/Admin/Master/AddProduct.aspx");
             }
 }
 
-        
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            fixedSave.Visible = true;
+            hdnField.Value = "false";
+        }
+
+        protected void Deleteimg_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                System.Web.UI.WebControls.LinkButton productImg = (System.Web.UI.WebControls.LinkButton)sender;
+                var lit = productImg.CommandArgument;
+                CommanderEDM db = new CommanderEDM();
+                if (lit != "")
+                {
+                    var prodImg = ImageController.getByID5(lit);
+                    var fileImg = FileController.getByID3(prodImg.File_ID);
+                    ImageController.removeItem(prodImg.Image_ID);
+                    FileController.removeItem(fileImg.File_ID);
+                    rep_bind();
+                    fixedSave.Style["visibility"] = "hidden";
+                    hdnField.Value = "true";
+                }
+                else
+                {
+                    Response.Redirect("~/Admin/Master/AddProduct.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Admin/Master/AddProduct.aspx");
+            }
+        }
     }  
 }

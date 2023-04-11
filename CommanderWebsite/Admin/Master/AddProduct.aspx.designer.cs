@@ -22,6 +22,60 @@ namespace CommanderWebsite.Admin.Master {
         protected global::System.Web.UI.WebControls.Literal Literal1;
         
         /// <summary>
+        /// hdnField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdnField;
+        
+        /// <summary>
+        /// btnDuplicate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDuplicate;
+        
+        /// <summary>
+        /// btnSave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSave;
+        
+        /// <summary>
+        /// fixedSave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fixedSave;
+        
+        /// <summary>
+        /// btnDuplicateBar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDuplicateBar;
+        
+        /// <summary>
+        /// btnSaveBar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSaveBar;
+        
+        /// <summary>
         /// productName control.
         /// </summary>
         /// <remarks>
@@ -67,15 +121,6 @@ namespace CommanderWebsite.Admin.Master {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea Proddescription;
         
         /// <summary>
-        /// Prodshortdescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea Prodshortdescription;
-        
-        /// <summary>
         /// listViewProducts control.
         /// </summary>
         /// <remarks>
@@ -83,6 +128,15 @@ namespace CommanderWebsite.Admin.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView listViewProducts;
+        
+        /// <summary>
+        /// uploadImglink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor uploadImglink;
         
         /// <summary>
         /// FileUpload1 control.
@@ -247,22 +301,22 @@ namespace CommanderWebsite.Admin.Master {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl productQty;
         
         /// <summary>
-        /// Select1 control.
+        /// Selectcat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Select1;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect Selectcat;
         
         /// <summary>
-        /// Selectcategories control.
+        /// Selectbrands control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Selectcategories;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect Selectbrands;
         
         /// <summary>
         /// SelectTags control.

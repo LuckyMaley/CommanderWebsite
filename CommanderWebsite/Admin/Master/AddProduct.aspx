@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- sa-app__body -->
-    <div id="top" class="sa-app__body">
+    <div id="top" class="sa-app__body" >
         <div class="mx-sm-2 px-2 px-sm-3 px-xxl-4 pb-6">
             <div class="container">
                 <div class="py-5">
@@ -17,9 +17,18 @@
                                 </ol>
                             </nav>
                             
-                            <h1 class="h3 m-0">Edit Product</h1>
+                            <h1 class="h3 m-0">Add Product</h1>
                         </div>
-                       <asp:Literal ID="Literal1" runat="server" Visible="False"></asp:Literal> <div class="col-auto d-flex"><a href="#" class="btn btn-secondary me-3">Duplicate</a><a href="#" class="btn btn-primary">Save</a></div>
+                       <asp:Literal ID="Literal1" runat="server" Visible="False"></asp:Literal> 
+                        <asp:HiddenField ID="hdnField" runat="server" />
+                        <div class="col-auto d-flex">
+                            <asp:Button ID="btnDuplicate" class="btn btn-secondary me-3" runat="server" Text="Duplicate" />
+                           <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" class="btn btn-primary" Text="Save" />
+                        </div>
+                        <div id="fixedSave" runat="server" class="d-flex sa-app__toolbar" style="top:0;margin:0;visibility:hidden; position:fixed;z-index:99; justify-content:flex-end; align-content:center; align-items:center;background-color:white">
+                            <asp:Button ID="btnDuplicateBar" class="btn btn-secondary me-3" runat="server" Text="Duplicate" />
+                           <asp:Button ID="btnSaveBar" runat="server" OnClick="btnSave_Click" class="btn btn-primary" Text="Save" />
+                        </div>
                     </div>
                 </div>
                 <div class="mb-0">
@@ -156,10 +165,10 @@
                                     
                                     <div class="row g-4">
     <div class="col-sm-6">
-        <label for="productName" class="form-label">Name</label><input type="text" runat="server" class="form-control" id="productName" value="" placeholder="Brandix Jeans JEANS150" />
+        <label for="productName" class="form-label">Name</label><input type="text" runat="server" class="form-control input" id="productName" value="" placeholder="Brandix Jeans JEANS150" />
     </div>
     <div class="col-sm-3">
-        <label for="prodSKUnum" class="form-label">SKU</label> <input type="text" class="form-control" id="prodSKUnum" runat="server" />
+        <label for="prodSKUnum" class="form-label">SKU</label> <input type="text" class="form-control input" id="prodSKUnum" runat="server" />
     </div>
     <div class="col-sm">
         <label for="prodWeight" class="form-label">Weight, kg</label><input type="text" id="prodWeight" class="form-control" runat="server" />
@@ -174,10 +183,14 @@
                                         <div id="ProdslugHelp" class="form-text">Unique human-readable product identifier. No longer than 255 characters.</div>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="Proddescription" class="form-label">Description</label><textarea id="Proddescription" runat="server" class="editor form-control " rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare, mi in ornare elementum, libero nibh lacinia urna, quis convallis lorem erat at purus. Maecenas eu varius nisi.</textarea>
+                                        <label for="Proddescription" class="form-label">Description</label>
+                                        <textarea id="Proddescription" runat="server" class="editor form-control " rows="8"></textarea>
                                     </div>
-                                    <div>
-                                        <label for="Prodshortdescription" class="form-label">Short description</label><textarea id="Prodshortdescription" runat="server" class="form-control sa-quill-control" rows="2"></textarea></div>
+                                    <%--<div>
+                                        <label for="Prodshortdescription" class="form-label">Short description</label>
+                                        <textarea id="Prodshortdescription" runat="server" class="form-control sa-quill-control" rows="2"></textarea>
+                                    </div>--%>
+                                
                                 </div>
                             </div>
                           
@@ -198,7 +211,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                    <asp:ListView ID="listViewProducts" OnItemDataBound="listViewProducts_ItemDataBound" runat="server" OnItemCommand="listViewProducts_ItemCommand">
+                                    <asp:ListView ID="listViewProducts" OnItemDataBound="listViewProducts_ItemDataBound" runat="server" >
                          <EmptyDataTemplate>
                               
                              <tr>
@@ -225,7 +238,8 @@
                                                         <asp:Button ID="btnDown" CssClass="btn btn-secondary w-100" OnClick="btnDown_Click"  CommandArgument='<%#: Eval("File_ID")%>' runat="server" Text="Down" />
                                                     </td>
                                                     <td >
-                                                        <asp:LinkButton CssClass="btn btn-sa-muted btn-sm mx-n3" runat="server" id="Deleteimg" aria-label="Delete image" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Delete image">
+                                                        <asp:HiddenField ID="HiddenField1" runat="server" Value='<%#: Eval("Image_ID")%>' />
+                                                        <asp:LinkButton CssClass="btn btn-sa-muted btn-sm mx-n3" runat="server" id="Deleteimg" aria-label="Delete image" OnClick="Deleteimg_Click" CommandArgument='<%#: Eval("Image_ID")%>'  data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Delete image">
                                                             
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
                                                                 <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z"></path></svg></asp:LinkButton>
@@ -241,7 +255,7 @@
                                        
                                     </div>
                                     <div class="sa-divider"></div>
-                                    <div class="px-5 py-4 my-2"><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Upload new image</a>
+                                    <div class="px-5 py-4 my-2"><a href="#" id="uploadImglink" runat="server" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Upload new image</a>
 
 <div
     class="modal fade"
@@ -423,9 +437,10 @@
                                                 var statusPublish = document.getElementById("<%=statusPublished.ClientID%>");
                                                 var statusHid = document.getElementById("<%=statusHidden.ClientID%>");
                                                 var DivSchedule = document.getElementById("<%=ScheduleDiv.ClientID%>");
-                                            DivSchedule.style.display = statusSchedule.checked ? "block" : "none";
-                                        }
-</script>
+                                                DivSchedule.style.display = statusSchedule.checked ? "block" : "none";                                            
+                                            }
+
+                                        </script>
                                         <label class="form-check">
                                             <input type="radio" id="statusPublished" runat="server" class="form-check-input" onclick="ShowHideDiv()" name="status"  />
                                             <span class="form-check-label">Published</span>
@@ -444,7 +459,6 @@
                                         </div>
                                         
                                     </div>
-                                    
                                     
                                 </div>
                             </div>
@@ -479,7 +493,7 @@
                                     <div class="mb-5">
                                         <h2 class="mb-0 fs-exact-18">Categories</h2>
                                     </div>
-                                    <select class="sa-select2 form-select" id="Select1" runat="server" multiple="true" tabindex="-1" aria-hidden="true">
+                                    <select class="sa-select2 form-select" id="Selectcat" runat="server" multiple="true" tabindex="-1" aria-hidden="true">
                                         <option selected="" >Power tools</option>
                                         <option>Screwdrivers</option>
                                         <option selected="" >Chainsaws</option>
@@ -496,7 +510,7 @@
                                     <div class="mb-5">
                                         <h2 class="mb-0 fs-exact-18">Brands</h2>
                                     </div>
-                                    <select class="sa-select2 form-select" id="Selectcategories" runat="server" multiple="true" tabindex="-1" aria-hidden="true">
+                                    <select class="sa-select2 form-select" id="Selectbrands" runat="server" multiple="true" tabindex="-1" aria-hidden="true">
                                         <option selected="" >Power tools</option>
                                         <option>Screwdrivers</option>
                                         <option selected="" >Chainsaws</option>
@@ -529,59 +543,158 @@
                 
             </div>
         </div>
-       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript">
-            
-
-            "use strict";
+             'use strict';
             (() => {
-                const modified_inputs = new Set;
-                const defaultValue = "defaultValue";
+                const modified_inputs = new Set();
+                const defaultValue = 'defaultValue';
                 // store default values
-                addEventListener("beforeinput", (evt) => {
-                    const target = evt.target;
-                    if (!(defaultValue in target || defaultValue in target.dataset)) {
-                        target.dataset[defaultValue] = ("" + (target.value || target.textContent)).trim();
-                    }
-                });
-                // detect input modifications
-                addEventListener("input", (evt) => {
-                    const target = evt.target;
-                    let original;
-                    if (defaultValue in target) {
-                        original = target[defaultValue];
-                    } else {
-                        original = target.dataset[defaultValue];
-                    }
-                    if (original !== ("" + (target.value || target.textContent)).trim()) {
-                        if (!modified_inputs.has(target)) {
-                            modified_inputs.add(target);
+                addEventListener('beforeinput', evt => {
+                   
+                        const target = evt.target;
+                        
+                        if (!(defaultValue in target.dataset)) {
+                            target.dataset[defaultValue] = ('' + (target.value || target.textContent)).trim();
+                            var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+                            DivSave.style.visibility = "hidden";
                         }
-                    } else if (modified_inputs.has(target)) {
-                        modified_inputs.delete(target);
-                    }
+                    
                 });
-                // clear modified inputs upon form submission
-                addEventListener("submit", (evt) => {
-                    modified_inputs.clear();
-                    // to prevent the warning from happening, it is advisable
-                    // that you clear your form controls back to their default
-                    // state with evt.target.reset() or form.reset() after submission
-                });
-                // warn before closing if any inputs are modified
-                addEventListener("beforeunload", (evt) => {
+            // detect input modifications
+                addEventListener('input', evt => {
+                    
+                        const target = evt.target;
+                        let original = target.dataset[defaultValue];
+
+                        let current = ('' + (target.value || target.textContent)).trim();
+                        
+                        if (original !== current) {
+                            if (!modified_inputs.has(target)) {
+                                modified_inputs.add(target);
+                                var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+                                DivSave.style.visibility = "visible";
+                            }
+                        } else if (modified_inputs.has(target)) {
+
+
+                            //modified_inputs.delete(target);
+                            //var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+                            //DivSave.style.visibility = "hidden";
+                        }
+                    
+                
+            });
+
+                addEventListener(
+          'submit',
+          function (e) {
+             
+              modified_inputs.clear();
+          
+          },
+          false
+        );
+
+
+                addEventListener('beforeunload', evt => {
+                        var isPostBack = '<%= this.IsPostBack%>' == 'True';
+                    var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+                    var literalBtn = $("#<%= hdnField.ClientID %>").val();
+                    
                     if (modified_inputs.size) {
-                        const unsaved_changes_warning = "Changes you made may not be saved.";
-                        evt.preventDefault();
-                        evt.returnValue = unsaved_changes_warning;
-                       
-                        return unsaved_changes_warning;
-                    }
+                            const unsaved_changes_warning = 'Changes you made may not be saved.';
+                            evt.preventDefault();
+                            evt.returnValue = unsaved_changes_warning;
+                            return unsaved_changes_warning;
+                        
+                        }
+                    
+                    
+
+                    
+            });
+            })();
+           
+                
+        </script>
+
+        <script>
+            
+            $(document).ready(function () {
+              
+      $('#<%=Button1.ClientID%>').click(function (e) {
+          
+          //alert("You Clicked....");
+          var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+          DivSave.style.visibility = "hidden";
+          window.removeEventListener("beforeunload", function (event) {
+              event.returnValue = "Are you sure you want to leave this page?";
+          });
+      });
+
+      $('#<%=btnSave.ClientID%>').click(function (e) {
+          
+          var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+          DivSave.style.visibility = "hidden";
+          var literalBtn = $("#<%= hdnField.ClientID %>");
+          
+      });
+
+       $('#<%=btnSaveBar.ClientID%>').click(function (e) {
+          
+          var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+           DivSave.style.visibility = "hidden";
+           
+      });
+    
+      window.addEventListener("load", (event) => {
+          var literalBtn = $("#<%= hdnField.ClientID %>").val();
+          var isPostBack = '<%= this.IsPostBack%>' == 'True';
+    if (isPostBack) {
+        //alert('Its a PostBack!');
+        //alert('The text: ' + literalBtn);
+        //alert('The track: ' + track);
+        var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+        if (literalBtn === "true") {
+            DivSave.style.visibility = "visible";
+          }
+    }
+
+           
+      });
+    
+                const textArea = document.getElementById('<%=Proddescription.ClientID%>');
+                $('#<%=Proddescription.ClientID%>').change(function () {
+                    
+                        var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+          DivSave.style.visibility = "visible";
+               
                 });
 
-                
-            })();
-        </script>
+                $('#<%=Selectcat.ClientID%>').change(function () {
+                    var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+                    DivSave.style.visibility = "visible";
+                    //alert($(this).val());
+                    //window.onbeforeunload = function () { return "You have unsaved changes."; }
+                });
+
+                $('#<%=Selectbrands.ClientID%>').change(function () {
+                    var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+                    DivSave.style.visibility = "visible";
+                    //alert($(this).val());
+                    //window.onbeforeunload = function () { return "You have unsaved changes."; }
+                });
+
+                $('#<%=SelectTags.ClientID%>').change(function () {
+                    var DivSave = document.getElementById("<%=fixedSave.ClientID%>");
+                    DivSave.style.visibility = "visible";
+                    //alert($(this).val());
+                    //window.onbeforeunload = function () { return "You have unsaved changes."; }
+                });
+      
+  });
+</script>
         </div>
     
     <!-- sa-app__body / end -->
