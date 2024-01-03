@@ -9,4 +9,7 @@ The Commander website provides the customers with a Wishlist feature where they 
 
 The administration can override all features of the website and engage with every webpage of the system without any restrictions. The customer is restricted from some pages of the website. The customers are able navigate through various categories of the system so that they can make purchases by adding the products to the shopping cart. The Wishlist enables the customer to add items to purchase when they are ready. The customers receive discounts from Commander as they make more purchases. 
 
+# Guidelines
+
+![Static Badge](https://img.shields.io/badge/Visual%20Studio-2015-green) ![Static Badge](https://img.shields.io/badge/.Net%20Framework-4.5.2-blue)
 
